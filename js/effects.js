@@ -41,7 +41,7 @@
     const cursor    = document.querySelector('.cursor');
     const cursorDot = document.querySelector('.cursor-dot');
 
-    if (cursor && cursorDot) {
+    if (cursor && cursorDot && getComputedStyle(cursor).display !== 'none') {
       let mouseX = -100, mouseY = -100;
       let curX = -100, curY = -100;
       let raf;
@@ -93,7 +93,11 @@
     const magneticEls = document.querySelectorAll('.magnetic');
 
     magneticEls.forEach(el => {
+      let leaveTimer;
+
       el.addEventListener('mousemove', e => {
+        clearTimeout(leaveTimer);
+        el.style.transition = '';
         const rect = el.getBoundingClientRect();
         const cx = rect.left + rect.width / 2;
         const cy = rect.top  + rect.height / 2;
@@ -105,7 +109,7 @@
       el.addEventListener('mouseleave', () => {
         el.style.transform = '';
         el.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
-        setTimeout(() => { el.style.transition = ''; }, 500);
+        leaveTimer = setTimeout(() => { el.style.transition = ''; }, 500);
       });
     });
   }
@@ -298,8 +302,8 @@
     const items = [];
 
     targets.forEach(section => {
-      // Ensure clipping
-      section.style.overflow = 'hidden';
+      // Clip only if not already clipped via CSS
+      if (getComputedStyle(section).overflow === 'visible') section.style.overflow = 'hidden';
 
       for (let i = 0; i < PER_SECTION; i++) {
         const el = document.createElement('span');

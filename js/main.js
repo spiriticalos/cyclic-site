@@ -49,10 +49,10 @@
   }
 
   /* ── ACTIVE NAV LINK ── */
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPath = (window.location.pathname.split('/').pop() || 'index').replace(/\.html$/, '');
   document.querySelectorAll('.nav__link').forEach(link => {
-    const href = link.getAttribute('href').split('/').pop();
-    if (href === currentPath) link.classList.add('active');
+    const href = (link.getAttribute('href') || '').split('/').pop().replace(/\.html$/, '');
+    if (href && href === currentPath) link.classList.add('active');
   });
 
   /* ── EVENT FILTER (events.html) ── */

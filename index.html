@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Music Events Romania | Cyclic Agency</title>
+  <meta name="description" content="Cyclic Agency — Romania's leading electronic music event agency. House, techno &amp; melodic events across 22 cities since 2009. Discover upcoming events.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cyclic.ro/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Electronic Music Events Romania | Cyclic Agency">
+  <meta property="og:description" content="Romania's leading electronic music event agency. House, techno &amp; melodic events across 22 cities since 2009.">
+  <meta property="og:image" content="https://placehold.co/1200x630/0a0a0a/BAFF29">
+  <meta property="og:url" content="https://cyclic.ro/">
+  <meta property="og:site_name" content="Cyclic Agency">
+
+  <!-- Critical inline CSS for above-fold -->
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Space Grotesk',sans-serif;background:#0a0a0a;color:#fff;overflow-x:hidden}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:72px}
+    .hero{min-height:100svh;display:flex;align-items:flex-end;position:relative;overflow:hidden;padding-bottom:clamp(60px,8vw,100px)}
+  </style>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&display=swap">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cyclic Agency",
+    "url": "https://cyclic.ro",
+    "logo": "https://cyclic.ro/assets/logo.png",
+    "description": "Romania's leading electronic music event agency since 2009.",
+    "foundingDate": "2009",
+    "areaServed": "Romania",
+    "sameAs": [
+      "https://facebook.com/cyclicagency",
+      "https://instagram.com/cyclic_music",
+      "https://tiktok.com/@cyclic_music"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "email": "ionut@cyclic.ro",
+        "telephone": "+40721381922",
+        "contactType": "Director of Events",
+        "name": "Ionut Hupca"
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "alexandra@cyclic.ro",
+        "telephone": "+40748571629",
+        "contactType": "Event Coordinator",
+        "name": "Alexandra Bodonea"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Events (sample) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Upcoming Cyclic Events",
+    "itemListElement": [
+      {
+        "@type": "MusicEvent",
+        "position": 1,
+        "name": "Cyclic: Mihai Popoviciu",
+        "startDate": "2026-05-03",
+        "location": {
+          "@type": "Place",
+          "name": "Control Club",
+          "address": { "@type": "PostalAddress", "addressLocality": "Bucharest", "addressCountry": "RO" }
+        },
+        "performer": { "@type": "Person", "name": "Mihai Popoviciu" },
+        "organizer": { "@type": "Organization", "name": "Cyclic Agency", "url": "https://cyclic.ro" }
+      },
+      {
+        "@type": "MusicEvent",
+        "position": 2,
+        "name": "Cyclic: Optick b2b Christian Lepah",
+        "startDate": "2026-05-17",
+        "location": {
+          "@type": "Place",
+          "name": "Flying Circus",
+          "address": { "@type": "PostalAddress", "addressLocality": "Cluj-Napoca", "addressCountry": "RO" }
+        },
+        "performer": [
+          { "@type": "Person", "name": "Optick" },
+          { "@type": "Person", "name": "Christian Lepah" }
+        ],
+        "organizer": { "@type": "Organization", "name": "Cyclic Agency", "url": "https://cyclic.ro" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner container">
+      <a href="index.html" class="nav__logo" aria-label="Cyclic Agency home">CYCLIC<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html"   class="nav__link active">Home</a></li>
+        <li><a href="events.html"  class="nav__link">Events</a></li>
+        <li><a href="artists.html" class="nav__link">Artists</a></li>
+        <li><a href="rentals.html" class="nav__link">Rentals</a></li>
+        <li><a href="labels.html"  class="nav__link">Labels</a></li>
+        <li><a href="about.html"   class="nav__link">About Us</a></li>
+      </ul>
+      <a href="events.html" class="btn btn--accent nav__cta magnetic">Get Tickets <span class="arrow">→</span></a>
+      <button class="nav__burger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <a href="index.html"   class="nav__link">Home</a>
+    <a href="events.html"  class="nav__link">Events</a>
+    <a href="artists.html" class="nav__link">Artists</a>
+    <a href="rentals.html" class="nav__link">Rentals</a>
+    <a href="labels.html"  class="nav__link">Labels</a>
+    <a href="about.html"   class="nav__link">About Us</a>
+    <a href="events.html"  class="btn btn--accent magnetic">Get Tickets →</a>
+  </div>
+
+  <main>
+    <!-- ══ HERO ══ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="scanlines"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Est. 2009 — Romania</p>
+        <h1 class="hero__title display-lg" id="hero-title">
+          Romania's<br>Underground.<br><em>Elevated.</em>
+        </h1>
+        <p class="hero__sub">
+          Electronic music events across 22 cities.
+          House, techno, melodic — curated since 2009.
+        </p>
+        <div class="btn-group hero__cta">
+          <a href="events.html" class="btn btn--accent btn--lg magnetic">Upcoming Events <span class="arrow">→</span></a>
+          <a href="about.html"  class="btn btn--outline">Our Story</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">Scroll</div>
+    </section>
+
+    <!-- ══ STATS ══ -->
+    <section class="stats fade-in" aria-label="Cyclic Agency statistics">
+      <div class="stat">
+        <span class="stat__number" data-count="17" data-suffix="+">17+</span>
+        <p class="stat__title">Years</p>
+        <p class="stat__desc">Curating underground electronic music</p>
+      </div>
+      <div class="stat">
+        <span class="stat__number" data-count="30" data-suffix="+">30+</span>
+        <p class="stat__title">Venues</p>
+        <p class="stat__desc">Across 22 Romanian cities</p>
+      </div>
+      <div class="stat">
+        <span class="stat__number" data-count="100" data-suffix="+">100+</span>
+        <p class="stat__title">Artists</p>
+        <p class="stat__desc">International and local talent</p>
+      </div>
+    </section>
+
+    <!-- ══ UPCOMING EVENTS ══ -->
+    <section class="section" aria-labelledby="events-heading">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-header__left">
+            <span class="section-label">What's on</span>
+            <h2 class="display-sm section-header__title" id="events-heading">Upcoming Events</h2>
+          </div>
+          <div class="section-header__right">
+            <a href="events.html" class="btn btn--outline">All Events <span class="arrow">→</span></a>
+          </div>
+        </header>
+
+        <div class="events-grid stagger-children">
+
+          <article class="event-card fade-in" aria-label="Cyclic event: Mihai Popoviciu at Control Club Bucharest">
+            <div class="event-card__image-wrap">
+              <img src="https://placehold.co/800x600/111111/BAFF29?text=Mihai+Popoviciu"
+                   alt="Cyclic Agency electronic music event at Control Club Bucharest 2026 featuring Mihai Popoviciu"
+                   width="800" height="600" loading="lazy">
+              <div class="event-card__date-badge">
+                <span class="day">03</span>
+                <span class="month">May</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <div class="tags">
+                <span class="tag tag--accent">Techno</span>
+                <span class="tag">Bucharest</span>
+              </div>
+              <h3 class="event-card__title">Mihai Popoviciu</h3>
+              <p class="event-card__venue">Control Club, Bucharest</p>
+              <div class="event-card__footer">
+                <p class="event-card__price">From <strong>60 RON</strong></p>
+                <a href="events.html" class="btn btn--accent btn--sm magnetic">Tickets →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card fade-in delay-2" aria-label="Cyclic event: Optick b2b Christian Lepah at Flying Circus Cluj">
+            <div class="event-card__image-wrap">
+              <img src="https://placehold.co/800x600/111111/BAFF29?text=Optick+b2b+Lepah"
+                   alt="Cyclic Agency electronic music event at Flying Circus Cluj-Napoca 2026 Optick b2b Christian Lepah"
+                   width="800" height="600" loading="lazy">
+              <div class="event-card__date-badge">
+                <span class="day">17</span>
+                <span class="month">May</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <div class="tags">
+                <span class="tag tag--purple">House</span>
+                <span class="tag">Cluj-Napoca</span>
+              </div>
+              <h3 class="event-card__title">Optick b2b Christian Lepah</h3>
+              <p class="event-card__venue">Flying Circus, Cluj-Napoca</p>
+              <div class="event-card__footer">
+                <p class="event-card__price">From <strong>50 RON</strong></p>
+                <a href="events.html" class="btn btn--accent btn--sm magnetic">Tickets →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card fade-in delay-3" aria-label="Cyclic event: Tale of Us at Form Space Bucharest">
+            <div class="event-card__image-wrap">
+              <img src="https://placehold.co/800x600/111111/BAFF29?text=Tale+of+Us"
+                   alt="Cyclic Agency electronic music event at Form Space Bucharest 2026 featuring Tale of Us"
+                   width="800" height="600" loading="lazy">
+              <div class="event-card__date-badge">
+                <span class="day">31</span>
+                <span class="month">May</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <div class="tags">
+                <span class="tag tag--accent">Melodic</span>
+                <span class="tag">Bucharest</span>
+                <span class="tag">Headliner</span>
+              </div>
+              <h3 class="event-card__title">Tale of Us</h3>
+              <p class="event-card__venue">Form Space, Bucharest</p>
+              <div class="event-card__footer">
+                <p class="event-card__price">From <strong>120 RON</strong></p>
+                <a href="events.html" class="btn btn--accent btn--sm magnetic">Tickets →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ HEADLINERS MARQUEE ══ -->
+    <div class="marquee" aria-label="Past international headliners" role="region">
+      <div class="marquee__track">
+        <span class="marquee__item">Tale of Us <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Dixon <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">DJ Koze <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Adriatique <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Argy <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Hot Since 82 <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Nina Kraviz <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Folamour <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Sasha <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Rodhad <span class="marquee__sep">✦</span></span>
+        <!-- duplicate for seamless loop -->
+        <span class="marquee__item">Tale of Us <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Dixon <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">DJ Koze <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Adriatique <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Argy <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Hot Since 82 <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Nina Kraviz <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Folamour <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Sasha <span class="marquee__sep">✦</span></span>
+        <span class="marquee__item">Rodhad <span class="marquee__sep">✦</span></span>
+      </div>
+    </div>
+
+    <!-- ══ FEATURED ARTISTS ══ -->
+    <section class="section" aria-labelledby="artists-heading">
+      <div class="container">
+        <header class="section-header fade-in">
+          <div class="section-header__left">
+            <span class="section-label">Our roster</span>
+            <h2 class="display-sm section-header__title" id="artists-heading">Featured Artists</h2>
+          </div>
+          <div class="section-header__right">
+            <a href="artists.html" class="btn btn--outline">Full Roster <span class="arrow">→</span></a>
+          </div>
+        </header>
+
+        <div class="artists-grid">
+          <article class="artist-card fade-in" data-type="local" aria-label="Artist: Mihai Popoviciu — Romanian electronic music producer and DJ">
+            <img class="artist-card__image" loading="lazy"
+                 src="https://placehold.co/400x533/111111/BAFF29?text=Mihai+Popoviciu"
+                 alt="DJ Mihai Popoviciu performing live at Cyclic event in Bucharest"
+                 width="400" height="533">
+            <div class="artist-card__overlay"></div>
+            <div class="artist-card__body">
+              <h3 class="artist-card__name">Mihai Popoviciu</h3>
+              <p class="artist-card__genre">Techno / House</p>
+              <div class="artist-card__links">
+                <a href="artists.html" class="artist-card__link">Profile →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="artist-card fade-in delay-1" data-type="local" aria-label="Artist: Optick — Romanian techno DJ">
+            <img class="artist-card__image" loading="lazy"
+                 src="https://placehold.co/400x533/111111/BAFF29?text=Optick"
+                 alt="Optick Romanian techno DJ performing at Cyclic underground event"
+                 width="400" height="533">
+            <div class="artist-card__overlay"></div>
+            <div class="artist-card__body">
+              <h3 class="artist-card__name">Optick</h3>
+              <p class="artist-card__genre">Techno</p>
+              <div class="artist-card__links">
+                <a href="artists.html" class="artist-card__link">Profile →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="artist-card fade-in delay-2" data-type="local" aria-label="Artist: Christian Lepah — Romanian house music DJ">
+            <img class="artist-card__image" loading="lazy"
+                 src="https://placehold.co/400x533/111111/BAFF29?text=Christian+Lepah"
+                 alt="Christian Lepah Romanian house DJ at Cyclic Agency underground music event"
+                 width="400" height="533">
+            <div class="artist-card__overlay"></div>
+            <div class="artist-card__body">
+              <h3 class="artist-card__name">Christian Lepah</h3>
+              <p class="artist-card__genre">House / Disco</p>
+              <div class="artist-card__links">
+                <a href="artists.html" class="artist-card__link">Profile →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="artist-card fade-in delay-3" data-type="international" aria-label="Artist: Rosario Internullo — International electronic music artist">
+            <img class="artist-card__image" loading="lazy"
+                 src="https://placehold.co/400x533/111111/BAFF29?text=Rosario+Internullo"
+                 alt="Rosario Internullo international electronic music DJ performing at Cyclic Romania"
+                 width="400" height="533">
+            <div class="artist-card__overlay"></div>
+            <div class="artist-card__body">
+              <h3 class="artist-card__name">Rosario Internullo</h3>
+              <p class="artist-card__genre">Melodic Techno</p>
+              <div class="artist-card__links">
+                <a href="artists.html" class="artist-card__link">Profile →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ PAST HEADLINERS ══ -->
+    <section class="section section--dark" aria-labelledby="headliners-heading">
+      <div class="container">
+        <header class="section-header fade-in">
+          <div class="section-header__left">
+            <span class="section-label">International acts</span>
+            <h2 class="display-sm section-header__title" id="headliners-heading">Past Headliners</h2>
+          </div>
+          <div class="section-header__right">
+            <p class="text-muted" style="font-size:13px;max-width:26ch;text-align:right;">Artists who have performed at Cyclic events across Romania</p>
+          </div>
+        </header>
+        <div class="headliners-list fade-in">
+          <span class="headliner-name">Tale of Us</span>
+          <span class="headliner-name">Dixon</span>
+          <span class="headliner-name">DJ Koze</span>
+          <span class="headliner-name">Adriatique</span>
+          <span class="headliner-name">Argy</span>
+          <span class="headliner-name">Hot Since 82</span>
+          <span class="headliner-name">Nina Kraviz</span>
+          <span class="headliner-name">Folamour</span>
+          <span class="headliner-name">Sasha</span>
+          <span class="headliner-name">Rodhad</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ ABOUT TEASER ══ -->
+    <section class="section" aria-labelledby="about-teaser-heading">
+      <div class="container">
+        <div class="grid-asym" style="align-items:center; gap: clamp(40px,6vw,100px);">
+
+          <div class="fade-in-left">
+            <span class="section-label">Since 2009</span>
+            <h2 class="display-sm" id="about-teaser-heading" style="margin-top:16px;">
+              17 Years of Shaping Romania's Electronic Music Scene
+            </h2>
+            <p class="text-lg text-muted" style="margin-top:20px; max-width:52ch; line-height:1.7;">
+              Cyclic Agency was born from a passion for authentic underground music. We don't just book DJs — we build communities, curate experiences, and connect Romanian audiences with the world's finest electronic music artists.
+            </p>
+            <div class="btn-group" style="margin-top:32px;">
+              <a href="about.html" class="btn btn--accent magnetic">Our Story <span class="arrow">→</span></a>
+              <a href="rentals.html" class="btn btn--outline">Production Services</a>
+            </div>
+          </div>
+
+          <div class="fade-in-right" style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+            <div class="card card--accent-border" style="aspect-ratio:1;">
+              <div class="card__icon">🎛️</div>
+              <h3 class="card__title">Production</h3>
+              <p class="card__body">Full technical production for events of any scale across Romania.</p>
+            </div>
+            <div class="card" style="aspect-ratio:1; margin-top:24px;">
+              <div class="card__icon">🎧</div>
+              <h3 class="card__title">Booking</h3>
+              <p class="card__body">Direct artist booking — local talent and international headliners.</p>
+            </div>
+            <div class="card" style="aspect-ratio:1;">
+              <div class="card__icon">🏷️</div>
+              <h3 class="card__title">Labels</h3>
+              <p class="card__body">Label management and release promotion for the underground scene.</p>
+            </div>
+            <div class="card card--accent-border" style="aspect-ratio:1; margin-top:24px;">
+              <div class="card__icon">📍</div>
+              <h3 class="card__title">22 Cities</h3>
+              <p class="card__body">Events in venues across Romania's most vibrant music cities.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CTA BANNER ══ -->
+    <section class="cta-section section--dark fade-in" aria-labelledby="cta-heading">
+      <div class="container cta-section__content">
+        <span class="section-label">Join the movement</span>
+        <h2 class="display-lg cta-section__title" id="cta-heading">
+          Next Event is Closer<br>Than You Think<span class="text-accent">.</span>
+        </h2>
+        <div class="btn-group" style="justify-content:center; margin-top: 8px;">
+          <a href="events.html" class="btn btn--accent btn--lg magnetic">Browse Events <span class="arrow">→</span></a>
+          <a href="about.html#contact" class="btn btn--outline btn--lg">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__logo">CYCLIC<span>.</span></p>
+          <p class="footer__tagline">Romania's Underground. Elevated.<br>Electronic music events since 2009.</p>
+          <nav class="footer__social" aria-label="Social media links">
+            <a href="https://facebook.com/cyclicagency" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://instagram.com/cyclic_music" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://tiktok.com/@cyclic_music" class="footer__social-link" target="_blank" rel="noopener noreferrer">TikTok</a>
+          </nav>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="labels.html">Labels</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+
+        <address class="footer__contact" style="font-style:normal;">
+          <h4>Contact</h4>
+          <div class="footer__contact-block">
+            <p class="footer__contact-role">Director of Events</p>
+            <p class="footer__contact-name">Ionut Hupca</p>
+            <a href="mailto:ionut@cyclic.ro">ionut@cyclic.ro</a>
+            <a href="tel:+40721381922">+40 721 381 922</a>
+          </div>
+          <div class="footer__contact-block">
+            <p class="footer__contact-role">Event Coordinator</p>
+            <p class="footer__contact-name">Alexandra Bodonea</p>
+            <a href="mailto:alexandra@cyclic.ro">alexandra@cyclic.ro</a>
+            <a href="tel:+40748571629">+40 748 571 629</a>
+          </div>
+        </address>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span class="js-year">2026</span> Cyclic Agency. All rights reserved.</p>
+        <p>Electronic music events Romania since 2009.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/effects.js" defer></script>
+</body>
+</html>

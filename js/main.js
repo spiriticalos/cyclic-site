@@ -158,6 +158,15 @@
       grid.style.gridTemplateColumns =
         remaining === 1 ? '1fr' :
         remaining === 2 ? 'repeat(2, 1fr)' : '';
+
+      if (remaining === 0) {
+        grid.innerHTML = `
+          <div style="grid-column:1/-1; text-align:center; padding: clamp(60px,8vw,100px) 0;">
+            <p style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:16px;">No upcoming events</p>
+            <p style="font-family:var(--font-display);font-size:clamp(28px,4vw,48px);margin-bottom:24px;">New events coming soon<span style="color:var(--accent)">.</span></p>
+            <a href="mailto:ionut@cyclic.ro" class="btn btn--outline">Get notified →</a>
+          </div>`;
+      }
     }
   })();
 

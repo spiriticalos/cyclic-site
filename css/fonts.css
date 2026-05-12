@@ -1,5 +1,4 @@
-/* Roboto — display / titluri */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+/* Roboto — loaded via <link> in HTML for better performance */
 
 /* Rosnoc — display / titluri (înlocuit cu Roboto) */
 @font-face {

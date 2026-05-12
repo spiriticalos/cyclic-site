@@ -700,6 +700,13 @@ h1, h2, h3, h4, h5, h6 {
   gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 32px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.filter-bar::-webkit-scrollbar { display: none; }
+@media (max-width: 480px) {
+  .filter-bar { flex-wrap: nowrap; padding-bottom: 4px; }
 }
 .filter-btn {
   padding: 8px 18px;
@@ -1607,7 +1614,15 @@ html, body {
   .nav__mobile { padding-bottom: max(24px, env(safe-area-inset-bottom)); }
 }
 
-/* 29. NEWSLETTER STICKY BAR */
+/* 29. CONTACT LINK — replaces inline onmouseover handlers */
+.contact-link {
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.contact-link:hover { color: var(--accent); }
+
+/* 30. NEWSLETTER STICKY BAR */
 .newsletter-bar {
   position: fixed;
   bottom: 0;

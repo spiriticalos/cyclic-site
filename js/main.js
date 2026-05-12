@@ -117,6 +117,98 @@
     });
   });
 
+  /* ── AUTO-HIDE EXPIRED EVENTS ── */
+  (function hideExpiredEvents() {
+    const MONTHS = { Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11 };
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // start of today — event visible all day, disappears at midnight
+
+    function eventDate(monthStr, dayStr) {
+      const m = MONTHS[monthStr];
+      if (m === undefined) return null;
+      // Multi-day events ("18–21") → use last day, stays visible through the final day
+      const d = parseInt(String(dayStr).split(/[–\-]/).pop());
+      if (isNaN(d)) return null;
+      return new Date(today.getFullYear(), m, d);
+    }
+
+    // Event cards (featured grid)
+    document.querySelectorAll('.event-card').forEach(card => {
+      const dayEl   = card.querySelector('.event-card__date-badge .day');
+      const monthEl = card.querySelector('.event-card__date-badge .month');
+      if (!dayEl || !monthEl) return;
+      const d = eventDate(monthEl.textContent.trim(), dayEl.textContent.trim());
+      if (d && d < today) card.remove();
+    });
+
+    // Event rows (list)
+    document.querySelectorAll('.event-row').forEach(row => {
+      const dateEl = row.querySelector('.event-row__date');
+      if (!dateEl) return;
+      const text = (dateEl.childNodes[0]?.textContent || '').trim(); // "Jun 07"
+      const [monthStr, dayStr] = text.split(/\s+/);
+      const d = eventDate(monthStr, dayStr);
+      if (d && d < today) row.remove();
+    });
+
+    // Adjust grid columns after removal
+    const grid = document.querySelector('.events-grid');
+    if (grid) {
+      const remaining = grid.querySelectorAll('.event-card').length;
+      grid.style.gridTemplateColumns =
+        remaining === 1 ? '1fr' :
+        remaining === 2 ? 'repeat(2, 1fr)' : '';
+    }
+  })();
+
+  /* ── NEWSLETTER STICKY BAR ── */
+  (function initNewsletterBar() {
+    if (localStorage.getItem('nl_dismissed')) return;
+
+    const bar = document.createElement('div');
+    bar.className = 'newsletter-bar';
+    bar.setAttribute('role', 'complementary');
+    bar.setAttribute('aria-label', 'Subscribe to Cyclic newsletter');
+    bar.innerHTML = `
+      <div class="container newsletter-bar__inner">
+        <div class="newsletter-bar__text">
+          <strong>Never miss a Cyclic event</strong>
+          <span>Early access · Exclusive offers</span>
+        </div>
+        <form class="newsletter-bar__form" novalidate>
+          <input type="email" class="newsletter-bar__input" placeholder="your@email.com" aria-label="Email address" autocomplete="email">
+          <button type="submit" class="btn btn--accent newsletter-bar__submit">Subscribe →</button>
+        </form>
+        <button class="newsletter-bar__close" aria-label="Close">✕</button>
+      </div>`;
+    document.body.appendChild(bar);
+
+    setTimeout(() => bar.classList.add('visible'), 1800);
+
+    bar.querySelector('.newsletter-bar__close').addEventListener('click', () => {
+      bar.classList.remove('visible');
+      setTimeout(() => bar.remove(), 450);
+      localStorage.setItem('nl_dismissed', '1');
+    });
+
+    bar.querySelector('.newsletter-bar__form').addEventListener('submit', e => {
+      e.preventDefault();
+      const input = bar.querySelector('.newsletter-bar__input');
+      if (!input.value.trim() || !input.value.includes('@')) {
+        input.classList.add('error');
+        input.addEventListener('input', () => input.classList.remove('error'), { once: true });
+        return;
+      }
+      bar.querySelector('.newsletter-bar__inner').innerHTML =
+        `<p style="width:100%;text-align:center;font-size:15px;">
+           <strong style="color:var(--accent);font-family:var(--font-display);">✓ You're in.</strong>
+           &nbsp;We'll hit you with early access and exclusive offers.
+         </p>`;
+      setTimeout(() => { bar.classList.remove('visible'); setTimeout(() => bar.remove(), 450); }, 2800);
+      localStorage.setItem('nl_dismissed', '1');
+    });
+  })();
+
   /* ── PREFERS REDUCED MOTION CHECK ── */
   window.REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 

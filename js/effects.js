@@ -204,21 +204,10 @@
   }
 
   /* ════════════════════════════════════════════
-     7. WAVEFORM CANVAS ANIMATION — 128 BPM house pump
+     7. WAVEFORM CANVAS ANIMATION
      ════════════════════════════════════════════ */
   function initWaveforms() {
     if (prefersReduced) return;
-
-    const BEAT_MS = (60 / 128) * 1000; // 128 BPM → 468.75ms per beat
-
-    // 5 waves: ampF, freq (per px), phaseOff, speed (per ms), base alpha, lineWidth, vertical offset (fraction of H)
-    const waves = [
-      { ampF: 0.16, freq: 0.0050, phaseOff: 0.0,  speed: 0.00022, alpha: 0.28, lw: 2.2, yOff:  0.00 },
-      { ampF: 0.10, freq: 0.0088, phaseOff: 1.8,  speed: 0.00016, alpha: 0.20, lw: 1.6, yOff:  0.06 },
-      { ampF: 0.22, freq: 0.0030, phaseOff: 3.5,  speed: 0.00008, alpha: 0.14, lw: 3.0, yOff: -0.04 },
-      { ampF: 0.07, freq: 0.0140, phaseOff: 5.2,  speed: 0.00032, alpha: 0.10, lw: 1.0, yOff:  0.09 },
-      { ampF: 0.13, freq: 0.0065, phaseOff: 2.6,  speed: 0.00013, alpha: 0.12, lw: 1.8, yOff: -0.07 },
-    ];
 
     const targets = document.querySelectorAll(
       '.hero__bg, .section--dark, .cta-section, .page-hero'
@@ -230,49 +219,58 @@
 
       const canvas = document.createElement('canvas');
       canvas.setAttribute('aria-hidden', 'true');
-      canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1';
+      canvas.style.cssText = [
+        'position:absolute',
+        'inset:0',
+        'width:100%',
+        'height:100%',
+        'pointer-events:none',
+        'z-index:1',
+        'opacity:1'
+      ].join(';');
+
       section.insertBefore(canvas, section.firstChild);
 
       const ctx = canvas.getContext('2d');
-      let W, H;
+      let W, H, rafId, tick = 0;
+
+      const waves = [
+        { ampF: 0.07, freq: 0.006, phaseOff: 0,   speed: 0.018, alpha: 0.13, lw: 1.5 },
+        { ampF: 0.04, freq: 0.011, phaseOff: 2.1, speed: 0.011, alpha: 0.08, lw: 1.0 },
+        { ampF: 0.10, freq: 0.004, phaseOff: 4.4, speed: 0.007, alpha: 0.06, lw: 2.0 },
+      ];
 
       function resize() {
         W = canvas.width  = section.offsetWidth;
         H = canvas.height = section.offsetHeight || window.innerHeight;
       }
 
-      function draw(now) {
+      function draw() {
         ctx.clearRect(0, 0, W, H);
-
-        // Sidechain pump: sharp attack on each beat, exponential release
-        // beatPhase 0→1 within a beat; pump 1.0 at beat, decays to ~0 by next beat
-        const beatPhase = (now % BEAT_MS) / BEAT_MS;
-        const pump = Math.pow(1 - beatPhase, 2.2); // exponential decay
-        const pumpAmp   = 1 + pump * 1.5;  // up to 2.5× amplitude on beat
-        const pumpAlpha = 1 + pump * 0.7;  // up to 1.7× opacity on beat
-        const pumpLW    = 1 + pump * 0.5;  // slightly thicker on beat
+        const cy = H / 2;
 
         waves.forEach(w => {
-          const cy = H * (0.5 + w.yOff);
           ctx.beginPath();
-          ctx.strokeStyle = `rgba(186,255,41,${Math.min(w.alpha * pumpAlpha, 0.60)})`;
-          ctx.lineWidth   = w.lw * pumpLW;
+          ctx.strokeStyle = `rgba(186,255,41,${w.alpha})`;
+          ctx.lineWidth   = w.lw;
           ctx.lineJoin    = 'round';
           ctx.lineCap     = 'round';
 
           for (let x = 0; x <= W; x += 2) {
-            const y = cy + Math.sin(x * w.freq + now * w.speed + w.phaseOff) * (H * w.ampF * pumpAmp);
+            const y = cy + Math.sin(x * w.freq + tick * w.speed + w.phaseOff) * (H * w.ampF);
             x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
           }
           ctx.stroke();
         });
 
-        requestAnimationFrame(draw);
+        tick++;
+        rafId = requestAnimationFrame(draw);
       }
 
-      new ResizeObserver(resize).observe(section);
+      const ro = new ResizeObserver(resize);
+      ro.observe(section);
       resize();
-      requestAnimationFrame(draw);
+      draw();
     });
   }
 

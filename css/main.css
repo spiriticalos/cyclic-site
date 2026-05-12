@@ -38,7 +38,7 @@ a, button { -webkit-tap-highlight-color: transparent; touch-action: manipulation
   --section-py:   clamp(80px, 10vw, 140px);
   --container:    1280px;
   --gap:          clamp(16px, 2.5vw, 32px);
-  --font-display: 'Rosnoc', sans-serif;
+  --font-display: 'Roboto', sans-serif;
   --font-body:    'Eurostile', sans-serif;
   --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out:  cubic-bezier(0.76, 0, 0.24, 1);

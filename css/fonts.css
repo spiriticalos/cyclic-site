@@ -1,4 +1,7 @@
-/* Rosnoc — display / titluri */
+/* Roboto — display / titluri */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+/* Rosnoc — display / titluri (înlocuit cu Roboto) */
 @font-face {
   font-family: 'Rosnoc';
   font-style: normal;

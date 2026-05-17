@@ -218,6 +218,7 @@
       padding-block: var(--section-py);
       overflow: hidden;
       position: relative;
+      scroll-margin-top: 88px;
     }
     .prd-hub__header {
       text-align: center;
@@ -375,6 +376,12 @@
         opacity: 1; transform: none; animation: none; transition: background 0.3s, color 0.3s, border-color 0.3s;
       }
     }
+    /* JS fallback: if scripting disabled, show everything */
+    @media (scripting: none) {
+      .prd-tag, .prd-card { opacity: 1 !important; transform: none !important; animation: none !important; }
+    }
+    /* Prevent invisible elements from being tab-focusable before animation */
+    .prd-hub:not(.is-active) .prd-tag { pointer-events: none; }
   </style>
 
   <script type="application/ld+json">
@@ -418,7 +425,7 @@
     </div>
   </nav>
 
-  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
+  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation" aria-modal="true">
     <a href="index.html"   class="nav__link">Home</a>
     <a href="events.html"  class="nav__link">Events</a>
     <a href="artists.html" class="nav__link">Artists</a>
@@ -444,7 +451,7 @@
         </div>
       </div>
 
-      <div class="rh__stats" aria-hidden="true">
+      <div class="rh__stats" aria-label="Cyclic Agency stats">
         <div class="rh__stat"><strong>17+</strong><span>Years</span></div>
         <div class="rh__stat"><strong>30</strong><span>Cities</span></div>
         <div class="rh__stat"><strong>500+</strong><span>Events</span></div>

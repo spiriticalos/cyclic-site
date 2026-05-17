@@ -191,30 +191,6 @@
       z-index: 1;
       background: #0a0a0a;
     }
-    /* Rental item icon — text label replacing emoji */
-    .rental-item__icon {
-      font-family: 'Roboto', sans-serif !important;
-      font-size: 10px !important;
-      font-weight: 900 !important;
-      letter-spacing: 0.1em;
-      color: #BAFF29;
-      background: rgba(186,255,41,0.07);
-      border: 1px solid rgba(186,255,41,0.18);
-      border-radius: 3px;
-      padding: 6px 8px;
-      min-width: 44px;
-      text-align: center;
-      line-height: 1;
-      margin-top: 3px;
-    }
-    /* Rental items stagger index (transition defined after main.css) */
-    .rental-item:nth-child(1) { --ri: 0; }
-    .rental-item:nth-child(2) { --ri: 1; }
-    .rental-item:nth-child(3) { --ri: 2; }
-    .rental-item:nth-child(4) { --ri: 3; }
-    .rental-item:nth-child(5) { --ri: 4; }
-    .rental-item:nth-child(6) { --ri: 5; }
-    .rental-item:nth-child(7) { --ri: 6; }
     @media (max-width: 768px) {
       .rh__stats { grid-template-columns: repeat(2, 1fr); }
       .rh__stat:nth-child(2) { border-right: none; }
@@ -237,18 +213,167 @@
 
   <!-- Rentals overrides — after main.css to win the cascade -->
   <style>
-    .rental-item {
-      opacity: 0;
-      transform: translateY(52px) scale(0.97);
-      transition:
-        opacity   0.7s  cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 110ms),
-        transform 0.8s  cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 110ms),
-        border-color 0.3s,
-        background   0.3s;
+    /* ═══ PRD HUB — Full Production tag cascade ═══ */
+    .prd-hub {
+      padding-block: var(--section-py);
+      overflow: hidden;
+      position: relative;
     }
-    .rental-grid.is-building .rental-item {
+    .prd-hub__header {
+      text-align: center;
+      margin-bottom: clamp(48px, 6vw, 80px);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .prd-hub__label {
+      margin-bottom: 22px;
+    }
+    .prd-hub__title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      font-size: clamp(48px, 9vw, 120px);
+      line-height: 0.88;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      margin: 14px 0 22px;
+    }
+    .prd-hub__sub {
+      color: rgba(255,255,255,0.55);
+      font-size: clamp(14px, 1.5vw, 17px);
+      max-width: 56ch;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    /* Tags — chips that "release" the cards below */
+    .prd-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .prd-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 11px 18px;
+      min-height: 44px;
+      border: 1px solid rgba(186,255,41,0.22);
+      background: rgba(186,255,41,0.05);
+      color: #BAFF29;
+      font-family: 'Eurostile', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s, transform 0.25s cubic-bezier(0.16,1,0.3,1), border-color 0.25s;
+      cursor: pointer;
+      white-space: nowrap;
+      opacity: 0;
+      transform: translateY(14px) scale(0.85);
+    }
+    .prd-hub.is-active .prd-tag {
+      animation: prd-tag-in 0.55s cubic-bezier(0.16,1,0.3,1) forwards;
+      animation-delay: calc(0.25s + var(--ti, 0) * 70ms);
+    }
+    .prd-tag:hover, .prd-tag:focus-visible {
+      background: #BAFF29;
+      color: #0a0a0a;
+      border-color: #BAFF29;
+      transform: translateY(-2px) scale(1);
+      outline: none;
+    }
+    .prd-tag:nth-child(1) { --ti: 0; }
+    .prd-tag:nth-child(2) { --ti: 1; }
+    .prd-tag:nth-child(3) { --ti: 2; }
+    .prd-tag:nth-child(4) { --ti: 3; }
+    .prd-tag:nth-child(5) { --ti: 4; }
+    .prd-tag:nth-child(6) { --ti: 5; }
+    @keyframes prd-tag-in {
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    /* Cards grid — derived from tags */
+    .prd-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(14px, 2vw, 22px);
+    }
+    .prd-card {
+      position: relative;
+      padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      opacity: 0;
+      transform: translateY(48px) scale(0.96);
+      transition:
+        opacity 0.7s cubic-bezier(0.16,1,0.3,1),
+        transform 0.8s cubic-bezier(0.16,1,0.3,1),
+        border-color 0.3s,
+        background 0.3s;
+      scroll-margin-top: 100px;
+    }
+    .prd-hub.is-active .prd-card {
       opacity: 1;
       transform: translateY(0) scale(1);
+      transition-delay: calc(0.6s + var(--ci, 0) * 90ms), calc(0.6s + var(--ci, 0) * 90ms), 0s, 0s;
+    }
+    .prd-card:nth-child(1) { --ci: 0; }
+    .prd-card:nth-child(2) { --ci: 1; }
+    .prd-card:nth-child(3) { --ci: 2; }
+    .prd-card:nth-child(4) { --ci: 3; }
+    .prd-card:nth-child(5) { --ci: 4; }
+    .prd-card:nth-child(6) { --ci: 5; }
+    .prd-card:hover {
+      border-color: rgba(186,255,41,0.35);
+      background: rgba(186,255,41,0.03);
+    }
+    .prd-card__tag {
+      display: inline-block;
+      font-family: 'Eurostile', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #BAFF29;
+      margin-bottom: 14px;
+    }
+    .prd-card__title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: clamp(20px, 2vw, 26px);
+      line-height: 1.05;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+    }
+    .prd-card__desc {
+      color: rgba(255,255,255,0.55);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+    /* Pulse when tag is tapped */
+    @keyframes prd-card-pulse {
+      0%   { box-shadow: 0 0 0 0 rgba(186,255,41,0.45); border-color: #BAFF29; }
+      100% { box-shadow: 0 0 0 18px rgba(186,255,41,0); border-color: rgba(255,255,255,0.08); }
+    }
+    .prd-card.pulse { animation: prd-card-pulse 1.2s ease-out; }
+    /* MOBILE ═══ */
+    @media (max-width: 900px) {
+      .prd-cards { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .prd-cards { grid-template-columns: 1fr; gap: 12px; }
+      .prd-tag { padding: 12px 16px; font-size: 12px; }
+      .prd-card { padding: 22px 20px; }
+      .prd-hub__header { margin-bottom: 36px; }
+      .prd-hub__sub { margin-bottom: 28px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .prd-tag, .prd-card {
+        opacity: 1; transform: none; animation: none; transition: background 0.3s, color 0.3s, border-color 0.3s;
+      }
     }
   </style>
 
@@ -331,74 +456,60 @@
 
     <div class="rh-content">
 
-    <!-- Equipment categories -->
-    <section id="equipment" class="section" aria-labelledby="equipment-heading">
+    <!-- Full Production hub — title + tag cascade derives cards -->
+    <section id="equipment" class="prd-hub" aria-labelledby="prd-heading">
       <div class="container">
-        <header class="section-header fade-in">
-          <div class="section-header__left">
-            <span class="section-label">What we offer</span>
-            <h2 class="display-sm section-header__title" id="equipment-heading">Equipment &amp; Services</h2>
+        <header class="prd-hub__header">
+          <span class="section-label prd-hub__label">Built into one</span>
+          <h2 class="prd-hub__title" id="prd-heading">Full Production<span class="text-accent">.</span></h2>
+          <p class="prd-hub__sub">End-to-end event production. From venue scouting and technical planning to setup, operation and breakdown — handled by one team, so you focus on the music.</p>
+
+          <div class="prd-tags" role="list" aria-label="What's included">
+            <a href="#card-sound"     class="prd-tag" role="listitem">#Sound</a>
+            <a href="#card-light"     class="prd-tag" role="listitem">#Lighting</a>
+            <a href="#card-dj"        class="prd-tag" role="listitem">#DJ</a>
+            <a href="#card-stage"     class="prd-tag" role="listitem">#Stage</a>
+            <a href="#card-crew"      class="prd-tag" role="listitem">#Crew</a>
+            <a href="#card-transport" class="prd-tag" role="listitem">#Transport</a>
           </div>
         </header>
 
-        <div class="rental-grid">
+        <div class="prd-cards">
+          <article id="card-sound" class="prd-card">
+            <span class="prd-card__tag">#Sound</span>
+            <h3 class="prd-card__title">Sound Systems</h3>
+            <p class="prd-card__desc">Professional line arrays, subwoofers and monitoring. Void Acoustics, d&amp;b audiotechnik and L-Acoustics inventory for clubs, warehouses and open-air events up to 5000 people.</p>
+          </article>
 
-          <div class="rental-item">
-            <div class="rental-item__icon">SND</div>
-            <div>
-              <h3 class="rental-item__title">Sound Systems</h3>
-              <p class="rental-item__desc">Professional line arrays, subwoofers and monitoring systems. Void Acoustics, d&b audiotechnik and L-Acoustics inventory available for clubs, warehouses and open-air events up to 5000 people.</p>
-            </div>
-          </div>
+          <article id="card-light" class="prd-card">
+            <span class="prd-card__tag">#Lighting</span>
+            <h3 class="prd-card__title">Lighting &amp; Visuals</h3>
+            <p class="prd-card__desc">Moving heads, LED bars, strobes, haze machines and lasers. Full visual production including LED walls and projection mapping for immersive experiences.</p>
+          </article>
 
-          <div class="rental-item">
-            <div class="rental-item__icon">LGT</div>
-            <div>
-              <h3 class="rental-item__title">Lighting &amp; Visuals</h3>
-              <p class="rental-item__desc">Moving heads, LED bars, strobes, haze machines and laser systems. Full visual production including LED video walls and projection mapping for immersive event experiences.</p>
-            </div>
-          </div>
+          <article id="card-dj" class="prd-card">
+            <span class="prd-card__tag">#DJ</span>
+            <h3 class="prd-card__title">DJ Equipment</h3>
+            <p class="prd-card__desc">Pioneer CDJ-3000 setups, DJM-A9 mixers, Rane Seventy-Two mixers and turntables. Fully maintained and rider-ready for professional performances.</p>
+          </article>
 
-          <div class="rental-item">
-            <div class="rental-item__icon">DJ</div>
-            <div>
-              <h3 class="rental-item__title">DJ Equipment</h3>
-              <p class="rental-item__desc">Pioneer CDJ-3000 setups, DJM-A9 mixers, Rane Seventy-Two mixers and turntables. Fully maintained and rider-ready equipment for professional DJ performances.</p>
-            </div>
-          </div>
+          <article id="card-stage" class="prd-card">
+            <span class="prd-card__tag">#Stage</span>
+            <h3 class="prd-card__title">Stage &amp; Structures</h3>
+            <p class="prd-card__desc">Modular stage systems, trussing, DJ booths and crowd barriers. Custom builds tailored to your venue — industrial clubs to outdoor festival sites.</p>
+          </article>
 
-          <div class="rental-item">
-            <div class="rental-item__icon">STG</div>
-            <div>
-              <h3 class="rental-item__title">Stage &amp; Structures</h3>
-              <p class="rental-item__desc">Modular stage systems, trussing, DJ booths and crowd barriers. Custom stage builds tailored to your venue and aesthetic from industrial to outdoor festival settings.</p>
-            </div>
-          </div>
+          <article id="card-crew" class="prd-card">
+            <span class="prd-card__tag">#Crew</span>
+            <h3 class="prd-card__title">Technical Staff</h3>
+            <p class="prd-card__desc">Sound engineers, lighting operators, riggers and production managers. Our crew has worked on 500+ electronic music events across Romania.</p>
+          </article>
 
-          <div class="rental-item">
-            <div class="rental-item__icon">PRD</div>
-            <div>
-              <h3 class="rental-item__title">Full Production</h3>
-              <p class="rental-item__desc">End-to-end event production management. From venue scouting and technical planning to setup, operation and breakdown. Our crew handles everything so you focus on the music.</p>
-            </div>
-          </div>
-
-          <div class="rental-item">
-            <div class="rental-item__icon">CREW</div>
-            <div>
-              <h3 class="rental-item__title">Technical Staff</h3>
-              <p class="rental-item__desc">Experienced sound engineers, lighting operators, riggers and production managers available for hire. Our crew has worked on 500+ electronic music events across Romania.</p>
-            </div>
-          </div>
-
-          <div class="rental-item">
-            <div class="rental-item__icon">TRK</div>
-            <div>
-              <h3 class="rental-item__title">Logistics &amp; Transport</h3>
-              <p class="rental-item__desc">Equipment transport and logistics across all 30 cities we operate in. Reliable delivery, setup and collection with our dedicated production fleet.</p>
-            </div>
-          </div>
-
+          <article id="card-transport" class="prd-card">
+            <span class="prd-card__tag">#Transport</span>
+            <h3 class="prd-card__title">Logistics &amp; Transport</h3>
+            <p class="prd-card__desc">Equipment transport and logistics across all 30 cities we operate in. Reliable delivery, setup and collection with our dedicated production fleet.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -539,14 +650,27 @@
   <script src="js/effects.js" defer></script>
   <script>
     (function () {
-      var grid = document.querySelector('.rental-grid');
-      if (!grid) return;
+      var hub = document.querySelector('.prd-hub');
+      if (!hub) return;
+      // Entrance animation when section enters viewport
       new IntersectionObserver(function (entries, obs) {
         if (entries[0].isIntersecting) {
-          grid.classList.add('is-building');
+          hub.classList.add('is-active');
           obs.disconnect();
         }
-      }, { threshold: 0.08 }).observe(grid);
+      }, { threshold: 0.12 }).observe(hub);
+      // Tag click → pulse the corresponding card
+      hub.querySelectorAll('.prd-tag').forEach(function (tag) {
+        tag.addEventListener('click', function () {
+          var href = tag.getAttribute('href');
+          if (!href || href.charAt(0) !== '#') return;
+          var card = document.querySelector(href);
+          if (!card) return;
+          card.classList.remove('pulse');
+          void card.offsetWidth;
+          card.classList.add('pulse');
+        });
+      });
     })();
   </script>
 </body>

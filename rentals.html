@@ -217,6 +217,34 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- Rentals page overrides — must come AFTER main.css to win the cascade -->
+  <style>
+    .rh {
+      position: sticky;
+      top: 0;
+      height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      z-index: 0;
+      background: #0a0a0a;
+    }
+    .rental-item {
+      opacity: 0;
+      transform: translateY(36px);
+      transition:
+        opacity  0.55s cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 80ms),
+        transform 0.65s cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 80ms),
+        border-color 0.3s,
+        background 0.3s;
+    }
+    .rental-grid.is-building .rental-item {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",

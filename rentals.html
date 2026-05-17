@@ -17,6 +17,198 @@
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     body{font-family:'Eurostile',sans-serif;background:#0a0a0a;color:#fff;overflow-x:hidden}
     .nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:72px}
+
+    /* ── RENTALS FULLSCREEN HERO ── */
+    .rh {
+      position: sticky;
+      top: 0;
+      height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      z-index: 0;
+      background: #0a0a0a;
+    }
+    .rh::before {
+      content: '';
+      position: absolute;
+      inset: -30%;
+      background:
+        radial-gradient(ellipse 55% 50% at 8% 70%, rgba(123,47,255,0.25) 0%, transparent 60%),
+        radial-gradient(ellipse 45% 55% at 88% 22%, rgba(186,255,41,0.10) 0%, transparent 55%);
+      animation: meshA 16s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+    .rh__grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(186,255,41,0.032) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(186,255,41,0.032) 1px, transparent 1px);
+      background-size: 64px 64px;
+      animation: rh-grid 22s linear infinite;
+      pointer-events: none;
+    }
+    @keyframes rh-grid {
+      from { background-position: 0 0; }
+      to   { background-position: 0 64px; }
+    }
+    .rh__scanline {
+      position: absolute;
+      left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(186,255,41,0.55), transparent);
+      top: 0;
+      z-index: 3;
+      pointer-events: none;
+      animation: rh-scan 1.8s cubic-bezier(0.4,0,0.6,1) 0.2s forwards;
+    }
+    @keyframes rh-scan {
+      from { top: 0; opacity: 1; }
+      to   { top: 100%; opacity: 0; }
+    }
+    .rh__body {
+      position: relative;
+      z-index: 2;
+      padding-bottom: clamp(96px, 9vw, 120px);
+    }
+    @keyframes rh-rise {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .rh__eyebrow {
+      font-family: 'Eurostile', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #BAFF29;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      opacity: 0;
+      transform: translateY(24px);
+      animation: rh-rise 0.8s cubic-bezier(0.16,1,0.3,1) 0.3s forwards;
+    }
+    .rh__eyebrow::before {
+      content: '';
+      width: 32px; height: 1px;
+      background: #BAFF29;
+    }
+    .rh__title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      font-size: clamp(68px, 11vw, 150px);
+      line-height: 0.88;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      margin-bottom: 32px;
+      opacity: 0;
+      transform: translateY(36px);
+      animation: rh-rise 0.95s cubic-bezier(0.16,1,0.3,1) 0.5s forwards;
+    }
+    .rh__sub {
+      font-size: clamp(14px, 1.5vw, 17px);
+      color: rgba(255,255,255,0.55);
+      max-width: 50ch;
+      line-height: 1.75;
+      margin-bottom: 40px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: rh-rise 0.8s cubic-bezier(0.16,1,0.3,1) 0.75s forwards;
+    }
+    .rh__cta {
+      opacity: 0;
+      transform: translateY(16px);
+      animation: rh-rise 0.7s cubic-bezier(0.16,1,0.3,1) 0.95s forwards;
+    }
+    .rh__stats {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      z-index: 2;
+      opacity: 0;
+      animation: rh-rise 0.7s cubic-bezier(0.16,1,0.3,1) 1.2s forwards;
+    }
+    .rh__stat {
+      padding: 18px clamp(20px,2.5vw,40px);
+      border-right: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .rh__stat:last-child { border-right: none; }
+    .rh__stat strong {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      font-size: clamp(22px, 2.5vw, 32px);
+      color: #BAFF29;
+      line-height: 1;
+    }
+    .rh__stat span {
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      font-weight: 600;
+    }
+    .rh__scroll {
+      position: absolute;
+      right: clamp(20px,4vw,60px);
+      bottom: clamp(88px,9vw,112px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.28);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-family: 'Eurostile', sans-serif;
+      z-index: 2;
+      opacity: 0;
+      animation: rh-rise 0.6s cubic-bezier(0.16,1,0.3,1) 1.4s forwards;
+    }
+    .rh__scroll::after {
+      content: '';
+      width: 1px;
+      height: 56px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.28), transparent);
+      animation: scrollLine 2s ease-in-out 1.6s infinite;
+    }
+    /* Wrapper: all sections after hero slide over the sticky hero */
+    .rh-content {
+      position: relative;
+      z-index: 1;
+      background: #0a0a0a;
+    }
+    /* Rental items: stagger-build animation */
+    .rental-item {
+      opacity: 0;
+      transform: translateY(36px);
+      transition:
+        opacity  0.55s cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 80ms),
+        transform 0.65s cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 80ms);
+    }
+    .rental-grid.is-building .rental-item { opacity: 1; transform: translateY(0); }
+    .rental-item:nth-child(1) { --ri: 0; }
+    .rental-item:nth-child(2) { --ri: 1; }
+    .rental-item:nth-child(3) { --ri: 2; }
+    .rental-item:nth-child(4) { --ri: 3; }
+    .rental-item:nth-child(5) { --ri: 4; }
+    .rental-item:nth-child(6) { --ri: 5; }
+    .rental-item:nth-child(7) { --ri: 6; }
+    .rental-item:nth-child(8) { --ri: 7; }
+    @media (max-width: 768px) {
+      .rh__stats { grid-template-columns: repeat(2, 1fr); }
+      .rh__stat:nth-child(2) { border-right: none; }
+      .rh__stat:nth-child(3) { border-top: 1px solid rgba(255,255,255,0.08); }
+      .rh__stat:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.08); }
+    }
+    @media (max-width: 480px) { .rh__scroll { display: none; } }
   </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,36 +269,35 @@
   </div>
 
   <main>
-    <header class="page-hero">
-      <div class="container page-hero__content">
-        <p class="section-label page-hero__label">Production services</p>
-        <h1 class="display-lg page-hero__title">Rentals &amp;<br>Production<span class="text-accent">.</span></h1>
-        <p class="page-hero__sub">Professional sound systems, lighting rigs, DJ equipment and full production services for events of any size across Romania.</p>
-      </div>
-    </header>
 
-    <!-- Intro strip -->
-    <section style="border-top:1px solid rgba(255,255,255,0.08); border-bottom:1px solid rgba(255,255,255,0.08); padding-block: clamp(40px,5vw,64px);">
-      <div class="container">
-        <div class="grid-3 fade-in">
-          <div style="padding: 0 24px; border-right: 1px solid rgba(255,255,255,0.08); text-align:center;">
-            <p class="display-sm text-accent" style="font-size: clamp(40px,5vw,72px);">17+</p>
-            <p style="font-size:13px; color: rgba(255,255,255,0.55); margin-top:4px;">Years of event production</p>
-          </div>
-          <div style="padding: 0 24px; border-right: 1px solid rgba(255,255,255,0.08); text-align:center;">
-            <p class="display-sm text-accent" style="font-size: clamp(40px,5vw,72px);">30</p>
-            <p style="font-size:13px; color: rgba(255,255,255,0.55); margin-top:4px;">Cities served across Romania</p>
-          </div>
-          <div style="padding: 0 24px; text-align:center;">
-            <p class="display-sm text-accent" style="font-size: clamp(40px,5vw,72px);">500+</p>
-            <p style="font-size:13px; color: rgba(255,255,255,0.55); margin-top:4px;">Events produced successfully</p>
-          </div>
+    <section class="rh" aria-labelledby="rh-title">
+      <div class="rh__grid" aria-hidden="true"></div>
+      <div class="rh__scanline" aria-hidden="true"></div>
+
+      <div class="container rh__body">
+        <p class="rh__eyebrow">Production Services — Romania Since 2009</p>
+        <h1 class="rh__title" id="rh-title">Full<br>Production<span class="text-accent">.</span></h1>
+        <p class="rh__sub">Sound systems, lighting, DJ equipment and complete event production across Romania — Martin Audio · d&b audiotechnik · Pioneer CDJ-3000.</p>
+        <div class="btn-group rh__cta">
+          <a href="mailto:ionut@cyclic.ro" class="btn btn--accent btn--lg magnetic">Get a Quote <span class="arrow">→</span></a>
+          <a href="#equipment" class="btn btn--outline">Explore Services</a>
         </div>
       </div>
+
+      <div class="rh__stats" aria-hidden="true">
+        <div class="rh__stat"><strong>17+</strong><span>Years</span></div>
+        <div class="rh__stat"><strong>30</strong><span>Cities</span></div>
+        <div class="rh__stat"><strong>500+</strong><span>Events</span></div>
+        <div class="rh__stat"><strong>24h</strong><span>Response</span></div>
+      </div>
+
+      <div class="rh__scroll" aria-hidden="true">Scroll</div>
     </section>
 
+    <div class="rh-content">
+
     <!-- Equipment categories -->
-    <section class="section" aria-labelledby="equipment-heading">
+    <section id="equipment" class="section" aria-labelledby="equipment-heading">
       <div class="container">
         <header class="section-header fade-in">
           <div class="section-header__left">
@@ -115,7 +306,7 @@
           </div>
         </header>
 
-        <div class="rental-grid fade-in">
+        <div class="rental-grid">
 
           <div class="rental-item">
             <div class="rental-item__icon">🔊</div>
@@ -268,6 +459,7 @@
         </div>
       </div>
     </section>
+    </div><!-- /rh-content -->
   </main>
 
   <footer class="footer" role="contentinfo">
@@ -318,5 +510,17 @@
 
   <script src="js/main.js" defer></script>
   <script src="js/effects.js" defer></script>
+  <script>
+    (function () {
+      var grid = document.querySelector('.rental-grid');
+      if (!grid) return;
+      new IntersectionObserver(function (entries, obs) {
+        if (entries[0].isIntersecting) {
+          grid.classList.add('is-building');
+          obs.disconnect();
+        }
+      }, { threshold: 0.08 }).observe(grid);
+    })();
+  </script>
 </body>
 </html>

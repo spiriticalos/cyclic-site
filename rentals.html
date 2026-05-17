@@ -25,7 +25,6 @@
       height: 100svh;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
       overflow: hidden;
       z-index: 0;
       background: #0a0a0a;
@@ -58,23 +57,29 @@
       position: absolute;
       left: 0; right: 0;
       height: 2px;
-      background: linear-gradient(90deg, transparent, rgba(186,255,41,0.55), transparent);
+      background: linear-gradient(90deg, transparent, rgba(186,255,41,0.6), transparent);
       top: 0;
       z-index: 3;
       pointer-events: none;
-      animation: rh-scan 1.8s cubic-bezier(0.4,0,0.6,1) 0.2s forwards;
+      animation: rh-scan 2s cubic-bezier(0.4,0,0.6,1) 0.1s forwards;
     }
     @keyframes rh-scan {
       from { top: 0; opacity: 1; }
       to   { top: 100%; opacity: 0; }
     }
+    /* Flex body — takes all space above stats bar */
     .rh__body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
       position: relative;
       z-index: 2;
-      padding-bottom: clamp(96px, 9vw, 120px);
+      padding-bottom: 40px;
     }
     @keyframes rh-rise {
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(var(--rh-y, 32px)); }
+      to   { opacity: 1; transform: translateY(0); }
     }
     .rh__eyebrow {
       font-family: 'Eurostile', sans-serif;
@@ -86,10 +91,9 @@
       display: inline-flex;
       align-items: center;
       gap: 12px;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
       opacity: 0;
-      transform: translateY(24px);
-      animation: rh-rise 0.8s cubic-bezier(0.16,1,0.3,1) 0.3s forwards;
+      animation: rh-rise 1s cubic-bezier(0.16,1,0.3,1) 0.4s forwards;
     }
     .rh__eyebrow::before {
       content: '';
@@ -104,9 +108,9 @@
       text-transform: uppercase;
       letter-spacing: 0.01em;
       margin-bottom: 32px;
+      --rh-y: 60px;
       opacity: 0;
-      transform: translateY(36px);
-      animation: rh-rise 0.95s cubic-bezier(0.16,1,0.3,1) 0.5s forwards;
+      animation: rh-rise 1.1s cubic-bezier(0.16,1,0.3,1) 0.65s forwards;
     }
     .rh__sub {
       font-size: clamp(14px, 1.5vw, 17px);
@@ -115,36 +119,35 @@
       line-height: 1.75;
       margin-bottom: 40px;
       opacity: 0;
-      transform: translateY(20px);
-      animation: rh-rise 0.8s cubic-bezier(0.16,1,0.3,1) 0.75s forwards;
+      animation: rh-rise 1s cubic-bezier(0.16,1,0.3,1) 0.95s forwards;
     }
     .rh__cta {
       opacity: 0;
-      transform: translateY(16px);
-      animation: rh-rise 0.7s cubic-bezier(0.16,1,0.3,1) 0.95s forwards;
+      animation: rh-rise 0.9s cubic-bezier(0.16,1,0.3,1) 1.15s forwards;
     }
+    /* Stats bar — natural flex child at bottom, no overlap */
     .rh__stats {
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       border-top: 1px solid rgba(255,255,255,0.08);
+      position: relative;
       z-index: 2;
+      flex-shrink: 0;
       opacity: 0;
-      animation: rh-rise 0.7s cubic-bezier(0.16,1,0.3,1) 1.2s forwards;
+      animation: rh-rise 0.8s cubic-bezier(0.16,1,0.3,1) 1.4s forwards;
     }
     .rh__stat {
-      padding: 18px clamp(20px,2.5vw,40px);
+      padding: 20px clamp(20px,2.5vw,40px);
       border-right: 1px solid rgba(255,255,255,0.08);
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 4px;
     }
     .rh__stat:last-child { border-right: none; }
     .rh__stat strong {
       font-family: 'Roboto', sans-serif;
       font-weight: 900;
-      font-size: clamp(22px, 2.5vw, 32px);
+      font-size: clamp(24px, 2.5vw, 36px);
       color: #BAFF29;
       line-height: 1;
     }
@@ -158,7 +161,7 @@
     .rh__scroll {
       position: absolute;
       right: clamp(20px,4vw,60px);
-      bottom: clamp(88px,9vw,112px);
+      bottom: 100px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -170,14 +173,14 @@
       font-family: 'Eurostile', sans-serif;
       z-index: 2;
       opacity: 0;
-      animation: rh-rise 0.6s cubic-bezier(0.16,1,0.3,1) 1.4s forwards;
+      animation: rh-rise 0.6s cubic-bezier(0.16,1,0.3,1) 1.6s forwards;
     }
     .rh__scroll::after {
       content: '';
       width: 1px;
       height: 56px;
       background: linear-gradient(to bottom, rgba(255,255,255,0.28), transparent);
-      animation: scrollLine 2s ease-in-out 1.6s infinite;
+      animation: scrollLine 2s ease-in-out 1.8s infinite;
     }
     /* Wrapper: all sections after hero slide over the sticky hero */
     .rh-content {
@@ -185,13 +188,29 @@
       z-index: 1;
       background: #0a0a0a;
     }
+    /* Rental item icon — text label replacing emoji */
+    .rental-item__icon {
+      font-family: 'Roboto', sans-serif !important;
+      font-size: 10px !important;
+      font-weight: 900 !important;
+      letter-spacing: 0.1em;
+      color: #BAFF29;
+      background: rgba(186,255,41,0.07);
+      border: 1px solid rgba(186,255,41,0.18);
+      border-radius: 3px;
+      padding: 6px 8px;
+      min-width: 44px;
+      text-align: center;
+      line-height: 1;
+      margin-top: 3px;
+    }
     /* Rental items: stagger-build animation */
     .rental-item {
       opacity: 0;
       transform: translateY(36px);
       transition:
-        opacity  0.55s cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 80ms),
-        transform 0.65s cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 80ms);
+        opacity  0.55s cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 90ms),
+        transform 0.65s cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 90ms);
     }
     .rental-grid.is-building .rental-item { opacity: 1; transform: translateY(0); }
     .rental-item:nth-child(1) { --ri: 0; }
@@ -209,6 +228,11 @@
       .rh__stat:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.08); }
     }
     @media (max-width: 480px) { .rh__scroll { display: none; } }
+    @media (prefers-reduced-motion: reduce) {
+      .rh__eyebrow, .rh__title, .rh__sub, .rh__cta, .rh__stats, .rh__scroll {
+        opacity: 1; transform: none; animation: none;
+      }
+    }
   </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -232,16 +256,16 @@
     }
     .rental-item {
       opacity: 0;
-      transform: translateY(36px);
+      transform: translateY(52px) scale(0.97);
       transition:
-        opacity  0.55s cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 80ms),
-        transform 0.65s cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 80ms),
+        opacity   0.7s  cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 110ms),
+        transform 0.8s  cubic-bezier(0.16,1,0.3,1) calc(var(--ri,0) * 110ms),
         border-color 0.3s,
-        background 0.3s;
+        background   0.3s;
     }
     .rental-grid.is-building .rental-item {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(0) scale(1);
     }
   </style>
 
@@ -305,7 +329,7 @@
       <div class="container rh__body">
         <p class="rh__eyebrow">Production Services — Romania Since 2009</p>
         <h1 class="rh__title" id="rh-title">Full<br>Production<span class="text-accent">.</span></h1>
-        <p class="rh__sub">Sound systems, lighting, DJ equipment and complete event production across Romania — Martin Audio · d&b audiotechnik · Pioneer CDJ-3000.</p>
+        <p class="rh__sub">Sound systems, lighting, DJ equipment and complete event production across Romania — Void Acoustics · d&b audiotechnik · Pioneer CDJ-3000.</p>
         <div class="btn-group rh__cta">
           <a href="mailto:ionut@cyclic.ro" class="btn btn--accent btn--lg magnetic">Get a Quote <span class="arrow">→</span></a>
           <a href="#equipment" class="btn btn--outline">Explore Services</a>
@@ -337,15 +361,15 @@
         <div class="rental-grid">
 
           <div class="rental-item">
-            <div class="rental-item__icon">🔊</div>
+            <div class="rental-item__icon">SND</div>
             <div>
               <h3 class="rental-item__title">Sound Systems</h3>
-              <p class="rental-item__desc">Professional line arrays, subwoofers and monitoring systems. Martin Audio, d&b audiotechnik and L-Acoustics inventory available for clubs, warehouses and open-air events up to 5000 people.</p>
+              <p class="rental-item__desc">Professional line arrays, subwoofers and monitoring systems. Void Acoustics, d&b audiotechnik and L-Acoustics inventory available for clubs, warehouses and open-air events up to 5000 people.</p>
             </div>
           </div>
 
           <div class="rental-item">
-            <div class="rental-item__icon">💡</div>
+            <div class="rental-item__icon">LGT</div>
             <div>
               <h3 class="rental-item__title">Lighting &amp; Visuals</h3>
               <p class="rental-item__desc">Moving heads, LED bars, strobes, haze machines and laser systems. Full visual production including LED video walls and projection mapping for immersive event experiences.</p>
@@ -353,7 +377,7 @@
           </div>
 
           <div class="rental-item">
-            <div class="rental-item__icon">🎛️</div>
+            <div class="rental-item__icon">DJ</div>
             <div>
               <h3 class="rental-item__title">DJ Equipment</h3>
               <p class="rental-item__desc">Pioneer CDJ-3000 setups, DJM-A9 mixers, Rane Seventy-Two mixers and turntables. Fully maintained and rider-ready equipment for professional DJ performances.</p>
@@ -361,7 +385,7 @@
           </div>
 
           <div class="rental-item">
-            <div class="rental-item__icon">🏗️</div>
+            <div class="rental-item__icon">STG</div>
             <div>
               <h3 class="rental-item__title">Stage &amp; Structures</h3>
               <p class="rental-item__desc">Modular stage systems, trussing, DJ booths and crowd barriers. Custom stage builds tailored to your venue and aesthetic from industrial to outdoor festival settings.</p>
@@ -369,7 +393,7 @@
           </div>
 
           <div class="rental-item">
-            <div class="rental-item__icon">🎬</div>
+            <div class="rental-item__icon">PRD</div>
             <div>
               <h3 class="rental-item__title">Full Production</h3>
               <p class="rental-item__desc">End-to-end event production management. From venue scouting and technical planning to setup, operation and breakdown. Our crew handles everything so you focus on the music.</p>
@@ -377,7 +401,7 @@
           </div>
 
           <div class="rental-item">
-            <div class="rental-item__icon">👨‍💻</div>
+            <div class="rental-item__icon">CREW</div>
             <div>
               <h3 class="rental-item__title">Technical Staff</h3>
               <p class="rental-item__desc">Experienced sound engineers, lighting operators, riggers and production managers available for hire. Our crew has worked on 500+ electronic music events across Romania.</p>
@@ -385,7 +409,7 @@
           </div>
 
           <div class="rental-item">
-            <div class="rental-item__icon">📹</div>
+            <div class="rental-item__icon">REC</div>
             <div>
               <h3 class="rental-item__title">Streaming &amp; Recording</h3>
               <p class="rental-item__desc">Multi-camera live stream production, audio recording and post-production. High-quality live streams for YouTube, Twitch and social platforms with professional broadcast quality.</p>
@@ -393,7 +417,7 @@
           </div>
 
           <div class="rental-item">
-            <div class="rental-item__icon">🚚</div>
+            <div class="rental-item__icon">TRK</div>
             <div>
               <h3 class="rental-item__title">Logistics &amp; Transport</h3>
               <p class="rental-item__desc">Equipment transport and logistics across all 30 cities we operate in. Reliable delivery, setup and collection with our dedicated production fleet.</p>

@@ -1,14 +1,5 @@
 /* Roboto — loaded via <link> in HTML for better performance */
 
-/* Rosnoc — display / titluri (înlocuit cu Roboto) */
-@font-face {
-  font-family: 'Rosnoc';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/rosnoc.otf') format('opentype');
-}
-
 /* Eurostile — body text */
 @font-face {
   font-family: 'Eurostile';

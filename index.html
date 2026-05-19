@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Electronic Music Events Romania | Cyclic Agency">
   <meta property="og:description" content="Romania's leading electronic music event agency. House, techno &amp; melodic events across 30 cities since 2009.">
-  <meta property="og:image" content="https://placehold.co/1200x630/0a0a0a/BAFF29">
+  <meta property="og:image" content="https://cyclic.ro/images/cyclic-logo.jpg">
   <meta property="og:url" content="https://cyclic.ro/">
   <meta property="og:site_name" content="Cyclic Agency">
   <meta property="og:locale" content="en_US">
@@ -35,7 +35,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Roboto:wght@700;900&display=swap">
   <link rel="stylesheet" href="css/fonts.css">
 
   <!-- Main CSS -->
@@ -45,13 +45,34 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["LocalBusiness", "Organization"],
     "name": "Cyclic Agency",
     "url": "https://cyclic.ro",
     "logo": "https://cyclic.ro/assets/logo.png",
     "description": "Romania's leading electronic music event agency since 2009.",
     "foundingDate": "2009",
     "areaServed": "Romania",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Strada Fabrica de Chibrituri 24-26",
+      "addressLocality": "București",
+      "postalCode": "040172",
+      "addressCountry": "RO"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.416872,
+      "longitude": 26.089979
+    },
+    "telephone": "+40721337694",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
     "sameAs": [
       "https://facebook.com/cyclicagency",
       "https://instagram.com/cyclic_music",
@@ -71,12 +92,18 @@
         "telephone": "+40748571629",
         "contactType": "Event Coordinator",
         "name": "Coman Vlad"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+40721337694",
+        "contactType": "Technical Director",
+        "name": "Cătălin Căpățână"
       }
     ]
   }
   </script>
 
-  <!-- JSON-LD: Events (sample) -->
+  <!-- JSON-LD: Events -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -86,31 +113,46 @@
       {
         "@type": "MusicEvent",
         "position": 1,
-        "name": "Cyclic: Mihai Popoviciu",
-        "startDate": "2026-05-03",
+        "name": "Cyclic x Crama Pandora: Brunch in Vie",
+        "startDate": "2026-05-23",
         "location": {
           "@type": "Place",
-          "name": "Control Club",
-          "address": { "@type": "PostalAddress", "addressLocality": "Bucharest", "addressCountry": "RO" }
+          "name": "Crama Pandora",
+          "address": { "@type": "PostalAddress", "addressLocality": "Focșani", "addressCountry": "RO" }
         },
-        "performer": { "@type": "Person", "name": "Mihai Popoviciu" },
-        "organizer": { "@type": "Organization", "name": "Cyclic Agency", "url": "https://cyclic.ro" }
+        "organizer": { "@type": "Organization", "name": "Cyclic Agency", "url": "https://cyclic.ro" },
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
       },
       {
         "@type": "MusicEvent",
         "position": 2,
-        "name": "Cyclic: Optick b2b Christian Lepah",
-        "startDate": "2026-05-17",
+        "name": "Cyclic: Tale of Us",
+        "startDate": "2026-05-31T23:00:00+03:00",
         "location": {
           "@type": "Place",
-          "name": "Flying Circus",
-          "address": { "@type": "PostalAddress", "addressLocality": "Cluj-Napoca", "addressCountry": "RO" }
+          "name": "Form Space",
+          "address": { "@type": "PostalAddress", "addressLocality": "Bucharest", "addressCountry": "RO" }
         },
-        "performer": [
-          { "@type": "Person", "name": "Optick" },
-          { "@type": "Person", "name": "Christian Lepah" }
-        ],
-        "organizer": { "@type": "Organization", "name": "Cyclic Agency", "url": "https://cyclic.ro" }
+        "performer": { "@type": "MusicGroup", "name": "Tale of Us" },
+        "organizer": { "@type": "Organization", "name": "Cyclic Agency", "url": "https://cyclic.ro" },
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+      },
+      {
+        "@type": "MusicEvent",
+        "position": 3,
+        "name": "The Bohemian Society — 4th Edition",
+        "startDate": "2026-06-18",
+        "endDate": "2026-06-21",
+        "location": {
+          "@type": "Place",
+          "name": "Sfântu Gheorghe",
+          "address": { "@type": "PostalAddress", "addressLocality": "Sfântu Gheorghe", "addressRegion": "Tulcea", "addressCountry": "RO" }
+        },
+        "organizer": { "@type": "Organization", "name": "Cyclic Agency", "url": "https://cyclic.ro" },
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
       }
     ]
   }
@@ -125,7 +167,7 @@
   <!-- ══ NAVIGATION ══ -->
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner container">
-      <a href="index.html" class="nav__logo" aria-label="Cyclic Agency home">CYCLIC<span>.</span></a>
+      <a href="index.html" class="nav__logo" aria-label="Cyclic Agency home">cyclic</a>
       <ul class="nav__links" role="list">
         <li><a href="index.html"   class="nav__link active">Home</a></li>
         <li><a href="events.html"  class="nav__link">Events</a></li>
@@ -508,7 +550,7 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <p class="footer__logo">CYCLIC<span>.</span></p>
+          <p class="footer__logo">cyclic</p>
           <p class="footer__tagline">Romania's Underground. Elevated.<br>Electronic music events since 2009.</p>
           <nav class="footer__social" aria-label="Social media links">
             <a href="https://facebook.com/cyclicagency" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>

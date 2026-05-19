@@ -40,6 +40,7 @@ a, button { -webkit-tap-highlight-color: transparent; touch-action: manipulation
   --gap:          clamp(16px, 2.5vw, 32px);
   --font-display: 'Roboto', sans-serif;
   --font-body:    'Eurostile', sans-serif;
+  --font-logo:    'DM Sans', sans-serif;
   --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out:  cubic-bezier(0.76, 0, 0.24, 1);
 }
@@ -252,14 +253,15 @@ h1, h2, h3, h4, h5, h6 {
   gap: 24px;
 }
 .nav__logo {
-  font-family: var(--font-display);
-  font-size: 56px;
-  letter-spacing: 0.08em;
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: -0.01em;
+  text-transform: none;
   color: var(--text);
   flex-shrink: 0;
   transition: color 0.2s;
 }
-.nav__logo span { color: var(--accent); }
 .nav__logo:hover { color: var(--accent); }
 .nav__links {
   display: flex;
@@ -1311,14 +1313,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 32px;
 }
 .footer__logo {
-  font-family: var(--font-display);
-  font-size: 48px;
-  letter-spacing: 0.06em;
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  text-transform: none;
   color: var(--text);
   line-height: 1;
   margin-bottom: 12px;
 }
-.footer__logo span { color: var(--accent); }
 .footer__tagline { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; max-width: 32ch; line-height: 1.6; }
 .footer__social {
   display: flex;
@@ -1485,7 +1488,7 @@ html, body {
 
 @media (max-width: 768px) {
   /* Nav logo smaller */
-  .nav__logo { font-size: 36px; }
+  .nav__logo { font-size: 22px; }
 
   /* Hero tighter */
   .hero {
@@ -1542,7 +1545,7 @@ html, body {
 
   /* Footer */
   .footer__grid { grid-template-columns: 1fr; gap: 32px; }
-  .footer__logo { font-size: 36px; }
+  .footer__logo { font-size: 26px; }
 
   /* Page hero: min-height 70vh inline on about.html is too tall on mobile */
   .page-hero { min-height: auto !important; }

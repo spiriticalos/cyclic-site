@@ -1256,7 +1256,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 .team-card {
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  padding: 32px 20px 28px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  transform: perspective(900px) rotateX(var(--rotate-x, 0deg)) rotateY(var(--rotate-y, 0deg));
+  will-change: transform;
+  transition: box-shadow 0.4s ease;
 }
+.team-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+    rgba(186, 255, 41, 0.13) 0%,
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.18s;
+  z-index: 0;
+}
+.team-card.active::before { opacity: 1; }
+.team-card.active {
+  box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 48px rgba(186,255,41,0.06);
+}
+.team-card > * { position: relative; z-index: 1; }
 .team-card__avatar {
   width: 120px; height: 120px;
   border-radius: 50%;

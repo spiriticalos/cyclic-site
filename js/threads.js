@@ -2,8 +2,7 @@
   'use strict';
 
   var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var isMobile = window.matchMedia('(max-width: 768px)').matches;
-  if (prefersReduced || isMobile) return;
+  if (prefersReduced) return;
 
   var hero = document.querySelector('.hero__bg');
   if (!hero) return;

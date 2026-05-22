@@ -977,6 +977,15 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255,255,255,0.3);
 }
 
+.artist-panel__desc {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.4);
+  font-family: var(--font-body);
+  max-width: 34ch;
+}
+
 .artist-panel__photo {
   position: relative;
   overflow: hidden;

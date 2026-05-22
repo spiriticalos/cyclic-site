@@ -1,15 +1,12 @@
 (function () {
   'use strict';
 
-  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReduced) return;
-
   var hero = document.querySelector('.hero__bg');
   if (!hero) return;
 
   var canvas = document.createElement('canvas');
   canvas.setAttribute('aria-hidden', 'true');
-  canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0';
+  canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1';
   hero.appendChild(canvas);
 
   var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -27,7 +24,11 @@
   ].join('\n');
 
   var FS = [
+    '#ifdef GL_FRAGMENT_PRECISION_HIGH',
     'precision highp float;',
+    '#else',
+    'precision mediump float;',
+    '#endif',
     'uniform float iTime;',
     'uniform vec3 iResolution;',
     'uniform vec3 uColor;',
@@ -106,13 +107,22 @@
     var s = gl.createShader(type);
     gl.shaderSource(s, src);
     gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
+      gl.deleteShader(s);
+      return null;
+    }
     return s;
   }
 
+  var vs = compileShader(gl.VERTEX_SHADER, VS);
+  var fs = compileShader(gl.FRAGMENT_SHADER, FS);
+  if (!vs || !fs) { hero.removeChild(canvas); return; }
+
   var prog = gl.createProgram();
-  gl.attachShader(prog, compileShader(gl.VERTEX_SHADER, VS));
-  gl.attachShader(prog, compileShader(gl.FRAGMENT_SHADER, FS));
+  gl.attachShader(prog, vs);
+  gl.attachShader(prog, fs);
   gl.linkProgram(prog);
+  if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) { hero.removeChild(canvas); return; }
   gl.useProgram(prog);
 
   var posBuf = gl.createBuffer();

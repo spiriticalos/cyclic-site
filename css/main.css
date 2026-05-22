@@ -658,7 +658,22 @@ h1, h2, h3, h4, h5, h6 {
   .events-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 580px) {
-  .events-grid { grid-template-columns: 1fr; }
+  .events-grid {
+    grid-template-columns: 1fr;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    gap: 16px;
+    overflow: visible;
+  }
+  .event-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .event-card__body { padding: 18px; gap: 8px; }
+  .event-card__title { font-size: 22px; }
+  .event-card__footer { padding-top: 14px; }
 }
 
 /* Events list layout (events page) */
@@ -1501,6 +1516,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cta-section__content { position: relative; z-index: 2; }
 .cta-section__title { font-size: clamp(48px, 8vw, 110px); max-width: 14ch; margin: 16px auto 28px; }
+
+/* About teaser 4-cards grid */
+.about-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.about-cards-grid .card { aspect-ratio: 1; }
+.about-card-offset { margin-top: 24px; }
+@media (max-width: 700px) {
+  .about-cards-grid { grid-template-columns: 1fr; }
+  .about-cards-grid .card { aspect-ratio: auto; }
+  .about-card-offset { margin-top: 0; }
+}
 
 /* 27. RESPONSIVE MOBILE OVERRIDES */
 

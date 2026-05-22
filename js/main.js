@@ -60,14 +60,20 @@
   const eventRows  = document.querySelectorAll('[data-genre]');
   if (filterBtns.length && eventRows.length) {
     const eventsGrid = document.querySelector('.events-grid');
+    const mobileQ = window.matchMedia('(max-width: 580px)');
 
     function updateGridColumns() {
       if (!eventsGrid) return;
       const visible = [...eventsGrid.querySelectorAll('[data-genre]')].filter(el => el.style.display !== 'none').length;
-      eventsGrid.style.gridTemplateColumns =
-        visible === 1 ? '1fr' :
-        visible === 2 ? 'repeat(2, 1fr)' : '';
+      // Don't override on mobile — CSS handles single-column layout
+      if (mobileQ.matches || visible >= 3 || visible === 0) {
+        eventsGrid.style.gridTemplateColumns = '';
+      } else {
+        eventsGrid.style.gridTemplateColumns = visible === 1 ? '1fr' : 'repeat(2, 1fr)';
+      }
     }
+
+    mobileQ.addEventListener('change', updateGridColumns);
 
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -85,7 +91,8 @@
 
   /* ── ARTIST FILTER (artists.html) ── */
   const artistFilterBtns = document.querySelectorAll('.artist-filter-btn');
-  const artistCards = document.querySelectorAll('[data-type]');
+  // Exclude the filter buttons themselves — they also carry data-type
+  const artistCards = document.querySelectorAll('[data-type]:not(.artist-filter-btn)');
   if (artistFilterBtns.length && artistCards.length) {
     artistFilterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -155,9 +162,16 @@
     const grid = document.querySelector('.events-grid');
     if (grid) {
       const remaining = grid.querySelectorAll('.event-card').length;
-      grid.style.gridTemplateColumns =
-        remaining === 1 ? '1fr' :
-        remaining === 2 ? 'repeat(2, 1fr)' : '';
+      const setColumns = () => {
+        const mobile = window.matchMedia('(max-width: 580px)').matches;
+        if (mobile || remaining >= 3 || remaining === 0) {
+          grid.style.gridTemplateColumns = '';
+        } else {
+          grid.style.gridTemplateColumns = remaining === 1 ? '1fr' : 'repeat(2, 1fr)';
+        }
+      };
+      setColumns();
+      window.addEventListener('resize', setColumns, { passive: true });
 
       if (remaining === 0) {
         grid.innerHTML = `

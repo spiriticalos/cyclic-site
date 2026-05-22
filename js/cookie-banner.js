@@ -1,31 +1,155 @@
+/* ============================================================
+   CYCLIC AGENCY — COOKIE CONSENT (opt-in, categorised)
+   Stores: localStorage 'cookie_consent_v2' = JSON
+     { necessary: true, analytics: bool, ts: number, v: 2 }
+   Public API on window.CyclicConsent
+   Events:
+     'cyclic-consent-changed' — fired on every save, detail = consent
+     'cyclic-consent-analytics' — fired when analytics turns on
+   ============================================================ */
 (function () {
   'use strict';
 
-  if (localStorage.getItem('cookies_acknowledged')) return;
+  var STORAGE_KEY = 'cookie_consent_v2';
+  var CURRENT_VERSION = 2;
 
-  var banner = document.createElement('div');
-  banner.className = 'cookie-banner';
-  banner.setAttribute('role', 'region');
-  banner.setAttribute('aria-label', 'Cookie consent notice');
-  banner.innerHTML =
-    '<div class="container cookie-banner__inner">' +
-      '<p class="cookie-banner__text">' +
-        'This site uses only essential local storage to remember your preferences (newsletter dismissal, this banner). ' +
-        'We do not use analytics, advertising or any third-party trackers. ' +
-        '<a href="cookie-policy.html">Cookie Policy</a> &middot; <a href="privacy-policy.html">Privacy Policy</a>' +
-      '</p>' +
-      '<div class="cookie-banner__actions">' +
-        '<button type="button" class="cookie-banner__btn cookie-banner__btn--accept">Got it</button>' +
-      '</div>' +
-    '</div>';
+  function read() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      var parsed = JSON.parse(raw);
+      if (parsed && parsed.v === CURRENT_VERSION) return parsed;
+      return null;
+    } catch (e) { return null; }
+  }
 
-  document.body.appendChild(banner);
-  setTimeout(function () { banner.classList.add('visible'); }, 250);
+  function write(state) {
+    var prev = read();
+    var payload = {
+      v: CURRENT_VERSION,
+      ts: Date.now(),
+      necessary: true,
+      analytics: !!state.analytics
+    };
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(payload)); } catch (e) {}
 
-  banner.querySelector('.cookie-banner__btn--accept').addEventListener('click', function () {
-    banner.classList.remove('visible');
-    try { localStorage.setItem('cookies_acknowledged', '1'); } catch (e) {}
-    setTimeout(function () { if (banner.parentNode) banner.parentNode.removeChild(banner); }, 400);
-    window.dispatchEvent(new CustomEvent('cookies-acknowledged'));
+    window.dispatchEvent(new CustomEvent('cyclic-consent-changed', { detail: payload }));
+    if (payload.analytics && !(prev && prev.analytics)) {
+      window.dispatchEvent(new CustomEvent('cyclic-consent-analytics', { detail: payload }));
+    }
+    return payload;
+  }
+
+  // Public API — accessible to analytics scripts and the footer "Cookie Settings" link
+  window.CyclicConsent = {
+    has: function (cat) {
+      if (cat === 'necessary') return true;
+      var c = read();
+      return !!(c && c[cat]);
+    },
+    get: function () { return read(); },
+    set: function (state) { return write(state || {}); },
+    show: function () { renderBanner(read() || { analytics: false }, false); },
+    acceptAll: function () { write({ analytics: true }); closeBanner(); },
+    rejectAll: function () { write({ analytics: false }); closeBanner(); }
+  };
+
+  var bannerEl = null;
+
+  function closeBanner() {
+    if (!bannerEl) return;
+    bannerEl.classList.remove('visible');
+    var el = bannerEl;
+    bannerEl = null;
+    setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 400);
+  }
+
+  function renderBanner(current, animateIn) {
+    if (bannerEl) {
+      try { bannerEl.parentNode && bannerEl.parentNode.removeChild(bannerEl); } catch (e) {}
+      bannerEl = null;
+    }
+
+    var analyticsChecked = current && current.analytics ? 'checked' : '';
+
+    bannerEl = document.createElement('div');
+    bannerEl.className = 'cookie-banner';
+    bannerEl.setAttribute('role', 'dialog');
+    bannerEl.setAttribute('aria-modal', 'false');
+    bannerEl.setAttribute('aria-label', 'Cookie consent');
+    bannerEl.innerHTML =
+      '<div class="container cookie-banner__inner">' +
+        '<div class="cookie-banner__main">' +
+          '<p class="cookie-banner__text">' +
+            'We use essential storage to make the site work. With your consent, we may also use analytics to understand how visitors use the site so we can improve it. ' +
+            '<a href="cookie-policy.html">Cookie Policy</a> &middot; <a href="privacy-policy.html">Privacy Policy</a>' +
+          '</p>' +
+          '<div class="cookie-banner__actions">' +
+            '<button type="button" class="cookie-banner__btn cookie-banner__btn--ghost" data-action="reject">Reject all</button>' +
+            '<button type="button" class="cookie-banner__btn cookie-banner__btn--ghost" data-action="customize" aria-expanded="false">Customize</button>' +
+            '<button type="button" class="cookie-banner__btn cookie-banner__btn--accept" data-action="accept">Accept all</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="cookie-banner__details" hidden>' +
+          '<label class="cookie-banner__cat">' +
+            '<input type="checkbox" checked disabled aria-describedby="cat-nec-desc">' +
+            '<span class="cookie-banner__cat-text">' +
+              '<strong>Strictly necessary</strong>' +
+              '<span id="cat-nec-desc">Required for the site to function — remembers your cookie choice and UI preferences. Cannot be turned off.</span>' +
+            '</span>' +
+          '</label>' +
+          '<label class="cookie-banner__cat">' +
+            '<input type="checkbox" data-cat="analytics" ' + analyticsChecked + ' aria-describedby="cat-an-desc">' +
+            '<span class="cookie-banner__cat-text">' +
+              '<strong>Analytics</strong>' +
+              '<span id="cat-an-desc">Helps us understand how visitors use the site (pages viewed, time on page, traffic source) so we can improve it. No advertising or cross-site tracking.</span>' +
+            '</span>' +
+          '</label>' +
+          '<div class="cookie-banner__details-actions">' +
+            '<button type="button" class="cookie-banner__btn cookie-banner__btn--accept" data-action="save">Save preferences</button>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+
+    document.body.appendChild(bannerEl);
+
+    if (animateIn) {
+      setTimeout(function () { bannerEl && bannerEl.classList.add('visible'); }, 200);
+    } else {
+      bannerEl.classList.add('visible');
+    }
+
+    bannerEl.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-action]');
+      if (!btn) return;
+      var action = btn.getAttribute('data-action');
+      if (action === 'accept') { write({ analytics: true }); closeBanner(); return; }
+      if (action === 'reject') { write({ analytics: false }); closeBanner(); return; }
+      if (action === 'customize') {
+        var details = bannerEl.querySelector('.cookie-banner__details');
+        var expanded = !details.hasAttribute('hidden');
+        if (expanded) { details.setAttribute('hidden', ''); btn.setAttribute('aria-expanded', 'false'); }
+        else { details.removeAttribute('hidden'); btn.setAttribute('aria-expanded', 'true'); }
+        return;
+      }
+      if (action === 'save') {
+        var input = bannerEl.querySelector('input[data-cat="analytics"]');
+        write({ analytics: !!(input && input.checked) });
+        closeBanner();
+      }
+    });
+  }
+
+  // Footer "Cookie Settings" trigger (event delegation, no inline handlers => CSP-safe)
+  document.addEventListener('click', function (e) {
+    var trigger = e.target.closest('.js-cookie-settings');
+    if (!trigger) return;
+    e.preventDefault();
+    window.CyclicConsent.show();
   });
+
+  // Only show on first visit (no saved consent in current version)
+  if (!read()) {
+    renderBanner({ analytics: false }, true);
+  }
 })();

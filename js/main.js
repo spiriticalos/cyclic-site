@@ -237,10 +237,15 @@
     }
 
     // Defer behind cookie banner so the two don't stack on first visit
-    if (localStorage.getItem('cookies_acknowledged')) {
+    function consentGiven() {
+      try { return !!JSON.parse(localStorage.getItem('cookie_consent_v2') || 'null'); }
+      catch (e) { return false; }
+    }
+
+    if (consentGiven()) {
       setTimeout(showBar, 1800);
     } else {
-      window.addEventListener('cookies-acknowledged', () => setTimeout(showBar, 600), { once: true });
+      window.addEventListener('cyclic-consent-changed', () => setTimeout(showBar, 600), { once: true });
     }
   })();
 

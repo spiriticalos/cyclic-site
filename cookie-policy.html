@@ -66,8 +66,16 @@
       <p>Cookies are small text files placed on your device when you visit a website. <strong>Local storage</strong> is a similar mechanism built into modern browsers that allows a site to save small pieces of information (such as a preference) directly in your browser, without sending it back to the server on every request.</p>
       <p>Both are widely used to remember user preferences, keep sessions active, or measure how a site is used.</p>
 
-      <h2>2. What we use</h2>
-      <p>We do <strong>not</strong> use HTTP cookies on this site. We use a very small amount of <strong>localStorage</strong> entries, all of them strictly necessary for the site's user-interface functionality.</p>
+      <h2>2. Consent categories</h2>
+      <p>When you first visit the Site, our cookie banner offers two categories:</p>
+      <ul>
+        <li><strong>Strictly necessary</strong> — required for the Site to function. Cannot be turned off. Set automatically when you use the Site.</li>
+        <li><strong>Analytics</strong> — helps us understand how visitors use the Site so we can improve it. Off by default; loaded only after you opt in via the banner.</li>
+      </ul>
+      <p>You can change your choice at any time by clicking <strong>Cookie Settings</strong> in the footer of any page, or by clearing your browser storage.</p>
+
+      <h2>3. Strictly necessary storage</h2>
+      <p>We do <strong>not</strong> set HTTP cookies in this category. We use a very small number of <strong>localStorage</strong> entries, all required for the user-interface to behave correctly. They contain no identifying information.</p>
 
       <table style="width:100%; border-collapse:collapse; margin: 16px 0 24px 0; font-size: 14px;">
         <thead>
@@ -79,8 +87,8 @@
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-            <td style="padding: 14px 8px; color: var(--text); font-family: monospace;">cookies_acknowledged</td>
-            <td style="padding: 14px 8px; color: var(--text-muted);">Remembers that you have seen and dismissed the cookie banner so we do not show it again.</td>
+            <td style="padding: 14px 8px; color: var(--text); font-family: monospace;">cookie_consent_v2</td>
+            <td style="padding: 14px 8px; color: var(--text-muted);">Records your cookie preferences (which categories you accepted) so we don't ask again on every visit.</td>
             <td style="padding: 14px 8px; color: var(--text-muted);">Persistent (until you clear browser storage)</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
@@ -91,22 +99,55 @@
         </tbody>
       </table>
 
-      <p>Because these entries are <strong>strictly necessary</strong> for the UI to behave correctly (and contain no identifying information), they are exempt from the consent requirement under Romanian Law 506/2004 (transposing the ePrivacy Directive). We still display a banner for transparency.</p>
+      <p>Because these entries are <strong>strictly necessary</strong> for the UI to behave correctly, they are exempt from the consent requirement under Romanian Law 506/2004 (transposing the ePrivacy Directive). We still describe them here for transparency.</p>
 
-      <h2>3. What we do NOT use</h2>
+      <h2>4. Analytics (opt-in)</h2>
+      <p>If you accept the Analytics category in the cookie banner, we load <strong>Google Analytics 4</strong> (provided by Google Ireland Limited). Google Analytics helps us measure aggregated, anonymised usage of the Site — for example which pages are most visited, where traffic comes from, and how long visitors stay. We use this information only to improve the Site.</p>
+      <p>When Analytics is enabled, the following cookies may be set in your browser:</p>
+
+      <table style="width:100%; border-collapse:collapse; margin: 16px 0 24px 0; font-size: 14px;">
+        <thead>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.12); text-align: left;">
+            <th style="padding: 12px 8px; font-family: var(--font-body); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 700;">Cookie</th>
+            <th style="padding: 12px 8px; font-family: var(--font-body); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 700;">Purpose</th>
+            <th style="padding: 12px 8px; font-family: var(--font-body); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 700;">Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+            <td style="padding: 14px 8px; color: var(--text); font-family: monospace;">_ga</td>
+            <td style="padding: 14px 8px; color: var(--text-muted);">Used by Google Analytics to distinguish unique users.</td>
+            <td style="padding: 14px 8px; color: var(--text-muted);">2 years</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+            <td style="padding: 14px 8px; color: var(--text); font-family: monospace;">_ga_&lt;ID&gt;</td>
+            <td style="padding: 14px 8px; color: var(--text-muted);">Used by Google Analytics 4 to persist session state.</td>
+            <td style="padding: 14px 8px; color: var(--text-muted);">2 years</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>We have configured Google Analytics with <strong>IP anonymisation</strong> and we do <strong>not</strong> use Google Signals, Google Ads linking, demographics, or any advertising features. Data is processed by Google in line with its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">Cookies overview</a>. Google may transfer data outside the EEA under Standard Contractual Clauses.</p>
+      <p>You can withdraw your consent at any time via the <strong>Cookie Settings</strong> link in the footer. Once withdrawn, Google Analytics will stop loading on subsequent page views; existing cookies can be removed using your browser's storage tools.</p>
+
+      <h2>5. What we do NOT use</h2>
       <ul>
-        <li>No Google Analytics, Plausible, Matomo or any other analytics platform.</li>
         <li>No Google Ads, Facebook Pixel, TikTok Pixel or any advertising trackers.</li>
         <li>No third-party social-media embeds that set tracking cookies.</li>
-        <li>No remarketing, profiling or cross-site tracking.</li>
+        <li>No remarketing, profiling or cross-site behavioural advertising.</li>
+        <li>No analytics other than the optional Google Analytics described above.</li>
       </ul>
-      <p>If we ever introduce non-essential cookies, we will update this policy and ask for your explicit, opt-in consent first.</p>
+      <p>If we ever introduce additional non-essential cookies, we will update this policy, add the relevant category to the banner, and ask for your explicit opt-in first.</p>
 
-      <h2>4. Third-party services</h2>
+      <h2>6. Third-party services</h2>
       <p>Some pages contain links to third-party services (for example <a href="https://www.kompostor.ro" target="_blank" rel="noopener">Kompostor</a> for ticket purchases, or WhatsApp for direct chat). When you click those links and leave our site, the third party becomes the data controller and applies its own cookie and privacy policies.</p>
 
-      <h2>5. How to control or delete browser storage</h2>
-      <p>You can clear cookies and localStorage at any time through your browser settings:</p>
+      <h2>7. How to control or delete cookies and browser storage</h2>
+      <p>You have several options:</p>
+      <ul>
+        <li><strong>Change your consent</strong> — use the <strong>Cookie Settings</strong> link in the footer to update your category choices at any time.</li>
+        <li><strong>Browser controls</strong> — most browsers let you block or delete cookies and localStorage from their settings:</li>
+      </ul>
       <ul>
         <li><strong>Chrome / Edge</strong> — Settings → Privacy and security → Clear browsing data.</li>
         <li><strong>Firefox</strong> — Settings → Privacy &amp; Security → Cookies and Site Data → Clear Data.</li>
@@ -115,10 +156,10 @@
       </ul>
       <p>Clearing storage will reset the cookie banner and the newsletter bar, so they may appear again.</p>
 
-      <h2>6. Changes to this Policy</h2>
+      <h2>8. Changes to this Policy</h2>
       <p>If we change which technologies the site uses, this page will be updated and the "Last updated" date above will change.</p>
 
-      <h2>7. Contact</h2>
+      <h2>9. Contact</h2>
       <div class="legal-page__contact-box">
         <p>Questions about this Cookie Policy?</p>
         <p>Email: <a href="mailto:ionut@cyclic.ro">ionut@cyclic.ro</a></p>
@@ -180,6 +221,7 @@
           <a href="privacy-policy.html">Privacy Policy</a>
           <a href="cookie-policy.html">Cookie Policy</a>
           <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="#" class="js-cookie-settings">Cookie Settings</a>
         </div>
         <div class="footer__legal-info">
           <span><strong>CYCLIC MUSIC S.R.L.</strong></span>
@@ -194,5 +236,6 @@
   <script src="js/main.js" defer></script>
   <script src="js/effects.js" defer></script>
   <script src="js/cookie-banner.js" defer></script>
+  <script src="js/analytics.js" defer></script>
 </body>
 </html>

@@ -188,48 +188,60 @@
   (function initNewsletterBar() {
     if (localStorage.getItem('nl_dismissed')) return;
 
-    const bar = document.createElement('div');
-    bar.className = 'newsletter-bar';
-    bar.setAttribute('role', 'complementary');
-    bar.setAttribute('aria-label', 'Subscribe to Cyclic newsletter');
-    bar.innerHTML = `
-      <div class="container newsletter-bar__inner">
-        <div class="newsletter-bar__text">
-          <strong>Never miss a Cyclic event</strong>
-          <span>Early access · Exclusive offers</span>
-        </div>
-        <form class="newsletter-bar__form" novalidate>
-          <input type="email" class="newsletter-bar__input" placeholder="your@email.com" aria-label="Email address" autocomplete="email">
-          <button type="submit" class="btn btn--accent newsletter-bar__submit">Subscribe →</button>
-        </form>
-        <button class="newsletter-bar__close" aria-label="Close">✕</button>
-      </div>`;
-    document.body.appendChild(bar);
+    function showBar() {
+      if (document.querySelector('.newsletter-bar')) return;
 
-    setTimeout(() => bar.classList.add('visible'), 1800);
+      const bar = document.createElement('div');
+      bar.className = 'newsletter-bar';
+      bar.setAttribute('role', 'complementary');
+      bar.setAttribute('aria-label', 'Subscribe to Cyclic newsletter');
+      bar.innerHTML = `
+        <div class="container newsletter-bar__inner">
+          <div class="newsletter-bar__text">
+            <strong>Never miss a Cyclic event</strong>
+            <span>Early access · Exclusive offers</span>
+          </div>
+          <form class="newsletter-bar__form" novalidate>
+            <input type="email" class="newsletter-bar__input" placeholder="your@email.com" aria-label="Email address" autocomplete="email" required>
+            <button type="submit" class="btn btn--accent newsletter-bar__submit">Subscribe →</button>
+          </form>
+          <p class="newsletter-bar__consent">By subscribing you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+          <button class="newsletter-bar__close" aria-label="Close">✕</button>
+        </div>`;
+      document.body.appendChild(bar);
 
-    bar.querySelector('.newsletter-bar__close').addEventListener('click', () => {
-      bar.classList.remove('visible');
-      setTimeout(() => bar.remove(), 450);
-      localStorage.setItem('nl_dismissed', '1');
-    });
+      setTimeout(() => bar.classList.add('visible'), 600);
 
-    bar.querySelector('.newsletter-bar__form').addEventListener('submit', e => {
-      e.preventDefault();
-      const input = bar.querySelector('.newsletter-bar__input');
-      if (!input.value.trim() || !input.value.includes('@')) {
-        input.classList.add('error');
-        input.addEventListener('input', () => input.classList.remove('error'), { once: true });
-        return;
-      }
-      bar.querySelector('.newsletter-bar__inner').innerHTML =
-        `<p style="width:100%;text-align:center;font-size:15px;">
-           <strong style="color:var(--accent);font-family:var(--font-display);">✓ You're in.</strong>
-           &nbsp;We'll hit you with early access and exclusive offers.
-         </p>`;
-      setTimeout(() => { bar.classList.remove('visible'); setTimeout(() => bar.remove(), 450); }, 2800);
-      localStorage.setItem('nl_dismissed', '1');
-    });
+      bar.querySelector('.newsletter-bar__close').addEventListener('click', () => {
+        bar.classList.remove('visible');
+        setTimeout(() => bar.remove(), 450);
+        localStorage.setItem('nl_dismissed', '1');
+      });
+
+      bar.querySelector('.newsletter-bar__form').addEventListener('submit', e => {
+        e.preventDefault();
+        const input = bar.querySelector('.newsletter-bar__input');
+        if (!input.value.trim() || !input.value.includes('@')) {
+          input.classList.add('error');
+          input.addEventListener('input', () => input.classList.remove('error'), { once: true });
+          return;
+        }
+        bar.querySelector('.newsletter-bar__inner').innerHTML =
+          `<p style="width:100%;text-align:center;font-size:15px;">
+             <strong style="color:var(--accent);font-family:var(--font-display);">✓ You're in.</strong>
+             &nbsp;We'll hit you with early access and exclusive offers.
+           </p>`;
+        setTimeout(() => { bar.classList.remove('visible'); setTimeout(() => bar.remove(), 450); }, 2800);
+        localStorage.setItem('nl_dismissed', '1');
+      });
+    }
+
+    // Defer behind cookie banner so the two don't stack on first visit
+    if (localStorage.getItem('cookies_acknowledged')) {
+      setTimeout(showBar, 1800);
+    } else {
+      window.addEventListener('cookies-acknowledged', () => setTimeout(showBar, 600), { once: true });
+    }
   })();
 
   /* ── PREFERS REDUCED MOTION CHECK ── */

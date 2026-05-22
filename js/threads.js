@@ -140,8 +140,8 @@
   var uMouse = gl.getUniformLocation(prog, 'uMouse');
 
   gl.uniform3f(uCol, 1.0, 1.0, 1.0);
-  gl.uniform1f(uAmp, 1.0);
-  gl.uniform1f(uDist, 0.0);
+  gl.uniform1f(uAmp, 1.6);
+  gl.uniform1f(uDist, 0.35);
   gl.uniform2f(uMouse, 0.5, 0.5);
 
   function resize() {

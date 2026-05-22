@@ -1550,10 +1550,11 @@ html, body {
   /* Nav logo smaller */
   .nav__logo { font-size: 22px; }
 
-  /* Hero tighter */
+  /* Hero tighter — center content vertically on mobile so gap from nav halves */
   .hero {
     padding-bottom: clamp(40px, 6vw, 64px);
-    align-items: flex-end;
+    padding-top: var(--nav-h);
+    align-items: center;
   }
   .hero__title {
     font-size: clamp(32px, 9vw, 56px);

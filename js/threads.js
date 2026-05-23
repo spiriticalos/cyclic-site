@@ -6,10 +6,11 @@
 
   var canvas = document.createElement('canvas');
   canvas.setAttribute('aria-hidden', 'true');
-  canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1';
+  canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;z-index:1';
   hero.appendChild(canvas);
 
-  var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  var gl = canvas.getContext('webgl', { alpha: true, antialias: true, premultipliedAlpha: false })
+        || canvas.getContext('experimental-webgl', { alpha: true, antialias: true, premultipliedAlpha: false });
   if (!gl) { hero.removeChild(canvas); return; }
 
   gl.enable(gl.BLEND);
@@ -140,21 +141,28 @@
   var uMouse = gl.getUniformLocation(prog, 'uMouse');
 
   gl.uniform3f(uCol, 1.0, 1.0, 1.0);
-  gl.uniform1f(uAmp, 1.6);
-  gl.uniform1f(uDist, 0.35);
+  gl.uniform1f(uAmp, 1.8);
+  gl.uniform1f(uDist, 0.45);
   gl.uniform2f(uMouse, 0.5, 0.5);
 
   function resize() {
-    var w = hero.offsetWidth;
-    var h = hero.offsetHeight || window.innerHeight;
+    var w = hero.offsetWidth || hero.clientWidth || window.innerWidth;
+    var h = hero.offsetHeight || hero.clientHeight || window.innerHeight;
+    if (w === 0 || h === 0) return;
     canvas.width  = w;
     canvas.height = h;
     gl.viewport(0, 0, w, h);
     gl.uniform3f(uRes, w, h, w / (h || 1));
   }
 
-  new ResizeObserver(resize).observe(hero);
+  // Multiple resize triggers — mobile layout can settle late (flex + 100svh + defer)
+  try { new ResizeObserver(resize).observe(hero); } catch (e) {}
+  window.addEventListener('resize', resize);
+  window.addEventListener('orientationchange', resize);
+  window.addEventListener('load', resize);
   resize();
+  requestAnimationFrame(resize);
+  setTimeout(resize, 250);
 
   var targetMouse  = [0.5, 0.5];
   var currentMouse = [0.5, 0.5];

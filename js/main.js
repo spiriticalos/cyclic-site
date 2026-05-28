@@ -16,11 +16,60 @@
     onScroll();
   }
 
-  /* ── LANGUAGE TOGGLE — auto-inject RO↔EN switcher in nav ── */
+  /* ── LANGUAGE TOGGLE + RO NAV AUTO-TRANSLATE ── */
   (function injectLangToggle() {
     const html = document.documentElement;
     const pageLang = (html.lang || 'en').toLowerCase().startsWith('ro') ? 'ro' : 'en';
     const otherLang = pageLang === 'ro' ? 'en' : 'ro';
+
+    // If page is RO, auto-translate nav text + hrefs (for pages that still carry EN chrome)
+    if (pageLang === 'ro') {
+      const textMap = {
+        'Home': 'Acasă',
+        'Events': 'Evenimente',
+        'Artists': 'Artiști',
+        'Rentals': 'Închirieri',
+        'Labels': 'Label-uri',
+        'About Us': 'Despre noi',
+        'About': 'Despre',
+        'Get Tickets': 'Bilete',
+        'Get Tickets →': 'Bilete →',
+        'Get a Quote': 'Cere ofertă',
+        'Get a Quote →': 'Cere ofertă →'
+      };
+      const hrefMap = {
+        'events.html': 'evenimente.html',
+        'artists.html': 'artisti.html',
+        'rentals.html': 'inchiriere-echipamente.html',
+        'labels.html': 'label-uri.html',
+        'about.html': 'despre-noi.html'
+      };
+      document.querySelectorAll('.nav .nav__link, .nav__mobile .nav__link, .nav .nav__cta, .nav__mobile .btn').forEach(el => {
+        // Translate visible text only when it's a direct text node that matches the map
+        const raw = el.textContent.replace(/\s+/g, ' ').trim();
+        // Replace text node with translated text; preserve any child <span class="arrow"> etc.
+        for (const src in textMap) {
+          if (raw === src || raw.startsWith(src + ' ')) {
+            // Find direct text node and replace
+            for (const node of el.childNodes) {
+              if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() === src) {
+                node.textContent = textMap[src];
+                break;
+              } else if (node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0) {
+                node.textContent = node.textContent.replace(src, textMap[src]);
+                break;
+              }
+            }
+            break;
+          }
+        }
+        // Rewrite href if it's a known EN page with a RO equivalent
+        const href = el.getAttribute('href');
+        if (href && hrefMap[href]) {
+          el.setAttribute('href', hrefMap[href]);
+        }
+      });
+    }
 
     // Resolve target: prefer hreflang alternate, fall back to category root
     const altLink = document.querySelector('link[rel="alternate"][hreflang="' + otherLang + '"]');

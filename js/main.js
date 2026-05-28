@@ -16,6 +16,51 @@
     onScroll();
   }
 
+  /* ── LANGUAGE TOGGLE — auto-inject RO↔EN switcher in nav ── */
+  (function injectLangToggle() {
+    const html = document.documentElement;
+    const pageLang = (html.lang || 'en').toLowerCase().startsWith('ro') ? 'ro' : 'en';
+    const otherLang = pageLang === 'ro' ? 'en' : 'ro';
+
+    // Resolve target: prefer hreflang alternate, fall back to category root
+    const altLink = document.querySelector('link[rel="alternate"][hreflang="' + otherLang + '"]');
+    const fallback = otherLang === 'ro' ? 'inchiriere-echipamente.html' : 'rentals.html';
+    const targetUrl = altLink ? altLink.getAttribute('href') : fallback;
+
+    const label = otherLang === 'ro' ? 'RO' : 'EN';
+    const flag = otherLang === 'ro' ? '🇷🇴' : '🇬🇧';
+    const labelLong = otherLang === 'ro' ? 'Română' : 'English';
+    const aria = otherLang === 'ro' ? 'Versiunea română' : 'Switch to English';
+
+    // Desktop nav — insert before burger (or append if no burger)
+    const navInner = document.querySelector('.nav__inner');
+    if (navInner && !navInner.querySelector('.lang-toggle')) {
+      const toggle = document.createElement('a');
+      toggle.href = targetUrl;
+      toggle.className = 'lang-toggle';
+      toggle.setAttribute('hreflang', otherLang);
+      toggle.setAttribute('aria-label', aria);
+      toggle.innerHTML = '<span class="lang-toggle__flag" aria-hidden="true">' + flag + '</span> ' + label;
+      const burger = navInner.querySelector('.nav__burger');
+      if (burger) navInner.insertBefore(toggle, burger);
+      else navInner.appendChild(toggle);
+    }
+
+    // Mobile drawer — insert before primary CTA (.btn--accent), else append
+    const navMobile = document.querySelector('.nav__mobile');
+    if (navMobile && !navMobile.querySelector('.lang-toggle')) {
+      const mToggle = document.createElement('a');
+      mToggle.href = targetUrl;
+      mToggle.className = 'lang-toggle';
+      mToggle.setAttribute('hreflang', otherLang);
+      mToggle.setAttribute('aria-label', aria);
+      mToggle.innerHTML = '<span class="lang-toggle__flag" aria-hidden="true">' + flag + '</span> ' + labelLong;
+      const mCta = navMobile.querySelector('.btn--accent');
+      if (mCta) navMobile.insertBefore(mToggle, mCta);
+      else navMobile.appendChild(mToggle);
+    }
+  })();
+
   /* ── MOBILE MENU ── */
   const burger  = document.querySelector('.nav__burger');
   const mobileMenu = document.querySelector('.nav__mobile');

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Închiriere echipamente evenimente București | Cyclic Agency</title>
+  <meta name="description" content="Închiriere echipamente sonorizare, DJ și lumini pentru evenimente, cluburi și festivaluri din România. Void Acoustics, Pioneer CDJ-3000, schelă lumini — din 2009.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cyclic.ro/inchiriere-echipamente.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Închiriere echipamente evenimente București | Cyclic Agency">
+  <meta property="og:description" content="Închiriere sonorizare, DJ și lumini pentru evenimente, cluburi și festivaluri. Void Acoustics, Pioneer CDJ-3000, schelă lumini — din 2009.">
+  <meta property="og:image" content="https://cyclic.ro/images/cyclic-logo.jpg">
+  <meta property="og:url" content="https://cyclic.ro/inchiriere-echipamente.html">
+  <meta property="og:site_name" content="Cyclic Agency">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@cyclic_music">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Bilingual: hreflang -->
+  <link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-echipamente.html">
+  <link rel="alternate" hreflang="en" href="https://cyclic.ro/rentals.html">
+  <link rel="alternate" hreflang="x-default" href="https://cyclic.ro/rentals.html">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Eurostile',sans-serif;background:#0a0a0a;color:#fff;overflow-x:hidden}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:72px}
+
+    /* Hero (mirror din rentals.html) */
+    .rh { position: sticky; top: 0; height: 100svh; display: flex; flex-direction: column; overflow: hidden; z-index: 0; background: #0a0a0a; }
+    .rh::before { content: ''; position: absolute; inset: -30%; background: radial-gradient(ellipse 55% 50% at 8% 70%, rgba(123,47,255,0.25) 0%, transparent 60%), radial-gradient(ellipse 45% 55% at 88% 22%, rgba(150,204,0,0.10) 0%, transparent 55%); animation: meshA 16s ease-in-out infinite alternate; pointer-events: none; }
+    .rh__grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(150,204,0,0.032) 1px, transparent 1px), linear-gradient(90deg, rgba(150,204,0,0.032) 1px, transparent 1px); background-size: 64px 64px; animation: rh-grid 22s linear infinite; pointer-events: none; }
+    @keyframes rh-grid { from { background-position: 0 0; } to { background-position: 0 64px; } }
+    .rh__scanline { position: absolute; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, rgba(150,204,0,0.6), transparent); top: 0; z-index: 3; pointer-events: none; animation: rh-scan 2s cubic-bezier(0.4,0,0.6,1) 0.1s forwards; }
+    @keyframes rh-scan { from { top: 0; opacity: 1; } to { top: 100%; opacity: 0; } }
+    .rh__body { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; position: relative; z-index: 2; padding-bottom: 40px; }
+    @keyframes rh-rise { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes rh-rise-title { from { opacity: 0; transform: translateY(60px); } to { opacity: 1; transform: translateY(0); } }
+    .rh__eyebrow { font-family: 'Eurostile', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #96CC00; display: inline-flex; align-items: center; gap: 12px; margin-bottom: 28px; opacity: 0; animation: rh-rise 1s cubic-bezier(0.16,1,0.3,1) 0.4s forwards; }
+    .rh__eyebrow::before { content: ''; width: 32px; height: 1px; background: #96CC00; }
+    .rh__title { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: clamp(40px, 10vw, 140px); line-height: 0.88; text-transform: uppercase; letter-spacing: 0.01em; margin-bottom: 32px; opacity: 0; animation: rh-rise-title 1.1s cubic-bezier(0.16,1,0.3,1) 0.65s forwards; }
+    .rh__sub { font-size: clamp(14px, 1.5vw, 17px); color: rgba(255,255,255,0.55); max-width: 54ch; line-height: 1.75; margin-bottom: 40px; opacity: 0; animation: rh-rise 1s cubic-bezier(0.16,1,0.3,1) 0.95s forwards; }
+    .rh__cta { opacity: 0; animation: rh-rise 0.9s cubic-bezier(0.16,1,0.3,1) 1.15s forwards; }
+    .rh__stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(255,255,255,0.08); position: relative; z-index: 2; flex-shrink: 0; opacity: 0; animation: rh-rise 0.8s cubic-bezier(0.16,1,0.3,1) 1.4s forwards; }
+    .rh__stat { padding: 20px clamp(20px,2.5vw,40px); border-right: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 4px; }
+    .rh__stat:last-child { border-right: none; }
+    .rh__stat strong { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: clamp(24px, 2.5vw, 36px); color: #96CC00; line-height: 1; }
+    .rh__stat span { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.45); font-weight: 600; }
+    .rh-content { position: relative; z-index: 1; background: #0a0a0a; }
+    @media (max-width: 768px) { .rh__stats { grid-template-columns: repeat(2, 1fr); } .rh__stat:nth-child(2) { border-right: none; } .rh__stat:nth-child(3), .rh__stat:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.08); } }
+    @media (prefers-reduced-motion: reduce) { .rh__eyebrow, .rh__title, .rh__sub, .rh__cta, .rh__stats { opacity: 1; transform: none; animation: none; } }
+
+    /* Categorii — 3 carduri mari, click → pagina categorie */
+    .cat { padding-block: var(--section-py); }
+    .cat__head { text-align: center; max-width: 720px; margin: 0 auto clamp(48px, 6vw, 80px); }
+    .cat__head h2 { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: clamp(40px, 7vw, 88px); line-height: 0.92; text-transform: uppercase; margin: 14px 0 20px; }
+    .cat__head p { color: rgba(255,255,255,0.55); font-size: clamp(14px, 1.5vw, 17px); line-height: 1.7; }
+    .cat__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2vw, 24px); }
+    .cat-card { display: flex; flex-direction: column; padding: clamp(28px, 3vw, 40px); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; background: rgba(255,255,255,0.03); text-decoration: none; color: inherit; transition: border-color 0.3s, transform 0.4s cubic-bezier(0.16,1,0.3,1), background 0.3s; position: relative; overflow: hidden; min-height: 360px; }
+    .cat-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 100% 0%, rgba(150,204,0,0.12) 0%, transparent 50%); opacity: 0; transition: opacity 0.4s; pointer-events: none; }
+    .cat-card:hover { border-color: rgba(150,204,0,0.35); transform: translateY(-6px); background: rgba(150,204,0,0.02); }
+    .cat-card:hover::before { opacity: 1; }
+    .cat-card__num { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 14px; color: #96CC00; letter-spacing: 0.18em; margin-bottom: clamp(40px, 5vw, 64px); position: relative; z-index: 1; }
+    .cat-card__title { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: clamp(28px, 3vw, 38px); line-height: 1; text-transform: uppercase; margin-bottom: 14px; position: relative; z-index: 1; }
+    .cat-card__desc { color: rgba(255,255,255,0.6); font-size: 14px; line-height: 1.65; margin-bottom: 24px; flex: 1; position: relative; z-index: 1; }
+    .cat-card__brands { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; position: relative; z-index: 1; }
+    .cat-card__brands span { font-size: 10px; font-weight: 700; letter-spacing: 0.14em; padding: 6px 12px; border: 1px solid rgba(150,204,0,0.25); color: #96CC00; border-radius: 100px; text-transform: uppercase; }
+    .cat-card__cta { font-family: 'Eurostile', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #96CC00; display: inline-flex; align-items: center; gap: 8px; position: relative; z-index: 1; transition: gap 0.3s; }
+    .cat-card:hover .cat-card__cta { gap: 14px; }
+    @media (max-width: 900px) { .cat__grid { grid-template-columns: 1fr; } .cat-card { min-height: auto; } }
+
+    /* Brand strip + de ce noi */
+    .why { padding-block: var(--section-py); background: var(--bg-alt); position: relative; overflow: hidden; }
+    .why__inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(40px, 6vw, 80px); align-items: center; }
+    .why__inner h2 { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: clamp(32px, 5vw, 64px); line-height: 1; text-transform: uppercase; margin: 14px 0 24px; }
+    .why__inner p { color: rgba(255,255,255,0.6); font-size: 15px; line-height: 1.75; margin-bottom: 20px; max-width: 50ch; }
+    .why-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .why-stat { padding: 28px 24px; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; background: rgba(255,255,255,0.03); }
+    .why-stat strong { display: block; font-family: 'Roboto', sans-serif; font-weight: 900; font-size: clamp(32px, 4vw, 48px); color: #96CC00; line-height: 1; margin-bottom: 8px; }
+    .why-stat span { color: rgba(255,255,255,0.55); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.4; }
+    @media (max-width: 900px) { .why__inner { grid-template-columns: 1fr; } .why-stats { grid-template-columns: 1fr 1fr; } }
+
+    /* Quote form RO (mirror din rentals.html) */
+    .qf { padding-block: var(--section-py); position: relative; overflow: hidden; scroll-margin-top: 88px; }
+    .qf::before { content: ''; position: absolute; inset: -20%; background: radial-gradient(ellipse 40% 50% at 12% 80%, rgba(123,47,255,0.16) 0%, transparent 60%), radial-gradient(ellipse 50% 45% at 90% 18%, rgba(150,204,0,0.08) 0%, transparent 55%); pointer-events: none; }
+    .qf__inner { position: relative; display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(40px, 6vw, 80px); align-items: start; }
+    .qf__left h2 { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: clamp(36px, 6vw, 72px); line-height: 0.95; text-transform: uppercase; margin: 14px 0 22px; }
+    .qf__left p { color: rgba(255,255,255,0.6); font-size: 15px; line-height: 1.75; margin-bottom: 32px; max-width: 46ch; }
+    .qf-points { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 18px; }
+    .qf-points li { display: flex; align-items: flex-start; gap: 14px; font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.55; }
+    .qf-points li::before { content: ''; flex-shrink: 0; width: 18px; height: 18px; margin-top: 1px; border-radius: 50%; background: rgba(150,204,0,0.15); border: 1px solid #96CC00; background-image: linear-gradient(45deg, transparent 45%, #96CC00 45% 55%, transparent 55%), linear-gradient(-45deg, transparent 45%, #96CC00 45% 55%, transparent 55%); background-size: 9px 9px, 9px 9px; background-position: center; background-repeat: no-repeat; }
+    .qf-form { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: clamp(28px, 3vw, 40px); display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .qf-field { display: flex; flex-direction: column; gap: 7px; }
+    .qf-field--full { grid-column: 1 / -1; }
+    .qf-field label { font-family: 'Eurostile', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+    .qf-field label .req { color: #96CC00; }
+    .qf-field input, .qf-field select, .qf-field textarea { width: 100%; background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.1); color: #fff; font-family: 'Eurostile', sans-serif; font-size: 14px; padding: 13px 14px; border-radius: 8px; transition: border-color 0.2s, background 0.2s; min-height: 44px; }
+    .qf-field textarea { resize: vertical; min-height: 110px; line-height: 1.5; }
+    .qf-field input::placeholder, .qf-field textarea::placeholder { color: rgba(255,255,255,0.32); }
+    .qf-field input:focus, .qf-field select:focus, .qf-field textarea:focus { outline: none; border-color: #96CC00; background: rgba(0,0,0,0.55); }
+    .qf-field select { appearance: none; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='%2396CC00' d='M6 8 0 0h12z'/></svg>"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 38px; }
+    .qf-consent { grid-column: 1 / -1; display: flex; align-items: flex-start; gap: 10px; font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.5; }
+    .qf-consent input { width: 16px; height: 16px; margin-top: 2px; accent-color: #96CC00; flex-shrink: 0; }
+    .qf-consent a { color: #96CC00; text-decoration: underline; text-underline-offset: 3px; }
+    .qf-submit { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 4px; flex-wrap: wrap; }
+    .qf-submit button { background: #96CC00; color: #0a0a0a; border: none; padding: 16px 32px; font-family: 'Eurostile', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; border-radius: 100px; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s, background 0.2s; min-height: 48px; }
+    .qf-submit button:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(150,204,0,0.25); background: #A8DC00; }
+    .qf-submit button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .qf-submit small { color: rgba(255,255,255,0.4); font-size: 12px; }
+    .qf-honeypot { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; opacity: 0; }
+    .qf-status { grid-column: 1 / -1; padding: 14px 18px; border-radius: 10px; font-size: 13px; line-height: 1.5; display: none; }
+    .qf-status.is-ok { display: block; background: rgba(150,204,0,0.08); border: 1px solid rgba(150,204,0,0.35); color: #d6f57a; }
+    .qf-status.is-err { display: block; background: rgba(255,90,90,0.08); border: 1px solid rgba(255,90,90,0.35); color: #ffb3b3; }
+    @media (max-width: 900px) { .qf__inner { grid-template-columns: 1fr; } .qf-form { grid-template-columns: 1fr; } }
+
+    /* Language toggle button — minimal, in nav */
+    .lang-toggle { display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.7); text-decoration: none; border: 1px solid rgba(255,255,255,0.15); border-radius: 100px; transition: border-color 0.25s, color 0.25s, background 0.25s; margin-left: 12px; font-family: 'Eurostile', sans-serif; }
+    .lang-toggle:hover { border-color: #96CC00; color: #96CC00; background: rgba(150,204,0,0.05); }
+    .lang-toggle__flag { font-size: 14px; line-height: 1; }
+  </style>
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Schema.org: LocalBusiness + Service + FAQPage + BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "Organization"],
+    "name": "Cyclic Agency",
+    "url": "https://cyclic.ro",
+    "logo": "https://cyclic.ro/images/cyclic-logo.jpg",
+    "description": "Închiriere echipamente sonorizare, DJ și lumini pentru evenimente, cluburi și festivaluri din România.",
+    "foundingDate": "2009",
+    "areaServed": [
+      { "@type": "City", "name": "București" },
+      { "@type": "City", "name": "Cluj-Napoca" },
+      { "@type": "City", "name": "Iași" },
+      { "@type": "City", "name": "Timișoara" },
+      { "@type": "City", "name": "Constanța" },
+      { "@type": "City", "name": "Focșani" },
+      { "@type": "Country", "name": "România" }
+    ],
+    "address": { "@type": "PostalAddress", "streetAddress": "Strada Fabrica de Chibrituri 24-26", "addressLocality": "București", "postalCode": "050183", "addressCountry": "RO" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 44.416872, "longitude": 26.089979 },
+    "telephone": "+40721337694",
+    "sameAs": ["https://facebook.com/cyclicagency","https://instagram.com/cyclic_music","https://tiktok.com/@cyclic_music"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Închiriere echipamente evenimente România",
+    "serviceType": "Închiriere sonorizare, DJ și lumini",
+    "provider": { "@type": "Organization", "name": "Cyclic Agency", "url": "https://cyclic.ro" },
+    "areaServed": { "@type": "Country", "name": "România" },
+    "description": "Închiriere sisteme de sunet Void Acoustics și d&b audiotechnik, echipamente DJ Pioneer CDJ-3000 și DJM-A9, lumini moving heads, lasere și schelă lumini, cu crew tehnic profesional, în toată România.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Catalog închirieri Cyclic",
+      "itemListElement": [
+        { "@type": "Offer", "url": "https://cyclic.ro/inchiriere-sonorizare.html", "itemOffered": { "@type": "Service", "name": "Închiriere sonorizare Void Acoustics, d&b audiotechnik, L-Acoustics" } },
+        { "@type": "Offer", "url": "https://cyclic.ro/inchiriere-dj.html", "itemOffered": { "@type": "Service", "name": "Închiriere echipament DJ Pioneer CDJ-3000, mixere DJM-A9 și Rane" } },
+        { "@type": "Offer", "url": "https://cyclic.ro/inchiriere-lumini.html", "itemOffered": { "@type": "Service", "name": "Închiriere lumini moving heads, lasere și schelă lumini Prolyte" } }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://cyclic.ro/"},
+      {"@type": "ListItem", "position": 2, "name": "Închirieri echipamente", "item": "https://cyclic.ro/inchiriere-echipamente.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ce echipamente închiriază Cyclic pentru evenimente?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Închiriem sisteme de sonorizare profesionale (Void Acoustics, d&b audiotechnik, L-Acoustics), echipamente DJ (Pioneer CDJ-3000, DJM-A9, Rane Seventy-Two), lumini (moving heads Robe / Martin / Ayrton, LED-uri, lasere) și schelă lumini Prolyte, plus crew tehnic pentru cluburi, festivaluri și evenimente private din toată România." }
+      },
+      {
+        "@type": "Question",
+        "name": "Livrați echipamente și în afara Bucureștiului?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Da. Operăm în toate cele 30 de orașe din România în care am produs evenimente, inclusiv București, Cluj-Napoca, Iași, Timișoara, Constanța, Focșani și locații izolate precum Delta Dunării. Transport și setup incluse în oferta finală." }
+      },
+      {
+        "@type": "Question",
+        "name": "Pot închiria doar echipamentul, fără crew?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Da, oferim și dry hire pentru clienții cu echipă tehnică proprie. Majoritatea preferă pachet complet cu inginerii și operatorii noștri — ambele variante sunt cotate transparent în ofertă." }
+      },
+      {
+        "@type": "Question",
+        "name": "Cât durează să primesc o ofertă?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Răspundem la fiecare cerere de ofertă în maxim 24 de ore, direct de la un production manager — niciodată autoresponder." }
+      },
+      {
+        "@type": "Question",
+        "name": "Care e bugetul minim pentru un eveniment?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Producem evenimente de la cluburi intime (100 persoane) până la open-air-uri de 5.000+ persoane. Bugetul depinde de echipamente, crew, transport și durata setup-ului — îți trimitem o ofertă detaliată în 24h după ce primim brief-ul." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigare principală">
+    <div class="nav__inner container">
+      <a href="index.html" class="nav__logo">cyclic</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html"   class="nav__link">Acasă</a></li>
+        <li><a href="events.html"  class="nav__link">Evenimente</a></li>
+        <li><a href="artists.html" class="nav__link">Artiști</a></li>
+        <li><a href="inchiriere-echipamente.html" class="nav__link active">Închirieri</a></li>
+        <li><a href="labels.html"  class="nav__link">Labels</a></li>
+        <li><a href="about.html"   class="nav__link">Despre</a></li>
+      </ul>
+      <a href="#quote" class="btn btn--accent nav__cta magnetic">Cere ofertă <span class="arrow">→</span></a>
+      <a href="rentals.html" class="lang-toggle" hreflang="en" aria-label="Switch to English"><span class="lang-toggle__flag" aria-hidden="true">🇬🇧</span> EN</a>
+      <button class="nav__burger" aria-label="Deschide meniu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" role="dialog" aria-label="Navigare mobilă" aria-modal="true">
+    <a href="index.html"   class="nav__link">Acasă</a>
+    <a href="events.html"  class="nav__link">Evenimente</a>
+    <a href="artists.html" class="nav__link">Artiști</a>
+    <a href="inchiriere-echipamente.html" class="nav__link">Închirieri</a>
+    <a href="labels.html"  class="nav__link">Labels</a>
+    <a href="about.html"   class="nav__link">Despre</a>
+    <a href="rentals.html" class="nav__link" hreflang="en">🇬🇧 English</a>
+    <a href="#quote" class="btn btn--accent magnetic">Cere ofertă →</a>
+  </div>
+
+  <main>
+    <section class="rh" aria-labelledby="rh-title">
+      <div class="rh__grid" aria-hidden="true"></div>
+      <div class="rh__scanline" aria-hidden="true"></div>
+
+      <div class="container rh__body">
+        <p class="rh__eyebrow">Închirieri echipamente evenimente — Din 2009</p>
+        <h1 class="rh__title" id="rh-title">Sonorizare. DJ.<br>Lumini<span class="text-accent">.</span></h1>
+        <p class="rh__sub">Închiriere echipamente profesionale pentru cluburi, festivaluri și evenimente private din toată România — Void Acoustics, Pioneer CDJ-3000, schelă lumini și crew tehnic, totul de la o singură echipă.</p>
+        <div class="btn-group rh__cta">
+          <a href="#quote" class="btn btn--accent btn--lg magnetic">Cere ofertă <span class="arrow">→</span></a>
+          <a href="#categorii" class="btn btn--outline">Vezi echipamentele</a>
+        </div>
+      </div>
+
+      <div class="rh__stats" aria-label="Cifre Cyclic Agency">
+        <div class="rh__stat"><strong>17+</strong><span>Ani</span></div>
+        <div class="rh__stat"><strong>30</strong><span>Orașe</span></div>
+        <div class="rh__stat"><strong>500+</strong><span>Evenimente</span></div>
+        <div class="rh__stat"><strong>24h</strong><span>Răspuns</span></div>
+      </div>
+    </section>
+
+    <div class="rh-content">
+
+    <!-- Categorii — 3 carduri către paginile dedicate -->
+    <section id="categorii" class="cat" aria-labelledby="cat-heading">
+      <div class="container">
+        <header class="cat__head">
+          <span class="section-label">Trei direcții. Un singur partener.</span>
+          <h2 id="cat-heading">Echipamente de închiriat<span class="text-accent">.</span></h2>
+          <p>Tot ce ai nevoie pentru un eveniment de muzică electronică — sonorizare reference, echipament DJ rider-ready și lumini cu schelă, livrate și operate de aceeași echipă.</p>
+        </header>
+
+        <div class="cat__grid">
+          <a href="inchiriere-sonorizare.html" class="cat-card">
+            <span class="cat-card__num">01 / SONORIZARE</span>
+            <h3 class="cat-card__title">Sisteme de sunet</h3>
+            <p class="cat-card__desc">Line array-uri și subwoofere cardioide pentru cluburi, warehouse-uri și evenimente open-air până la 5.000 de oameni. Setup tunat la fiecare locație.</p>
+            <div class="cat-card__brands">
+              <span>Void Acoustics</span>
+              <span>d&amp;b</span>
+              <span>L-Acoustics</span>
+            </div>
+            <span class="cat-card__cta">Vezi sonorizare <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="inchiriere-dj.html" class="cat-card">
+            <span class="cat-card__num">02 / DJ + MIXERE</span>
+            <h3 class="cat-card__title">Echipament DJ</h3>
+            <p class="cat-card__desc">Pioneer CDJ-3000, DJM-A9 și Rane Seventy-Two — setup-uri rider-ready cu monitoare in-ear sau wedge. Cele mai noi playere Pioneer disponibile pentru închiriere în România.</p>
+            <div class="cat-card__brands">
+              <span>Pioneer CDJ-3000</span>
+              <span>DJM-A9</span>
+              <span>Rane</span>
+            </div>
+            <span class="cat-card__cta">Vezi echipament DJ <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="inchiriere-lumini.html" class="cat-card">
+            <span class="cat-card__num">03 / LUMINI + SCHELĂ</span>
+            <h3 class="cat-card__title">Lumini &amp; schelă</h3>
+            <p class="cat-card__desc">Moving heads Robe, Martin și Ayrton, LED bars, strobe, hazere și lasere — totul prins pe schelă lumini Prolyte H30V / H40V, dimensionată pentru fiecare scenă.</p>
+            <div class="cat-card__brands">
+              <span>Robe · Martin</span>
+              <span>Prolyte</span>
+              <span>Lasere RGB</span>
+            </div>
+            <span class="cat-card__cta">Vezi lumini <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="why" aria-labelledby="why-heading">
+      <div class="container why__inner">
+        <div>
+          <span class="section-label">De ce Cyclic</span>
+          <h2 id="why-heading">17 ani. Mii de evenimente. Zero compromis<span class="text-accent">.</span></h2>
+          <p>Cyclic Agency a fost fondată în 2009 de Ionuț Hupcă în Focșani, sub numele Electro Events. În 17 ani s-a transformat într-una dintre cele mai cunoscute agenții de muzică electronică din România, cu activitate constantă în 30 de orașe.</p>
+          <p>Toate echipamentele pe care le închiriem au fost testate în condiții reale de eveniment — fiecare crew member a lucrat zeci de show-uri. De la club night pentru 200 de oameni până la open-air pentru 5.000+, același standard.</p>
+        </div>
+        <div class="why-stats">
+          <div class="why-stat"><strong>17+</strong><span>Ani de experiență în România</span></div>
+          <div class="why-stat"><strong>500+</strong><span>Evenimente produse</span></div>
+          <div class="why-stat"><strong>30</strong><span>Orașe acoperite</span></div>
+          <div class="why-stat"><strong>24h</strong><span>Răspuns la cererea de ofertă</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proces -->
+    <section class="section section--dark" aria-labelledby="process-heading">
+      <div class="container">
+        <header class="section-header fade-in">
+          <div class="section-header__left">
+            <span class="section-label">Cum funcționează</span>
+            <h2 class="display-sm section-header__title" id="process-heading">Procesul de închiriere</h2>
+          </div>
+        </header>
+
+        <div class="values-list fade-in">
+          <div class="value-item">
+            <div class="value-item__num">01</div>
+            <div>
+              <h3 class="value-item__title">Trimite brief-ul</h3>
+              <p class="value-item__desc">Spune-ne despre eveniment — data, locația, capacitatea estimată și tipul de event. Răspundem în maxim 24 de ore cu disponibilitate și o estimare inițială de preț.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-item__num">02</div>
+            <div>
+              <h3 class="value-item__title">Consultanță tehnică</h3>
+              <p class="value-item__desc">Echipa noastră tehnică analizează specificațiile locației și nevoile evenimentului ca să propună setup-ul optim. Pentru producții mari facem și recunoaștere la fața locului.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-item__num">03</div>
+            <div>
+              <h3 class="value-item__title">Ofertă transparentă</h3>
+              <p class="value-item__desc">Primești o ofertă detaliată, itemizată — echipamente, crew, transport, servicii suplimentare. Fără costuri ascunse, totul defalcat clar.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-item__num">04</div>
+            <div>
+              <h3 class="value-item__title">Ziua evenimentului</h3>
+              <p class="value-item__desc">Crew-ul ajunge la timp pentru setup și soundcheck. Rămânem pe toată durata evenimentului pentru orice nevoie tehnică, plus breakdown complet și ridicare după.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote form RO -->
+    <section id="quote" class="qf" aria-labelledby="qf-heading">
+      <div class="container qf__inner">
+        <div class="qf__left">
+          <span class="section-label">Cere o ofertă</span>
+          <h2 id="qf-heading">Spune-ne despre evenimentul tău<span class="text-accent">.</span></h2>
+          <p>Trimite brief-ul — locație, dată, capacitate. Răspundem în 24 de ore cu disponibilitate, setup recomandat și preț transparent pentru închiriere echipamente, crew și logistică oriunde în România.</p>
+          <ul class="qf-points">
+            <li>Răspuns în 24h, direct de la un production manager</li>
+            <li>Ofertă transparentă — echipamente, crew, transport, itemizat</li>
+            <li>Inventar tour-grade Void / d&amp;b / Pioneer</li>
+            <li>O singură echipă pentru sonorizare, DJ, lumini și schelă</li>
+          </ul>
+        </div>
+
+        <!-- CONTENT-TODO: înlocuiește YOUR_FORM_ID cu endpoint-ul Formspree după signup la formspree.io -->
+        <form class="qf-form" id="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="qf-honeypot" aria-hidden="true">
+            <label>Lasă gol<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <input type="hidden" name="_subject" value="Cerere ofertă închiriere — cyclic.ro">
+          <input type="hidden" name="_language" value="ro">
+
+          <div class="qf-field">
+            <label for="qf-name">Nume <span class="req">*</span></label>
+            <input id="qf-name" type="text" name="name" required autocomplete="name" placeholder="Numele tău complet">
+          </div>
+          <div class="qf-field">
+            <label for="qf-email">Email <span class="req">*</span></label>
+            <input id="qf-email" type="email" name="email" required autocomplete="email" placeholder="email@firma.ro">
+          </div>
+
+          <div class="qf-field">
+            <label for="qf-phone">Telefon / WhatsApp</label>
+            <input id="qf-phone" type="tel" name="phone" autocomplete="tel" placeholder="+40 …">
+          </div>
+          <div class="qf-field">
+            <label for="qf-date">Data evenimentului <span class="req">*</span></label>
+            <input id="qf-date" type="date" name="event_date" required>
+          </div>
+
+          <div class="qf-field">
+            <label for="qf-city">Oraș / Locație <span class="req">*</span></label>
+            <input id="qf-city" type="text" name="city" required placeholder="București, Iași, Delta Dunării…">
+          </div>
+          <div class="qf-field">
+            <label for="qf-capacity">Capacitate estimată</label>
+            <input id="qf-capacity" type="number" name="capacity" min="1" placeholder="ex. 800">
+          </div>
+
+          <div class="qf-field qf-field--full">
+            <label for="qf-type">Tip eveniment <span class="req">*</span></label>
+            <select id="qf-type" name="event_type" required>
+              <option value="">Alege…</option>
+              <option>Club night</option>
+              <option>Festival / open-air</option>
+              <option>Eveniment privat</option>
+              <option>Brand activation / corporate</option>
+              <option>Doar închiriere echipament (fără crew)</option>
+              <option>Altele</option>
+            </select>
+          </div>
+
+          <div class="qf-field qf-field--full">
+            <label for="qf-msg">Ce ai nevoie?</label>
+            <textarea id="qf-msg" name="message" placeholder="Sonorizare, lumini, pupitru DJ, schelă, crew — orice specificație (rider Pioneer / Void / d&b binevenit)."></textarea>
+          </div>
+
+          <label class="qf-consent">
+            <input type="checkbox" name="consent" required>
+            <span>Sunt de acord ca datele să fie procesate pentru a răspunde la această cerere, conform <a href="privacy-policy.html">Politicii de Confidențialitate</a>. <span class="req">*</span></span>
+          </label>
+
+          <div class="qf-status" id="qf-status" role="status" aria-live="polite"></div>
+
+          <div class="qf-submit">
+            <button type="submit">Trimite cererea <span aria-hidden="true">→</span></button>
+            <small>Sau WhatsApp <a href="https://wa.me/40721381922" style="color:#96CC00;text-decoration:none;">+40 721 381 922</a></small>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="cta-section section--dark fade-in" aria-labelledby="ro-cta">
+      <div class="container cta-section__content">
+        <span class="section-label">Hai să construim ceva bun</span>
+        <h2 class="display-lg cta-section__title" id="ro-cta">
+          Evenimentul tău merită<br>cel mai bun setup<span class="text-accent">.</span>
+        </h2>
+        <div class="btn-group" style="justify-content:center;">
+          <a href="#quote" class="btn btn--accent btn--lg magnetic">Cere ofertă <span class="arrow">→</span></a>
+          <a href="https://wa.me/40721381922" target="_blank" rel="noopener" class="btn btn--outline btn--lg">WhatsApp acum</a>
+        </div>
+      </div>
+    </section>
+
+    </div><!-- /rh-content -->
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__logo">cyclic</p>
+          <p class="footer__tagline">Underground-ul României. Ridicat.<br>Evenimente de muzică electronică din 2009.</p>
+          <nav class="footer__social" aria-label="Social media">
+            <a href="https://facebook.com/cyclicagency" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://instagram.com/cyclic_music" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://tiktok.com/@cyclic_music" class="footer__social-link" target="_blank" rel="noopener noreferrer">TikTok</a>
+          </nav>
+        </div>
+        <nav class="footer__nav" aria-label="Navigare footer">
+          <h4>Închirieri</h4>
+          <ul>
+            <li><a href="inchiriere-echipamente.html">Toate închirierile</a></li>
+            <li><a href="inchiriere-sonorizare.html">Închiriere sonorizare</a></li>
+            <li><a href="inchiriere-dj.html">Închiriere DJ &amp; mixere</a></li>
+            <li><a href="inchiriere-lumini.html">Închiriere lumini &amp; schelă</a></li>
+          </ul>
+        </nav>
+        <address class="footer__contact" style="font-style:normal;">
+          <h4>Contact</h4>
+          <div class="footer__contact-block">
+            <p class="footer__contact-role">Director Evenimente</p>
+            <p class="footer__contact-name">Ionuț Hupcă</p>
+            <a href="mailto:ionut@cyclic.ro">ionut@cyclic.ro</a>
+            <a href="https://wa.me/40721381922" target="_blank" rel="noopener">+40 721 381 922</a>
+          </div>
+          <div class="footer__contact-block">
+            <p class="footer__contact-role">Coordonator Evenimente</p>
+            <p class="footer__contact-name">Coman Vlad</p>
+            <a href="mailto:vlad.coman@cyclic.ro">vlad.coman@cyclic.ro</a>
+            <a href="https://wa.me/40765483450" target="_blank" rel="noopener">+40 765 483 450</a>
+          </div>
+        </address>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span class="js-year">2026</span> Cyclic Agency. Toate drepturile rezervate.</p>
+        <p>Evenimente de muzică electronică în România din 2009.</p>
+      </div>
+
+      <div class="footer__legal">
+        <div class="footer__legal-links">
+          <a href="privacy-policy.html">Politică Confidențialitate</a>
+          <a href="cookie-policy.html">Politică Cookies</a>
+          <a href="terms.html">Termeni &amp; Condiții</a>
+          <a href="#" class="js-cookie-settings">Setări Cookies</a>
+        </div>
+        <div class="footer__legal-info">
+          <span><strong>CYCLIC MUSIC S.R.L.</strong></span>
+          <span>CUI: 36792785</span>
+          <span>Reg. Com.: J40/15762/2016</span>
+          <span>Str. Fabrica de Chibrituri 24-26, Sector 5, București, 050183</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/effects.js" defer></script>
+  <script src="js/rentals.js" defer></script>
+  <script src="js/cookie-banner.js" defer></script>
+  <script src="js/analytics.js" defer></script>
+</body>
+</html>

@@ -1,39 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ENGLISH PAGES -->
   <url>
     <loc>https://cyclic.ro/</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://cyclic.ro/events.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cyclic.ro/artists.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cyclic.ro/about.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cyclic.ro/rentals.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/rentals.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-echipamente.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyclic.ro/rentals.html"/>
   </url>
   <url>
     <loc>https://cyclic.ro/labels.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ROMANIAN PAGES — Rental landing pages -->
+  <url>
+    <loc>https://cyclic.ro/inchiriere-echipamente.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-echipamente.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/rentals.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyclic.ro/rentals.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/inchiriere-sonorizare.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-sonorizare.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/rentals.html#card-sound"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/inchiriere-dj.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-dj.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/rentals.html#card-dj"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/inchiriere-lumini.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-lumini.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/rentals.html#card-light"/>
+  </url>
+
+  <!-- LEGAL -->
+  <url>
+    <loc>https://cyclic.ro/privacy-policy.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/cookie-policy.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/terms.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

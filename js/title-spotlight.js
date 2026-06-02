@@ -9,10 +9,10 @@
 (function () {
   'use strict';
 
-  var title = document.querySelector('.ch__title');
+  var title = document.querySelector('.ch__title, .rh__title');
   if (!title) return;
 
-  var hero = title.closest('.ch') || title;
+  var hero = title.closest('.ch, .rh') || title;
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var hasHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 

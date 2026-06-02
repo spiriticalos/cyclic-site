@@ -4,13 +4,19 @@
   var hero = document.querySelector('.hero__bg');
   if (!hero) return;
 
+  // Perf tiers — lighter on phones, static (no loop) when user prefers reduced motion.
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var isMobile = window.matchMedia('(max-width: 768px)').matches;
+  var LINE_COUNT = isMobile ? 18 : 40;       // shader loop iterations (per-pixel cost)
+  var RENDER_SCALE = isMobile ? 0.62 : 1;    // internal buffer downscale
+
   var canvas = document.createElement('canvas');
   canvas.setAttribute('aria-hidden', 'true');
   canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;z-index:1';
   hero.appendChild(canvas);
 
-  var gl = canvas.getContext('webgl', { alpha: true, antialias: true, premultipliedAlpha: false })
-        || canvas.getContext('experimental-webgl', { alpha: true, antialias: true, premultipliedAlpha: false });
+  var glOpts = { alpha: true, antialias: !isMobile, premultipliedAlpha: false };
+  var gl = canvas.getContext('webgl', glOpts) || canvas.getContext('experimental-webgl', glOpts);
   if (!gl) { hero.removeChild(canvas); return; }
 
   gl.enable(gl.BLEND);
@@ -37,7 +43,7 @@
     'uniform float uDistance;',
     'uniform vec2 uMouse;',
     '#define PI 3.1415926538',
-    'const int u_line_count = 40;',
+    'const int u_line_count = ' + LINE_COUNT + ';',
     'const float u_line_width = 7.0;',
     'const float u_line_blur = 10.0;',
     'float Perlin2D(vec2 P) {',
@@ -145,14 +151,20 @@
   gl.uniform1f(uDist, 0.45);
   gl.uniform2f(uMouse, 0.5, 0.5);
 
+  var targetMouse  = [0.5, 0.5];
+  var currentMouse = [0.5, 0.5];
+
   function resize() {
     var w = hero.offsetWidth || hero.clientWidth || window.innerWidth;
     var h = hero.offsetHeight || hero.clientHeight || window.innerHeight;
     if (w === 0 || h === 0) return;
-    canvas.width  = w;
-    canvas.height = h;
-    gl.viewport(0, 0, w, h);
-    gl.uniform3f(uRes, w, h, w / (h || 1));
+    var bw = Math.max(1, Math.round(w * RENDER_SCALE));
+    var bh = Math.max(1, Math.round(h * RENDER_SCALE));
+    canvas.width  = bw;
+    canvas.height = bh;
+    gl.viewport(0, 0, bw, bh);
+    gl.uniform3f(uRes, bw, bh, bw / (bh || 1));
+    if (reduce) renderFrame(0);   // static single frame, no animation loop
   }
 
   // Multiple resize triggers — mobile layout can settle late (flex + 100svh + defer)
@@ -163,9 +175,6 @@
   resize();
   requestAnimationFrame(resize);
   setTimeout(resize, 250);
-
-  var targetMouse  = [0.5, 0.5];
-  var currentMouse = [0.5, 0.5];
 
   hero.addEventListener('mousemove', function (e) {
     var r = hero.getBoundingClientRect();
@@ -178,15 +187,39 @@
     targetMouse[1] = 0.5;
   });
 
-  function loop(t) {
+  function renderFrame(t) {
     currentMouse[0] += 0.05 * (targetMouse[0] - currentMouse[0]);
     currentMouse[1] += 0.05 * (targetMouse[1] - currentMouse[1]);
     gl.uniform2f(uMouse, currentMouse[0], currentMouse[1]);
     gl.uniform1f(uTime, t * 0.001);
     gl.clear(gl.COLOR_BUFFER_BIT);
     gl.drawArrays(gl.TRIANGLES, 0, 3);
-    requestAnimationFrame(loop);
   }
 
-  requestAnimationFrame(loop);
+  // Gating — don't burn GPU when the hero is offscreen or the tab is hidden.
+  var rafId = 0, running = false, inView = true;
+  function loop(t) {
+    if (!running) return;
+    renderFrame(t);
+    rafId = requestAnimationFrame(loop);
+  }
+  function start() {
+    if (running || reduce || !inView || document.hidden) return;
+    running = true;
+    rafId = requestAnimationFrame(loop);
+  }
+  function stop() { running = false; if (rafId) cancelAnimationFrame(rafId); }
+
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) stop(); else start();
+  });
+  try {
+    new IntersectionObserver(function (entries) {
+      inView = entries[0].isIntersecting;
+      if (inView) start(); else stop();
+    }, { threshold: 0 }).observe(hero);
+  } catch (e) { inView = true; }
+
+  if (reduce) renderFrame(0);   // one static frame
+  else start();
 })();

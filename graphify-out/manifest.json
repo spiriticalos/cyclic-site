@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\js\\threads.js": {
-    "mtime": 1779510650.5613315,
-    "ast_hash": "7340accb32fbea9d36a0894bfd51c96e",
+    "mtime": 1780390678.6362927,
+    "ast_hash": "4786cb1a42b7c1996f0ff366b17ca0c2",
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\package.json": {
@@ -105,23 +105,23 @@
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\inchiriere-dj.html": {
-    "mtime": 1780334711.5232103,
-    "ast_hash": "4faafdcf5da75b7b20b5f596bb6fd06c",
+    "mtime": 1780389716.6015575,
+    "ast_hash": "d920ccdc87bcab236ea554ddf4862f5b",
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\inchiriere-echipamente.html": {
-    "mtime": 1779999164.0973465,
-    "ast_hash": "b36196e1e9d49e4578e1aa6cfcdd1197",
+    "mtime": 1780389733.4301918,
+    "ast_hash": "e44607fb067f447dc306f4b34dff2a66",
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\inchiriere-lumini.html": {
-    "mtime": 1780345466.8741462,
-    "ast_hash": "15ef47f570dc0d07b453d7e1b3ba0121",
+    "mtime": 1780389700.4414244,
+    "ast_hash": "5ea3e2e4f39eda96e4defe1447638c2e",
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\inchiriere-sonorizare.html": {
-    "mtime": 1780345466.8158245,
-    "ast_hash": "bc6f8875dd0ffa0f028b2359d65dea7f",
+    "mtime": 1780389684.196658,
+    "ast_hash": "7eee834684c3538f85f7c9c0c1edc573",
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\index.html": {
@@ -312,6 +312,11 @@
   "D:\\party\\site cyclic V1\\logo cyclic alb pe fundal negru.JPG": {
     "mtime": 1779349508.2676256,
     "ast_hash": "2611117a0c788f4a25e675098de24364",
+    "semantic_hash": ""
+  },
+  "D:\\party\\site cyclic V1\\js\\title-spotlight.js": {
+    "mtime": 1780390286.097963,
+    "ast_hash": "1d8f395a5bfc20cb1b1b61fa08fd3a1b",
     "semantic_hash": ""
   }
 }

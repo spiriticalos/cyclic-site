@@ -439,7 +439,7 @@
       "label": "compileShader()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L107",
+      "source_location": "L113",
       "id": "js_threads_compileshader",
       "community": 5,
       "norm_label": "compileshader()"
@@ -448,19 +448,100 @@
       "label": "resize()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L148",
+      "source_location": "L157",
       "id": "js_threads_resize",
       "community": 5,
       "norm_label": "resize()"
     },
     {
+      "label": "renderFrame()",
+      "file_type": "code",
+      "source_file": "js/threads.js",
+      "source_location": "L190",
+      "id": "js_threads_renderframe",
+      "community": 5,
+      "norm_label": "renderframe()"
+    },
+    {
       "label": "loop()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L181",
+      "source_location": "L201",
       "id": "js_threads_loop",
       "community": 5,
       "norm_label": "loop()"
+    },
+    {
+      "label": "start()",
+      "file_type": "code",
+      "source_file": "js/threads.js",
+      "source_location": "L206",
+      "id": "js_threads_start",
+      "community": 5,
+      "norm_label": "start()"
+    },
+    {
+      "label": "stop()",
+      "file_type": "code",
+      "source_file": "js/threads.js",
+      "source_location": "L211",
+      "id": "js_threads_stop",
+      "community": 5,
+      "norm_label": "stop()"
+    },
+    {
+      "label": "title-spotlight.js",
+      "file_type": "code",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L1",
+      "id": "js_title_spotlight",
+      "community": 3,
+      "norm_label": "title-spotlight.js"
+    },
+    {
+      "label": "setVars()",
+      "file_type": "code",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L25",
+      "id": "js_title_spotlight_setvars",
+      "community": 3,
+      "norm_label": "setvars()"
+    },
+    {
+      "label": "onMove()",
+      "file_type": "code",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L30",
+      "id": "js_title_spotlight_onmove",
+      "community": 3,
+      "norm_label": "onmove()"
+    },
+    {
+      "label": "loop()",
+      "file_type": "code",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L53",
+      "id": "js_title_spotlight_loop",
+      "community": 3,
+      "norm_label": "loop()"
+    },
+    {
+      "label": "start()",
+      "file_type": "code",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L70",
+      "id": "js_title_spotlight_start",
+      "community": 3,
+      "norm_label": "start()"
+    },
+    {
+      "label": "stop()",
+      "file_type": "code",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L75",
+      "id": "js_title_spotlight_stop",
+      "community": 3,
+      "norm_label": "stop()"
     },
     {
       "label": "package.json",
@@ -755,9 +836,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L141",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation",
-      "target": "js_constellation_draw",
-      "confidence_score": 1.0
+      "target": "js_constellation_draw"
     },
     {
       "relation": "contains",
@@ -765,9 +846,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L204",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation",
-      "target": "js_constellation_frame",
-      "confidence_score": 1.0
+      "target": "js_constellation_frame"
     },
     {
       "relation": "contains",
@@ -775,9 +856,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation",
-      "target": "js_constellation_ismobile",
-      "confidence_score": 1.0
+      "target": "js_constellation_ismobile"
     },
     {
       "relation": "contains",
@@ -785,9 +866,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation",
-      "target": "js_constellation_makeparticles",
-      "confidence_score": 1.0
+      "target": "js_constellation_makeparticles"
     },
     {
       "relation": "contains",
@@ -795,9 +876,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation",
-      "target": "js_constellation_pointermove",
-      "confidence_score": 1.0
+      "target": "js_constellation_pointermove"
     },
     {
       "relation": "contains",
@@ -805,9 +886,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation",
-      "target": "js_constellation_rand",
-      "confidence_score": 1.0
+      "target": "js_constellation_rand"
     },
     {
       "relation": "contains",
@@ -815,9 +896,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation",
-      "target": "js_constellation_resize",
-      "confidence_score": 1.0
+      "target": "js_constellation_resize"
     },
     {
       "relation": "contains",
@@ -825,9 +906,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L211",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation",
-      "target": "js_constellation_start",
-      "confidence_score": 1.0
+      "target": "js_constellation_start"
     },
     {
       "relation": "contains",
@@ -835,9 +916,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation",
-      "target": "js_constellation_step",
-      "confidence_score": 1.0
+      "target": "js_constellation_step"
     },
     {
       "relation": "contains",
@@ -845,9 +926,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L216",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation",
-      "target": "js_constellation_stop",
-      "confidence_score": 1.0
+      "target": "js_constellation_stop"
     },
     {
       "relation": "calls",
@@ -856,9 +937,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation_makeparticles",
-      "target": "js_constellation_ismobile",
-      "confidence_score": 1.0
+      "target": "js_constellation_ismobile"
     },
     {
       "relation": "calls",
@@ -867,9 +948,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation_makeparticles",
-      "target": "js_constellation_rand",
-      "confidence_score": 1.0
+      "target": "js_constellation_rand"
     },
     {
       "relation": "calls",
@@ -878,9 +959,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation_step",
-      "target": "js_constellation_rand",
-      "confidence_score": 1.0
+      "target": "js_constellation_rand"
     },
     {
       "relation": "calls",
@@ -889,9 +970,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation_resize",
-      "target": "js_constellation_makeparticles",
-      "confidence_score": 1.0
+      "target": "js_constellation_makeparticles"
     },
     {
       "relation": "calls",
@@ -900,9 +981,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation_resize",
-      "target": "js_constellation_draw",
-      "confidence_score": 1.0
+      "target": "js_constellation_draw"
     },
     {
       "relation": "calls",
@@ -911,9 +992,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L206",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation_frame",
-      "target": "js_constellation_step",
-      "confidence_score": 1.0
+      "target": "js_constellation_step"
     },
     {
       "relation": "calls",
@@ -922,9 +1003,9 @@
       "source_file": "js/constellation.js",
       "source_location": "L207",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_constellation_frame",
-      "target": "js_constellation_draw",
-      "confidence_score": 1.0
+      "target": "js_constellation_draw"
     },
     {
       "relation": "calls",
@@ -1132,6 +1213,17 @@
       "target": "js_profile_card_round"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "js/profile-card.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "js_profile_card_createengine",
+      "target": "js_title_spotlight_setvars"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "js/rentals.js",
@@ -1165,11 +1257,124 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "js/threads.js",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "js_threads",
+      "target": "js_threads_renderframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/threads.js",
       "source_location": "L148",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "js_threads",
       "target": "js_threads_resize"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/threads.js",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "js_threads",
+      "target": "js_threads_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/threads.js",
+      "source_location": "L211",
+      "weight": 1.0,
+      "source": "js_threads",
+      "target": "js_threads_stop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/threads.js",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "js_threads_resize",
+      "target": "js_threads_renderframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/threads.js",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "js_threads_loop",
+      "target": "js_threads_renderframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "js_title_spotlight",
+      "target": "js_title_spotlight_loop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "js_title_spotlight",
+      "target": "js_title_spotlight_onmove",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "js_title_spotlight",
+      "target": "js_title_spotlight_setvars",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "js_title_spotlight",
+      "target": "js_title_spotlight_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "js_title_spotlight",
+      "target": "js_title_spotlight_stop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "js_title_spotlight_loop",
+      "target": "js_title_spotlight_setvars",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1207,9 +1412,9 @@
       "source_file": "TRANSLATION.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "translation",
-      "target": "translation_translation_tracking_cyclic_agency",
-      "confidence_score": 1.0
+      "target": "translation_translation_tracking_cyclic_agency"
     },
     {
       "relation": "contains",
@@ -1217,9 +1422,9 @@
       "source_file": "TRANSLATION.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "translation_translation_tracking_cyclic_agency",
-      "target": "translation_pagini_legale_de_verificat_status_ro_en_la_final",
-      "confidence_score": 1.0
+      "target": "translation_pagini_legale_de_verificat_status_ro_en_la_final"
     },
     {
       "relation": "contains",
@@ -1227,9 +1432,9 @@
       "source_file": "TRANSLATION.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "translation_translation_tracking_cyclic_agency",
-      "target": "translation_pagini_principale_en_surs\u0103_ro_output",
-      "confidence_score": 1.0
+      "target": "translation_pagini_principale_en_surs\u0103_ro_output"
     },
     {
       "relation": "contains",
@@ -1237,9 +1442,9 @@
       "source_file": "TRANSLATION.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "translation_translation_tracking_cyclic_agency",
-      "target": "translation_pagini_\u00eenchirieri_ro_native_seo_ro_e_sursa_aici",
-      "confidence_score": 1.0
+      "target": "translation_pagini_\u00eenchirieri_ro_native_seo_ro_e_sursa_aici"
     },
     {
       "relation": "contains",
@@ -1247,11 +1452,11 @@
       "source_file": "TRANSLATION.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "translation_translation_tracking_cyclic_agency",
-      "target": "translation_trecerea_final\u0103_checklist",
-      "confidence_score": 1.0
+      "target": "translation_trecerea_final\u0103_checklist"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "01b6c479ff6d25cb4f82d18116ffd95da6f627fe"
+  "built_at_commit": "130a8d4bd6c2678d26cc2480cd7070888758cf72"
 }

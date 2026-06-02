@@ -38,7 +38,9 @@
     lastMove = performance.now();
   }
 
-  if (hasHover) hero.addEventListener('mousemove', onMove, { passive: true });
+  // Listen on window (not the hero) so stacking/overlays never swallow the
+  // event — e.g. the hub's sticky z-indexed hero. Coords stay relative to title.
+  if (hasHover) window.addEventListener('mousemove', onMove, { passive: true });
 
   var running = false;
   var inView = true;

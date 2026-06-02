@@ -512,6 +512,19 @@ h1, h2, h3, h4, h5, h6 {
   inset: 0;
   background: radial-gradient(ellipse 60% 80% at 100% 50%, rgba(123,47,255,0.15) 0%, transparent 60%);
 }
+/* One-shot green scanline that descends on page load */
+.page-hero::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(150,204,0,0.6), transparent);
+  z-index: 3;
+  pointer-events: none;
+  animation: ph-scan 2s cubic-bezier(0.4,0,0.6,1) 0.15s forwards;
+}
+@keyframes ph-scan { from { top: 0; opacity: 1; } to { top: 100%; opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .page-hero::after { display: none; } }
 .page-hero__content { position: relative; z-index: 2; }
 .page-hero__label { margin-bottom: 20px; }
 .page-hero__title {

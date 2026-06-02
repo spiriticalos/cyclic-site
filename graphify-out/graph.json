@@ -1,0 +1,865 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "add-event.js",
+      "file_type": "code",
+      "source_file": "add-event.js",
+      "source_location": "L1",
+      "id": "add_event",
+      "community": 0,
+      "norm_label": "add-event.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "add-event.js",
+      "source_location": "L6",
+      "id": "add_event_fs",
+      "community": 0,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "add-event.js",
+      "source_location": "L7",
+      "id": "add_event_path",
+      "community": 0,
+      "norm_label": "path"
+    },
+    {
+      "label": "rl",
+      "file_type": "code",
+      "source_file": "add-event.js",
+      "source_location": "L8",
+      "id": "add_event_rl",
+      "community": 0,
+      "norm_label": "rl"
+    },
+    {
+      "label": "sharp",
+      "file_type": "code",
+      "source_file": "add-event.js",
+      "source_location": "L9",
+      "id": "add_event_sharp",
+      "community": 0,
+      "norm_label": "sharp"
+    },
+    {
+      "label": "ask()",
+      "file_type": "code",
+      "source_file": "add-event.js",
+      "source_location": "L11",
+      "id": "add_event_ask",
+      "community": 0,
+      "norm_label": "ask()"
+    },
+    {
+      "label": "downloadImage()",
+      "file_type": "code",
+      "source_file": "add-event.js",
+      "source_location": "L13",
+      "id": "add_event_downloadimage",
+      "community": 0,
+      "norm_label": "downloadimage()"
+    },
+    {
+      "label": "slug()",
+      "file_type": "code",
+      "source_file": "add-event.js",
+      "source_location": "L29",
+      "id": "add_event_slug",
+      "community": 0,
+      "norm_label": "slug()"
+    },
+    {
+      "label": "monthNum()",
+      "file_type": "code",
+      "source_file": "add-event.js",
+      "source_location": "L36",
+      "id": "add_event_monthnum",
+      "community": 0,
+      "norm_label": "monthnum()"
+    },
+    {
+      "label": "pad()",
+      "file_type": "code",
+      "source_file": "add-event.js",
+      "source_location": "L40",
+      "id": "add_event_pad",
+      "community": 0,
+      "norm_label": "pad()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "add-event.js",
+      "source_location": "L42",
+      "id": "add_event_main",
+      "community": 0,
+      "norm_label": "main()"
+    },
+    {
+      "label": "analytics.js",
+      "file_type": "code",
+      "source_file": "js/analytics.js",
+      "source_location": "L1",
+      "id": "js_analytics",
+      "community": 7,
+      "norm_label": "analytics.js"
+    },
+    {
+      "label": "loadGA()",
+      "file_type": "code",
+      "source_file": "js/analytics.js",
+      "source_location": "L30",
+      "id": "js_analytics_loadga",
+      "community": 7,
+      "norm_label": "loadga()"
+    },
+    {
+      "label": "artist-carousel.js",
+      "file_type": "code",
+      "source_file": "js/artist-carousel.js",
+      "source_location": "L1",
+      "id": "js_artist_carousel",
+      "community": 8,
+      "norm_label": "artist-carousel.js"
+    },
+    {
+      "label": "updateCards()",
+      "file_type": "code",
+      "source_file": "js/artist-carousel.js",
+      "source_location": "L34",
+      "id": "js_artist_carousel_updatecards",
+      "community": 8,
+      "norm_label": "updatecards()"
+    },
+    {
+      "label": "cookie-banner.js",
+      "file_type": "code",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L1",
+      "id": "js_cookie_banner",
+      "community": 1,
+      "norm_label": "cookie-banner.js"
+    },
+    {
+      "label": "read()",
+      "file_type": "code",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L16",
+      "id": "js_cookie_banner_read",
+      "community": 1,
+      "norm_label": "read()"
+    },
+    {
+      "label": "write()",
+      "file_type": "code",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L26",
+      "id": "js_cookie_banner_write",
+      "community": 1,
+      "norm_label": "write()"
+    },
+    {
+      "label": "closeBanner()",
+      "file_type": "code",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L59",
+      "id": "js_cookie_banner_closebanner",
+      "community": 1,
+      "norm_label": "closebanner()"
+    },
+    {
+      "label": "renderBanner()",
+      "file_type": "code",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L67",
+      "id": "js_cookie_banner_renderbanner",
+      "community": 1,
+      "norm_label": "renderbanner()"
+    },
+    {
+      "label": "effects.js",
+      "file_type": "code",
+      "source_file": "js/effects.js",
+      "source_location": "L1",
+      "id": "js_effects",
+      "community": 4,
+      "norm_label": "effects.js"
+    },
+    {
+      "label": "lerp()",
+      "file_type": "code",
+      "source_file": "js/effects.js",
+      "source_location": "L55",
+      "id": "js_effects_lerp",
+      "community": 4,
+      "norm_label": "lerp()"
+    },
+    {
+      "label": "loop()",
+      "file_type": "code",
+      "source_file": "js/effects.js",
+      "source_location": "L56",
+      "id": "js_effects_loop",
+      "community": 4,
+      "norm_label": "loop()"
+    },
+    {
+      "label": "animateCounter()",
+      "file_type": "code",
+      "source_file": "js/effects.js",
+      "source_location": "L139",
+      "id": "js_effects_animatecounter",
+      "community": 4,
+      "norm_label": "animatecounter()"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L1",
+      "id": "js_main",
+      "community": 2,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "updateGridColumns()",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L155",
+      "id": "js_main_updategridcolumns",
+      "community": 2,
+      "norm_label": "updategridcolumns()"
+    },
+    {
+      "label": "eventDate()",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L223",
+      "id": "js_main_eventdate",
+      "community": 2,
+      "norm_label": "eventdate()"
+    },
+    {
+      "label": "showBar()",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L281",
+      "id": "js_main_showbar",
+      "community": 2,
+      "norm_label": "showbar()"
+    },
+    {
+      "label": "consentGiven()",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L330",
+      "id": "js_main_consentgiven",
+      "community": 2,
+      "norm_label": "consentgiven()"
+    },
+    {
+      "label": "profile-card.js",
+      "file_type": "code",
+      "source_file": "js/profile-card.js",
+      "source_location": "L1",
+      "id": "js_profile_card",
+      "community": 3,
+      "norm_label": "profile-card.js"
+    },
+    {
+      "label": "clamp()",
+      "file_type": "code",
+      "source_file": "js/profile-card.js",
+      "source_location": "L5",
+      "id": "js_profile_card_clamp",
+      "community": 3,
+      "norm_label": "clamp()"
+    },
+    {
+      "label": "round()",
+      "file_type": "code",
+      "source_file": "js/profile-card.js",
+      "source_location": "L6",
+      "id": "js_profile_card_round",
+      "community": 3,
+      "norm_label": "round()"
+    },
+    {
+      "label": "createEngine()",
+      "file_type": "code",
+      "source_file": "js/profile-card.js",
+      "source_location": "L8",
+      "id": "js_profile_card_createengine",
+      "community": 3,
+      "norm_label": "createengine()"
+    },
+    {
+      "label": "check()",
+      "file_type": "code",
+      "source_file": "js/profile-card.js",
+      "source_location": "L80",
+      "id": "js_profile_card_check",
+      "community": 3,
+      "norm_label": "check()"
+    },
+    {
+      "label": "rentals.js",
+      "file_type": "code",
+      "source_file": "js/rentals.js",
+      "source_location": "L1",
+      "id": "js_rentals",
+      "community": 9,
+      "norm_label": "rentals.js"
+    },
+    {
+      "label": "showStatus()",
+      "file_type": "code",
+      "source_file": "js/rentals.js",
+      "source_location": "L71",
+      "id": "js_rentals_showstatus",
+      "community": 9,
+      "norm_label": "showstatus()"
+    },
+    {
+      "label": "threads.js",
+      "file_type": "code",
+      "source_file": "js/threads.js",
+      "source_location": "L1",
+      "id": "js_threads",
+      "community": 5,
+      "norm_label": "threads.js"
+    },
+    {
+      "label": "compileShader()",
+      "file_type": "code",
+      "source_file": "js/threads.js",
+      "source_location": "L107",
+      "id": "js_threads_compileshader",
+      "community": 5,
+      "norm_label": "compileshader()"
+    },
+    {
+      "label": "resize()",
+      "file_type": "code",
+      "source_file": "js/threads.js",
+      "source_location": "L148",
+      "id": "js_threads_resize",
+      "community": 5,
+      "norm_label": "resize()"
+    },
+    {
+      "label": "loop()",
+      "file_type": "code",
+      "source_file": "js/threads.js",
+      "source_location": "L181",
+      "id": "js_threads_loop",
+      "community": 5,
+      "norm_label": "loop()"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "id": "package",
+      "community": 6,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "id": "package_devdependencies",
+      "community": 6,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "sharp",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "id": "package_devdependencies_sharp",
+      "community": 6,
+      "norm_label": "sharp"
+    },
+    {
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L1",
+      "id": "vercel",
+      "community": 10,
+      "norm_label": "vercel.json"
+    },
+    {
+      "label": "headers",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "id": "vercel_headers",
+      "community": 10,
+      "norm_label": "headers"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "add_event",
+      "target": "add_event_ask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "add_event",
+      "target": "add_event_downloadimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "add_event",
+      "target": "add_event_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "add_event",
+      "target": "add_event_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "add_event",
+      "target": "add_event_monthnum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "add_event",
+      "target": "add_event_pad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "add_event",
+      "target": "add_event_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "add_event",
+      "target": "add_event_rl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "add_event",
+      "target": "add_event_sharp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "add_event",
+      "target": "add_event_slug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "add_event_main",
+      "target": "add_event_sharp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "add_event_main",
+      "target": "add_event_ask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "add_event_main",
+      "target": "add_event_downloadimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "add_event_main",
+      "target": "add_event_slug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "add_event_main",
+      "target": "add_event_monthnum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "add-event.js",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "add_event_main",
+      "target": "add_event_pad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/analytics.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "js_analytics",
+      "target": "js_analytics_loadga",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/artist-carousel.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "js_artist_carousel",
+      "target": "js_artist_carousel_updatecards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "js_cookie_banner",
+      "target": "js_cookie_banner_closebanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "js_cookie_banner",
+      "target": "js_cookie_banner_read",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "js_cookie_banner",
+      "target": "js_cookie_banner_renderbanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "js_cookie_banner",
+      "target": "js_cookie_banner_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "js_cookie_banner_write",
+      "target": "js_cookie_banner_read",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "js_cookie_banner_renderbanner",
+      "target": "js_cookie_banner_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/cookie-banner.js",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "js_cookie_banner_renderbanner",
+      "target": "js_cookie_banner_closebanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/effects.js",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "js_effects",
+      "target": "js_effects_animatecounter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/effects.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "js_effects",
+      "target": "js_effects_lerp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/effects.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "js_effects",
+      "target": "js_effects_loop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/effects.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "js_effects_loop",
+      "target": "js_effects_lerp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/main.js",
+      "source_location": "L330",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_consentgiven",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/main.js",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_eventdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/main.js",
+      "source_location": "L281",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_showbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/main.js",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_updategridcolumns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/profile-card.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "js_profile_card",
+      "target": "js_profile_card_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/profile-card.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "js_profile_card",
+      "target": "js_profile_card_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/profile-card.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "js_profile_card",
+      "target": "js_profile_card_createengine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/profile-card.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "js_profile_card",
+      "target": "js_profile_card_round",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/rentals.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "js_rentals",
+      "target": "js_rentals_showstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/threads.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "js_threads",
+      "target": "js_threads_compileshader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/threads.js",
+      "source_location": "L181",
+      "weight": 1.0,
+      "source": "js_threads",
+      "target": "js_threads_loop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/threads.js",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "js_threads",
+      "target": "js_threads_resize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_sharp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_headers",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

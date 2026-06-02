@@ -45,17 +45,13 @@
         'about.html': 'despre-noi.html'
       };
       document.querySelectorAll('.nav .nav__link, .nav__mobile .nav__link, .nav .nav__cta, .nav__mobile .btn').forEach(el => {
-        // Translate visible text only when it's a direct text node that matches the map
+        // Translate first matching text node — replace() preserves surrounding whitespace
+        // (critical for CTAs like "Get Tickets <span>→</span>" where the text node is "Get Tickets ")
         const raw = el.textContent.replace(/\s+/g, ' ').trim();
-        // Replace text node with translated text; preserve any child <span class="arrow"> etc.
         for (const src in textMap) {
           if (raw === src || raw.startsWith(src + ' ')) {
-            // Find direct text node and replace
             for (const node of el.childNodes) {
-              if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() === src) {
-                node.textContent = textMap[src];
-                break;
-              } else if (node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0) {
+              if (node.nodeType === Node.TEXT_NODE && node.textContent.includes(src)) {
                 node.textContent = node.textContent.replace(src, textMap[src]);
                 break;
               }

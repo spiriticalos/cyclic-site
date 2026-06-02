@@ -139,6 +139,105 @@
       "norm_label": "updatecards()"
     },
     {
+      "label": "constellation.js",
+      "file_type": "code",
+      "source_file": "js/constellation.js",
+      "source_location": "L1",
+      "id": "js_constellation",
+      "community": 11,
+      "norm_label": "constellation.js"
+    },
+    {
+      "label": "isMobile()",
+      "file_type": "code",
+      "source_file": "js/constellation.js",
+      "source_location": "L45",
+      "id": "js_constellation_ismobile",
+      "community": 11,
+      "norm_label": "ismobile()"
+    },
+    {
+      "label": "rand()",
+      "file_type": "code",
+      "source_file": "js/constellation.js",
+      "source_location": "L47",
+      "id": "js_constellation_rand",
+      "community": 11,
+      "norm_label": "rand()"
+    },
+    {
+      "label": "makeParticles()",
+      "file_type": "code",
+      "source_file": "js/constellation.js",
+      "source_location": "L49",
+      "id": "js_constellation_makeparticles",
+      "community": 11,
+      "norm_label": "makeparticles()"
+    },
+    {
+      "label": "resize()",
+      "file_type": "code",
+      "source_file": "js/constellation.js",
+      "source_location": "L66",
+      "id": "js_constellation_resize",
+      "community": 11,
+      "norm_label": "resize()"
+    },
+    {
+      "label": "pointerMove()",
+      "file_type": "code",
+      "source_file": "js/constellation.js",
+      "source_location": "L82",
+      "id": "js_constellation_pointermove",
+      "community": 11,
+      "norm_label": "pointermove()"
+    },
+    {
+      "label": "step()",
+      "file_type": "code",
+      "source_file": "js/constellation.js",
+      "source_location": "L102",
+      "id": "js_constellation_step",
+      "community": 11,
+      "norm_label": "step()"
+    },
+    {
+      "label": "draw()",
+      "file_type": "code",
+      "source_file": "js/constellation.js",
+      "source_location": "L141",
+      "id": "js_constellation_draw",
+      "community": 11,
+      "norm_label": "draw()"
+    },
+    {
+      "label": "frame()",
+      "file_type": "code",
+      "source_file": "js/constellation.js",
+      "source_location": "L204",
+      "id": "js_constellation_frame",
+      "community": 11,
+      "norm_label": "frame()"
+    },
+    {
+      "label": "start()",
+      "file_type": "code",
+      "source_file": "js/constellation.js",
+      "source_location": "L211",
+      "id": "js_constellation_start",
+      "community": 3,
+      "norm_label": "start()"
+    },
+    {
+      "label": "stop()",
+      "file_type": "code",
+      "source_file": "js/constellation.js",
+      "source_location": "L216",
+      "id": "js_constellation_stop",
+      "community": 11,
+      "norm_label": "stop()"
+    },
+    {
       "label": "cookie-banner.js",
       "file_type": "code",
       "source_file": "js/cookie-banner.js",
@@ -407,6 +506,60 @@
       "id": "vercel_headers",
       "community": 10,
       "norm_label": "headers"
+    },
+    {
+      "label": "TRANSLATION.md",
+      "file_type": "document",
+      "source_file": "TRANSLATION.md",
+      "source_location": "L1",
+      "id": "translation",
+      "community": 12,
+      "norm_label": "translation.md"
+    },
+    {
+      "label": "Translation tracking \u2014 Cyclic Agency",
+      "file_type": "document",
+      "source_file": "TRANSLATION.md",
+      "source_location": "L1",
+      "id": "translation_translation_tracking_cyclic_agency",
+      "community": 12,
+      "norm_label": "translation tracking \u2014 cyclic agency"
+    },
+    {
+      "label": "Pagini principale (EN surs\u0103 \u2192 RO output)",
+      "file_type": "document",
+      "source_file": "TRANSLATION.md",
+      "source_location": "L14",
+      "id": "translation_pagini_principale_en_surs\u0103_ro_output",
+      "community": 12,
+      "norm_label": "pagini principale (en sursa \u2192 ro output)"
+    },
+    {
+      "label": "Pagini \u00eenchirieri (RO-native, SEO \u2014 RO e sursa aici)",
+      "file_type": "document",
+      "source_file": "TRANSLATION.md",
+      "source_location": "L24",
+      "id": "translation_pagini_\u00eenchirieri_ro_native_seo_ro_e_sursa_aici",
+      "community": 12,
+      "norm_label": "pagini inchirieri (ro-native, seo \u2014 ro e sursa aici)"
+    },
+    {
+      "label": "Pagini legale (de verificat status RO/EN la final)",
+      "file_type": "document",
+      "source_file": "TRANSLATION.md",
+      "source_location": "L33",
+      "id": "translation_pagini_legale_de_verificat_status_ro_en_la_final",
+      "community": 12,
+      "norm_label": "pagini legale (de verificat status ro/en la final)"
+    },
+    {
+      "label": "Trecerea final\u0103 (checklist)",
+      "file_type": "document",
+      "source_file": "TRANSLATION.md",
+      "source_location": "L43",
+      "id": "translation_trecerea_final\u0103_checklist",
+      "community": 12,
+      "norm_label": "trecerea finala (checklist)"
     }
   ],
   "links": [
@@ -416,9 +569,9 @@
       "source_file": "add-event.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event",
-      "target": "add_event_ask",
-      "confidence_score": 1.0
+      "target": "add_event_ask"
     },
     {
       "relation": "contains",
@@ -426,9 +579,9 @@
       "source_file": "add-event.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event",
-      "target": "add_event_downloadimage",
-      "confidence_score": 1.0
+      "target": "add_event_downloadimage"
     },
     {
       "relation": "contains",
@@ -436,9 +589,9 @@
       "source_file": "add-event.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event",
-      "target": "add_event_fs",
-      "confidence_score": 1.0
+      "target": "add_event_fs"
     },
     {
       "relation": "contains",
@@ -446,9 +599,9 @@
       "source_file": "add-event.js",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event",
-      "target": "add_event_main",
-      "confidence_score": 1.0
+      "target": "add_event_main"
     },
     {
       "relation": "contains",
@@ -456,9 +609,9 @@
       "source_file": "add-event.js",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event",
-      "target": "add_event_monthnum",
-      "confidence_score": 1.0
+      "target": "add_event_monthnum"
     },
     {
       "relation": "contains",
@@ -466,9 +619,9 @@
       "source_file": "add-event.js",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event",
-      "target": "add_event_pad",
-      "confidence_score": 1.0
+      "target": "add_event_pad"
     },
     {
       "relation": "contains",
@@ -476,9 +629,9 @@
       "source_file": "add-event.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event",
-      "target": "add_event_path",
-      "confidence_score": 1.0
+      "target": "add_event_path"
     },
     {
       "relation": "contains",
@@ -486,9 +639,9 @@
       "source_file": "add-event.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event",
-      "target": "add_event_rl",
-      "confidence_score": 1.0
+      "target": "add_event_rl"
     },
     {
       "relation": "contains",
@@ -496,9 +649,9 @@
       "source_file": "add-event.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event",
-      "target": "add_event_sharp",
-      "confidence_score": 1.0
+      "target": "add_event_sharp"
     },
     {
       "relation": "contains",
@@ -506,9 +659,9 @@
       "source_file": "add-event.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event",
-      "target": "add_event_slug",
-      "confidence_score": 1.0
+      "target": "add_event_slug"
     },
     {
       "relation": "calls",
@@ -517,9 +670,9 @@
       "source_file": "add-event.js",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event_main",
-      "target": "add_event_sharp",
-      "confidence_score": 1.0
+      "target": "add_event_sharp"
     },
     {
       "relation": "calls",
@@ -528,9 +681,9 @@
       "source_file": "add-event.js",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event_main",
-      "target": "add_event_ask",
-      "confidence_score": 1.0
+      "target": "add_event_ask"
     },
     {
       "relation": "calls",
@@ -539,9 +692,9 @@
       "source_file": "add-event.js",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event_main",
-      "target": "add_event_downloadimage",
-      "confidence_score": 1.0
+      "target": "add_event_downloadimage"
     },
     {
       "relation": "calls",
@@ -550,9 +703,9 @@
       "source_file": "add-event.js",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event_main",
-      "target": "add_event_slug",
-      "confidence_score": 1.0
+      "target": "add_event_slug"
     },
     {
       "relation": "calls",
@@ -561,9 +714,9 @@
       "source_file": "add-event.js",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event_main",
-      "target": "add_event_monthnum",
-      "confidence_score": 1.0
+      "target": "add_event_monthnum"
     },
     {
       "relation": "calls",
@@ -572,9 +725,9 @@
       "source_file": "add-event.js",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "add_event_main",
-      "target": "add_event_pad",
-      "confidence_score": 1.0
+      "target": "add_event_pad"
     },
     {
       "relation": "contains",
@@ -582,9 +735,9 @@
       "source_file": "js/analytics.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_analytics",
-      "target": "js_analytics_loadga",
-      "confidence_score": 1.0
+      "target": "js_analytics_loadga"
     },
     {
       "relation": "contains",
@@ -592,9 +745,197 @@
       "source_file": "js/artist-carousel.js",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_artist_carousel",
-      "target": "js_artist_carousel_updatecards",
+      "target": "js_artist_carousel_updatecards"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "js_constellation",
+      "target": "js_constellation_draw",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L204",
+      "weight": 1.0,
+      "source": "js_constellation",
+      "target": "js_constellation_frame",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "js_constellation",
+      "target": "js_constellation_ismobile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "js_constellation",
+      "target": "js_constellation_makeparticles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "js_constellation",
+      "target": "js_constellation_pointermove",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "js_constellation",
+      "target": "js_constellation_rand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "js_constellation",
+      "target": "js_constellation_resize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L211",
+      "weight": 1.0,
+      "source": "js_constellation",
+      "target": "js_constellation_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "js_constellation",
+      "target": "js_constellation_step",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "js_constellation",
+      "target": "js_constellation_stop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "js_constellation_makeparticles",
+      "target": "js_constellation_ismobile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "js_constellation_makeparticles",
+      "target": "js_constellation_rand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "js_constellation_step",
+      "target": "js_constellation_rand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "js_constellation_resize",
+      "target": "js_constellation_makeparticles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "js_constellation_resize",
+      "target": "js_constellation_draw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "js_constellation_frame",
+      "target": "js_constellation_step",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/constellation.js",
+      "source_location": "L207",
+      "weight": 1.0,
+      "source": "js_constellation_frame",
+      "target": "js_constellation_draw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "js/profile-card.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "js_profile_card_createengine",
+      "target": "js_constellation_start"
     },
     {
       "relation": "contains",
@@ -602,9 +943,9 @@
       "source_file": "js/cookie-banner.js",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_cookie_banner",
-      "target": "js_cookie_banner_closebanner",
-      "confidence_score": 1.0
+      "target": "js_cookie_banner_closebanner"
     },
     {
       "relation": "contains",
@@ -612,9 +953,9 @@
       "source_file": "js/cookie-banner.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_cookie_banner",
-      "target": "js_cookie_banner_read",
-      "confidence_score": 1.0
+      "target": "js_cookie_banner_read"
     },
     {
       "relation": "contains",
@@ -622,9 +963,9 @@
       "source_file": "js/cookie-banner.js",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_cookie_banner",
-      "target": "js_cookie_banner_renderbanner",
-      "confidence_score": 1.0
+      "target": "js_cookie_banner_renderbanner"
     },
     {
       "relation": "contains",
@@ -632,9 +973,9 @@
       "source_file": "js/cookie-banner.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_cookie_banner",
-      "target": "js_cookie_banner_write",
-      "confidence_score": 1.0
+      "target": "js_cookie_banner_write"
     },
     {
       "relation": "calls",
@@ -643,9 +984,9 @@
       "source_file": "js/cookie-banner.js",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_cookie_banner_write",
-      "target": "js_cookie_banner_read",
-      "confidence_score": 1.0
+      "target": "js_cookie_banner_read"
     },
     {
       "relation": "calls",
@@ -654,9 +995,9 @@
       "source_file": "js/cookie-banner.js",
       "source_location": "L126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_cookie_banner_renderbanner",
-      "target": "js_cookie_banner_write",
-      "confidence_score": 1.0
+      "target": "js_cookie_banner_write"
     },
     {
       "relation": "calls",
@@ -665,9 +1006,9 @@
       "source_file": "js/cookie-banner.js",
       "source_location": "L126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_cookie_banner_renderbanner",
-      "target": "js_cookie_banner_closebanner",
-      "confidence_score": 1.0
+      "target": "js_cookie_banner_closebanner"
     },
     {
       "relation": "contains",
@@ -675,9 +1016,9 @@
       "source_file": "js/effects.js",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_effects",
-      "target": "js_effects_animatecounter",
-      "confidence_score": 1.0
+      "target": "js_effects_animatecounter"
     },
     {
       "relation": "contains",
@@ -685,9 +1026,9 @@
       "source_file": "js/effects.js",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_effects",
-      "target": "js_effects_lerp",
-      "confidence_score": 1.0
+      "target": "js_effects_lerp"
     },
     {
       "relation": "contains",
@@ -695,9 +1036,9 @@
       "source_file": "js/effects.js",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_effects",
-      "target": "js_effects_loop",
-      "confidence_score": 1.0
+      "target": "js_effects_loop"
     },
     {
       "relation": "calls",
@@ -706,9 +1047,9 @@
       "source_file": "js/effects.js",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_effects_loop",
-      "target": "js_effects_lerp",
-      "confidence_score": 1.0
+      "target": "js_effects_lerp"
     },
     {
       "relation": "contains",
@@ -716,9 +1057,9 @@
       "source_file": "js/main.js",
       "source_location": "L330",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_main",
-      "target": "js_main_consentgiven",
-      "confidence_score": 1.0
+      "target": "js_main_consentgiven"
     },
     {
       "relation": "contains",
@@ -726,9 +1067,9 @@
       "source_file": "js/main.js",
       "source_location": "L223",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_main",
-      "target": "js_main_eventdate",
-      "confidence_score": 1.0
+      "target": "js_main_eventdate"
     },
     {
       "relation": "contains",
@@ -736,9 +1077,9 @@
       "source_file": "js/main.js",
       "source_location": "L281",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_main",
-      "target": "js_main_showbar",
-      "confidence_score": 1.0
+      "target": "js_main_showbar"
     },
     {
       "relation": "contains",
@@ -746,9 +1087,9 @@
       "source_file": "js/main.js",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_main",
-      "target": "js_main_updategridcolumns",
-      "confidence_score": 1.0
+      "target": "js_main_updategridcolumns"
     },
     {
       "relation": "contains",
@@ -756,9 +1097,9 @@
       "source_file": "js/profile-card.js",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_profile_card",
-      "target": "js_profile_card_check",
-      "confidence_score": 1.0
+      "target": "js_profile_card_check"
     },
     {
       "relation": "contains",
@@ -766,9 +1107,9 @@
       "source_file": "js/profile-card.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_profile_card",
-      "target": "js_profile_card_clamp",
-      "confidence_score": 1.0
+      "target": "js_profile_card_clamp"
     },
     {
       "relation": "contains",
@@ -776,9 +1117,9 @@
       "source_file": "js/profile-card.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_profile_card",
-      "target": "js_profile_card_createengine",
-      "confidence_score": 1.0
+      "target": "js_profile_card_createengine"
     },
     {
       "relation": "contains",
@@ -786,9 +1127,9 @@
       "source_file": "js/profile-card.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_profile_card",
-      "target": "js_profile_card_round",
-      "confidence_score": 1.0
+      "target": "js_profile_card_round"
     },
     {
       "relation": "contains",
@@ -796,9 +1137,9 @@
       "source_file": "js/rentals.js",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_rentals",
-      "target": "js_rentals_showstatus",
-      "confidence_score": 1.0
+      "target": "js_rentals_showstatus"
     },
     {
       "relation": "contains",
@@ -806,9 +1147,9 @@
       "source_file": "js/threads.js",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_threads",
-      "target": "js_threads_compileshader",
-      "confidence_score": 1.0
+      "target": "js_threads_compileshader"
     },
     {
       "relation": "contains",
@@ -816,9 +1157,9 @@
       "source_file": "js/threads.js",
       "source_location": "L181",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_threads",
-      "target": "js_threads_loop",
-      "confidence_score": 1.0
+      "target": "js_threads_loop"
     },
     {
       "relation": "contains",
@@ -826,9 +1167,9 @@
       "source_file": "js/threads.js",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_threads",
-      "target": "js_threads_resize",
-      "confidence_score": 1.0
+      "target": "js_threads_resize"
     },
     {
       "relation": "contains",
@@ -836,9 +1177,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_devdependencies",
-      "confidence_score": 1.0
+      "target": "package_devdependencies"
     },
     {
       "relation": "contains",
@@ -846,9 +1187,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_sharp",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_sharp"
     },
     {
       "relation": "contains",
@@ -856,10 +1197,61 @@
       "source_file": "vercel.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vercel",
-      "target": "vercel_headers",
+      "target": "vercel_headers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TRANSLATION.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "translation",
+      "target": "translation_translation_tracking_cyclic_agency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TRANSLATION.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "translation_translation_tracking_cyclic_agency",
+      "target": "translation_pagini_legale_de_verificat_status_ro_en_la_final",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TRANSLATION.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "translation_translation_tracking_cyclic_agency",
+      "target": "translation_pagini_principale_en_surs\u0103_ro_output",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TRANSLATION.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "translation_translation_tracking_cyclic_agency",
+      "target": "translation_pagini_\u00eenchirieri_ro_native_seo_ro_e_sursa_aici",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TRANSLATION.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "translation_translation_tracking_cyclic_agency",
+      "target": "translation_trecerea_final\u0103_checklist",
       "confidence_score": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "01b6c479ff6d25cb4f82d18116ffd95da6f627fe"
 }

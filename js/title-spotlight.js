@@ -38,9 +38,14 @@
     lastMove = performance.now();
   }
 
-  // Listen on window (not the hero) so stacking/overlays never swallow the
-  // event — e.g. the hub's sticky z-indexed hero. Coords stay relative to title.
-  if (hasHover) window.addEventListener('mousemove', onMove, { passive: true });
+  // Touch / no-hover devices and reduced-motion: light one fixed, pleasant spot
+  // and skip the animation loop entirely — no perpetual repaint, no battery
+  // drain on phones.
+  if (!hasHover || reduce) { setVars(); return; }
+
+  // Desktop: listen on window (not the hero) so stacking/overlays never swallow
+  // the event — e.g. the hub's sticky z-indexed hero. Coords stay relative to title.
+  window.addEventListener('mousemove', onMove, { passive: true });
 
   var running = false;
   var inView = true;
@@ -49,7 +54,7 @@
     if (!running) return;
 
     var idle = (now - lastMove) > 1600;
-    if (!hasHover || idle) {
+    if (idle) {
       // slow Lissajous drift — light keeps sweeping the title
       var t = (now - t0) / 1000;
       target.x = 50 + Math.cos(t * 0.45) * 40;
@@ -81,5 +86,5 @@
   } catch (e) { inView = true; }
 
   setVars();      // place the light at its resting spot
-  if (!reduce) start();
+  start();
 })();

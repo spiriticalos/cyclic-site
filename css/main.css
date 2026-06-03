@@ -710,16 +710,18 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: var(--radius-lg);
     overflow: hidden;
   }
+  /* Posters are portrait (≈600×750) — match the frame so they aren't cropped */
+  .event-card__image-wrap { aspect-ratio: 4/5; }
   .event-card__body { padding: 18px; gap: 8px; }
   .event-card__title { font-size: 22px; }
   .event-card__footer { padding-top: 14px; }
   .event-card__date-badge {
-    top: 12px;
-    left: 12px;
-    padding: 5px 9px;
+    top: 10px;
+    left: 10px;
+    padding: 4px 8px;
   }
-  .event-card__date-badge .day { font-size: 18px; }
-  .event-card__date-badge .month { font-size: 9px; }
+  .event-card__date-badge .day { font-size: 15px; }
+  .event-card__date-badge .month { font-size: 8px; }
 }
 
 /* Events list layout (events page) */

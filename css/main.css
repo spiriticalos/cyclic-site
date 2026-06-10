@@ -633,6 +633,20 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.6s var(--ease-out);
 }
 .event-card:hover .event-card__image-wrap img { transform: scale(1.06); }
+/* Solo upcoming event — don't stretch full-width; centre a capped card and
+   show the portrait poster uncropped (compound selector beats the responsive
+   .events-grid column overrides). */
+.events-grid.events-grid--solo {
+  grid-template-columns: minmax(0, 440px);
+  justify-content: center;
+  background: transparent;
+  border: none;
+}
+.events-grid--solo .event-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+.events-grid--solo .event-card__image-wrap { aspect-ratio: 4/5; }
 .event-card__date-badge {
   position: absolute;
   top: 16px; left: 16px;

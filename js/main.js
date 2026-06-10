@@ -260,10 +260,13 @@
       const remaining = grid.querySelectorAll('.event-card').length;
       const setColumns = () => {
         const mobile = window.matchMedia('(max-width: 580px)').matches;
-        if (mobile || remaining >= 3 || remaining === 0) {
+        // Single event on a wide screen → centred capped card (CSS .events-grid--solo),
+        // so a portrait poster isn't stretched/cropped full-width.
+        grid.classList.toggle('events-grid--solo', !mobile && remaining === 1);
+        if (mobile || remaining >= 3 || remaining === 0 || remaining === 1) {
           grid.style.gridTemplateColumns = '';
         } else {
-          grid.style.gridTemplateColumns = remaining === 1 ? '1fr' : 'repeat(2, 1fr)';
+          grid.style.gridTemplateColumns = 'repeat(2, 1fr)';
         }
       };
       setColumns();

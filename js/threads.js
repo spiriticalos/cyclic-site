@@ -7,8 +7,9 @@
   // Perf tiers — lighter on phones, static (no loop) when user prefers reduced motion.
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var isMobile = window.matchMedia('(max-width: 768px)').matches;
-  var LINE_COUNT = isMobile ? 18 : 40;       // shader loop iterations (per-pixel cost)
+  var LINE_COUNT = isMobile ? 32 : 40;       // shader loop iterations (per-pixel cost)
   var RENDER_SCALE = isMobile ? 0.62 : 1;    // internal buffer downscale
+  var Y_BASE = isMobile ? 0.66 : 0.5;        // vertical centre of the bundle — lifted higher on phones
 
   var canvas = document.createElement('canvas');
   canvas.setAttribute('aria-hidden', 'true');
@@ -80,7 +81,7 @@
     '    Perlin2D(vec2(time_scaled, st.x + time_scaled) * 3.5) / 1.5,',
     '    st.x * 0.3',
     '  );',
-    '  float y = 0.5 + (perc - 0.5) * distance + xnoise / 2.0 * finalAmplitude;',
+    '  float y = ' + Y_BASE.toFixed(3) + ' + (perc - 0.5) * distance + xnoise / 2.0 * finalAmplitude;',
     '  float line_start = smoothstep(',
     '    y + (width / 2.0) + (u_line_blur * px(1.0, iResolution.xy) * blur),',
     '    y, st.y',

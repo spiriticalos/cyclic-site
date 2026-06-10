@@ -226,7 +226,13 @@
       // Multi-day events ("18–21") → use last day, stays visible through the final day
       const d = parseInt(String(dayStr).split(/[–\-]/).pop());
       if (isNaN(d)) return null;
-      return new Date(today.getFullYear(), m, d);
+      let date = new Date(today.getFullYear(), m, d);
+      // Dates carry no year. If the date lands more than ~6 months in the past,
+      // it belongs to next year (e.g. a Feb lineup announced the previous autumn)
+      // rather than being a stale event to hide — roll it forward so it isn't
+      // silently removed. Anything within 6 months past is treated as expired.
+      if ((today - date) / 86400000 > 183) date = new Date(today.getFullYear() + 1, m, d);
+      return date;
     }
 
     // Event cards (featured grid)

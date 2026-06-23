@@ -32,35 +32,53 @@
         || canvas.getContext('experimental-webgl');
   if (!gl) { host.removeChild(canvas); return; }
 
-  /* ── Generate the "image" being distorted: dark base + green/purple
-     mesh blobs (same palette as the homepage hero) + a faint grid so
-     the warp is actually visible. No external photo required. ── */
+  /* ── Generate the "image" being distorted: the same soft mesh-gradient
+     language as the homepage hero (css/main.css .hero__bg::before/::after),
+     plus a faint scatter of glowing dots (constellation.js palette) so the
+     warp has detail to bend. No external photo required. ── */
   var bg = document.createElement('canvas');
-  bg.width = 768; bg.height = 768;
+  bg.width = 900; bg.height = 900;
   var bctx = bg.getContext('2d');
   bctx.fillStyle = '#0a0a0a';
   bctx.fillRect(0, 0, bg.width, bg.height);
 
-  var blobA = bctx.createRadialGradient(bg.width * 0.18, bg.height * 0.22, 0, bg.width * 0.18, bg.height * 0.22, bg.width * 0.58);
-  blobA.addColorStop(0, 'rgba(150,204,0,0.38)');
-  blobA.addColorStop(1, 'rgba(150,204,0,0)');
-  bctx.fillStyle = blobA;
-  bctx.fillRect(0, 0, bg.width, bg.height);
+  var GREEN = '150,204,0';
+  var PURPLE = '123,47,255';
 
-  var blobB = bctx.createRadialGradient(bg.width * 0.85, bg.height * 0.82, 0, bg.width * 0.85, bg.height * 0.82, bg.width * 0.62);
-  blobB.addColorStop(0, 'rgba(123,47,255,0.34)');
-  blobB.addColorStop(1, 'rgba(123,47,255,0)');
-  bctx.fillStyle = blobB;
-  bctx.fillRect(0, 0, bg.width, bg.height);
-
-  bctx.strokeStyle = 'rgba(255,255,255,0.08)';
-  bctx.lineWidth = 1;
-  var step = bg.width / 16;
-  for (var gx = 0; gx <= bg.width; gx += step) {
-    bctx.beginPath(); bctx.moveTo(gx + 0.5, 0); bctx.lineTo(gx + 0.5, bg.height); bctx.stroke();
+  function blob(cxFrac, cyFrac, rxFrac, ryFrac, rgb, alpha, fadeStop) {
+    var cx = bg.width * cxFrac, cy = bg.height * cyFrac;
+    var rx = bg.width * rxFrac, ry = bg.height * ryFrac;
+    bctx.save();
+    bctx.translate(cx, cy);
+    bctx.scale(rx, ry);
+    var grad = bctx.createRadialGradient(0, 0, 0, 0, 0, 1);
+    grad.addColorStop(0, 'rgba(' + rgb + ',' + alpha + ')');
+    grad.addColorStop(fadeStop, 'rgba(' + rgb + ',0)');
+    bctx.fillStyle = grad;
+    bctx.beginPath();
+    bctx.arc(0, 0, 1, 0, Math.PI * 2);
+    bctx.fill();
+    bctx.restore();
   }
-  for (var gy = 0; gy <= bg.height; gy += step) {
-    bctx.beginPath(); bctx.moveTo(0, gy + 0.5); bctx.lineTo(bg.width, gy + 0.5); bctx.stroke();
+
+  // Same positions/colours as the homepage mesh, scaled for a non-inset box.
+  blob(0.15, 0.60, 0.88, 0.80, PURPLE, 0.30, 0.60);
+  blob(0.85, 0.25, 0.72, 0.88, GREEN,  0.16, 0.55);
+  blob(0.55, 0.95, 0.56, 0.62, GREEN,  0.10, 0.50);
+  blob(0.75, 0.75, 0.80, 0.70, PURPLE, 0.19, 0.55);
+  blob(0.25, 0.15, 0.95, 0.78, GREEN,  0.08, 0.60);
+
+  var DOT_COLORS = ['rgba(150,204,0,', 'rgba(123,47,255,', 'rgba(255,255,255,'];
+  var dotCount = 60;
+  for (var d = 0; d < dotCount; d++) {
+    var dx = Math.random() * bg.width;
+    var dy = Math.random() * bg.height;
+    var dr = 1.2 + Math.random() * 1.5;
+    var col = DOT_COLORS[(Math.random() * DOT_COLORS.length) | 0];
+    bctx.fillStyle = col + '0.10)';
+    bctx.beginPath(); bctx.arc(dx, dy, dr * 3, 0, Math.PI * 2); bctx.fill();
+    bctx.fillStyle = col + '0.55)';
+    bctx.beginPath(); bctx.arc(dx, dy, dr, 0, Math.PI * 2); bctx.fill();
   }
 
   var VS = [

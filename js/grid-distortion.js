@@ -1,9 +1,8 @@
 /* ============================================================
    CYCLIC AGENCY — GRID DISTORTION
-   Abstract brand-colour mesh + faint grid, warped under the
-   cursor (port of reactbits.dev "Grid Distortion", no Three.js —
-   raw WebGL to match threads.js's footprint). No photo needed:
-   the "image" is a generated canvas in the Cyclic palette.
+   Port of reactbits.dev "Grid Distortion" without Three.js (raw
+   WebGL, matching threads.js's footprint). Warps an abstract
+   image (images/despre-noi-hero.webp) under the cursor.
    Self-mounts into .page-hero — just include the script.
    ============================================================ */
 
@@ -31,55 +30,6 @@
   var gl = canvas.getContext('webgl', { alpha: true, antialias: false, premultipliedAlpha: false })
         || canvas.getContext('experimental-webgl');
   if (!gl) { host.removeChild(canvas); return; }
-
-  /* ── Generate the "image" being distorted: the same soft mesh-gradient
-     language as the homepage hero (css/main.css .hero__bg::before/::after),
-     plus a faint scatter of glowing dots (constellation.js palette) so the
-     warp has detail to bend. No external photo required. ── */
-  var bg = document.createElement('canvas');
-  bg.width = 900; bg.height = 900;
-  var bctx = bg.getContext('2d');
-  bctx.fillStyle = '#0a0a0a';
-  bctx.fillRect(0, 0, bg.width, bg.height);
-
-  var GREEN = '150,204,0';
-  var PURPLE = '123,47,255';
-
-  function blob(cxFrac, cyFrac, rxFrac, ryFrac, rgb, alpha, fadeStop) {
-    var cx = bg.width * cxFrac, cy = bg.height * cyFrac;
-    var rx = bg.width * rxFrac, ry = bg.height * ryFrac;
-    bctx.save();
-    bctx.translate(cx, cy);
-    bctx.scale(rx, ry);
-    var grad = bctx.createRadialGradient(0, 0, 0, 0, 0, 1);
-    grad.addColorStop(0, 'rgba(' + rgb + ',' + alpha + ')');
-    grad.addColorStop(fadeStop, 'rgba(' + rgb + ',0)');
-    bctx.fillStyle = grad;
-    bctx.beginPath();
-    bctx.arc(0, 0, 1, 0, Math.PI * 2);
-    bctx.fill();
-    bctx.restore();
-  }
-
-  // Same positions/colours as the homepage mesh, scaled for a non-inset box.
-  blob(0.15, 0.60, 0.88, 0.80, PURPLE, 0.30, 0.60);
-  blob(0.85, 0.25, 0.72, 0.88, GREEN,  0.16, 0.55);
-  blob(0.55, 0.95, 0.56, 0.62, GREEN,  0.10, 0.50);
-  blob(0.75, 0.75, 0.80, 0.70, PURPLE, 0.19, 0.55);
-  blob(0.25, 0.15, 0.95, 0.78, GREEN,  0.08, 0.60);
-
-  var DOT_COLORS = ['rgba(150,204,0,', 'rgba(123,47,255,', 'rgba(255,255,255,'];
-  var dotCount = 60;
-  for (var d = 0; d < dotCount; d++) {
-    var dx = Math.random() * bg.width;
-    var dy = Math.random() * bg.height;
-    var dr = 1.2 + Math.random() * 1.5;
-    var col = DOT_COLORS[(Math.random() * DOT_COLORS.length) | 0];
-    bctx.fillStyle = col + '0.10)';
-    bctx.beginPath(); bctx.arc(dx, dy, dr * 3, 0, Math.PI * 2); bctx.fill();
-    bctx.fillStyle = col + '0.55)';
-    bctx.beginPath(); bctx.arc(dx, dy, dr, 0, Math.PI * 2); bctx.fill();
-  }
 
   var VS = [
     'attribute vec2 position;',
@@ -131,16 +81,28 @@
   var uTex  = gl.getUniformLocation(prog, 'uTexture');
   var uData = gl.getUniformLocation(prog, 'uDataTexture');
 
-  // ── Background texture (static) ──
+  // ── Background texture: real image, loaded async (1x1 dark placeholder until then) ──
   var bgTexture = gl.createTexture();
   gl.bindTexture(gl.TEXTURE_2D, bgTexture);
-  gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
-  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, bg);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
-  gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([10, 10, 10, 255]));
+
+  var bgImage = new Image();
+  bgImage.onload = function () {
+    gl.bindTexture(gl.TEXTURE_2D, bgTexture);
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, bgImage);
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    if (reduce) render();
+  };
+  bgImage.src = 'images/despre-noi-hero.webp';
 
   // ── Data texture (dynamic distortion field, Uint8 — no float-texture extension needed) ──
   var state = new Float32Array(GRID * GRID * 2);     // accumulated x/y offset per grid cell

@@ -217,6 +217,7 @@
   try {
     new IntersectionObserver(function (entries) {
       inView = entries[0].isIntersecting;
+      document.body.classList.toggle('hero-in-view', inView);
       if (inView) start(); else stop();
     }, { threshold: 0 }).observe(hero);
   } catch (e) { inView = true; }

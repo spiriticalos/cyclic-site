@@ -270,6 +270,9 @@ body.hero-in-view .nav--scrolled {
   transition: color 0.2s;
 }
 .nav__logo:hover { color: var(--accent); }
+.nav__logo { display: inline-flex; align-items: center; }
+.nav__logo-img { height: 24px; width: auto; display: block; transition: opacity 0.2s; }
+.nav__logo:hover .nav__logo-img { opacity: 0.7; }
 .nav__links {
   display: flex;
   align-items: center;

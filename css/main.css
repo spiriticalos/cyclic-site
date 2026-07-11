@@ -564,6 +564,22 @@ body.hero-in-view .nav--scrolled {
   max-width: 52ch;
 }
 
+/* Magic Rings hero (Labels) — titlu centrat, încadrat de inele */
+.page-hero--rings {
+  min-height: min(86vh, 820px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.page-hero--rings::before { display: none; } /* inelele dau vizualul, scot gradientul lateral */
+.magic-rings { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.page-hero--rings .page-hero__content { max-width: 680px; }
+.page-hero--rings .page-hero__label,
+.page-hero--rings .page-hero__title,
+.page-hero--rings .page-hero__sub { margin-inline: auto; }
+.page-hero--rings .page-hero__title { max-width: none; }
+
 /* 14. STATS */
 .stats {
   display: grid;
@@ -1706,6 +1722,8 @@ html, body {
 
   /* Page hero: min-height 70vh inline on about.html is too tall on mobile */
   .page-hero { min-height: auto !important; }
+  /* Magic-rings hero păstrează înălțime ca inelele să încadreze titlul */
+  .page-hero--rings { min-height: 72vh !important; }
 
   /* Artist card body: tighter padding on mobile */
   .artist-card__body { padding: 16px; }

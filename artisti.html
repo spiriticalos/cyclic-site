@@ -30,8 +30,8 @@
   </style>
 
   <link rel="preload" href="images/artists/optick.webp" as="image" type="image/webp">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fonts.css?v=2">
+  <link rel="stylesheet" href="css/main.css?v=2">
 
   <script type="application/ld+json">
   {
@@ -107,48 +107,50 @@
   <div class="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
 
-  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigare principală">
     <div class="nav__inner container">
       <a href="index.html" class="nav__logo">cyclic</a>
       <ul class="nav__links" role="list">
-        <li><a href="index.html"   class="nav__link">Home</a></li>
-        <li><a href="events.html"  class="nav__link">Events</a></li>
-        <li><a href="artists.html" class="nav__link active">Artists</a></li>
-        <li><a href="rentals.html" class="nav__link">Rentals</a></li>
-        <li><a href="labels.html"  class="nav__link">Labels</a></li>
-        <li><a href="about.html"   class="nav__link">About Us</a></li>
+        <li><a href="index.html"      class="nav__link">Acasă</a></li>
+        <li><a href="evenimente.html" class="nav__link">Evenimente</a></li>
+        <li><a href="artisti.html"    class="nav__link active">Artiști</a></li>
+        <li><a href="inchiriere-echipamente.html" class="nav__link">Închirieri</a></li>
+        <li><a href="label-uri.html"  class="nav__link">Label-uri</a></li>
+        <li><a href="despre-noi.html" class="nav__link">Despre noi</a></li>
       </ul>
-      <a href="events.html" class="btn btn--accent nav__cta magnetic">Get Tickets <span class="arrow">→</span></a>
-      <button class="nav__burger" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a href="evenimente.html" class="btn btn--accent nav__cta magnetic">Bilete <span class="arrow">→</span></a>
+      <a href="artists.html" class="lang-toggle" hreflang="en" aria-label="Switch to English"><span class="lang-toggle__flag" aria-hidden="true">🇬🇧</span> EN</a>
+      <button class="nav__burger" aria-label="Deschide meniu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation" aria-modal="true">
-    <a href="index.html"   class="nav__link">Home</a>
-    <a href="events.html"  class="nav__link">Events</a>
-    <a href="artists.html" class="nav__link">Artists</a>
-    <a href="rentals.html" class="nav__link">Rentals</a>
-    <a href="labels.html"  class="nav__link">Labels</a>
-    <a href="about.html"   class="nav__link">About Us</a>
-    <a href="events.html"  class="btn btn--accent magnetic">Get Tickets →</a>
+  <div class="nav__mobile" role="dialog" aria-label="Navigare mobilă" aria-modal="true">
+    <a href="index.html"      class="nav__link">Acasă</a>
+    <a href="evenimente.html" class="nav__link">Evenimente</a>
+    <a href="artisti.html"    class="nav__link">Artiști</a>
+    <a href="inchiriere-echipamente.html" class="nav__link">Închirieri</a>
+    <a href="label-uri.html"  class="nav__link">Label-uri</a>
+    <a href="despre-noi.html" class="nav__link">Despre noi</a>
+    <a href="evenimente.html" class="btn btn--accent magnetic">Bilete →</a>
+    <a href="artists.html" class="lang-toggle" hreflang="en" aria-label="Switch to English"><span class="lang-toggle__flag" aria-hidden="true">🇬🇧</span> EN</a>
   </div>
 
   <main>
     <header class="page-hero">
       <div class="container page-hero__content">
-        <p class="section-label page-hero__label">Our roster</p>
-        <h1 class="display-lg page-hero__title">Artists<span class="text-accent">.</span></h1>
-        <p class="page-hero__sub">Romanian and international electronic music talent — curated, managed and booked by Cyclic Agency across 30 cities.</p>
+        <p class="section-label page-hero__label">Roster-ul nostru</p>
+        <h1 class="display-lg page-hero__title">Artiști<span class="text-accent">.</span></h1>
+        <p class="page-hero__sub">Talente românești și internaționale din muzica electronică — curatoriate, gestionate și rezervate de Cyclic Agency în 30 de orașe.</p>
       </div>
     </header>
 
     <!-- Filter bar -->
     <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
       <div class="container">
-        <div class="filter-bar" role="group" aria-label="Filter by type">
-          <button class="artist-filter-btn filter-btn active" data-type="all">All Artists</button>
-          <button class="artist-filter-btn filter-btn" data-type="local">Local</button>
-          <button class="artist-filter-btn filter-btn" data-type="international">International</button>
+        <div class="filter-bar" role="group" aria-label="Filtrează după tip">
+          <button class="artist-filter-btn filter-btn active" data-type="all">Toți artiștii</button>
+          <button class="artist-filter-btn filter-btn" data-type="local">Locali</button>
+          <button class="artist-filter-btn filter-btn" data-type="international">Internaționali</button>
         </div>
       </div>
     </div>
@@ -162,8 +164,8 @@
           <span class="artist-panel__idx">01</span>
           <span class="artist-panel__genre">Techno</span>
           <h2 class="artist-panel__name">Optick</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian techno DJ and producer — a defining name in Bucharest's underground club scene.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">DJ și producător de techno român — un nume definitoriu în scena underground a cluburilor din București.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/optick.webp" alt="Optick Romanian techno DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -176,8 +178,8 @@
           <span class="artist-panel__idx">02</span>
           <span class="artist-panel__genre">Techno</span>
           <h2 class="artist-panel__name">Rhem</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian techno artist with a sharp, industrial edge and a growing presence on the Eastern European circuit.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">Artist techno român cu un sound tăios, industrial, și o prezență în creștere pe circuitul est-european.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/rhem.webp" alt="Rhem Romanian techno DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -190,8 +192,8 @@
           <span class="artist-panel__idx">03</span>
           <span class="artist-panel__genre">Melodic Techno</span>
           <h2 class="artist-panel__name">Dobrikan</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian melodic techno DJ bridging raw underground energy with emotional, layered soundscapes.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">DJ român de melodic techno care îmbină energia brută a underground-ului cu peisaje sonore emoționale, stratificate.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/dobrikan.webp" alt="Dobrikan Romanian melodic techno artist Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -204,8 +206,8 @@
           <span class="artist-panel__idx">04</span>
           <span class="artist-panel__genre">House</span>
           <h2 class="artist-panel__name">Adrian Eftimie</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian house DJ delivering deep, soulful sets across Romania's leading club stages.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">DJ român de house cu seturi deep și pline de suflet pe cele mai importante scene de club din România.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/adrian-eftimie.webp" alt="Adrian Eftimie Romanian house DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -218,8 +220,8 @@
           <span class="artist-panel__idx">05</span>
           <span class="artist-panel__genre">Progressive / House</span>
           <h2 class="artist-panel__name">Afgo &amp;<br>Lemon</h2>
-          <span class="artist-panel__type">Local Artists</span>
-          <p class="artist-panel__desc">Romanian progressive house duo — two DJs, one signature sound that blends melody with dancefloor intensity.</p>
+          <span class="artist-panel__type">Artiști locali</span>
+          <p class="artist-panel__desc">Duo român de progressive house — doi DJ, un sound distinctiv care îmbină melodia cu intensitatea ringului de dans.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/afgo-lemon.webp" alt="Afgo and Lemon Romanian progressive house duo Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -232,8 +234,8 @@
           <span class="artist-panel__idx">06</span>
           <span class="artist-panel__genre">Techno</span>
           <h2 class="artist-panel__name">Deny</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian techno DJ known for driving, high-energy sets that keep dancefloors moving until the last beat.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">DJ techno român cunoscut pentru seturi energice, în forță, care țin ringul în mișcare până la ultimul beat.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/deny.webp" alt="Deny Romanian techno DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -246,8 +248,8 @@
           <span class="artist-panel__idx">07</span>
           <span class="artist-panel__genre">Techno</span>
           <h2 class="artist-panel__name">Emann</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian techno producer and DJ with a dark, forward-moving aesthetic and powerful stage presence.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">Producător și DJ techno român cu o estetică întunecată, mereu în mișcare, și o prezență scenică puternică.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/emann.webp" alt="Emann Romanian techno DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -260,8 +262,8 @@
           <span class="artist-panel__idx">08</span>
           <span class="artist-panel__genre">House</span>
           <h2 class="artist-panel__name">Efi</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian house DJ bringing warm grooves and soulful selections to clubs across Romania.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">DJ român de house care aduce groove-uri calde și selecții pline de suflet în cluburile din toată România.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/efi.webp" alt="Efi Romanian house DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -274,8 +276,8 @@
           <span class="artist-panel__idx">09</span>
           <span class="artist-panel__genre">Techno</span>
           <h2 class="artist-panel__name">Eleez</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian techno DJ with a relentless, hypnotic style built for peak-time club hours.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">DJ techno român cu un stil hipnotic, neobosit, construit pentru orele de vârf ale clubului.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/eleez.webp" alt="Eleez Romanian techno DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -288,8 +290,8 @@
           <span class="artist-panel__idx">10</span>
           <span class="artist-panel__genre">House</span>
           <h2 class="artist-panel__name">Kristopher</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian house DJ blending musical depth with crowd-reading technique refined across years on the Romanian circuit.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">DJ român de house care îmbină profunzimea muzicală cu o tehnică de citire a publicului rafinată în ani pe circuitul românesc.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/kristopher.webp" alt="Kristopher Romanian house DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -302,8 +304,8 @@
           <span class="artist-panel__idx">11</span>
           <span class="artist-panel__genre">Electronic</span>
           <h2 class="artist-panel__name">Oscar</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian electronic artist spanning multiple facets of the dance music spectrum with an eclectic, open approach.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">Artist electronic român care acoperă multiple fațete ale spectrului dance cu o abordare eclectică, deschisă.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/oscar.webp" alt="Oscar Romanian electronic DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -316,8 +318,8 @@
           <span class="artist-panel__idx">12</span>
           <span class="artist-panel__genre">House</span>
           <h2 class="artist-panel__name">Pascal Junior</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian house DJ with a refined, musical approach and a loyal following across the Romanian club scene.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">DJ român de house cu o abordare rafinată, muzicală, și un public fidel în scena de club din România.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/pascal-junior.webp" alt="Pascal Junior Romanian house DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -330,8 +332,8 @@
           <span class="artist-panel__idx">13</span>
           <span class="artist-panel__genre">Techno</span>
           <h2 class="artist-panel__name">Sabo</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian techno DJ, a dependable and powerful presence on stage at venues across Romania.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">DJ techno român, o prezență puternică și de încredere pe scenele din toată România.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/sabo.webp" alt="Sabo Romanian techno DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -344,8 +346,8 @@
           <span class="artist-panel__idx">14</span>
           <span class="artist-panel__genre">Electronic</span>
           <h2 class="artist-panel__name">Zamfirov</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian DJ and producer with a broad, genre-crossing style rooted in electronic music culture.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">DJ și producător român cu un stil larg, care traversează genurile, înrădăcinat în cultura muzicii electronice.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/zamfirov.webp" alt="Zamfirov Romanian electronic DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -358,8 +360,8 @@
           <span class="artist-panel__idx">15</span>
           <span class="artist-panel__genre">Techno</span>
           <h2 class="artist-panel__name">Brad Brunner</h2>
-          <span class="artist-panel__type">Local Artist</span>
-          <p class="artist-panel__desc">Romanian techno DJ with a consistent, high-impact stage presence and a reputation built on the underground circuit.</p>
+          <span class="artist-panel__type">Artist local</span>
+          <p class="artist-panel__desc">DJ techno român cu o prezență scenică constantă, de mare impact, și o reputație construită pe circuitul underground.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/brad-brunner.webp" alt="Brad Brunner Romanian techno DJ Cyclic Agency" width="900" height="1200" loading="lazy">
@@ -372,8 +374,8 @@
           <span class="artist-panel__idx">16</span>
           <span class="artist-panel__genre">Techno</span>
           <h2 class="artist-panel__name">Hraach</h2>
-          <span class="artist-panel__type">International</span>
-          <p class="artist-panel__desc">International techno DJ and producer, brought to Romanian stages by Cyclic Agency as part of our international booking programme.</p>
+          <span class="artist-panel__type">Internațional</span>
+          <p class="artist-panel__desc">DJ și producător techno internațional, adus pe scenele românești de Cyclic Agency în cadrul programului nostru de booking internațional.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/hraach.webp" alt="Hraach international techno DJ Cyclic Agency Romania" width="900" height="1200" loading="lazy">
@@ -386,8 +388,8 @@
           <span class="artist-panel__idx">17</span>
           <span class="artist-panel__genre">Techno</span>
           <h2 class="artist-panel__name">Sahar Z</h2>
-          <span class="artist-panel__type">International</span>
-          <p class="artist-panel__desc">International techno DJ with a global touring profile and a powerful, emotionally charged approach to the dancefloor.</p>
+          <span class="artist-panel__type">Internațional</span>
+          <p class="artist-panel__desc">DJ techno internațional cu turnee globale și o abordare puternică, încărcată emoțional, a ringului de dans.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/sahar-z.webp" alt="Sahar Z international techno DJ Cyclic Agency Romania" width="900" height="1200" loading="lazy">
@@ -400,8 +402,8 @@
           <span class="artist-panel__idx">18</span>
           <span class="artist-panel__genre">Techno</span>
           <h2 class="artist-panel__name">Shai T</h2>
-          <span class="artist-panel__type">International</span>
-          <p class="artist-panel__desc">International techno DJ and producer with an acclaimed touring schedule across Europe and beyond.</p>
+          <span class="artist-panel__type">Internațional</span>
+          <p class="artist-panel__desc">DJ și producător techno internațional cu un program de turnee apreciat în Europa și dincolo de ea.</p>
         </div>
         <div class="artist-panel__photo">
           <img src="images/artists/shai-t.webp" alt="Shai T international techno DJ Cyclic Agency Romania" width="900" height="1200" loading="lazy">
@@ -415,12 +417,12 @@
       <div class="container">
         <header class="section-header fade-in">
           <div class="section-header__left">
-            <span class="section-label">International acts</span>
-            <h2 class="display-sm section-header__title" id="headliners-section-heading">Past International Headliners</h2>
+            <span class="section-label">Artiști internaționali</span>
+            <h2 class="display-sm section-header__title" id="headliners-section-heading">Headlineri internaționali aduși de noi</h2>
           </div>
         </header>
         <p class="text-muted fade-in" style="max-width:60ch; margin-bottom:48px; font-size:15px; line-height:1.75;">
-          Over 17 years, Cyclic Agency has brought the world's most celebrated electronic music artists to Romanian stages.
+          În peste 17 ani, Cyclic Agency a adus pe scenele românești unii dintre cei mai apreciați artiști de muzică electronică din lume.
         </p>
         <div class="headliners-list fade-in">
           <span class="headliner-name">Tale of Us</span>
@@ -440,10 +442,10 @@
     <!-- Booking CTA -->
     <section class="cta-section fade-in" aria-labelledby="booking-cta">
       <div class="container cta-section__content">
-        <span class="section-label">Work with us</span>
-        <h2 class="display-lg cta-section__title" id="booking-cta">Book an Artist<span class="text-accent">.</span></h2>
-        <p class="text-muted text-lg" style="max-width:48ch; margin: 0 auto 32px;">Looking to book one of our artists for your event? Get in touch with our team.</p>
-        <a href="mailto:ionut@cyclic.ro" class="btn btn--accent btn--lg magnetic">Contact for Booking <span class="arrow">→</span></a>
+        <span class="section-label">Lucrează cu noi</span>
+        <h2 class="display-lg cta-section__title" id="booking-cta">Rezervă un artist<span class="text-accent">.</span></h2>
+        <p class="text-muted text-lg" style="max-width:48ch; margin: 0 auto 32px;">Vrei să rezervi unul dintre artiștii noștri pentru evenimentul tău? Contactează echipa noastră.</p>
+        <a href="mailto:ionut@cyclic.ro" class="btn btn--accent btn--lg magnetic">Contact pentru booking <span class="arrow">→</span></a>
       </div>
     </section>
 
@@ -454,34 +456,34 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <p class="footer__logo">cyclic</p>
-          <p class="footer__tagline">Romania's Underground. Elevated.<br>Electronic music events since 2009.</p>
-          <nav class="footer__social" aria-label="Social media links">
+          <p class="footer__tagline">Underground-ul României. Ridicat.<br>Evenimente de muzică electronică din 2009.</p>
+          <nav class="footer__social" aria-label="Linkuri social media">
             <a href="https://facebook.com/cyclicagency" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://instagram.com/cyclic_music" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://tiktok.com/@cyclic_music" class="footer__social-link" target="_blank" rel="noopener noreferrer">TikTok</a>
           </nav>
         </div>
-        <nav class="footer__nav" aria-label="Footer navigation">
-          <h4>Pages</h4>
+        <nav class="footer__nav" aria-label="Navigare footer">
+          <h4>Pagini</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="artists.html">Artists</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="labels.html">Labels</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="evenimente.html">Evenimente</a></li>
+            <li><a href="artisti.html">Artiști</a></li>
+            <li><a href="inchiriere-echipamente.html">Închirieri</a></li>
+            <li><a href="label-uri.html">Label-uri</a></li>
+            <li><a href="despre-noi.html">Despre noi</a></li>
           </ul>
         </nav>
         <address class="footer__contact" style="font-style:normal;">
           <h4>Contact</h4>
           <div class="footer__contact-block">
-            <p class="footer__contact-role">Director of Events</p>
-            <p class="footer__contact-name">Ionut Hupca</p>
+            <p class="footer__contact-role">Director Evenimente</p>
+            <p class="footer__contact-name">Ionuț Hupcă</p>
             <a href="mailto:ionut@cyclic.ro">ionut@cyclic.ro</a>
             <a href="https://wa.me/40721381922" target="_blank" rel="noopener">+40 721 381 922</a>
           </div>
           <div class="footer__contact-block">
-            <p class="footer__contact-role">Event Coordinator</p>
+            <p class="footer__contact-role">Coordonator Evenimente</p>
             <p class="footer__contact-name">Coman Vlad</p>
             <a href="mailto:vlad.coman@cyclic.ro">vlad.coman@cyclic.ro</a>
             <a href="https://wa.me/40765483450" target="_blank" rel="noopener">+40 765 483 450</a>
@@ -489,16 +491,16 @@
         </address>
       </div>
       <div class="footer__bottom">
-        <p>© <span class="js-year">2026</span> Cyclic Agency. All rights reserved.</p>
-        <p>Electronic music events Romania since 2009.</p>
+        <p>© <span class="js-year">2026</span> Cyclic Agency. Toate drepturile rezervate.</p>
+        <p>Evenimente de muzică electronică în România din 2009.</p>
       </div>
 
       <div class="footer__legal">
         <div class="footer__legal-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="cookie-policy.html">Cookie Policy</a>
-          <a href="terms.html">Terms &amp; Conditions</a>
-          <a href="#" class="js-cookie-settings">Cookie Settings</a>
+          <a href="privacy-policy.html">Politică Confidențialitate</a>
+          <a href="cookie-policy.html">Politică Cookies</a>
+          <a href="terms.html">Termeni &amp; Condiții</a>
+          <a href="#" class="js-cookie-settings">Setări Cookies</a>
         </div>
         <div class="footer__legal-info">
           <span><strong>CYCLIC MUSIC S.R.L.</strong></span>
@@ -510,9 +512,9 @@
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
-  <script src="js/effects.js" defer></script>
-  <script src="js/cookie-banner.js" defer></script>
-  <script src="js/analytics.js" defer></script>
+  <script src="js/main.js?v=2" defer></script>
+  <script src="js/effects.js?v=2" defer></script>
+  <script src="js/cookie-banner.js?v=2" defer></script>
+  <script src="js/analytics.js?v=2" defer></script>
 </body>
 </html>

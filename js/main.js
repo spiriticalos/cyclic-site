@@ -216,7 +216,9 @@
 
   /* ── AUTO-HIDE EXPIRED EVENTS ── */
   (function hideExpiredEvents() {
-    const MONTHS = { Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11 };
+    // EN + RO abbreviations — RO pages render "Mai", "Iun", "7 Iul" etc.
+    const MONTHS = { Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11,
+                     Ian:0,Mai:4,Iun:5,Iul:6,Noi:10 };
     const today = new Date();
     today.setHours(0, 0, 0, 0); // start of today — event visible all day, disappears at midnight
 
@@ -248,8 +250,11 @@
     document.querySelectorAll('.event-row').forEach(row => {
       const dateEl = row.querySelector('.event-row__date');
       if (!dateEl) return;
-      const text = (dateEl.childNodes[0]?.textContent || '').trim(); // "Jun 07"
-      const [monthStr, dayStr] = text.split(/\s+/);
+      const text = (dateEl.childNodes[0]?.textContent || '').trim(); // "Jun 07" (EN) sau "7 Iun" (RO)
+      const parts = text.split(/\s+/);
+      const dayFirst = /^\d/.test(parts[0]);
+      const monthStr = dayFirst ? parts[1] : parts[0];
+      const dayStr   = dayFirst ? parts[0] : parts[1];
       const d = eventDate(monthStr, dayStr);
       if (d && d < today) row.remove();
     });
@@ -273,11 +278,12 @@
       window.addEventListener('resize', setColumns, { passive: true });
 
       if (remaining === 0) {
+        const roPage = (document.documentElement.lang || '').toLowerCase().startsWith('ro');
         grid.innerHTML = `
           <div style="grid-column:1/-1; text-align:center; padding: clamp(60px,8vw,100px) 0;">
-            <p style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:16px;">No upcoming events</p>
-            <p style="font-family:var(--font-display);font-size:clamp(28px,4vw,48px);margin-bottom:24px;">New events coming soon<span style="color:var(--accent)">.</span></p>
-            <a href="mailto:ionut@cyclic.ro" class="btn btn--outline">Get notified →</a>
+            <p style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:16px;">${roPage ? 'Niciun eveniment viitor' : 'No upcoming events'}</p>
+            <p style="font-family:var(--font-display);font-size:clamp(28px,4vw,48px);margin-bottom:24px;">${roPage ? 'Evenimente noi în curând' : 'New events coming soon'}<span style="color:var(--accent)">.</span></p>
+            <a href="mailto:ionut@cyclic.ro" class="btn btn--outline">${roPage ? 'Fii anunțat' : 'Get notified'} →</a>
           </div>`;
       }
     }
@@ -287,25 +293,50 @@
   (function initNewsletterBar() {
     if (localStorage.getItem('nl_dismissed')) return;
 
+    const roPage = (document.documentElement.lang || '').toLowerCase().startsWith('ro');
+    const T = roPage ? {
+      aria: 'Abonare la newsletter-ul Cyclic',
+      title: 'Nu rata niciun eveniment Cyclic',
+      sub: 'Acces din timp · Oferte exclusive',
+      placeholder: 'adresa@email.com',
+      emailAria: 'Adresă de email',
+      submit: 'Abonează-te →',
+      consent: 'Prin abonare ești de acord cu <a href="privacy-policy.html">Politica de Confidențialitate</a>.',
+      closeAria: 'Închide',
+      okTitle: '✓ Te-ai abonat.',
+      okSub: '&nbsp;Îți trimitem acces din timp și oferte exclusive.'
+    } : {
+      aria: 'Subscribe to Cyclic newsletter',
+      title: 'Never miss a Cyclic event',
+      sub: 'Early access · Exclusive offers',
+      placeholder: 'your@email.com',
+      emailAria: 'Email address',
+      submit: 'Subscribe →',
+      consent: 'By subscribing you agree to our <a href="privacy-policy.html">Privacy Policy</a>.',
+      closeAria: 'Close',
+      okTitle: '✓ You\'re in.',
+      okSub: '&nbsp;We\'ll hit you with early access and exclusive offers.'
+    };
+
     function showBar() {
       if (document.querySelector('.newsletter-bar')) return;
 
       const bar = document.createElement('div');
       bar.className = 'newsletter-bar';
       bar.setAttribute('role', 'complementary');
-      bar.setAttribute('aria-label', 'Subscribe to Cyclic newsletter');
+      bar.setAttribute('aria-label', T.aria);
       bar.innerHTML = `
         <div class="container newsletter-bar__inner">
           <div class="newsletter-bar__text">
-            <strong>Never miss a Cyclic event</strong>
-            <span>Early access · Exclusive offers</span>
+            <strong>${T.title}</strong>
+            <span>${T.sub}</span>
           </div>
           <form class="newsletter-bar__form" novalidate>
-            <input type="email" class="newsletter-bar__input" placeholder="your@email.com" aria-label="Email address" autocomplete="email" required>
-            <button type="submit" class="btn btn--accent newsletter-bar__submit">Subscribe →</button>
+            <input type="email" class="newsletter-bar__input" placeholder="${T.placeholder}" aria-label="${T.emailAria}" autocomplete="email" required>
+            <button type="submit" class="btn btn--accent newsletter-bar__submit">${T.submit}</button>
           </form>
-          <p class="newsletter-bar__consent">By subscribing you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
-          <button class="newsletter-bar__close" aria-label="Close">✕</button>
+          <p class="newsletter-bar__consent">${T.consent}</p>
+          <button class="newsletter-bar__close" aria-label="${T.closeAria}">✕</button>
         </div>`;
       document.body.appendChild(bar);
 
@@ -327,8 +358,8 @@
         }
         bar.querySelector('.newsletter-bar__inner').innerHTML =
           `<p style="width:100%;text-align:center;font-size:15px;">
-             <strong style="color:var(--accent);font-family:var(--font-display);">✓ You're in.</strong>
-             &nbsp;We'll hit you with early access and exclusive offers.
+             <strong style="color:var(--accent);font-family:var(--font-display);">${T.okTitle}</strong>
+             ${T.okSub}
            </p>`;
         setTimeout(() => { bar.classList.remove('visible'); setTimeout(() => bar.remove(), 450); }, 2800);
         localStorage.setItem('nl_dismissed', '1');

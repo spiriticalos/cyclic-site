@@ -16,10 +16,12 @@
 | EN (sursă)      | RO (output)                  | Status   | Note |
 |-----------------|------------------------------|----------|------|
 | `home-en.html`  | `index.html`                 | synced   | Homepage tradus integral |
-| `events.html`   | `evenimente.html`            | stale    | Chrome RO, body încă EN |
-| `artists.html`  | `artisti.html`               | stale    | Chrome RO, body încă EN |
-| `labels.html`   | `label-uri.html`             | stale    | Chrome RO, body încă EN |
-| `about.html`    | `despre-noi.html`            | stale    | Chrome RO, body încă EN |
+| `events.html`   | `evenimente.html`            | synced   | Tradus integral 2026-07-10 |
+| `artists.html`  | `artisti.html`               | synced   | Tradus integral 2026-07-10 |
+| `labels.html`   | `label-uri.html`             | synced   | Tradus integral 2026-07-10 |
+| `about.html`    | `despre-noi.html`            | synced   | Tradus integral 2026-07-10 |
+
+**Toggle de limbă:** toate paginile RO↔EN au buton `lang-toggle` în nav (desktop + mobil) din 2026-07-10. Paginile legale (privacy/terms/cookie) sunt EN-only, fără toggle.
 
 ## Pagini închirieri (RO-native, SEO — RO e sursa aici)
 

@@ -250,7 +250,7 @@
       "label": "read()",
       "file_type": "code",
       "source_file": "js/cookie-banner.js",
-      "source_location": "L16",
+      "source_location": "L39",
       "id": "js_cookie_banner_read",
       "community": 1,
       "norm_label": "read()"
@@ -259,7 +259,7 @@
       "label": "write()",
       "file_type": "code",
       "source_file": "js/cookie-banner.js",
-      "source_location": "L26",
+      "source_location": "L49",
       "id": "js_cookie_banner_write",
       "community": 1,
       "norm_label": "write()"
@@ -268,7 +268,7 @@
       "label": "closeBanner()",
       "file_type": "code",
       "source_file": "js/cookie-banner.js",
-      "source_location": "L59",
+      "source_location": "L82",
       "id": "js_cookie_banner_closebanner",
       "community": 1,
       "norm_label": "closebanner()"
@@ -277,7 +277,7 @@
       "label": "renderBanner()",
       "file_type": "code",
       "source_file": "js/cookie-banner.js",
-      "source_location": "L67",
+      "source_location": "L90",
       "id": "js_cookie_banner_renderbanner",
       "community": 1,
       "norm_label": "renderbanner()"
@@ -340,7 +340,7 @@
       "label": "eventDate()",
       "file_type": "code",
       "source_file": "js/main.js",
-      "source_location": "L223",
+      "source_location": "L225",
       "id": "js_main_eventdate",
       "community": 2,
       "norm_label": "eventdate()"
@@ -349,7 +349,7 @@
       "label": "showBar()",
       "file_type": "code",
       "source_file": "js/main.js",
-      "source_location": "L281",
+      "source_location": "L321",
       "id": "js_main_showbar",
       "community": 2,
       "norm_label": "showbar()"
@@ -358,7 +358,7 @@
       "label": "consentGiven()",
       "file_type": "code",
       "source_file": "js/main.js",
-      "source_location": "L330",
+      "source_location": "L370",
       "id": "js_main_consentgiven",
       "community": 2,
       "norm_label": "consentgiven()"
@@ -439,7 +439,7 @@
       "label": "compileShader()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L113",
+      "source_location": "L114",
       "id": "js_threads_compileshader",
       "community": 5,
       "norm_label": "compileshader()"
@@ -448,7 +448,7 @@
       "label": "resize()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L157",
+      "source_location": "L158",
       "id": "js_threads_resize",
       "community": 5,
       "norm_label": "resize()"
@@ -457,7 +457,7 @@
       "label": "renderFrame()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L190",
+      "source_location": "L191",
       "id": "js_threads_renderframe",
       "community": 5,
       "norm_label": "renderframe()"
@@ -466,7 +466,7 @@
       "label": "loop()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L201",
+      "source_location": "L202",
       "id": "js_threads_loop",
       "community": 5,
       "norm_label": "loop()"
@@ -475,7 +475,7 @@
       "label": "start()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L206",
+      "source_location": "L207",
       "id": "js_threads_start",
       "community": 5,
       "norm_label": "start()"
@@ -484,7 +484,7 @@
       "label": "stop()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L211",
+      "source_location": "L212",
       "id": "js_threads_stop",
       "community": 5,
       "norm_label": "stop()"
@@ -562,10 +562,19 @@
       "norm_label": "devdependencies"
     },
     {
-      "label": "sharp",
+      "label": "playwright",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L3",
+      "id": "package_devdependencies_playwright",
+      "community": 6,
+      "norm_label": "playwright"
+    },
+    {
+      "label": "sharp",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
       "id": "package_devdependencies_sharp",
       "community": 6,
       "norm_label": "sharp"
@@ -619,7 +628,7 @@
       "label": "Pagini \u00eenchirieri (RO-native, SEO \u2014 RO e sursa aici)",
       "file_type": "document",
       "source_file": "TRANSLATION.md",
-      "source_location": "L24",
+      "source_location": "L26",
       "id": "translation_pagini_\u00eenchirieri_ro_native_seo_ro_e_sursa_aici",
       "community": 12,
       "norm_label": "pagini inchirieri (ro-native, seo \u2014 ro e sursa aici)"
@@ -628,7 +637,7 @@
       "label": "Pagini legale (de verificat status RO/EN la final)",
       "file_type": "document",
       "source_file": "TRANSLATION.md",
-      "source_location": "L33",
+      "source_location": "L35",
       "id": "translation_pagini_legale_de_verificat_status_ro_en_la_final",
       "community": 12,
       "norm_label": "pagini legale (de verificat status ro/en la final)"
@@ -637,7 +646,7 @@
       "label": "Trecerea final\u0103 (checklist)",
       "file_type": "document",
       "source_file": "TRANSLATION.md",
-      "source_location": "L43",
+      "source_location": "L45",
       "id": "translation_trecerea_final\u0103_checklist",
       "community": 12,
       "norm_label": "trecerea finala (checklist)"
@@ -1259,9 +1268,9 @@
       "source_file": "js/threads.js",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_threads",
-      "target": "js_threads_renderframe",
-      "confidence_score": 1.0
+      "target": "js_threads_renderframe"
     },
     {
       "relation": "contains",
@@ -1279,9 +1288,9 @@
       "source_file": "js/threads.js",
       "source_location": "L206",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_threads",
-      "target": "js_threads_start",
-      "confidence_score": 1.0
+      "target": "js_threads_start"
     },
     {
       "relation": "contains",
@@ -1289,9 +1298,9 @@
       "source_file": "js/threads.js",
       "source_location": "L211",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_threads",
-      "target": "js_threads_stop",
-      "confidence_score": 1.0
+      "target": "js_threads_stop"
     },
     {
       "relation": "calls",
@@ -1300,9 +1309,9 @@
       "source_file": "js/threads.js",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_threads_resize",
-      "target": "js_threads_renderframe",
-      "confidence_score": 1.0
+      "target": "js_threads_renderframe"
     },
     {
       "relation": "calls",
@@ -1311,9 +1320,9 @@
       "source_file": "js/threads.js",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_threads_loop",
-      "target": "js_threads_renderframe",
-      "confidence_score": 1.0
+      "target": "js_threads_renderframe"
     },
     {
       "relation": "contains",
@@ -1321,9 +1330,9 @@
       "source_file": "js/title-spotlight.js",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_title_spotlight",
-      "target": "js_title_spotlight_loop",
-      "confidence_score": 1.0
+      "target": "js_title_spotlight_loop"
     },
     {
       "relation": "contains",
@@ -1331,9 +1340,9 @@
       "source_file": "js/title-spotlight.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_title_spotlight",
-      "target": "js_title_spotlight_onmove",
-      "confidence_score": 1.0
+      "target": "js_title_spotlight_onmove"
     },
     {
       "relation": "contains",
@@ -1341,9 +1350,9 @@
       "source_file": "js/title-spotlight.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_title_spotlight",
-      "target": "js_title_spotlight_setvars",
-      "confidence_score": 1.0
+      "target": "js_title_spotlight_setvars"
     },
     {
       "relation": "contains",
@@ -1351,9 +1360,9 @@
       "source_file": "js/title-spotlight.js",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_title_spotlight",
-      "target": "js_title_spotlight_start",
-      "confidence_score": 1.0
+      "target": "js_title_spotlight_start"
     },
     {
       "relation": "contains",
@@ -1361,9 +1370,9 @@
       "source_file": "js/title-spotlight.js",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_title_spotlight",
-      "target": "js_title_spotlight_stop",
-      "confidence_score": 1.0
+      "target": "js_title_spotlight_stop"
     },
     {
       "relation": "calls",
@@ -1372,9 +1381,9 @@
       "source_file": "js/title-spotlight.js",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_title_spotlight_loop",
-      "target": "js_title_spotlight_setvars",
-      "confidence_score": 1.0
+      "target": "js_title_spotlight_setvars"
     },
     {
       "relation": "contains",
@@ -1385,6 +1394,16 @@
       "confidence_score": 1.0,
       "source": "package",
       "target": "package_devdependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_playwright"
     },
     {
       "relation": "contains",
@@ -1458,5 +1477,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "130a8d4bd6c2678d26cc2480cd7070888758cf72"
+  "built_at_commit": "8b4ca0c3d7a1e0fd7f2e7cbbca6e32718ce50ec5"
 }

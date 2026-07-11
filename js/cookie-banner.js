@@ -13,6 +13,29 @@
   var STORAGE_KEY = 'cookie_consent_v2';
   var CURRENT_VERSION = 2;
 
+  var RO = (document.documentElement.lang || '').toLowerCase().indexOf('ro') === 0;
+  var T = RO ? {
+    aria: 'Consimțământ cookies',
+    text: 'Folosim stocare esențială pentru ca site-ul să funcționeze. Cu acordul tău, putem folosi și analytics ca să înțelegem cum e utilizat site-ul și să-l îmbunătățim. ',
+    cookiePolicy: 'Politică Cookies', privacyPolicy: 'Politică Confidențialitate',
+    reject: 'Refuz tot', customize: 'Personalizează', accept: 'Accept tot',
+    necTitle: 'Strict necesare',
+    necDesc: 'Necesare pentru funcționarea site-ului — rețin alegerea ta de cookies și preferințele de interfață. Nu pot fi dezactivate.',
+    anTitle: 'Analytics',
+    anDesc: 'Ne ajută să înțelegem cum e folosit site-ul (pagini vizitate, timp pe pagină, sursa traficului) ca să-l îmbunătățim. Fără reclame sau tracking cross-site.',
+    save: 'Salvează preferințele'
+  } : {
+    aria: 'Cookie consent',
+    text: 'We use essential storage to make the site work. With your consent, we may also use analytics to understand how visitors use the site so we can improve it. ',
+    cookiePolicy: 'Cookie Policy', privacyPolicy: 'Privacy Policy',
+    reject: 'Reject all', customize: 'Customize', accept: 'Accept all',
+    necTitle: 'Strictly necessary',
+    necDesc: 'Required for the site to function — remembers your cookie choice and UI preferences. Cannot be turned off.',
+    anTitle: 'Analytics',
+    anDesc: 'Helps us understand how visitors use the site (pages viewed, time on page, traffic source) so we can improve it. No advertising or cross-site tracking.',
+    save: 'Save preferences'
+  };
+
   function read() {
     try {
       var raw = localStorage.getItem(STORAGE_KEY);
@@ -76,37 +99,37 @@
     bannerEl.className = 'cookie-banner';
     bannerEl.setAttribute('role', 'dialog');
     bannerEl.setAttribute('aria-modal', 'false');
-    bannerEl.setAttribute('aria-label', 'Cookie consent');
+    bannerEl.setAttribute('aria-label', T.aria);
     bannerEl.innerHTML =
       '<div class="container cookie-banner__inner">' +
         '<div class="cookie-banner__main">' +
           '<p class="cookie-banner__text">' +
-            'We use essential storage to make the site work. With your consent, we may also use analytics to understand how visitors use the site so we can improve it. ' +
-            '<a href="cookie-policy.html">Cookie Policy</a> &middot; <a href="privacy-policy.html">Privacy Policy</a>' +
+            T.text +
+            '<a href="cookie-policy.html">' + T.cookiePolicy + '</a> &middot; <a href="privacy-policy.html">' + T.privacyPolicy + '</a>' +
           '</p>' +
           '<div class="cookie-banner__actions">' +
-            '<button type="button" class="cookie-banner__btn cookie-banner__btn--ghost" data-action="reject">Reject all</button>' +
-            '<button type="button" class="cookie-banner__btn cookie-banner__btn--ghost" data-action="customize" aria-expanded="false">Customize</button>' +
-            '<button type="button" class="cookie-banner__btn cookie-banner__btn--accept" data-action="accept">Accept all</button>' +
+            '<button type="button" class="cookie-banner__btn cookie-banner__btn--ghost" data-action="reject">' + T.reject + '</button>' +
+            '<button type="button" class="cookie-banner__btn cookie-banner__btn--ghost" data-action="customize" aria-expanded="false">' + T.customize + '</button>' +
+            '<button type="button" class="cookie-banner__btn cookie-banner__btn--accept" data-action="accept">' + T.accept + '</button>' +
           '</div>' +
         '</div>' +
         '<div class="cookie-banner__details" hidden>' +
           '<label class="cookie-banner__cat">' +
             '<input type="checkbox" checked disabled aria-describedby="cat-nec-desc">' +
             '<span class="cookie-banner__cat-text">' +
-              '<strong>Strictly necessary</strong>' +
-              '<span id="cat-nec-desc">Required for the site to function — remembers your cookie choice and UI preferences. Cannot be turned off.</span>' +
+              '<strong>' + T.necTitle + '</strong>' +
+              '<span id="cat-nec-desc">' + T.necDesc + '</span>' +
             '</span>' +
           '</label>' +
           '<label class="cookie-banner__cat">' +
             '<input type="checkbox" data-cat="analytics" ' + analyticsChecked + ' aria-describedby="cat-an-desc">' +
             '<span class="cookie-banner__cat-text">' +
-              '<strong>Analytics</strong>' +
-              '<span id="cat-an-desc">Helps us understand how visitors use the site (pages viewed, time on page, traffic source) so we can improve it. No advertising or cross-site tracking.</span>' +
+              '<strong>' + T.anTitle + '</strong>' +
+              '<span id="cat-an-desc">' + T.anDesc + '</span>' +
             '</span>' +
           '</label>' +
           '<div class="cookie-banner__details-actions">' +
-            '<button type="button" class="cookie-banner__btn cookie-banner__btn--accept" data-action="save">Save preferences</button>' +
+            '<button type="button" class="cookie-banner__btn cookie-banner__btn--accept" data-action="save">' + T.save + '</button>' +
           '</div>' +
         '</div>' +
       '</div>';

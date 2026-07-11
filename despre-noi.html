@@ -29,8 +29,8 @@
     .nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:72px}
   </style>
 
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fonts.css?v=2">
+  <link rel="stylesheet" href="css/main.css?v=2">
 
   <script type="application/ld+json">
   {
@@ -105,58 +105,60 @@
     <div class="nav__inner container">
       <a href="index.html" class="nav__logo">cyclic</a>
       <ul class="nav__links" role="list">
-        <li><a href="index.html"   class="nav__link">Home</a></li>
-        <li><a href="events.html"  class="nav__link">Events</a></li>
-        <li><a href="artists.html" class="nav__link">Artists</a></li>
-        <li><a href="rentals.html" class="nav__link">Rentals</a></li>
-        <li><a href="labels.html"  class="nav__link">Labels</a></li>
-        <li><a href="about.html"   class="nav__link active">About Us</a></li>
+        <li><a href="index.html"      class="nav__link">Acasă</a></li>
+        <li><a href="evenimente.html" class="nav__link">Evenimente</a></li>
+        <li><a href="artisti.html"    class="nav__link">Artiști</a></li>
+        <li><a href="inchiriere-echipamente.html" class="nav__link">Închirieri</a></li>
+        <li><a href="label-uri.html"  class="nav__link">Label-uri</a></li>
+        <li><a href="despre-noi.html" class="nav__link active">Despre noi</a></li>
       </ul>
-      <a href="events.html" class="btn btn--accent nav__cta magnetic">Get Tickets <span class="arrow">→</span></a>
-      <button class="nav__burger" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a href="evenimente.html" class="btn btn--accent nav__cta magnetic">Bilete <span class="arrow">→</span></a>
+      <a href="about.html" class="lang-toggle" hreflang="en" aria-label="Switch to English"><span class="lang-toggle__flag" aria-hidden="true">🇬🇧</span> EN</a>
+      <button class="nav__burger" aria-label="Deschide meniu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation" aria-modal="true">
-    <a href="index.html"   class="nav__link">Home</a>
-    <a href="events.html"  class="nav__link">Events</a>
-    <a href="artists.html" class="nav__link">Artists</a>
-    <a href="rentals.html" class="nav__link">Rentals</a>
-    <a href="labels.html"  class="nav__link">Labels</a>
-    <a href="about.html"   class="nav__link">About Us</a>
-    <a href="events.html"  class="btn btn--accent magnetic">Get Tickets →</a>
+  <div class="nav__mobile" role="dialog" aria-label="Navigare mobilă" aria-modal="true">
+    <a href="index.html"      class="nav__link">Acasă</a>
+    <a href="evenimente.html" class="nav__link">Evenimente</a>
+    <a href="artisti.html"    class="nav__link">Artiști</a>
+    <a href="inchiriere-echipamente.html" class="nav__link">Închirieri</a>
+    <a href="label-uri.html"  class="nav__link">Label-uri</a>
+    <a href="despre-noi.html" class="nav__link">Despre noi</a>
+    <a href="evenimente.html" class="btn btn--accent magnetic">Bilete →</a>
+    <a href="about.html" class="lang-toggle" hreflang="en" aria-label="Switch to English"><span class="lang-toggle__flag" aria-hidden="true">🇬🇧</span> EN</a>
   </div>
 
   <main>
     <!-- Page Hero — big statement -->
     <header class="page-hero" style="min-height: 70vh; display:flex; align-items:flex-end;">
       <div class="container page-hero__content" style="padding-bottom: clamp(60px,8vw,100px);">
-        <p class="section-label page-hero__label">Est. 2009</p>
+        <p class="section-label page-hero__label">Din 2009</p>
         <h1 class="display-xl page-hero__title" style="max-width: 18ch;">
-          17 Years of Romania's Underground<span class="text-accent">.</span>
+          17 ani de underground românesc<span class="text-accent">.</span>
         </h1>
         <p class="page-hero__sub" style="max-width:60ch;">
-          We are Cyclic Agency. Since 2009 we've been building Romania's electronic music community — one unforgettable event at a time.
+          Suntem Cyclic Agency. Din 2009 construim comunitatea de muzică electronică din România — un eveniment de neuitat după altul.
         </p>
       </div>
     </header>
 
     <!-- Stats -->
-    <section class="stats fade-in" aria-label="Cyclic Agency key facts">
+    <section class="stats fade-in" aria-label="Cifre cheie Cyclic Agency">
       <div class="stat">
         <span class="stat__number" data-count="17" data-suffix="+">17+</span>
-        <p class="stat__title">Years</p>
-        <p class="stat__desc">Curating underground electronic music</p>
+        <p class="stat__title">Ani</p>
+        <p class="stat__desc">De muzică electronică underground curatoriată</p>
       </div>
       <div class="stat">
         <span class="stat__number" data-count="30" data-suffix="+">30+</span>
-        <p class="stat__title">Venues</p>
-        <p class="stat__desc">Across 30 Romanian cities</p>
+        <p class="stat__title">Locații</p>
+        <p class="stat__desc">În 30 de orașe din România</p>
       </div>
       <div class="stat">
         <span class="stat__number" data-count="100" data-suffix="+">100+</span>
-        <p class="stat__title">Artists</p>
-        <p class="stat__desc">International and local talent</p>
+        <p class="stat__title">Artiști</p>
+        <p class="stat__desc">Talente internaționale și locale</p>
       </div>
     </section>
 
@@ -166,31 +168,31 @@
         <div class="grid-asym-r fade-in" style="align-items:center; gap: clamp(40px,6vw,100px);">
 
           <div class="about-text">
-            <span class="section-label">Our story</span>
+            <span class="section-label">Povestea noastră</span>
             <h2 class="display-sm" id="story-heading" style="margin-top:16px; margin-bottom:32px;">
-              The Complete Package<span class="text-accent">.</span>
+              Pachetul complet<span class="text-accent">.</span>
             </h2>
             <p>
-              Cyclic Agency is one of the very few companies in Romania that can deliver a truly complete event — <strong>venue, professional equipment and internationally recognized DJs</strong>, all from a single team that has been doing this for 17 years. Whether it's a corporate event for a hundred guests or a night that fills a hall with thousands, the infrastructure and expertise are already in place.
+              Cyclic Agency este una dintre foarte puținele companii din România care pot livra un eveniment cu adevărat complet — <strong>locație, echipamente profesionale și DJ recunoscuți internațional</strong>, toate de la o singură echipă care face asta de 17 ani. Fie că e vorba de un eveniment corporate pentru o sută de invitați sau de o noapte care umple o sală cu mii de oameni, infrastructura și expertiza există deja.
             </p>
             <p>
-              That position was earned, not given. <strong>Ionuț Hupcă</strong> started organizing parties in Focșani before there was a business plan — before there was even a name. His first venture, <strong>Electro Events</strong>, was a two-day outdoor festival that lost money. He continued anyway. By 2009, Cyclic Agency existed as a conviction: Romanian audiences deserved the same quality of electronic music experiences as Berlin, Amsterdam or London.
+              Poziția asta a fost câștigată, nu primită. <strong>Ionuț Hupcă</strong> a început să organizeze petreceri în Focșani înainte să existe un plan de afaceri — înainte să existe măcar un nume. Primul lui proiect, <strong>Electro Events</strong>, a fost un festival outdoor de două zile care a pierdut bani. A continuat oricum. În 2009, Cyclic Agency exista deja ca o convingere: publicul din România merita aceeași calitate a experiențelor de muzică electronică ca Berlinul, Amsterdamul sau Londra.
             </p>
             <p>
-              Over 17 years, that conviction turned into one of Romania's most established event names — bringing <strong>Sasha, Dixon, Tale of Us, Amelie Lens</strong> and dozens of world-class artists to stages across <strong>30 cities</strong>. The reputation wasn't built on the marquee bookings. It was built on consistency: every event organized correctly, from first contact to last beat, without exception.
+              În 17 ani, convingerea aceea s-a transformat într-unul dintre cele mai consacrate nume de evenimente din România — aducând <strong>Sasha, Dixon, Tale of Us, Amelie Lens</strong> și zeci de artiști de talie mondială pe scene din <strong>30 de orașe</strong>. Reputația nu s-a construit pe booking-urile de afiș. S-a construit pe consecvență: fiecare eveniment organizat corect, de la primul contact la ultimul beat, fără excepție.
             </p>
             <p>
-              The same standard shaped <strong>Cyclic Rentals</strong>. What started as internal necessity — having the right gear for their own events — grew into one of Romania's recognized names in professional equipment rental. Smaller promoters and companies across the country who need access to pro-grade sound, lighting and staging now rely on Cyclic. The belief behind it has never changed: <strong>quality production should not be a privilege of large budgets</strong>.
+              Același standard a modelat <strong>Cyclic Rentals</strong>. Ce a început ca necesitate internă — să aibă echipamentele potrivite pentru propriile evenimente — a crescut într-unul dintre numele recunoscute din România în închirierea de echipamente profesionale. Promoterii mai mici și companiile din toată țara care au nevoie de sunet, lumini și scenotehnică la nivel profesionist se bazează acum pe Cyclic. Convingerea din spate nu s-a schimbat niciodată: <strong>producția de calitate nu ar trebui să fie un privilegiu al bugetelor mari</strong>.
             </p>
             <p>
-              Alongside the events and rentals, Cyclic has always been a nursery for Romanian talent — discovering artists, managing careers, and pushing them onto international stages. <strong>Optick, Rosario Internullo, Mihai Popoviciu, Adrian Eftimie, The Model</strong>. And in 2019, <strong>Cyclic Records</strong> launched under Mihai Popoviciu's direction, completing the loop from discovery to release.
+              Pe lângă evenimente și închirieri, Cyclic a fost mereu o pepinieră pentru talentul românesc — descoperind artiști, gestionând cariere și împingându-i pe scene internaționale. <strong>Optick, Rosario Internullo, Mihai Popoviciu, Adrian Eftimie, The Model</strong>. Iar în 2019 s-a lansat <strong>Cyclic Records</strong>, sub direcția lui Mihai Popoviciu, închizând cercul de la descoperire la lansare.
             </p>
             <p>
-              Today, Cyclic also produces <a href="https://thebohemiansociety.ro/" target="_blank" rel="noopener noreferrer" style="color:#96CC00; text-decoration:none; border-bottom:1px solid rgba(150,204,0,0.4);">The Bohemian Society</a> — one of Romania's most original festivals, at its 4th edition in 2026. Art, electronic music and community in the Danube Delta. It defines exactly what Cyclic has always stood for.
+              Astăzi, Cyclic produce și <a href="https://thebohemiansociety.ro/" target="_blank" rel="noopener noreferrer" style="color:#96CC00; text-decoration:none; border-bottom:1px solid rgba(150,204,0,0.4);">The Bohemian Society</a> — unul dintre cele mai originale festivaluri din România, la a 4-a ediție în 2026. Artă, muzică electronică și comunitate în Delta Dunării. Definește exact ceea ce Cyclic a reprezentat dintotdeauna.
             </p>
             <div class="highlight-block">
-              <p>"Profitable is only if you do very large events. We operate in the middle zone — and that's exactly where the trust is built."</p>
-              <p style="margin-top:12px; font-size:13px; opacity:0.5;">— Ionuț Hupcă, Director of Events</p>
+              <p>„Profitabil e doar dacă faci evenimente foarte mari. Noi operăm în zona de mijloc — și exact acolo se construiește încrederea."</p>
+              <p style="margin-top:12px; font-size:13px; opacity:0.5;">— Ionuț Hupcă, Director Evenimente</p>
             </div>
           </div>
 
@@ -202,9 +204,9 @@
                    style="width:100%; height:auto; display:block;">
             </div>
             <div class="tags">
-              <span class="tag tag--accent">Founded 2009</span>
-              <span class="tag">Bucharest</span>
-              <span class="tag">30 Cities</span>
+              <span class="tag tag--accent">Fondată în 2009</span>
+              <span class="tag">București</span>
+              <span class="tag">30 de orașe</span>
               <span class="tag tag--purple">Underground</span>
             </div>
           </div>
@@ -218,29 +220,29 @@
       <div class="container">
         <header class="section-header fade-in">
           <div class="section-header__left">
-            <span class="section-label">What we bring to the table</span>
-            <h2 class="display-sm section-header__title" id="offer-heading">One Team. Full Solution<span class="text-accent">.</span></h2>
+            <span class="section-label">Ce aducem noi</span>
+            <h2 class="display-sm section-header__title" id="offer-heading">O echipă. Soluția completă<span class="text-accent">.</span></h2>
           </div>
           <p class="section-header__desc" style="max-width:46ch;">
-            From the first call to the last beat — Cyclic covers every layer of a professional event.
+            De la primul telefon la ultimul beat — Cyclic acoperă fiecare nivel al unui eveniment profesionist.
           </p>
         </header>
 
         <div class="grid-3 fade-in">
           <div class="card card--accent-border" style="padding:36px 28px;">
-            <p style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(150,204,0,0.6); margin-bottom:20px;">Events &amp; Booking</p>
-            <h3 class="card__title" style="margin-bottom:16px;">Artists &amp; Venues</h3>
-            <p class="card__body">Access to 100+ artists — local and international — and a network of venues across 30 Romanian cities. Corporate events, club nights, rooftop sessions, festivals. We know how to fill a room.</p>
+            <p style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(150,204,0,0.6); margin-bottom:20px;">Evenimente &amp; Booking</p>
+            <h3 class="card__title" style="margin-bottom:16px;">Artiști &amp; Locații</h3>
+            <p class="card__body">Acces la peste 100 de artiști — locali și internaționali — și o rețea de locații în 30 de orașe din România. Evenimente corporate, nopți de club, sesiuni pe rooftop, festivaluri. Știm cum se umple o sală.</p>
           </div>
           <div class="card" style="padding:36px 28px;">
             <p style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.3); margin-bottom:20px;">Cyclic Rentals</p>
-            <h3 class="card__title" style="margin-bottom:16px;">Professional Equipment</h3>
-            <p class="card__body">Professional-grade sound, lighting and staging — available to promoters of all sizes. No ownership overhead, no compromises. The same gear we use for our own events, now available to yours.</p>
+            <h3 class="card__title" style="margin-bottom:16px;">Echipamente profesionale</h3>
+            <p class="card__body">Sunet, lumini și scenotehnică la nivel profesionist — disponibile promoterilor de orice dimensiune. Fără costurile deținerii, fără compromisuri. Aceleași echipamente pe care le folosim la evenimentele noastre, acum disponibile pentru ale tale.</p>
           </div>
           <div class="card" style="padding:36px 28px;">
             <p style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.3); margin-bottom:20px;">Cyclic Records</p>
-            <h3 class="card__title" style="margin-bottom:16px;">Artist Development</h3>
-            <p class="card__body">We don't just book artists — we build careers. From management and bookings to label releases, Cyclic has developed some of Romania's most respected names in electronic music.</p>
+            <h3 class="card__title" style="margin-bottom:16px;">Dezvoltarea artiștilor</h3>
+            <p class="card__body">Nu doar rezervăm artiști — construim cariere. De la management și booking-uri la lansări pe label, Cyclic a dezvoltat unele dintre cele mai respectate nume din muzica electronică românească.</p>
           </div>
         </div>
 
@@ -255,8 +257,8 @@
       <div class="container">
         <header class="section-header fade-in">
           <div class="section-header__left">
-            <span class="section-label">Milestones</span>
-            <h2 class="display-sm section-header__title" id="timeline-heading">17 Years in Numbers</h2>
+            <span class="section-label">Repere</span>
+            <h2 class="display-sm section-header__title" id="timeline-heading">17 ani în cifre</h2>
           </div>
         </header>
 
@@ -264,43 +266,43 @@
           <div class="value-item">
             <div class="value-item__num">2009</div>
             <div>
-              <h3 class="value-item__title">The Beginning — Focșani</h3>
-              <p class="value-item__desc">Before Cyclic had a name, there was Electro Events — a two-day outdoor electronic music festival in Focșani. The first edition lost money. The audience's reaction made it impossible to stop. Cyclic Agency is born from that stubbornness.</p>
+              <h3 class="value-item__title">Începutul — Focșani</h3>
+              <p class="value-item__desc">Înainte ca Cyclic să aibă un nume, a existat Electro Events — un festival outdoor de muzică electronică de două zile în Focșani. Prima ediție a pierdut bani. Reacția publicului a făcut imposibilă oprirea. Cyclic Agency se naște din încăpățânarea aceea.</p>
             </div>
           </div>
           <div class="value-item">
             <div class="value-item__num">2012</div>
             <div>
-              <h3 class="value-item__title">First International Headliners</h3>
-              <p class="value-item__desc">Cyclic begins booking major international names — Sasha among the first — establishing the agency as the bridge between Romania's passionate underground audience and the global electronic music circuit.</p>
+              <h3 class="value-item__title">Primii headlineri internaționali</h3>
+              <p class="value-item__desc">Cyclic începe să aducă nume internaționale mari — Sasha printre primele — consolidând agenția ca punte între publicul underground pasionat din România și circuitul global de muzică electronică.</p>
             </div>
           </div>
           <div class="value-item">
             <div class="value-item__num">2015</div>
             <div>
-              <h3 class="value-item__title">Expansion to 10 Cities</h3>
-              <p class="value-item__desc">Cyclic extends beyond Bucharest, producing events in Cluj-Napoca, Timișoara, Brașov and 6 more cities. Events move to rooftops, industrial spaces and unconventional venues — a signature that defines the brand to this day.</p>
+              <h3 class="value-item__title">Extindere în 10 orașe</h3>
+              <p class="value-item__desc">Cyclic se extinde dincolo de București, producând evenimente în Cluj-Napoca, Timișoara, Brașov și încă 6 orașe. Evenimentele se mută pe rooftop-uri, în spații industriale și locații neconvenționale — o semnătură care definește brandul până azi.</p>
             </div>
           </div>
           <div class="value-item">
             <div class="value-item__num">2019</div>
             <div>
-              <h3 class="value-item__title">100th Event &amp; Cyclic Records</h3>
-              <p class="value-item__desc">We celebrate our 100th event with a special Bucharest edition. Cyclic Records launches under the direction of Mihai Popoviciu — giving the roster's artists a home for their recorded music and completing the loop from discovery to release.</p>
+              <h3 class="value-item__title">Al 100-lea eveniment &amp; Cyclic Records</h3>
+              <p class="value-item__desc">Sărbătorim al 100-lea eveniment cu o ediție specială la București. Se lansează Cyclic Records, sub direcția lui Mihai Popoviciu — oferind artiștilor din roster o casă pentru muzica lor și închizând cercul de la descoperire la lansare.</p>
             </div>
           </div>
           <div class="value-item">
             <div class="value-item__num">2023</div>
             <div>
-              <h3 class="value-item__title">The Bohemian Society — Edition I</h3>
-              <p class="value-item__desc">Cyclic launches <a href="https://thebohemiansociety.ro/" target="_blank" rel="noopener noreferrer" style="color:#96CC00;">The Bohemian Society</a>, one of Romania's most original festivals — a blend of electronic music, art and community set in unique outdoor locations. The first edition sets a new standard for what a Romanian festival can be.</p>
+              <h3 class="value-item__title">The Bohemian Society — Ediția I</h3>
+              <p class="value-item__desc">Cyclic lansează <a href="https://thebohemiansociety.ro/" target="_blank" rel="noopener noreferrer" style="color:#96CC00;">The Bohemian Society</a>, unul dintre cele mai originale festivaluri din România — un amestec de muzică electronică, artă și comunitate în locații outdoor unice. Prima ediție stabilește un nou standard pentru ce poate fi un festival românesc.</p>
             </div>
           </div>
           <div class="value-item">
             <div class="value-item__num">2026</div>
             <div>
-              <h3 class="value-item__title">30 Cities, 100+ Artists &amp; The Bohemian Society</h3>
-              <p class="value-item__desc">Cyclic Agency operates across 30 Romanian cities with a roster of over 100 artists. And now, one of the most exciting festivals in Romania — <a href="https://thebohemiansociety.ro/" target="_blank" rel="noopener noreferrer" style="color:#96CC00;">The Bohemian Society</a> — where art, electronic music and community come together exactly as Cyclic always intended.</p>
+              <h3 class="value-item__title">30 de orașe, 100+ artiști &amp; The Bohemian Society</h3>
+              <p class="value-item__desc">Cyclic Agency operează în 30 de orașe din România cu un roster de peste 100 de artiști. Și acum, unul dintre cele mai interesante festivaluri din România — <a href="https://thebohemiansociety.ro/" target="_blank" rel="noopener noreferrer" style="color:#96CC00;">The Bohemian Society</a> — unde arta, muzica electronică și comunitatea se întâlnesc exact așa cum Cyclic și-a propus dintotdeauna.</p>
             </div>
           </div>
         </div>
@@ -312,41 +314,41 @@
       <div class="container">
         <header class="section-header fade-in">
           <div class="section-header__left">
-            <span class="section-label">What drives us</span>
-            <h2 class="display-sm section-header__title" id="values-heading">Our Values</h2>
+            <span class="section-label">Ce ne motivează</span>
+            <h2 class="display-sm section-header__title" id="values-heading">Valorile noastre</h2>
           </div>
         </header>
 
         <div class="grid-3 fade-in">
           <div class="card card--accent-border">
 
-            <h3 class="card__title">Music First</h3>
-            <p class="card__body">Every decision starts with the music. We book artists we believe in. We design events around the sonic experience. Commercial considerations come second.</p>
+            <h3 class="card__title">Muzica pe primul loc</h3>
+            <p class="card__body">Fiecare decizie începe cu muzica. Rezervăm artiști în care credem. Construim evenimentele în jurul experienței sonore. Considerentele comerciale vin pe locul doi.</p>
           </div>
           <div class="card">
 
-            <h3 class="card__title">Community</h3>
-            <p class="card__body">Electronic music is nothing without its people. We build communities, support local artists, and create spaces where culture can genuinely grow.</p>
+            <h3 class="card__title">Comunitate</h3>
+            <p class="card__body">Muzica electronică nu e nimic fără oamenii ei. Construim comunități, susținem artiștii locali și creăm spații în care cultura poate crește cu adevărat.</p>
           </div>
           <div class="card">
 
-            <h3 class="card__title">Authenticity</h3>
-            <p class="card__body">We don't chase trends. We stay true to underground music culture — its values, its aesthetics, its refusal to compromise for the mainstream.</p>
+            <h3 class="card__title">Autenticitate</h3>
+            <p class="card__body">Nu alergăm după trenduri. Rămânem fideli culturii muzicale underground — valorilor ei, esteticii ei, refuzului ei de a face compromisuri pentru mainstream.</p>
           </div>
           <div class="card">
 
-            <h3 class="card__title">Craft</h3>
-            <p class="card__body">From sound design to visual presentation, every element of our events is approached with care and expertise earned through 17 years of experience.</p>
+            <h3 class="card__title">Meșteșug</h3>
+            <p class="card__body">De la sound design la prezentarea vizuală, fiecare element al evenimentelor noastre e abordat cu grijă și cu expertiza câștigată în 17 ani de experiență.</p>
           </div>
           <div class="card">
 
-            <h3 class="card__title">Global Perspective</h3>
-            <p class="card__body">We connect Romania's scene with the international electronic music world — bringing the best here while pushing Romanian talent beyond our borders.</p>
+            <h3 class="card__title">Perspectivă globală</h3>
+            <p class="card__body">Conectăm scena din România cu lumea internațională a muzicii electronice — aducem ce e mai bun aici și împingem talentul românesc dincolo de granițe.</p>
           </div>
           <div class="card card--accent-border">
 
-            <h3 class="card__title">Growth</h3>
-            <p class="card__body">We invest in the long-term. In developing artists, in building venues, in growing audiences. Sustainable growth over quick wins, always.</p>
+            <h3 class="card__title">Creștere</h3>
+            <p class="card__body">Investim pe termen lung. În dezvoltarea artiștilor, în construirea locațiilor, în creșterea publicului. Creștere sustenabilă în locul câștigurilor rapide, întotdeauna.</p>
           </div>
         </div>
       </div>
@@ -357,11 +359,11 @@
       <div class="container">
         <header class="section-header fade-in">
           <div class="section-header__left">
-            <span class="section-label">Romanian talent</span>
-            <h2 class="display-sm section-header__title" id="nursery-heading">Romania's Underground, on the World Stage<span class="text-accent">.</span></h2>
+            <span class="section-label">Talent românesc</span>
+            <h2 class="display-sm section-header__title" id="nursery-heading">Underground-ul României, pe scena lumii<span class="text-accent">.</span></h2>
           </div>
           <p class="section-header__desc" style="max-width:50ch;">
-            Cyclic has always been more than a promoter. Since the beginning, we've been a nursery — discovering Romanian artists, managing their careers and pushing them onto international stages.
+            Cyclic a fost mereu mai mult decât un promoter. De la început am fost o pepinieră — descoperim artiști români, le gestionăm carierele și îi împingem pe scene internaționale.
           </p>
         </header>
 
@@ -389,7 +391,7 @@
         </div>
 
         <div class="fade-in" style="text-align:center;">
-          <a href="artists.html" class="btn btn--outline btn--lg magnetic">See All Artists <span class="arrow">→</span></a>
+          <a href="artisti.html" class="btn btn--outline btn--lg magnetic">Vezi toți artiștii <span class="arrow">→</span></a>
         </div>
       </div>
     </section>
@@ -399,8 +401,8 @@
       <div class="container">
         <header class="section-header fade-in">
           <div class="section-header__left">
-            <span class="section-label">The people</span>
-            <h2 class="display-sm section-header__title" id="team-heading">Our Team</h2>
+            <span class="section-label">Oamenii</span>
+            <h2 class="display-sm section-header__title" id="team-heading">Echipa noastră</h2>
           </div>
         </header>
 
@@ -411,8 +413,8 @@
                    alt="Ionut Hupca Director of Events at Cyclic Agency Romania"
                    width="240" height="240" loading="lazy">
             </div>
-            <h3 class="team-card__name"><a href="https://wa.me/40721381922" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Ionut Hupca</a></h3>
-            <p class="team-card__role">Director of Events</p>
+            <h3 class="team-card__name"><a href="https://wa.me/40721381922" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Ionuț Hupcă</a></h3>
+            <p class="team-card__role">Director Evenimente</p>
             <address class="team-card__contact" style="font-style:normal;">
               <a href="mailto:ionut@cyclic.ro">ionut@cyclic.ro</a>
             </address>
@@ -425,7 +427,7 @@
                    width="240" height="240" loading="lazy">
             </div>
             <h3 class="team-card__name"><a href="https://wa.me/40721337694" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Cătălin Căpățână</a></h3>
-            <p class="team-card__role">Head of Commercial</p>
+            <p class="team-card__role">Director Comercial</p>
             <address class="team-card__contact" style="font-style:normal;">
               <a href="mailto:catalin@cyclic.ro">catalin@cyclic.ro</a>
             </address>
@@ -438,7 +440,7 @@
                    width="240" height="240" loading="lazy">
             </div>
             <h3 class="team-card__name"><a href="https://wa.me/40765483450" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Coman Vlad</a></h3>
-            <p class="team-card__role">Event Coordinator</p>
+            <p class="team-card__role">Coordonator Evenimente</p>
             <address class="team-card__contact" style="font-style:normal;">
               <a href="mailto:vlad.coman@cyclic.ro">vlad.coman@cyclic.ro</a>
             </address>
@@ -450,10 +452,10 @@
                    alt="Cyclic Agency team — we're hiring"
                    width="240" height="240" loading="lazy">
             </div>
-            <h3 class="team-card__name">Join the Team</h3>
-            <p class="team-card__role">We're Growing</p>
+            <h3 class="team-card__name">Alătură-te echipei</h3>
+            <p class="team-card__role">Suntem în creștere</p>
             <div class="team-card__contact">
-              <a href="mailto:ionut@cyclic.ro">Send us your CV</a>
+              <a href="mailto:ionut@cyclic.ro">Trimite-ne CV-ul tău</a>
             </div>
           </div>
         </div>
@@ -465,37 +467,37 @@
       <div class="container">
         <div class="grid-asym fade-in" style="align-items:center; gap:clamp(40px,6vw,100px);">
           <div>
-            <span class="section-label">Get in touch</span>
+            <span class="section-label">Contactează-ne</span>
             <h2 class="display-sm" id="contact-cta" style="margin-top:16px; margin-bottom:24px;">
-              Let's Create Something<br>Memorable<span class="text-accent">.</span>
+              Hai să creăm ceva<br>memorabil<span class="text-accent">.</span>
             </h2>
             <p class="text-muted" style="font-size:15px; line-height:1.8; margin-bottom:32px;">
-              Whether you're an artist, a venue, a label, or a brand looking to partner with Romania's leading electronic music agency — we want to hear from you.
+              Fie că ești artist, locație, label sau brand care caută un parteneriat cu agenția de muzică electronică lider din România — vrem să auzim de tine.
             </p>
             <div class="btn-group">
-              <a href="mailto:ionut@cyclic.ro" class="btn btn--accent btn--lg magnetic">Email Us <span class="arrow">→</span></a>
-              <a href="https://wa.me/40721381922" target="_blank" rel="noopener" class="btn btn--outline btn--lg">WhatsApp Us</a>
+              <a href="mailto:ionut@cyclic.ro" class="btn btn--accent btn--lg magnetic">Scrie-ne <span class="arrow">→</span></a>
+              <a href="https://wa.me/40721381922" target="_blank" rel="noopener" class="btn btn--outline btn--lg">WhatsApp</a>
             </div>
           </div>
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="card" style="display:flex; align-items:center; gap:20px; padding:24px 28px;">
               <div style="width:40px;height:40px;border-radius:4px;background:var(--accent-dim);border:1px solid rgba(150,204,0,0.2);flex-shrink:0;"></div>
               <div>
-                <p style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:4px;">Events & Bookings</p>
+                <p style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:4px;">Evenimente & Booking</p>
                 <a href="mailto:ionut@cyclic.ro" class="contact-link">ionut@cyclic.ro</a>
               </div>
             </div>
             <div class="card" style="display:flex; align-items:center; gap:20px; padding:24px 28px;">
               <div style="width:40px;height:40px;border-radius:4px;background:var(--accent-dim);border:1px solid rgba(150,204,0,0.2);flex-shrink:0;"></div>
               <div>
-                <p style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:4px;">Director of Events</p>
+                <p style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:4px;">Director Evenimente</p>
                 <a href="https://wa.me/40721381922" target="_blank" rel="noopener" class="contact-link">+40 721 381 922</a>
               </div>
             </div>
             <div class="card" style="display:flex; align-items:center; gap:20px; padding:24px 28px;">
               <div style="width:40px;height:40px;border-radius:4px;background:var(--accent-dim);border:1px solid rgba(150,204,0,0.2);flex-shrink:0;"></div>
               <div>
-                <p style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:4px;">Coordination</p>
+                <p style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:4px;">Coordonare</p>
                 <a href="mailto:vlad.coman@cyclic.ro" class="contact-link">vlad.coman@cyclic.ro</a>
               </div>
             </div>
@@ -511,34 +513,34 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <p class="footer__logo">cyclic</p>
-          <p class="footer__tagline">Romania's Underground. Elevated.<br>Electronic music events since 2009.</p>
-          <nav class="footer__social" aria-label="Social media links">
+          <p class="footer__tagline">Underground-ul României. Ridicat.<br>Evenimente de muzică electronică din 2009.</p>
+          <nav class="footer__social" aria-label="Linkuri social media">
             <a href="https://facebook.com/cyclicagency" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://instagram.com/cyclic_music" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://tiktok.com/@cyclic_music" class="footer__social-link" target="_blank" rel="noopener noreferrer">TikTok</a>
           </nav>
         </div>
-        <nav class="footer__nav" aria-label="Footer navigation">
-          <h4>Pages</h4>
+        <nav class="footer__nav" aria-label="Navigare footer">
+          <h4>Pagini</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="artists.html">Artists</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="labels.html">Labels</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="evenimente.html">Evenimente</a></li>
+            <li><a href="artisti.html">Artiști</a></li>
+            <li><a href="inchiriere-echipamente.html">Închirieri</a></li>
+            <li><a href="label-uri.html">Label-uri</a></li>
+            <li><a href="despre-noi.html">Despre noi</a></li>
           </ul>
         </nav>
         <address class="footer__contact" style="font-style:normal;">
           <h4>Contact</h4>
           <div class="footer__contact-block">
-            <p class="footer__contact-role">Director of Events</p>
-            <p class="footer__contact-name">Ionut Hupca</p>
+            <p class="footer__contact-role">Director Evenimente</p>
+            <p class="footer__contact-name">Ionuț Hupcă</p>
             <a href="mailto:ionut@cyclic.ro">ionut@cyclic.ro</a>
             <a href="https://wa.me/40721381922" target="_blank" rel="noopener">+40 721 381 922</a>
           </div>
           <div class="footer__contact-block">
-            <p class="footer__contact-role">Event Coordinator</p>
+            <p class="footer__contact-role">Coordonator Evenimente</p>
             <p class="footer__contact-name">Coman Vlad</p>
             <a href="mailto:vlad.coman@cyclic.ro">vlad.coman@cyclic.ro</a>
             <a href="https://wa.me/40765483450" target="_blank" rel="noopener">+40 765 483 450</a>
@@ -546,16 +548,16 @@
         </address>
       </div>
       <div class="footer__bottom">
-        <p>© <span class="js-year">2026</span> Cyclic Agency. All rights reserved.</p>
-        <p>Electronic music events Romania since 2009.</p>
+        <p>© <span class="js-year">2026</span> Cyclic Agency. Toate drepturile rezervate.</p>
+        <p>Evenimente de muzică electronică în România din 2009.</p>
       </div>
 
       <div class="footer__legal">
         <div class="footer__legal-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="cookie-policy.html">Cookie Policy</a>
-          <a href="terms.html">Terms &amp; Conditions</a>
-          <a href="#" class="js-cookie-settings">Cookie Settings</a>
+          <a href="privacy-policy.html">Politică Confidențialitate</a>
+          <a href="cookie-policy.html">Politică Cookies</a>
+          <a href="terms.html">Termeni &amp; Condiții</a>
+          <a href="#" class="js-cookie-settings">Setări Cookies</a>
         </div>
         <div class="footer__legal-info">
           <span><strong>CYCLIC MUSIC S.R.L.</strong></span>
@@ -567,10 +569,10 @@
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
-  <script src="js/effects.js" defer></script>
-  <script src="js/profile-card.js" defer></script>
-  <script src="js/cookie-banner.js" defer></script>
-  <script src="js/analytics.js" defer></script>
+  <script src="js/main.js?v=2" defer></script>
+  <script src="js/effects.js?v=2" defer></script>
+  <script src="js/profile-card.js?v=2" defer></script>
+  <script src="js/cookie-banner.js?v=2" defer></script>
+  <script src="js/analytics.js?v=2" defer></script>
 </body>
 </html>

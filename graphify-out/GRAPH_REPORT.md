@@ -1,16 +1,16 @@
-# Graph Report - site cyclic V1  (2026-06-02)
+# Graph Report - site cyclic V1  (2026-07-10)
 
 ## Corpus Check
-- 14 files · ~144,094 words
+- 14 files · ~144,382 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 71 nodes · 79 edges · 13 communities (10 shown, 3 thin omitted)
-- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)
+- 72 nodes · 80 edges · 13 communities (11 shown, 2 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `130a8d4b`
+- Built from commit: `8b4ca0c3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -46,7 +46,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (13 total, 3 thin omitted)
+## Communities (13 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.29
@@ -64,6 +64,10 @@ Nodes (4): start(), createEngine(), loop(), setVars()
 Cohesion: 0.38
 Nodes (3): loop(), renderFrame(), resize()
 
+### Community 6 - "Community 6"
+Cohesion: 0.50
+Nodes (3): devDependencies, playwright, sharp
+
 ### Community 11 - "Community 11"
 Cohesion: 0.36
 Nodes (7): draw(), frame(), isMobile(), makeParticles(), rand(), resize(), step()
@@ -73,14 +77,14 @@ Cohesion: 0.33
 Nodes (5): Pagini legale (de verificat status RO/EN la final), Pagini principale (EN sursă → RO output), Pagini închirieri (RO-native, SEO — RO e sursa aici), Translation tracking — Cyclic Agency, Trecerea finală (checklist)
 
 ## Knowledge Gaps
-- **9 isolated node(s):** `fs`, `path`, `rl`, `sharp`, `headers` (+4 more)
+- **10 isolated node(s):** `fs`, `path`, `rl`, `playwright`, `sharp` (+5 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `start()` connect `Community 3` to `Community 11`?**
-  _High betweenness centrality (0.046) - this node is a cross-community bridge._
+  _High betweenness centrality (0.044) - this node is a cross-community bridge._
 - **What connects `fs`, `path`, `rl` to the rest of the system?**
-  _9 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _10 weakly-connected nodes found - possible documentation gaps or missing edges._

@@ -29,8 +29,8 @@
     .nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:72px}
   </style>
 
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fonts.css?v=2">
+  <link rel="stylesheet" href="css/main.css?v=2">
 
   <script type="application/ld+json">
   {
@@ -77,38 +77,40 @@
   <div class="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
 
-  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigare principală">
     <div class="nav__inner container">
       <a href="index.html" class="nav__logo">cyclic</a>
       <ul class="nav__links" role="list">
-        <li><a href="index.html"   class="nav__link">Home</a></li>
-        <li><a href="events.html"  class="nav__link">Events</a></li>
-        <li><a href="artists.html" class="nav__link">Artists</a></li>
-        <li><a href="rentals.html" class="nav__link">Rentals</a></li>
-        <li><a href="labels.html"  class="nav__link active">Labels</a></li>
-        <li><a href="about.html"   class="nav__link">About Us</a></li>
+        <li><a href="index.html"      class="nav__link">Acasă</a></li>
+        <li><a href="evenimente.html" class="nav__link">Evenimente</a></li>
+        <li><a href="artisti.html"    class="nav__link">Artiști</a></li>
+        <li><a href="inchiriere-echipamente.html" class="nav__link">Închirieri</a></li>
+        <li><a href="label-uri.html"  class="nav__link active">Label-uri</a></li>
+        <li><a href="despre-noi.html" class="nav__link">Despre noi</a></li>
       </ul>
-      <a href="events.html" class="btn btn--accent nav__cta magnetic">Get Tickets <span class="arrow">→</span></a>
-      <button class="nav__burger" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a href="evenimente.html" class="btn btn--accent nav__cta magnetic">Bilete <span class="arrow">→</span></a>
+      <a href="labels.html" class="lang-toggle" hreflang="en" aria-label="Switch to English"><span class="lang-toggle__flag" aria-hidden="true">🇬🇧</span> EN</a>
+      <button class="nav__burger" aria-label="Deschide meniu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation" aria-modal="true">
-    <a href="index.html"   class="nav__link">Home</a>
-    <a href="events.html"  class="nav__link">Events</a>
-    <a href="artists.html" class="nav__link">Artists</a>
-    <a href="rentals.html" class="nav__link">Rentals</a>
-    <a href="labels.html"  class="nav__link">Labels</a>
-    <a href="about.html"   class="nav__link">About Us</a>
-    <a href="events.html"  class="btn btn--accent magnetic">Get Tickets →</a>
+  <div class="nav__mobile" role="dialog" aria-label="Navigare mobilă" aria-modal="true">
+    <a href="index.html"      class="nav__link">Acasă</a>
+    <a href="evenimente.html" class="nav__link">Evenimente</a>
+    <a href="artisti.html"    class="nav__link">Artiști</a>
+    <a href="inchiriere-echipamente.html" class="nav__link">Închirieri</a>
+    <a href="label-uri.html"  class="nav__link">Label-uri</a>
+    <a href="despre-noi.html" class="nav__link">Despre noi</a>
+    <a href="evenimente.html" class="btn btn--accent magnetic">Bilete →</a>
+    <a href="labels.html" class="lang-toggle" hreflang="en" aria-label="Switch to English"><span class="lang-toggle__flag" aria-hidden="true">🇬🇧</span> EN</a>
   </div>
 
   <main>
     <header class="page-hero">
       <div class="container page-hero__content">
-        <p class="section-label page-hero__label">Music labels</p>
-        <h1 class="display-lg page-hero__title">Labels<span class="text-accent">.</span></h1>
-        <p class="page-hero__sub">The record labels shaping Romania's underground electronic music scene. From homegrown independents to internationally distributed imprints.</p>
+        <p class="section-label page-hero__label">Label-uri muzicale</p>
+        <h1 class="display-lg page-hero__title">Label-uri<span class="text-accent">.</span></h1>
+        <p class="page-hero__sub">Casele de discuri care modelează scena underground de muzică electronică din România. De la independenți autohtoni la label-uri distribuite internațional.</p>
       </div>
     </header>
 
@@ -117,26 +119,26 @@
       <div class="container">
         <div class="grid-asym fade-in" style="align-items:center; gap: clamp(40px,6vw,100px); margin-bottom: var(--section-py);">
           <div>
-            <span class="section-label">Our role</span>
+            <span class="section-label">Rolul nostru</span>
             <h2 class="display-sm" id="labels-intro" style="margin-top:16px; margin-bottom:24px;">
-              Connecting Labels to<br>Audiences<span class="text-accent">.</span>
+              Conectăm label-urile<br>cu publicul<span class="text-accent">.</span>
             </h2>
             <p class="text-muted" style="font-size:15px; line-height:1.8; margin-bottom:16px;">
-              Cyclic Agency has long been a bridge between Romania's most exciting underground labels and the audiences hungry for quality electronic music. We work with labels at every stage — from release parties and label nights to artist booking and brand partnerships.
+              Cyclic Agency este de mult timp o punte între cele mai interesante label-uri underground din România și publicul dornic de muzică electronică de calitate. Lucrăm cu label-uri în fiecare etapă — de la release party-uri și label nights la booking de artiști și parteneriate cu branduri.
             </p>
             <p class="text-muted" style="font-size:15px; line-height:1.8; margin-bottom:32px;">
-              Our network spans 30 Romanian cities and extends internationally, giving labels the platform to reach new audiences and grow their communities beyond the digital space.
+              Rețeaua noastră acoperă 30 de orașe din România și se extinde internațional, oferind label-urilor platforma pentru a ajunge la audiențe noi și a-și crește comunitățile dincolo de spațiul digital.
             </p>
-            <a href="https://wa.me/40721381922?text=Bun%C4%83%20Ionu%C8%9B%2C%20sunt%20interesat%20de%20un%20parteneriat%20cu%20Cyclic%20Agency." class="btn btn--outline magnetic" target="_blank" rel="noopener">Partner With Us <span class="arrow">→</span></a>
+            <a href="https://wa.me/40721381922?text=Bun%C4%83%20Ionu%C8%9B%2C%20sunt%20interesat%20de%20un%20parteneriat%20cu%20Cyclic%20Agency." class="btn btn--outline magnetic" target="_blank" rel="noopener">Devino partener <span class="arrow">→</span></a>
           </div>
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="card card--accent-border">
               <h3 class="card__title">Label Nights</h3>
-              <p class="card__body">We produce dedicated label showcase events that highlight a label's full roster, aesthetic and culture — not just a single artist.</p>
+              <p class="card__body">Producem evenimente showcase dedicate, care pun în lumină întregul roster, estetica și cultura unui label — nu doar un singur artist.</p>
             </div>
             <div class="card">
-              <h3 class="card__title">Release Parties</h3>
-              <p class="card__body">Album and EP release events in carefully selected venues across Romania, tailored to each label's identity and audience.</p>
+              <h3 class="card__title">Release Party-uri</h3>
+              <p class="card__body">Evenimente de lansare pentru albume și EP-uri în locații atent alese din toată România, adaptate identității și publicului fiecărui label.</p>
             </div>
           </div>
         </div>
@@ -144,8 +146,8 @@
         <!-- Labels grid -->
         <header class="section-header fade-in">
           <div class="section-header__left">
-            <span class="section-label">Partner labels</span>
-            <h2 class="display-sm section-header__title" id="labels-grid-heading">Labels We Work With</h2>
+            <span class="section-label">Label-uri partenere</span>
+            <h2 class="display-sm section-header__title" id="labels-grid-heading">Label-urile cu care lucrăm</h2>
           </div>
         </header>
 
@@ -163,7 +165,7 @@
                 <span class="tag tag--accent">Techno</span>
                 <span class="tag tag--purple">House</span>
               </div>
-              <p class="label-card__desc">The in-house imprint of Cyclic Agency, releasing music from Romania's finest underground artists. From deep techno to melodic house — authentic electronic music rooted in the Romanian scene.</p>
+              <p class="label-card__desc">Label-ul in-house al Cyclic Agency, care lansează muzica celor mai buni artiști underground din România. De la deep techno la melodic house — muzică electronică autentică, înrădăcinată în scena românească.</p>
             </div>
           </article>
 
@@ -178,7 +180,7 @@
               <div class="tags" style="margin-bottom:10px;">
                 <span class="tag tag--accent">Techno</span>
               </div>
-              <p class="label-card__desc">Bucharest-based techno imprint known for its raw, industrial aesthetic and uncompromising releases. Home to some of Romania's most respected techno artists and producers.</p>
+              <p class="label-card__desc">Label techno din București, cunoscut pentru estetica sa brută, industrială, și lansări fără compromisuri. Casa unora dintre cei mai respectați artiști și producători techno din România.</p>
             </div>
           </article>
 
@@ -193,7 +195,7 @@
               <div class="tags" style="margin-bottom:10px;">
                 <span class="tag tag--purple">Melodic House</span>
               </div>
-              <p class="label-card__desc">A sublabel dedicated to melodic and organic house music. Releases from Romanian and international artists who blur the lines between electronic and acoustic worlds.</p>
+              <p class="label-card__desc">Un sublabel dedicat muzicii house melodice și organice. Lansări de la artiști români și internaționali care estompează granițele dintre lumea electronică și cea acustică.</p>
             </div>
           </article>
 
@@ -208,7 +210,7 @@
               <div class="tags" style="margin-bottom:10px;">
                 <span class="tag tag--accent">Dark Techno</span>
               </div>
-              <p class="label-card__desc">Underground Romania's home for darker, experimental techno. Digital and vinyl releases from emerging and established artists pushing the boundaries of the genre.</p>
+              <p class="label-card__desc">Casa techno-ului întunecat, experimental, din underground-ul românesc. Lansări digitale și pe vinil de la artiști emergenți și consacrați care împing limitele genului.</p>
             </div>
           </article>
 
@@ -224,7 +226,7 @@
                 <span class="tag tag--purple">House</span>
                 <span class="tag">Disco</span>
               </div>
-              <p class="label-card__desc">Cluj-Napoca's premier house and disco label, celebrating the city's vibrant club culture. Monthly releases featuring local talent and occasional international collaborations.</p>
+              <p class="label-card__desc">Principalul label de house și disco din Cluj-Napoca, o celebrare a culturii vibrante de club a orașului. Lansări lunare cu talente locale și colaborări internaționale ocazionale.</p>
             </div>
           </article>
 
@@ -240,7 +242,7 @@
                 <span class="tag">Afro House</span>
                 <span class="tag">Global Bass</span>
               </div>
-              <p class="label-card__desc">Bridging Romanian club culture with global rhythms. A forward-thinking label releasing afro house, global bass and Afro-fusion electronic music with a distinctly Romanian perspective.</p>
+              <p class="label-card__desc">O punte între cultura de club românească și ritmurile globale. Un label vizionar care lansează afro house, global bass și Afro-fusion cu o perspectivă distinct românească.</p>
             </div>
           </article>
 
@@ -253,41 +255,41 @@
       <div class="container">
         <header class="section-header fade-in">
           <div class="section-header__left">
-            <span class="section-label">Label partnerships</span>
-            <h2 class="display-sm section-header__title" id="label-services-heading">How We Support Labels</h2>
+            <span class="section-label">Parteneriate cu label-uri</span>
+            <h2 class="display-sm section-header__title" id="label-services-heading">Cum susținem label-urile</h2>
           </div>
         </header>
 
         <div class="grid-3 fade-in">
 
           <div class="card card--accent-border">
-            <h3 class="card__title">Artist Development</h3>
-            <p class="card__body">We work closely with labels to develop their artists' live careers — from first club bookings to major festival slots.</p>
+            <h3 class="card__title">Dezvoltarea artiștilor</h3>
+            <p class="card__body">Lucrăm îndeaproape cu label-urile pentru a dezvolta carierele live ale artiștilor lor — de la primele booking-uri în cluburi la sloturi pe festivaluri mari.</p>
           </div>
 
           <div class="card">
-            <h3 class="card__title">Event Marketing</h3>
-            <p class="card__body">Integrated marketing support for label nights and release events — social media, press, partnerships and on-the-ground promotion.</p>
+            <h3 class="card__title">Marketing de evenimente</h3>
+            <p class="card__body">Suport de marketing integrat pentru label nights și evenimente de lansare — social media, presă, parteneriate și promovare pe teren.</p>
           </div>
 
           <div class="card">
-            <h3 class="card__title">International Reach</h3>
-            <p class="card__body">Our network extends beyond Romania. We help labels connect with international booking agencies, promoters and press.</p>
+            <h3 class="card__title">Acoperire internațională</h3>
+            <p class="card__body">Rețeaua noastră se întinde dincolo de România. Ajutăm label-urile să se conecteze cu agenții internaționale de booking, promoteri și presă.</p>
           </div>
 
           <div class="card">
-            <h3 class="card__title">Venue Access</h3>
-            <p class="card__body">Established relationships with Romania's top venues mean labels get access to spaces that suit their aesthetic and capacity needs.</p>
+            <h3 class="card__title">Acces la locații</h3>
+            <p class="card__body">Relațiile consolidate cu cele mai bune locații din România înseamnă că label-urile au acces la spații potrivite esteticii și capacității de care au nevoie.</p>
           </div>
 
           <div class="card">
-            <h3 class="card__title">Production Support</h3>
-            <p class="card__body">Full technical production for label events — sound, lighting and visual design that matches and elevates the label's brand identity.</p>
+            <h3 class="card__title">Suport de producție</h3>
+            <p class="card__body">Producție tehnică completă pentru evenimentele label-urilor — sunet, lumini și design vizual care se potrivesc și ridică identitatea brandului.</p>
           </div>
 
           <div class="card card--accent-border">
-            <h3 class="card__title">Brand Partnerships</h3>
-            <p class="card__body">We facilitate brand collaborations and sponsorships that make sense for underground labels — authentic, non-intrusive and community-driven.</p>
+            <h3 class="card__title">Parteneriate cu branduri</h3>
+            <p class="card__body">Facilităm colaborări cu branduri și sponsorizări care au sens pentru label-urile underground — autentice, neintruzive și orientate spre comunitate.</p>
           </div>
 
         </div>
@@ -297,12 +299,12 @@
     <!-- Submit label -->
     <section class="cta-section fade-in" aria-labelledby="submit-label-cta">
       <div class="container cta-section__content">
-        <span class="section-label">Get involved</span>
+        <span class="section-label">Implică-te</span>
         <h2 class="display-lg cta-section__title" id="submit-label-cta">
-          Got a Label?<br>Let's Talk<span class="text-accent">.</span>
+          Ai un label?<br>Hai să vorbim<span class="text-accent">.</span>
         </h2>
-        <p class="text-muted text-lg" style="max-width:48ch; margin: 0 auto 32px;">We're always looking to partner with labels that share our passion for authentic underground electronic music.</p>
-        <a href="https://wa.me/40721381922?text=Bun%C4%83%20Ionu%C8%9B%2C%20sunt%20interesat%20de%20un%20parteneriat%20cu%20Cyclic%20Agency." class="btn btn--accent btn--lg magnetic" target="_blank" rel="noopener">Partner With Us <span class="arrow">→</span></a>
+        <p class="text-muted text-lg" style="max-width:48ch; margin: 0 auto 32px;">Căutăm mereu parteneriate cu label-uri care ne împărtășesc pasiunea pentru muzica electronică underground autentică.</p>
+        <a href="https://wa.me/40721381922?text=Bun%C4%83%20Ionu%C8%9B%2C%20sunt%20interesat%20de%20un%20parteneriat%20cu%20Cyclic%20Agency." class="btn btn--accent btn--lg magnetic" target="_blank" rel="noopener">Devino partener <span class="arrow">→</span></a>
       </div>
     </section>
   </main>
@@ -312,34 +314,34 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <p class="footer__logo">cyclic</p>
-          <p class="footer__tagline">Romania's Underground. Elevated.<br>Electronic music events since 2009.</p>
-          <nav class="footer__social" aria-label="Social media links">
+          <p class="footer__tagline">Underground-ul României. Ridicat.<br>Evenimente de muzică electronică din 2009.</p>
+          <nav class="footer__social" aria-label="Linkuri social media">
             <a href="https://facebook.com/cyclicagency" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://instagram.com/cyclic_music" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://tiktok.com/@cyclic_music" class="footer__social-link" target="_blank" rel="noopener noreferrer">TikTok</a>
           </nav>
         </div>
-        <nav class="footer__nav" aria-label="Footer navigation">
-          <h4>Pages</h4>
+        <nav class="footer__nav" aria-label="Navigare footer">
+          <h4>Pagini</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="artists.html">Artists</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="labels.html">Labels</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="evenimente.html">Evenimente</a></li>
+            <li><a href="artisti.html">Artiști</a></li>
+            <li><a href="inchiriere-echipamente.html">Închirieri</a></li>
+            <li><a href="label-uri.html">Label-uri</a></li>
+            <li><a href="despre-noi.html">Despre noi</a></li>
           </ul>
         </nav>
         <address class="footer__contact" style="font-style:normal;">
           <h4>Contact</h4>
           <div class="footer__contact-block">
-            <p class="footer__contact-role">Director of Events</p>
-            <p class="footer__contact-name">Ionut Hupca</p>
+            <p class="footer__contact-role">Director Evenimente</p>
+            <p class="footer__contact-name">Ionuț Hupcă</p>
             <a href="mailto:ionut@cyclic.ro">ionut@cyclic.ro</a>
             <a href="https://wa.me/40721381922" target="_blank" rel="noopener">+40 721 381 922</a>
           </div>
           <div class="footer__contact-block">
-            <p class="footer__contact-role">Event Coordinator</p>
+            <p class="footer__contact-role">Coordonator Evenimente</p>
             <p class="footer__contact-name">Coman Vlad</p>
             <a href="mailto:vlad.coman@cyclic.ro">vlad.coman@cyclic.ro</a>
             <a href="https://wa.me/40765483450" target="_blank" rel="noopener">+40 765 483 450</a>
@@ -347,16 +349,16 @@
         </address>
       </div>
       <div class="footer__bottom">
-        <p>© <span class="js-year">2026</span> Cyclic Agency. All rights reserved.</p>
-        <p>Electronic music events Romania since 2009.</p>
+        <p>© <span class="js-year">2026</span> Cyclic Agency. Toate drepturile rezervate.</p>
+        <p>Evenimente de muzică electronică în România din 2009.</p>
       </div>
 
       <div class="footer__legal">
         <div class="footer__legal-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="cookie-policy.html">Cookie Policy</a>
-          <a href="terms.html">Terms &amp; Conditions</a>
-          <a href="#" class="js-cookie-settings">Cookie Settings</a>
+          <a href="privacy-policy.html">Politică Confidențialitate</a>
+          <a href="cookie-policy.html">Politică Cookies</a>
+          <a href="terms.html">Termeni &amp; Condiții</a>
+          <a href="#" class="js-cookie-settings">Setări Cookies</a>
         </div>
         <div class="footer__legal-info">
           <span><strong>CYCLIC MUSIC S.R.L.</strong></span>
@@ -368,9 +370,9 @@
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
-  <script src="js/effects.js" defer></script>
-  <script src="js/cookie-banner.js" defer></script>
-  <script src="js/analytics.js" defer></script>
+  <script src="js/main.js?v=2" defer></script>
+  <script src="js/effects.js?v=2" defer></script>
+  <script src="js/cookie-banner.js?v=2" defer></script>
+  <script src="js/analytics.js?v=2" defer></script>
 </body>
 </html>

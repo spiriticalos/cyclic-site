@@ -4,22 +4,20 @@
   var hero = document.querySelector('.hero__bg');
   if (!hero) return;
 
-  // Perf tiers — lighter on phones, static (no loop) when user prefers reduced motion.
-  // Mobil: buffer aproape de rezoluția reală (altfel apare pixelat pe ecrane dense),
-  // compensat cu jumătate din linii + cap la ~30fps => același buget GPU, imagine curată.
+  // Setările vizuale originale (commit 98a5f9a), acum active și pe mobil.
+  // Static (fără loop) când userul preferă reduced motion.
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var isMobile = window.matchMedia('(max-width: 768px)').matches;
-  var LINE_COUNT = isMobile ? 16 : 40;       // shader loop iterations (per-pixel cost)
-  var RENDER_SCALE = isMobile ? Math.min(window.devicePixelRatio || 1, 1.25) : 1;
-  var FRAME_MS = isMobile ? 33 : 0;          // ~30fps pe mobil, nelimitat pe desktop
-  var Y_BASE = isMobile ? 0.66 : 0.5;        // vertical centre of the bundle — lifted higher on phones
+  var LINE_COUNT = 40;       // shader loop iterations (per-pixel cost)
+  var RENDER_SCALE = 1;      // buffer la dimensiunea CSS, fără downscale
+  var FRAME_MS = 0;          // fără limită de fps
+  var Y_BASE = 0.5;          // mănunchiul centrat vertical
 
   var canvas = document.createElement('canvas');
   canvas.setAttribute('aria-hidden', 'true');
   canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;z-index:1';
   hero.appendChild(canvas);
 
-  var glOpts = { alpha: true, antialias: !isMobile, premultipliedAlpha: false };
+  var glOpts = { alpha: true, antialias: true, premultipliedAlpha: false };
   var gl = canvas.getContext('webgl', glOpts) || canvas.getContext('experimental-webgl', glOpts);
   if (!gl) { hero.removeChild(canvas); return; }
 
@@ -151,8 +149,8 @@
   var uMouse = gl.getUniformLocation(prog, 'uMouse');
 
   gl.uniform3f(uCol, 1.0, 1.0, 1.0);
-  gl.uniform1f(uAmp, 1.8);
-  gl.uniform1f(uDist, 0.45);
+  gl.uniform1f(uAmp, 1.0);
+  gl.uniform1f(uDist, 0.0);
   gl.uniform2f(uMouse, 0.5, 0.5);
 
   var targetMouse  = [0.5, 0.5];

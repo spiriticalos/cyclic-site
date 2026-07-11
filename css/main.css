@@ -1904,6 +1904,10 @@ html, body {
   overflow-y: auto;
 }
 .cookie-banner.visible { transform: translateY(0); }
+/* Ascunde barile fixate de jos cât timp meniul mobil e deschis (altfel se
+   suprapun cu ultimele linkuri). Alunecă la loc când meniul se închide. */
+body.nav-open .cookie-banner,
+body.nav-open .newsletter-bar { transform: translateY(110%); pointer-events: none; }
 .cookie-banner__inner {
   display: flex;
   flex-direction: column;

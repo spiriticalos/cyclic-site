@@ -110,31 +110,25 @@
   const burger  = document.querySelector('.nav__burger');
   const mobileMenu = document.querySelector('.nav__mobile');
   if (burger && mobileMenu) {
-    burger.addEventListener('click', () => {
-      const isOpen = burger.classList.toggle('open');
-      mobileMenu.classList.toggle('open', isOpen);
-      burger.setAttribute('aria-expanded', String(isOpen));
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
+    // nav-open pe body ascunde cookie/newsletter bar cât timp meniul e deschis
+    function setMenu(open) {
+      burger.classList.toggle('open', open);
+      mobileMenu.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('nav-open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+
+    burger.addEventListener('click', () => setMenu(!burger.classList.contains('open')));
 
     // Close on link click
     mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        burger.classList.remove('open');
-        mobileMenu.classList.remove('open');
-        burger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
+      link.addEventListener('click', () => setMenu(false));
     });
 
     // Close on Escape
     document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && burger.classList.contains('open')) {
-        burger.classList.remove('open');
-        mobileMenu.classList.remove('open');
-        burger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      }
+      if (e.key === 'Escape' && burger.classList.contains('open')) setMenu(false);
     });
   }
 

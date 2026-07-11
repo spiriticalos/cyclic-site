@@ -29,11 +29,14 @@ Cyclic operează ca un brand umbrelă:
 ## Pagini
 
 - [Acasă](https://cyclic.ro/)
-- [Evenimente](https://cyclic.ro/events.html)
-- [Artiști](https://cyclic.ro/artists.html)
-- [Închirieri echipamente (versiunea engleză)](https://cyclic.ro/rentals.html)
-- [Labeluri](https://cyclic.ro/labels.html)
-- [Despre noi](https://cyclic.ro/about.html)
+- [Evenimente](https://cyclic.ro/evenimente.html)
+- [Artiști](https://cyclic.ro/artisti.html)
+- [Închirieri echipamente](https://cyclic.ro/inchiriere-echipamente.html)
+- [Label-uri](https://cyclic.ro/label-uri.html)
+- [Despre noi](https://cyclic.ro/despre-noi.html)
+
+Fiecare pagină are versiune EN (events.html, artists.html, rentals.html, labels.html,
+about.html, home-en.html) cu toggle de limbă și hreflang alternate.
 
 ## Închirieri echipamente — pagini dedicate (RO)
 
@@ -52,8 +55,15 @@ Bucureşti (sediu), Cluj-Napoca, Iași, Timișoara, Constanța, Focșani, Sfânt
 
 Pentru o cerere de ofertă, fiecare pagină de închiriere are un formular dedicat. Răspuns trimis în maxim 24 de ore, direct de la un production manager, niciodată autoresponder.
 
+## Echipă
+
+- Ionuț Hupcă — Fondator & Director Evenimente (ionut@cyclic.ro, +40 721 381 922)
+- Cătălin Căpățână — Director Comercial (catalin@cyclic.ro)
+- Coman Vlad — Coordonator Evenimente (vlad.coman@cyclic.ro)
+- Matei-Gabriel Câmpescu — Coordonator PR & Brand (matei@cyclic.ro)
+
 ## Contact
 
-- Evenimente & Booking: ionut@cyclic.ro — Ionuț Hupcă, Director of Events
-- Coordinare: vlad.coman@cyclic.ro — Coman Vlad
-- Social: instagram.com/cyclic_music · facebook.com/cyclicagency
+- Evenimente & Booking: ionut@cyclic.ro — Ionuț Hupcă, Director Evenimente
+- Închirieri: formular cerere ofertă pe fiecare pagină de închiriere
+- Social: instagram.com/cyclic_music · facebook.com/cyclicagency · youtube.com/@cyclic_music · soundcloud.com/cyclicmusic

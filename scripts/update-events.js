@@ -191,5 +191,16 @@ function splice(file, block, ld) {
 
   const c1 = splice('evenimente.html', roBlock, ld);
   const c2 = splice('events.html', enBlock, ld);
+
+  // Homepage — doar primele HOME_MAX evenimente (secțiune highlight)
+  const HOME_MAX = 3;
+  const homeImg = withImg.slice(0, HOME_MAX);
+  const homeRo = homeImg.map(([ev, img]) => cardHtml(ev, img, 'ro')).join('\n');
+  const homeEn = homeImg.map(([ev, img]) => cardHtml(ev, img, 'en')).join('\n');
+  const ldHome = ldJson(events.slice(0, HOME_MAX));
+  const c3 = splice('index.html', homeRo, ldHome);
+  const c4 = splice('home-en.html', homeEn, ldHome);
+
   console.log(`evenimente.html: ${c1 ? 'actualizat' : 'neschimbat'} | events.html: ${c2 ? 'actualizat' : 'neschimbat'}`);
+  console.log(`index.html: ${c3 ? 'actualizat' : 'neschimbat'} | home-en.html: ${c4 ? 'actualizat' : 'neschimbat'}`);
 })().catch(e => { console.error(e); process.exit(1); });

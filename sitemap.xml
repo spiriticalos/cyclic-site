@@ -5,7 +5,7 @@
   <!-- ROMANIAN PAGES (primary) -->
   <url>
     <loc>https://cyclic.ro/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/"/>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/evenimente.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/evenimente.html"/>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/artisti.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artisti.html"/>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/despre-noi.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/despre-noi.html"/>
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/label-uri.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/label-uri.html"/>
@@ -48,7 +48,7 @@
   <!-- ROMANIAN RENTAL PAGES -->
   <url>
     <loc>https://cyclic.ro/inchiriere-echipamente.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-echipamente.html"/>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/inchiriere-sonorizare.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-sonorizare.html"/>
@@ -64,7 +64,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/inchiriere-dj.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-dj.html"/>
@@ -72,7 +72,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/inchiriere-lumini.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-lumini.html"/>
@@ -82,7 +82,7 @@
   <!-- ENGLISH ALTERNATES -->
   <url>
     <loc>https://cyclic.ro/home-en.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/home-en.html"/>
@@ -90,7 +90,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/events.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/events.html"/>
@@ -98,7 +98,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/artists.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artists.html"/>
@@ -106,7 +106,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/rentals.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/rentals.html"/>
@@ -114,7 +114,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/about.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/about.html"/>
@@ -122,7 +122,7 @@
   </url>
   <url>
     <loc>https://cyclic.ro/labels.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/labels.html"/>
@@ -132,19 +132,19 @@
   <!-- LEGAL -->
   <url>
     <loc>https://cyclic.ro/privacy-policy.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://cyclic.ro/cookie-policy.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://cyclic.ro/terms.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

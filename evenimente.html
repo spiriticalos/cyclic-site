@@ -72,41 +72,109 @@
     ]
   }
   </script>
+  <!-- AUTO-EVENTS-LD:START (generat de scripts/update-events.js) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Cyclic Agency Upcoming Events 2026",
-    "itemListElement": [
-      {
-        "@type": "MusicEvent", "position": 1,
-        "name": "Cyclic: Mihai Popoviciu",
-        "startDate": "2026-05-03T22:00:00+03:00",
-        "location": {"@type":"Place","name":"Control Club","address":{"@type":"PostalAddress","streetAddress":"Str. Constantin Mille 4","addressLocality":"Bucharest","addressCountry":"RO"}},
-        "performer": {"@type":"Person","name":"Mihai Popoviciu"},
-        "organizer": {"@type":"Organization","name":"Cyclic Agency","url":"https://cyclic.ro"},
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Cyclic Agency Upcoming Events",
+  "itemListElement": [
+    {
+      "@type": "MusicEvent",
+      "position": 1,
+      "name": "Cyclic: MVMNTS Open Air",
+      "startDate": "2026-07-26T15:00:00+03:00",
+      "url": "https://www.kompostor.ro/evenimente/13722-cyclic-presents-mvmnts-at-amfiteatrul-transilvania",
+      "location": {
+        "@type": "Place",
+        "name": "Amfiteatrul Transilvania",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Brașov",
+          "addressCountry": "RO"
+        }
       },
-      {
-        "@type": "MusicEvent", "position": 2,
-        "name": "Cyclic: Optick b2b Christian Lepah",
-        "startDate": "2026-05-17T22:00:00+03:00",
-        "location": {"@type":"Place","name":"Flying Circus","address":{"@type":"PostalAddress","addressLocality":"Cluj-Napoca","addressCountry":"RO"}},
-        "performer": [{"@type":"Person","name":"Optick"},{"@type":"Person","name":"Christian Lepah"}],
-        "organizer": {"@type":"Organization","name":"Cyclic Agency","url":"https://cyclic.ro"}
+      "performer": [
+        {
+          "@type": "Person",
+          "name": "Armen Miran"
+        },
+        {
+          "@type": "Person",
+          "name": "Rosario Internullo"
+        },
+        {
+          "@type": "Person",
+          "name": "Adrian Eftimie"
+        },
+        {
+          "@type": "Person",
+          "name": "Optick"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": 68,
+        "priceCurrency": "RON",
+        "url": "https://www.kompostor.ro/evenimente/13722-cyclic-presents-mvmnts-at-amfiteatrul-transilvania",
+        "availability": "https://schema.org/InStock"
       },
-      {
-        "@type": "MusicEvent", "position": 3,
-        "name": "Cyclic: Tale of Us",
-        "startDate": "2026-05-31T23:00:00+03:00",
-        "location": {"@type":"Place","name":"Form Space","address":{"@type":"PostalAddress","addressLocality":"Bucharest","addressCountry":"RO"}},
-        "performer": {"@type":"MusicGroup","name":"Tale of Us"},
-        "organizer": {"@type":"Organization","name":"Cyclic Agency","url":"https://cyclic.ro"}
-      }
-    ]
-  }
+      "organizer": {
+        "@type": "Organization",
+        "name": "Cyclic Agency",
+        "url": "https://cyclic.ro"
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+    },
+    {
+      "@type": "MusicEvent",
+      "position": 2,
+      "name": "Cyclic: Brunch in Vie",
+      "startDate": "2026-08-08T18:00:00+03:00",
+      "url": "https://www.kompostor.ro/evenimente/13735-cyclic-crama-pandora-present-brunch-in-vie",
+      "location": {
+        "@type": "Place",
+        "name": "Crama Pandora",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cotești",
+          "addressCountry": "RO"
+        }
+      },
+      "performer": [
+        {
+          "@type": "Person",
+          "name": "Pascal Junior"
+        },
+        {
+          "@type": "Person",
+          "name": "Dobrikan"
+        },
+        {
+          "@type": "Person",
+          "name": "Paul Damixie"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": 68,
+        "priceCurrency": "RON",
+        "url": "https://www.kompostor.ro/evenimente/13735-cyclic-crama-pandora-present-brunch-in-vie",
+        "availability": "https://schema.org/InStock"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Cyclic Agency",
+        "url": "https://cyclic.ro"
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+    }
+  ]
+}
   </script>
+  <!-- AUTO-EVENTS-LD:END -->
 </head>
 <body>
   <div class="cursor" aria-hidden="true"></div>
@@ -167,94 +235,54 @@
 
         <!-- Featured events (cards) -->
         <div class="events-grid stagger-children" style="margin-bottom: clamp(32px, 5vw, 64px);">
-
-          <article class="event-card" data-genre="house" aria-label="Cyclic event: Toy Tonics Rooftop Jam at Grand Hotel Bucharest">
+          <!-- AUTO-EVENTS:START (generat de scripts/update-events.js — nu edita manual, folosește data/events-overrides.json) -->
+          <article class="event-card" data-genre="melodic" aria-label="MVMNTS Open Air — Amfiteatrul Transilvania, Moieciu de Sus, 26 Iul 2026">
             <div class="event-card__image-wrap">
-              <img src="images/event-toy-tonics.webp"
-                   alt="Cyclic x Toy Tonics Rooftop Jam at Grand Hotel Bucharest terrace May 16 2026"
+              <img src="images/events-auto/13722.webp"
+                   alt="MVMNTS Open Air — Amfiteatrul Transilvania, Moieciu de Sus, 26 Iul 2026"
                    width="600" height="600" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
               <div class="event-card__date-badge">
-                <span class="day">16</span>
-                <span class="month">Mai</span>
+                <span class="day">26</span>
+                <span class="month">Iul</span>
               </div>
             </div>
             <div class="event-card__body">
-              <div class="tags"><span class="tag tag--purple">House</span><span class="tag">Rooftop</span><span class="tag">Bucharest</span></div>
-              <h3 class="event-card__title">Toy Tonics Rooftop Jam</h3>
-              <p class="event-card__venue">Grand Hotel Bucharest, Terasa Etaj 2</p>
-              <p class="event-card__desc" style="font-size:13px; color:rgba(255,255,255,0.5); margin:8px 0;">CEOE · Navala · Rhem · Egonostas</p>
-              <div class="event-card__footer">
-                <p class="event-card__price">De la <strong>69 RON</strong></p>
-                <a href="https://www.kompostor.ro/evenimente/13698-cyclic-present-toy-tonics-rooftop-jam" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--sm magnetic">Bilete →</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="event-card" data-genre="house" aria-label="Cyclic x Crama Pandora: Brunch in Vie — Focsani May 23 2026">
-            <div class="event-card__image-wrap">
-              <img src="images/event-brunch-vie.webp"
-                   alt="Cyclic x Crama Pandora Brunch in Vie outdoor vineyard event Focsani May 23 2026"
-                   width="600" height="600" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
-              <div class="event-card__date-badge">
-                <span class="day">23</span>
-                <span class="month">Mai</span>
-              </div>
-            </div>
-            <div class="event-card__body">
-              <div class="tags"><span class="tag tag--purple">House</span><span class="tag">Outdoor</span><span class="tag">Focșani</span></div>
-              <h3 class="event-card__title">Brunch in Vie</h3>
-              <p class="event-card__venue">Crama Pandora, Focșani</p>
-              <p class="event-card__desc" style="font-size:13px; color:rgba(255,255,255,0.5); margin:8px 0;">Adrian Eftimie · Sylvio · Lucian Slot</p>
+              <div class="tags"><span class="tag tag--accent">Melodic</span><span class="tag">Open Air</span><span class="tag">Brașov</span></div>
+              <h3 class="event-card__title">MVMNTS Open Air</h3>
+              <p class="event-card__venue">Amfiteatrul Transilvania, Moieciu de Sus</p>
+              <p class="event-card__desc" style="font-size:13px; color:rgba(255,255,255,0.5); margin:8px 0;">Armen Miran · Rosario Internullo · Adrian Eftimie · Optick</p>
               <div class="event-card__footer">
                 <p class="event-card__price">De la <strong>68 RON</strong></p>
-                <a href="https://www.kompostor.ro/evenimente/13693-cyclic-crama-pandora-present-brunch-in-vie" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--sm magnetic">Bilete →</a>
+                <a href="https://www.kompostor.ro/evenimente/13722-cyclic-presents-mvmnts-at-amfiteatrul-transilvania" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--sm magnetic">Bilete →</a>
               </div>
             </div>
           </article>
 
-          <article class="event-card" data-genre="melodic" aria-label="Cyclic Rooftop w. Lost Desert — Palas Mall Iasi June 27 2026">
+          <article class="event-card" data-genre="house" aria-label="Brunch in Vie — Crama Pandora, Cotești, 8 Aug 2026">
             <div class="event-card__image-wrap">
-              <img src="images/event-lost-desert.webp"
-                   alt="Cyclic Rooftop w. Lost Desert Adrian Eftimie MoonSound Emann Iasi June 27 2026"
+              <img src="images/events-auto/13735.webp"
+                   alt="Brunch in Vie — Crama Pandora, Cotești, 8 Aug 2026"
                    width="600" height="600" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
               <div class="event-card__date-badge">
-                <span class="day">27</span>
-                <span class="month">Iun</span>
+                <span class="day">8</span>
+                <span class="month">Aug</span>
               </div>
             </div>
             <div class="event-card__body">
-              <div class="tags"><span class="tag tag--accent">Melodic</span><span class="tag">Rooftop</span><span class="tag">Iași</span></div>
-              <h3 class="event-card__title">Rooftop w. Lost Desert</h3>
-              <p class="event-card__venue">Palas Mall Rooftop, Iași</p>
-              <p class="event-card__desc" style="font-size:13px; color:rgba(255,255,255,0.5); margin:8px 0;">Lost Desert · Adrian Eftimie · MoonSound · Emann</p>
+              <div class="tags"><span class="tag tag--purple">House</span><span class="tag">Outdoor</span><span class="tag">Vrancea</span></div>
+              <h3 class="event-card__title">Brunch in Vie</h3>
+              <p class="event-card__venue">Crama Pandora, Cotești</p>
+              <p class="event-card__desc" style="font-size:13px; color:rgba(255,255,255,0.5); margin:8px 0;">Pascal Junior · Dobrikan · Paul Damixie</p>
               <div class="event-card__footer">
-                <p class="event-card__price">De la <strong>59 RON</strong></p>
-                <a href="https://www.kompostor.ro/evenimente/13704-cyclic-rooftop-w-lost-desert-adrian-eftimie-moonsound-emann" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--sm magnetic">Bilete →</a>
+                <p class="event-card__price">De la <strong>68 RON</strong></p>
+                <a href="https://www.kompostor.ro/evenimente/13735-cyclic-crama-pandora-present-brunch-in-vie" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--sm magnetic">Bilete →</a>
               </div>
             </div>
           </article>
 
-          <article class="event-card" data-genre="other" aria-label="The Bohemian Society Music & Travel Festival 2026 — Sfantu Gheorghe Delta Dunarii">
-            <div class="event-card__image-wrap">
-              <img src="images/event-bohemian-society.webp"
-                   alt="The Bohemian Society Music and Travel Festival June 18-21 2026 Sfantu Gheorghe Delta Dunarii"
-                   width="600" height="600" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
-              <div class="event-card__date-badge">
-                <span class="day">18–21</span>
-                <span class="month">Iun</span>
-              </div>
-            </div>
-            <div class="event-card__body">
-              <div class="tags"><span class="tag tag--accent">Festival</span><span class="tag tag--purple">4 Zile</span><span class="tag">Delta Dunării</span></div>
-              <h3 class="event-card__title">The Bohemian Society</h3>
-              <p class="event-card__venue">Sfântu Gheorghe, Tulcea</p>
-              <p class="event-card__desc" style="font-size:13px; color:rgba(255,255,255,0.5); margin:8px 0;">Hraach · Sabo · Optick · Emotional Tourist + more</p>
-              <div class="event-card__footer">
-                <p class="event-card__price">De la <strong>198 RON</strong></p>
-                <a href="https://thebohemiansociety.ro/" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--sm magnetic">Bilete →</a>
-              </div>
-            </div>
-          </article>
+
+
+          <!-- AUTO-EVENTS:END -->
 
         </div>
 

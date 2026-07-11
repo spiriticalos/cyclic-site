@@ -1,0 +1,18 @@
+{
+  "_comentariu": "Detalii curatoriate manual per eveniment Kompostor (cheie = ID). Campuri optionale: title, venue, lineup, genre (techno|house|melodic|other), tags (max 3). Restul (data, oras, pret, poster, link) vin automat de pe kompostor.ro.",
+  "13722": {
+    "title": "MVMNTS Open Air",
+    "venue": "Amfiteatrul Transilvania, Moieciu de Sus",
+    "lineup": "Armen Miran · Rosario Internullo · Adrian Eftimie · Optick",
+    "genre": "melodic",
+    "tags": ["Melodic", "Open Air", "Brașov"]
+  },
+  "13735": {
+    "title": "Brunch in Vie",
+    "city": "Cotești",
+    "venue": "Crama Pandora, Cotești",
+    "lineup": "Pascal Junior · Dobrikan · Paul Damixie",
+    "genre": "house",
+    "tags": ["House", "Outdoor", "Vrancea"]
+  }
+}

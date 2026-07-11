@@ -5,10 +5,13 @@
   if (!hero) return;
 
   // Perf tiers — lighter on phones, static (no loop) when user prefers reduced motion.
+  // Mobil: buffer aproape de rezoluția reală (altfel apare pixelat pe ecrane dense),
+  // compensat cu jumătate din linii + cap la ~30fps => același buget GPU, imagine curată.
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var isMobile = window.matchMedia('(max-width: 768px)').matches;
-  var LINE_COUNT = isMobile ? 32 : 40;       // shader loop iterations (per-pixel cost)
-  var RENDER_SCALE = isMobile ? 0.62 : 1;    // internal buffer downscale
+  var LINE_COUNT = isMobile ? 16 : 40;       // shader loop iterations (per-pixel cost)
+  var RENDER_SCALE = isMobile ? Math.min(window.devicePixelRatio || 1, 1.25) : 1;
+  var FRAME_MS = isMobile ? 33 : 0;          // ~30fps pe mobil, nelimitat pe desktop
   var Y_BASE = isMobile ? 0.66 : 0.5;        // vertical centre of the bundle — lifted higher on phones
 
   var canvas = document.createElement('canvas');
@@ -198,11 +201,13 @@
   }
 
   // Gating — don't burn GPU when the hero is offscreen or the tab is hidden.
-  var rafId = 0, running = false, inView = true;
+  var rafId = 0, running = false, inView = true, lastFrame = 0;
   function loop(t) {
     if (!running) return;
-    renderFrame(t);
     rafId = requestAnimationFrame(loop);
+    if (FRAME_MS && t - lastFrame < FRAME_MS) return;
+    lastFrame = t;
+    renderFrame(t);
   }
   function start() {
     if (running || reduce || !inView || document.hidden) return;

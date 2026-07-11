@@ -1,0 +1,38 @@
+name: Sincronizare evenimente din Kompostor
+
+on:
+  schedule:
+    # în fiecare luni la 06:00 UTC (09:00 ora României)
+    - cron: '0 6 * * 1'
+  workflow_dispatch: {}   # permite și rulare manuală din tab-ul Actions
+
+permissions:
+  contents: write
+
+jobs:
+  update-events:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Instalează sharp
+        run: npm install --no-save sharp
+
+      - name: Rulează sincronizarea
+        run: node scripts/update-events.js
+
+      - name: Commit + push dacă s-a schimbat ceva
+        run: |
+          git config user.name "cyclic-events-bot"
+          git config user.email "actions@github.com"
+          git add evenimente.html events.html images/events-auto
+          if git diff --cached --quiet; then
+            echo "Nimic de actualizat."
+          else
+            git commit -m "Evenimente: sincronizare automata din Kompostor"
+            git push
+          fi

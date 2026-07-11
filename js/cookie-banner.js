@@ -12,6 +12,7 @@
 
   var STORAGE_KEY = 'cookie_consent_v2';
   var CURRENT_VERSION = 2;
+  var MAX_AGE_MS = 183 * 24 * 60 * 60 * 1000; // ~6 luni — după atât se cere din nou consimțământul
 
   var RO = (document.documentElement.lang || '').toLowerCase().indexOf('ro') === 0;
   var T = RO ? {
@@ -41,8 +42,10 @@
       var raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return null;
       var parsed = JSON.parse(raw);
-      if (parsed && parsed.v === CURRENT_VERSION) return parsed;
-      return null;
+      if (!parsed || parsed.v !== CURRENT_VERSION) return null;
+      // Consimțământul expiră după ~6 luni → tratat ca inexistent (reapare banner-ul)
+      if (typeof parsed.ts === 'number' && Date.now() - parsed.ts > MAX_AGE_MS) return null;
+      return parsed;
     } catch (e) { return null; }
   }
 

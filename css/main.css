@@ -347,8 +347,15 @@ body.hero-in-view .nav--scrolled {
   z-index: 999;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* "safe center": centrat vertical când încape, dar aliniat sus când
+     conținutul e mai înalt decât ecranul (altfel primul link ar fi împins
+     deasupra zonei scrollabile și devine neclicabil pe telefoane mici). */
+  justify-content: safe center;
   gap: 8px;
+  /* Lasă bara fixă (72px) liberă, altfel primul link intră sub header
+     care are z-index mai mare și îi fură click-ul. Scroll dacă e prea înalt. */
+  padding: 88px 0 24px;
+  overflow-y: auto;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s var(--ease-out);
@@ -370,6 +377,14 @@ body.hero-in-view .nav--scrolled {
 @media (max-width: 900px) {
   .nav__links, .nav__cta, .nav .lang-toggle { display: none; }
   .nav__burger, .nav__mobile { display: flex; }
+}
+
+/* Ecrane scunde (telefoane mici, landscape): compactează meniul mobil ca
+   toate elementele să încapă fără scroll sub bara fixă. */
+@media (max-height: 640px) {
+  .nav__mobile { padding-top: 80px; gap: 2px; }
+  .nav__mobile .nav__link { font-size: clamp(22px, 5vw, 30px); padding: 8px 24px; }
+  .nav__mobile .btn { margin-top: 12px; }
 }
 
 /* 12. HERO */

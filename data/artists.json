@@ -76,11 +76,13 @@
   {
     "slug": "deny",
     "name": "Deny",
-    "genre": "Techno",
+    "genre": "House / Afro House",
     "type": "local",
-    "bio_ro": "DJ techno român cunoscut pentru seturi energice, în forță, care țin ringul în mișcare până la ultimul beat.",
-    "bio_en": "Romanian techno DJ known for driving, high-energy sets that keep dancefloors moving until the last beat.",
-    "links": []
+    "bio_ro": "DJ și producător din București care modelează un sound House, Afro House și Melodic House orientat spre viitor — construit pe groove, tensiune și emoție.",
+    "bio_en": "Bucharest-based DJ and producer shaping a forward-driven House, Afro House and Melodic House sound, built on groove, tension and emotion.",
+    "links": [
+      "https://open.spotify.com/artist/6JgR62Hn12bNkaMXWAFNKP"
+    ]
   },
   {
     "slug": "emann",

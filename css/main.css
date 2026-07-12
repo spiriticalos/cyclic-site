@@ -564,6 +564,64 @@ body.hero-in-view .nav--scrolled {
   max-width: 52ch;
 }
 
+/* Link peste tot panoul din grila de artiști -> pagina individuală */
+.artist-panel { position: relative; }
+.artist-panel__link { position: absolute; inset: 0; z-index: 6; }
+
+/* Pagină individuală de artist */
+.artist-detail {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(var(--nav-h) + clamp(40px, 6vw, 72px));
+  padding-bottom: clamp(60px, 8vw, 100px);
+  border-bottom: 1px solid var(--border);
+}
+.artist-detail::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 0% 40%, rgba(123,47,255,0.12) 0%, transparent 55%);
+  pointer-events: none;
+}
+.artist-detail__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 420px) 1fr;
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+}
+.artist-detail__media {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+}
+.artist-detail__media img { width: 100%; height: auto; display: block; aspect-ratio: 3/4; object-fit: cover; }
+.artist-detail__back {
+  display: inline-block;
+  margin-bottom: 22px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.artist-detail__back:hover { color: var(--accent); }
+.artist-detail__genre { margin-bottom: 16px; }
+.artist-detail__bio {
+  margin: 22px 0 28px;
+  font-size: clamp(15px, 1.6vw, 17px);
+  line-height: 1.8;
+  color: var(--text-muted);
+  max-width: 54ch;
+}
+.artist-detail__links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+@media (max-width: 820px) {
+  .artist-detail__grid { grid-template-columns: 1fr; gap: 32px; }
+  .artist-detail__media { max-width: 340px; }
+}
+
 /* Magic Rings hero (Labels) — titlu centrat, încadrat de inele */
 .page-hero--rings {
   min-height: min(86vh, 820px);

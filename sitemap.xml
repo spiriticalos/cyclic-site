@@ -128,6 +128,312 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/labels.html"/>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/label-uri.html"/>
   </url>
+  <!-- ARTIST PAGES -->
+  <url>
+    <loc>https://cyclic.ro/artist-optick.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-optick.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-optick-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-optick-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-optick.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-optick-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-rhem.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-rhem.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-rhem-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-rhem-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-rhem.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-rhem-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-dobrikan.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-dobrikan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-dobrikan-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-dobrikan-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-dobrikan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-dobrikan-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-adrian-eftimie.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-adrian-eftimie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-adrian-eftimie-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-adrian-eftimie-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-adrian-eftimie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-adrian-eftimie-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-afgo-lemon.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-afgo-lemon.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-afgo-lemon-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-afgo-lemon-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-afgo-lemon.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-afgo-lemon-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-deny.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-deny.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-deny-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-deny-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-deny.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-deny-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-emann.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-emann.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-emann-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-emann-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-emann.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-emann-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-efi.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-efi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-efi-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-efi-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-efi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-efi-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-eleez.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-eleez.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-eleez-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-eleez-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-eleez.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-eleez-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-kristopher.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-kristopher.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-kristopher-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-kristopher-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-kristopher.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-kristopher-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-oscar.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-oscar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-oscar-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-oscar-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-oscar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-oscar-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-pascal-junior.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-pascal-junior.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-pascal-junior-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-pascal-junior-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-pascal-junior.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-pascal-junior-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-sabo.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-sabo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-sabo-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-sabo-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-sabo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-sabo-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-zamfirov.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-zamfirov.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-zamfirov-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-zamfirov-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-zamfirov.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-zamfirov-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-brad-brunner.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-brad-brunner.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-brad-brunner-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-brad-brunner-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-brad-brunner.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-brad-brunner-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-rosario-internullo.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-rosario-internullo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-rosario-internullo-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-rosario-internullo-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-rosario-internullo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-rosario-internullo-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-hraach.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-hraach.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-hraach-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-hraach-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-hraach.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-hraach-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-sahar-z.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-sahar-z.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-sahar-z-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-sahar-z-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-sahar-z.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-sahar-z-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-shai-t.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-shai-t.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-shai-t-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-shai-t-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-shai-t.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-shai-t-en.html"/>
+  </url>
+
 
   <!-- LEGAL -->
   <url>

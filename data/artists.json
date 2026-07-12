@@ -136,7 +136,9 @@
     "type": "local",
     "bio_ro": "DJ român de house cu o abordare rafinată, muzicală, și un public fidel în scena de club din România.",
     "bio_en": "Romanian house DJ with a refined, musical approach and a loyal following across the Romanian club scene.",
-    "links": []
+    "links": [
+      "https://open.spotify.com/artist/4T8dF8zYAxgtlPPICuFQ5w"
+    ]
   },
   {
     "slug": "sabo",
@@ -163,7 +165,9 @@
     "type": "local",
     "bio_ro": "DJ techno român cu o prezență scenică constantă, de mare impact, și o reputație construită pe circuitul underground.",
     "bio_en": "Romanian techno DJ with a consistent, high-impact stage presence and a reputation built on the underground circuit.",
-    "links": []
+    "links": [
+      "https://open.spotify.com/artist/3VuRBWq60RkNH59fbf60SL"
+    ]
   },
   {
     "slug": "rosario-internullo",
@@ -173,6 +177,7 @@
     "bio_ro": "Unul dintre numele crescute alături de Cyclic. Rosario Internullo mixează house cu inimă — groove-uri calde, deep și organice, construite pentru conexiune, nu pentru efect. Seturile lui te prind încet și nu-ți mai dau drumul până la ultima piesă.",
     "bio_en": "One of the names that grew alongside Cyclic. Rosario Internullo plays house with heart — warm, deep, organic grooves built for connection rather than effect. His sets are about patience and soul: they pull you in slowly and don't let go until the last track.",
     "links": [
+      "https://open.spotify.com/artist/040jLhHkYJa6KAUJcnBEkY",
       "https://soundcloud.com/rosariointernullo",
       "https://www.instagram.com/rosariointernullo/",
       "https://www.facebook.com/djrosariointernullo",
@@ -186,7 +191,9 @@
     "type": "international",
     "bio_ro": "DJ și producător techno internațional, adus pe scenele românești de Cyclic Agency în cadrul programului nostru de booking internațional.",
     "bio_en": "International techno DJ and producer, brought to Romanian stages by Cyclic Agency as part of our international booking programme.",
-    "links": []
+    "links": [
+      "https://open.spotify.com/artist/6rdTxNwQhUJTodUx7voWXO"
+    ]
   },
   {
     "slug": "sahar-z",
@@ -195,7 +202,9 @@
     "type": "international",
     "bio_ro": "DJ techno internațional cu turnee globale și o abordare puternică, încărcată emoțional, a ringului de dans.",
     "bio_en": "International techno DJ with a global touring profile and a powerful, emotionally charged approach to the dancefloor.",
-    "links": []
+    "links": [
+      "https://open.spotify.com/artist/47YdOgVXS5hzu5spoFFpHU"
+    ]
   },
   {
     "slug": "shai-t",

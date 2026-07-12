@@ -216,5 +216,34 @@
     "links": [
       "https://open.spotify.com/artist/3peEllG3urQKzvyoZf4UgN"
     ]
+  },
+  {
+    "slug": "skinny",
+    "name": "SKINNY",
+    "genre": "House",
+    "type": "local",
+    "bio_ro": "DJ română de house cu o prezență scenică electrizantă — seturi vibrante, pline de energie, care transformă orice ring într-o petrecere de neuitat.",
+    "bio_en": "Romanian house DJ with an electrifying stage presence — vibrant, high-energy sets that turn any dancefloor into an unforgettable party.",
+    "links": [
+      "https://www.instagram.com/skinnyioana/",
+      "https://youtube.com/@skinnydj7824",
+      "https://www.tiktok.com/@skinnyioana",
+      "https://on.soundcloud.com/7AVPT3ZxZbrAstkj8"
+    ]
+  },
+  {
+    "slug": "paul-damixie",
+    "name": "Paul Damixie",
+    "genre": "House",
+    "type": "local",
+    "bio_ro": "DJ și producător român de house, cu o discografie internațională și seturi care îmbină groove-ul dansant cu momente melodice, pline de emoție.",
+    "bio_en": "Romanian house DJ and producer with an international discography, blending dancefloor groove with emotional, melodic moments.",
+    "links": [
+      "https://soundcloud.com/pauldamixie",
+      "https://www.instagram.com/pauldamixie/",
+      "https://www.facebook.com/pauldamixie/",
+      "https://www.tiktok.com/@pauldamixie_official",
+      "https://www.youtube.com/channel/UChPDEFm347lsgiRfy02RqBw"
+    ]
   }
 ]

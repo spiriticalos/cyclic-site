@@ -1500,7 +1500,7 @@ body.hero-in-view .nav--scrolled {
 }
 .value-item {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 100px 1fr;
   gap: 24px;
   align-items: start;
   padding: 28px 32px;
@@ -1509,7 +1509,7 @@ body.hero-in-view .nav--scrolled {
 }
 .value-item:last-child { border-bottom: none; }
 .value-item:hover { background: rgba(255,255,255,0.02); }
-.value-item__num { font-family: var(--font-display); font-size: 48px; color: var(--text-dim); line-height: 1; }
+.value-item__num { font-family: var(--font-display); font-size: 38px; color: var(--text-dim); line-height: 1; white-space: nowrap; }
 .value-item__title { font-family: var(--font-display); font-size: 28px; margin-bottom: 8px; }
 .value-item__desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; max-width: 60ch; }
 
@@ -1810,8 +1810,8 @@ html, body {
   .events-grid { grid-template-columns: 1fr; }
 
   /* Values list */
-  .value-item { grid-template-columns: 56px 1fr; gap: 12px; padding: 20px 16px; }
-  .value-item__num { font-size: 32px; }
+  .value-item { grid-template-columns: 68px 1fr; gap: 12px; padding: 20px 16px; }
+  .value-item__num { font-size: 24px; }
 
   /* Rental grid */
   .rental-grid { grid-template-columns: 1fr; }

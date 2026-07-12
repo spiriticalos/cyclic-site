@@ -465,6 +465,23 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-paul-damixie.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-paul-damixie-en.html"/>
   </url>
+  <url>
+    <loc>https://cyclic.ro/artist-laura-bogdan.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-laura-bogdan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-laura-bogdan-en.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/artist-laura-bogdan-en.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/artist-laura-bogdan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/artist-laura-bogdan-en.html"/>
+  </url>
+
 
 
 

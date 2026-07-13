@@ -133,8 +133,8 @@
       -webkit-user-select: none; user-select: none; cursor: default;
     }
     .rh__title .text-accent { -webkit-text-fill-color: #96CC00; color: #96CC00; }
-    /* Spotlight on the final CTA title (same effect as the hero) */
-    .cta-section__title {
+    /* Spotlight on section titles (same effect as the hero) */
+    .cta-section__title, .spotlight-title {
       --mx: 32%; --my: 42%;
       color: rgba(220,225,235,0.85); /* fallback if background-clip:text unsupported */
       background: radial-gradient(circle 340px at var(--mx) var(--my), #ffffff 0%, #eaffae 12%, #96CC00 30%, rgba(150,204,0,0.55) 46%, rgba(220,225,235,0.34) 64%);
@@ -143,7 +143,7 @@
       filter: drop-shadow(0 0 14px rgba(150,204,0,0.22));
       -webkit-user-select: none; user-select: none; cursor: default;
     }
-    .cta-section__title .text-accent { -webkit-text-fill-color: #96CC00; color: #96CC00; }
+    .cta-section__title .text-accent, .spotlight-title .text-accent { -webkit-text-fill-color: #96CC00; color: #96CC00; }
     .rh__sub {
       font-size: clamp(14px, 1.5vw, 17px);
       color: rgba(255,255,255,0.55);
@@ -1007,7 +1007,7 @@
       <div class="container">
         <header class="prd-hub__header">
           <span class="section-label prd-hub__label">Built into one</span>
-          <h2 class="prd-hub__title" id="prd-heading">Full Production<span class="text-accent">.</span></h2>
+          <h2 class="prd-hub__title spotlight-title" id="prd-heading">Full Production<span class="text-accent">.</span></h2>
           <p class="prd-hub__sub">End-to-end event production. From venue scouting and technical planning to setup, operation and breakdown — handled by one team, so you focus on the music.</p>
 
           <div class="prd-tags" role="list" aria-label="What's included">
@@ -1066,7 +1066,7 @@
         <header class="inv__header">
           <div>
             <span class="section-label">Equipment Rental Inventory</span>
-            <h2 id="inv-heading">Pro Gear For Hire<span class="text-accent">.</span></h2>
+            <h2 id="inv-heading" class="spotlight-title">Pro Gear For Hire<span class="text-accent">.</span></h2>
           </div>
           <p>The flagship equipment we rent for electronic music events across Romania — sound systems, DJ gear, lighting, video, stage and crew. Tour-grade inventory, maintained in-house, rider-ready.</p>
         </header>
@@ -1216,7 +1216,7 @@
       <div class="container">
         <header class="tb__head">
           <span class="section-label">Trusted by Romania's underground</span>
-          <h2 id="tb-heading">Events We've Powered<span class="text-accent">.</span></h2>
+          <h2 id="tb-heading" class="spotlight-title">Events We've Powered<span class="text-accent">.</span></h2>
         </header>
 
         <!-- CONTENT-TODO: replace text logos with SVG/PNG client logos when available. -->
@@ -1268,7 +1268,7 @@
           </div>
           <div>
             <span class="section-label">Why choose us</span>
-            <h2 class="display-sm" id="setup-heading" style="margin-top:16px; margin-bottom:24px;">
+            <h2 class="display-sm spotlight-title" id="setup-heading" style="margin-top:16px; margin-bottom:24px;">
               17 Years. Thousands of Events. Zero Compromise<span class="text-accent">.</span>
             </h2>
             <p class="text-muted" style="font-size:15px; line-height:1.75; margin-bottom:16px;">
@@ -1288,7 +1288,7 @@
       <div class="container">
         <header class="fq__head">
           <span class="section-label">Frequently asked</span>
-          <h2 id="fq-heading">Rentals — FAQ<span class="text-accent">.</span></h2>
+          <h2 id="fq-heading" class="spotlight-title">Rentals — FAQ<span class="text-accent">.</span></h2>
         </header>
         <div class="fq__list">
           <details class="fq-item">
@@ -1320,7 +1320,7 @@
       <div class="container qf__inner">
         <div class="qf__left">
           <span class="section-label">Request a quote</span>
-          <h2 id="qf-heading">Tell Us About Your Event<span class="text-accent">.</span></h2>
+          <h2 id="qf-heading" class="spotlight-title">Tell Us About Your Event<span class="text-accent">.</span></h2>
           <p>Send the brief — venue, date, capacity. We respond inside 24 hours with availability, recommended setup and transparent pricing for equipment rental, crew and logistics anywhere in Romania.</p>
           <ul class="qf-points">
             <li>Reply within 24 hours, from a real production manager</li>
@@ -1478,7 +1478,7 @@
 
   <script src="js/main.js?v=3" defer></script>
   <script src="js/effects.js?v=2" defer></script>
-  <script src="js/title-spotlight.js?v=4" defer></script>
+  <script src="js/title-spotlight.js?v=5" defer></script>
   <script src="js/rentals.js?v=2" defer></script>
   <script src="js/cookie-banner.js?v=3" defer></script>
   <script src="js/analytics.js?v=2" defer></script>

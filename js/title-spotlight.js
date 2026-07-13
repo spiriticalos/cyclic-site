@@ -21,7 +21,7 @@
   titles.forEach(function (el) {
     items.push({
       el: el,
-      hero: el.closest('.ch, .rh, .cta-section, .why, .qf') || el,
+      hero: el.closest('.ch, .rh, .cta-section, .why, .qf, .cat, .cat__head, .prd-hub, .inv, .tb, section') || el,
       target: { x: 32, y: 42 },
       cur: { x: 32, y: 42 },
       lastMove: -9999,

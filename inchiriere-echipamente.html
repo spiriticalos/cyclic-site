@@ -51,8 +51,8 @@
       filter: drop-shadow(0 0 14px rgba(150,204,0,0.22));
       -webkit-user-select: none; user-select: none; cursor: default; }
     .rh__title .text-accent { -webkit-text-fill-color: #96CC00; color: #96CC00; }
-    /* Spotlight pe titlul CTA final (acelasi efect ca hero) */
-    .cta-section__title {
+    /* Spotlight pe titluri (acelasi efect ca hero): CTA final + De ce Cyclic + form */
+    .cta-section__title, .spotlight-title {
       --mx: 32%; --my: 42%;
       color: rgba(220,225,235,0.85); /* fallback if background-clip:text unsupported */
       background: radial-gradient(circle 340px at var(--mx) var(--my), #ffffff 0%, #eaffae 12%, #96CC00 30%, rgba(150,204,0,0.55) 46%, rgba(220,225,235,0.34) 64%);
@@ -60,7 +60,7 @@
       -webkit-text-fill-color: transparent;
       filter: drop-shadow(0 0 14px rgba(150,204,0,0.22));
       -webkit-user-select: none; user-select: none; cursor: default; }
-    .cta-section__title .text-accent { -webkit-text-fill-color: #96CC00; color: #96CC00; }
+    .cta-section__title .text-accent, .spotlight-title .text-accent { -webkit-text-fill-color: #96CC00; color: #96CC00; }
     .rh__sub { font-size: clamp(14px, 1.5vw, 17px); color: rgba(255,255,255,0.55); max-width: 54ch; line-height: 1.75; margin-bottom: 40px; opacity: 0; animation: rh-rise 1s cubic-bezier(0.16,1,0.3,1) 0.95s forwards; }
     .rh__cta { opacity: 0; animation: rh-rise 0.9s cubic-bezier(0.16,1,0.3,1) 1.15s forwards; }
     .rh__stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(255,255,255,0.08); position: relative; z-index: 2; flex-shrink: 0; opacity: 0; animation: rh-rise 0.8s cubic-bezier(0.16,1,0.3,1) 1.4s forwards; }
@@ -340,7 +340,7 @@
       <div class="container why__inner">
         <div>
           <span class="section-label">De ce Cyclic</span>
-          <h2 id="why-heading">17 ani. Mii de evenimente. Zero compromis<span class="text-accent">.</span></h2>
+          <h2 id="why-heading" class="spotlight-title">17 ani. Mii de evenimente. Zero compromis<span class="text-accent">.</span></h2>
           <p>Cyclic Agency a fost fondată în 2009 de Ionuț Hupcă în Focșani, sub numele Electro Events. În 17 ani s-a transformat într-una dintre cele mai cunoscute agenții de muzică electronică din România, cu activitate constantă în 30 de orașe.</p>
           <p>Toate echipamentele pe care le închiriem au fost testate în condiții reale de eveniment — fiecare crew member a lucrat zeci de show-uri. De la club night pentru 200 de oameni până la open-air pentru 5.000+, același standard.</p>
         </div>
@@ -433,7 +433,7 @@
       <div class="container qf__inner">
         <div class="qf__left">
           <span class="section-label">Cere o ofertă</span>
-          <h2 id="qf-heading">Spune-ne despre evenimentul tău<span class="text-accent">.</span></h2>
+          <h2 id="qf-heading" class="spotlight-title">Spune-ne despre evenimentul tău<span class="text-accent">.</span></h2>
           <p>Trimite brief-ul — locație, dată, capacitate. Răspundem în 24 de ore cu disponibilitate, setup recomandat și preț transparent pentru închiriere echipamente, crew și logistică oriunde în România.</p>
           <ul class="qf-points">
             <li>Răspuns în 24h, direct de la un production manager</li>
@@ -590,7 +590,7 @@
 
   <script src="js/main.js?v=3" defer></script>
   <script src="js/effects.js?v=2" defer></script>
-  <script src="js/title-spotlight.js?v=3" defer></script>
+  <script src="js/title-spotlight.js?v=4" defer></script>
   <script src="js/rentals.js?v=2" defer></script>
   <script src="js/cookie-banner.js?v=3" defer></script>
   <script src="js/analytics.js?v=2" defer></script>

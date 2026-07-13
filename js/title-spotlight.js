@@ -10,7 +10,7 @@
 (function () {
   'use strict';
 
-  var titles = document.querySelectorAll('.ch__title, .rh__title, .cta-section__title');
+  var titles = document.querySelectorAll('.ch__title, .rh__title, .cta-section__title, .spotlight-title');
   if (!titles.length) return;
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -21,7 +21,7 @@
   titles.forEach(function (el) {
     items.push({
       el: el,
-      hero: el.closest('.ch, .rh, .cta-section') || el,
+      hero: el.closest('.ch, .rh, .cta-section, .why, .qf') || el,
       target: { x: 32, y: 42 },
       cur: { x: 32, y: 42 },
       lastMove: -9999,

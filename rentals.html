@@ -133,6 +133,17 @@
       -webkit-user-select: none; user-select: none; cursor: default;
     }
     .rh__title .text-accent { -webkit-text-fill-color: #96CC00; color: #96CC00; }
+    /* Spotlight on the final CTA title (same effect as the hero) */
+    .cta-section__title {
+      --mx: 32%; --my: 42%;
+      color: rgba(220,225,235,0.85); /* fallback if background-clip:text unsupported */
+      background: radial-gradient(circle 340px at var(--mx) var(--my), #ffffff 0%, #eaffae 12%, #96CC00 30%, rgba(150,204,0,0.55) 46%, rgba(220,225,235,0.34) 64%);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 14px rgba(150,204,0,0.22));
+      -webkit-user-select: none; user-select: none; cursor: default;
+    }
+    .cta-section__title .text-accent { -webkit-text-fill-color: #96CC00; color: #96CC00; }
     .rh__sub {
       font-size: clamp(14px, 1.5vw, 17px);
       color: rgba(255,255,255,0.55);
@@ -1467,7 +1478,7 @@
 
   <script src="js/main.js?v=3" defer></script>
   <script src="js/effects.js?v=2" defer></script>
-  <script src="js/title-spotlight.js?v=2" defer></script>
+  <script src="js/title-spotlight.js?v=3" defer></script>
   <script src="js/rentals.js?v=2" defer></script>
   <script src="js/cookie-banner.js?v=3" defer></script>
   <script src="js/analytics.js?v=2" defer></script>

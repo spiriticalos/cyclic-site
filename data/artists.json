@@ -59,6 +59,20 @@
     ]
   },
   {
+    "slug": "skinny",
+    "name": "SKINNY",
+    "genre": "House",
+    "type": "local",
+    "bio_ro": "DJ română de house cu o prezență scenică electrizantă — seturi vibrante, pline de energie, care transformă orice ring într-o petrecere de neuitat.",
+    "bio_en": "Romanian house DJ with an electrifying stage presence — vibrant, high-energy sets that turn any dancefloor into an unforgettable party.",
+    "links": [
+      "https://www.instagram.com/skinnyioana/",
+      "https://youtube.com/@skinnydj7824",
+      "https://www.tiktok.com/@skinnyioana",
+      "https://on.soundcloud.com/7AVPT3ZxZbrAstkj8"
+    ]
+  },
+  {
     "slug": "afgo-lemon",
     "name": "Afgo & Lemon",
     "genre": "Progressive / House",
@@ -217,20 +231,6 @@
     "bio_en": "International techno DJ and producer with an acclaimed touring schedule across Europe and beyond.",
     "links": [
       "https://open.spotify.com/artist/3peEllG3urQKzvyoZf4UgN"
-    ]
-  },
-  {
-    "slug": "skinny",
-    "name": "SKINNY",
-    "genre": "House",
-    "type": "local",
-    "bio_ro": "DJ română de house cu o prezență scenică electrizantă — seturi vibrante, pline de energie, care transformă orice ring într-o petrecere de neuitat.",
-    "bio_en": "Romanian house DJ with an electrifying stage presence — vibrant, high-energy sets that turn any dancefloor into an unforgettable party.",
-    "links": [
-      "https://www.instagram.com/skinnyioana/",
-      "https://youtube.com/@skinnydj7824",
-      "https://www.tiktok.com/@skinnyioana",
-      "https://on.soundcloud.com/7AVPT3ZxZbrAstkj8"
     ]
   },
   {

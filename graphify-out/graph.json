@@ -103,6 +103,150 @@
       "norm_label": "main()"
     },
     {
+      "label": "artists.json",
+      "file_type": "code",
+      "source_file": "data/artists.json",
+      "source_location": "L1",
+      "id": "data_artists",
+      "community": 17,
+      "norm_label": "artists.json"
+    },
+    {
+      "label": "events-overrides.json",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L1",
+      "id": "data_events_overrides",
+      "community": 14,
+      "norm_label": "events-overrides.json"
+    },
+    {
+      "label": "_comentariu",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L2",
+      "id": "data_events_overrides_comentariu",
+      "community": 14,
+      "norm_label": "_comentariu"
+    },
+    {
+      "label": "13722",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L3",
+      "id": "data_events_overrides_13722",
+      "community": 14,
+      "norm_label": "13722"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L4",
+      "id": "data_events_overrides_13722_title",
+      "community": 14,
+      "norm_label": "title"
+    },
+    {
+      "label": "venue",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L5",
+      "id": "data_events_overrides_13722_venue",
+      "community": 14,
+      "norm_label": "venue"
+    },
+    {
+      "label": "lineup",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L6",
+      "id": "data_events_overrides_13722_lineup",
+      "community": 14,
+      "norm_label": "lineup"
+    },
+    {
+      "label": "genre",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L7",
+      "id": "data_events_overrides_13722_genre",
+      "community": 14,
+      "norm_label": "genre"
+    },
+    {
+      "label": "tags",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L8",
+      "id": "data_events_overrides_13722_tags",
+      "community": 14,
+      "norm_label": "tags"
+    },
+    {
+      "label": "13735",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L10",
+      "id": "data_events_overrides_13735",
+      "community": 14,
+      "norm_label": "13735"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L11",
+      "id": "data_events_overrides_13735_title",
+      "community": 14,
+      "norm_label": "title"
+    },
+    {
+      "label": "city",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L12",
+      "id": "data_events_overrides_13735_city",
+      "community": 14,
+      "norm_label": "city"
+    },
+    {
+      "label": "venue",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L13",
+      "id": "data_events_overrides_13735_venue",
+      "community": 14,
+      "norm_label": "venue"
+    },
+    {
+      "label": "lineup",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L14",
+      "id": "data_events_overrides_13735_lineup",
+      "community": 14,
+      "norm_label": "lineup"
+    },
+    {
+      "label": "genre",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L15",
+      "id": "data_events_overrides_13735_genre",
+      "community": 14,
+      "norm_label": "genre"
+    },
+    {
+      "label": "tags",
+      "file_type": "code",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L16",
+      "id": "data_events_overrides_13735_tags",
+      "community": 14,
+      "norm_label": "tags"
+    },
+    {
       "label": "analytics.js",
       "file_type": "code",
       "source_file": "js/analytics.js",
@@ -225,7 +369,7 @@
       "source_file": "js/constellation.js",
       "source_location": "L211",
       "id": "js_constellation_start",
-      "community": 3,
+      "community": 11,
       "norm_label": "start()"
     },
     {
@@ -250,7 +394,7 @@
       "label": "read()",
       "file_type": "code",
       "source_file": "js/cookie-banner.js",
-      "source_location": "L39",
+      "source_location": "L40",
       "id": "js_cookie_banner_read",
       "community": 1,
       "norm_label": "read()"
@@ -259,7 +403,7 @@
       "label": "write()",
       "file_type": "code",
       "source_file": "js/cookie-banner.js",
-      "source_location": "L49",
+      "source_location": "L52",
       "id": "js_cookie_banner_write",
       "community": 1,
       "norm_label": "write()"
@@ -268,7 +412,7 @@
       "label": "closeBanner()",
       "file_type": "code",
       "source_file": "js/cookie-banner.js",
-      "source_location": "L82",
+      "source_location": "L85",
       "id": "js_cookie_banner_closebanner",
       "community": 1,
       "norm_label": "closebanner()"
@@ -277,7 +421,7 @@
       "label": "renderBanner()",
       "file_type": "code",
       "source_file": "js/cookie-banner.js",
-      "source_location": "L90",
+      "source_location": "L93",
       "id": "js_cookie_banner_renderbanner",
       "community": 1,
       "norm_label": "renderbanner()"
@@ -319,6 +463,87 @@
       "norm_label": "animatecounter()"
     },
     {
+      "label": "magic-rings.js",
+      "file_type": "code",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L1",
+      "id": "js_magic_rings",
+      "community": 16,
+      "norm_label": "magic-rings.js"
+    },
+    {
+      "label": "compile()",
+      "file_type": "code",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L96",
+      "id": "js_magic_rings_compile",
+      "community": 16,
+      "norm_label": "compile()"
+    },
+    {
+      "label": "U()",
+      "file_type": "code",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L122",
+      "id": "js_magic_rings_u",
+      "community": 16,
+      "norm_label": "u()"
+    },
+    {
+      "label": "hex()",
+      "file_type": "code",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L128",
+      "id": "js_magic_rings_hex",
+      "community": 16,
+      "norm_label": "hex()"
+    },
+    {
+      "label": "resize()",
+      "file_type": "code",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L154",
+      "id": "js_magic_rings_resize",
+      "community": 16,
+      "norm_label": "resize()"
+    },
+    {
+      "label": "drawFrame()",
+      "file_type": "code",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L177",
+      "id": "js_magic_rings_drawframe",
+      "community": 16,
+      "norm_label": "drawframe()"
+    },
+    {
+      "label": "loop()",
+      "file_type": "code",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L190",
+      "id": "js_magic_rings_loop",
+      "community": 16,
+      "norm_label": "loop()"
+    },
+    {
+      "label": "start()",
+      "file_type": "code",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L191",
+      "id": "js_magic_rings_start",
+      "community": 16,
+      "norm_label": "start()"
+    },
+    {
+      "label": "stop()",
+      "file_type": "code",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L192",
+      "id": "js_magic_rings_stop",
+      "community": 16,
+      "norm_label": "stop()"
+    },
+    {
       "label": "main.js",
       "file_type": "code",
       "source_file": "js/main.js",
@@ -328,10 +553,19 @@
       "norm_label": "main.js"
     },
     {
+      "label": "setMenu()",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L114",
+      "id": "js_main_setmenu",
+      "community": 2,
+      "norm_label": "setmenu()"
+    },
+    {
       "label": "updateGridColumns()",
       "file_type": "code",
       "source_file": "js/main.js",
-      "source_location": "L155",
+      "source_location": "L149",
       "id": "js_main_updategridcolumns",
       "community": 2,
       "norm_label": "updategridcolumns()"
@@ -340,7 +574,7 @@
       "label": "eventDate()",
       "file_type": "code",
       "source_file": "js/main.js",
-      "source_location": "L225",
+      "source_location": "L219",
       "id": "js_main_eventdate",
       "community": 2,
       "norm_label": "eventdate()"
@@ -349,7 +583,7 @@
       "label": "showBar()",
       "file_type": "code",
       "source_file": "js/main.js",
-      "source_location": "L321",
+      "source_location": "L315",
       "id": "js_main_showbar",
       "community": 2,
       "norm_label": "showbar()"
@@ -358,7 +592,7 @@
       "label": "consentGiven()",
       "file_type": "code",
       "source_file": "js/main.js",
-      "source_location": "L370",
+      "source_location": "L364",
       "id": "js_main_consentgiven",
       "community": 2,
       "norm_label": "consentgiven()"
@@ -369,7 +603,7 @@
       "source_file": "js/profile-card.js",
       "source_location": "L1",
       "id": "js_profile_card",
-      "community": 3,
+      "community": 11,
       "norm_label": "profile-card.js"
     },
     {
@@ -378,7 +612,7 @@
       "source_file": "js/profile-card.js",
       "source_location": "L5",
       "id": "js_profile_card_clamp",
-      "community": 3,
+      "community": 11,
       "norm_label": "clamp()"
     },
     {
@@ -387,7 +621,7 @@
       "source_file": "js/profile-card.js",
       "source_location": "L6",
       "id": "js_profile_card_round",
-      "community": 3,
+      "community": 11,
       "norm_label": "round()"
     },
     {
@@ -396,7 +630,7 @@
       "source_file": "js/profile-card.js",
       "source_location": "L8",
       "id": "js_profile_card_createengine",
-      "community": 3,
+      "community": 11,
       "norm_label": "createengine()"
     },
     {
@@ -405,7 +639,7 @@
       "source_file": "js/profile-card.js",
       "source_location": "L80",
       "id": "js_profile_card_check",
-      "community": 3,
+      "community": 11,
       "norm_label": "check()"
     },
     {
@@ -439,7 +673,7 @@
       "label": "compileShader()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L114",
+      "source_location": "L115",
       "id": "js_threads_compileshader",
       "community": 5,
       "norm_label": "compileshader()"
@@ -448,7 +682,7 @@
       "label": "resize()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L158",
+      "source_location": "L159",
       "id": "js_threads_resize",
       "community": 5,
       "norm_label": "resize()"
@@ -457,7 +691,7 @@
       "label": "renderFrame()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L191",
+      "source_location": "L192",
       "id": "js_threads_renderframe",
       "community": 5,
       "norm_label": "renderframe()"
@@ -466,7 +700,7 @@
       "label": "loop()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L202",
+      "source_location": "L203",
       "id": "js_threads_loop",
       "community": 5,
       "norm_label": "loop()"
@@ -475,7 +709,7 @@
       "label": "start()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L207",
+      "source_location": "L210",
       "id": "js_threads_start",
       "community": 5,
       "norm_label": "start()"
@@ -484,7 +718,7 @@
       "label": "stop()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L212",
+      "source_location": "L215",
       "id": "js_threads_stop",
       "community": 5,
       "norm_label": "stop()"
@@ -502,7 +736,7 @@
       "label": "setVars()",
       "file_type": "code",
       "source_file": "js/title-spotlight.js",
-      "source_location": "L25",
+      "source_location": "L34",
       "id": "js_title_spotlight_setvars",
       "community": 3,
       "norm_label": "setvars()"
@@ -511,7 +745,7 @@
       "label": "onMove()",
       "file_type": "code",
       "source_file": "js/title-spotlight.js",
-      "source_location": "L30",
+      "source_location": "L39",
       "id": "js_title_spotlight_onmove",
       "community": 3,
       "norm_label": "onmove()"
@@ -520,16 +754,25 @@
       "label": "loop()",
       "file_type": "code",
       "source_file": "js/title-spotlight.js",
-      "source_location": "L53",
+      "source_location": "L62",
       "id": "js_title_spotlight_loop",
       "community": 3,
       "norm_label": "loop()"
     },
     {
+      "label": "anyInView()",
+      "file_type": "code",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L79",
+      "id": "js_title_spotlight_anyinview",
+      "community": 3,
+      "norm_label": "anyinview()"
+    },
+    {
       "label": "start()",
       "file_type": "code",
       "source_file": "js/title-spotlight.js",
-      "source_location": "L70",
+      "source_location": "L83",
       "id": "js_title_spotlight_start",
       "community": 3,
       "norm_label": "start()"
@@ -538,7 +781,7 @@
       "label": "stop()",
       "file_type": "code",
       "source_file": "js/title-spotlight.js",
-      "source_location": "L75",
+      "source_location": "L88",
       "id": "js_title_spotlight_stop",
       "community": 3,
       "norm_label": "stop()"
@@ -578,6 +821,267 @@
       "id": "package_devdependencies_sharp",
       "community": 6,
       "norm_label": "sharp"
+    },
+    {
+      "label": "build-artists.js",
+      "file_type": "code",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L1",
+      "id": "scripts_build_artists",
+      "community": 15,
+      "norm_label": "build-artists.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L10",
+      "id": "scripts_build_artists_fs",
+      "community": 15,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L11",
+      "id": "scripts_build_artists_path",
+      "community": 15,
+      "norm_label": "path"
+    },
+    {
+      "label": "ROOT",
+      "file_type": "code",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L12",
+      "id": "scripts_build_artists_root",
+      "community": 15,
+      "norm_label": "root"
+    },
+    {
+      "label": "artists",
+      "file_type": "code",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L15",
+      "id": "scripts_build_artists_artists",
+      "community": 15,
+      "norm_label": "artists"
+    },
+    {
+      "label": "esc()",
+      "file_type": "code",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L20",
+      "id": "scripts_build_artists_esc",
+      "community": 15,
+      "norm_label": "esc()"
+    },
+    {
+      "label": "jesc()",
+      "file_type": "code",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L21",
+      "id": "scripts_build_artists_jesc",
+      "community": 15,
+      "norm_label": "jesc()"
+    },
+    {
+      "label": "linkLabel()",
+      "file_type": "code",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L23",
+      "id": "scripts_build_artists_linklabel",
+      "community": 15,
+      "norm_label": "linklabel()"
+    },
+    {
+      "label": "nav()",
+      "file_type": "code",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L34",
+      "id": "scripts_build_artists_nav",
+      "community": 15,
+      "norm_label": "nav()"
+    },
+    {
+      "label": "footer()",
+      "file_type": "code",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L59",
+      "id": "scripts_build_artists_footer",
+      "community": 15,
+      "norm_label": "footer()"
+    },
+    {
+      "label": "page()",
+      "file_type": "code",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L79",
+      "id": "scripts_build_artists_page",
+      "community": 15,
+      "norm_label": "page()"
+    },
+    {
+      "label": "update-events.js",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L1",
+      "id": "scripts_update_events",
+      "community": 13,
+      "norm_label": "update-events.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L14",
+      "id": "scripts_update_events_fs",
+      "community": 13,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L15",
+      "id": "scripts_update_events_path",
+      "community": 13,
+      "norm_label": "path"
+    },
+    {
+      "label": "sharp",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L16",
+      "id": "scripts_update_events_sharp",
+      "community": 13,
+      "norm_label": "sharp"
+    },
+    {
+      "label": "ROOT",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L18",
+      "id": "scripts_update_events_root",
+      "community": 13,
+      "norm_label": "root"
+    },
+    {
+      "label": "IMG_DIR",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L19",
+      "id": "scripts_update_events_img_dir",
+      "community": 13,
+      "norm_label": "img_dir"
+    },
+    {
+      "label": "OVERRIDES_FILE",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L20",
+      "id": "scripts_update_events_overrides_file",
+      "community": 13,
+      "norm_label": "overrides_file"
+    },
+    {
+      "label": "MONTHS_RO_FULL",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L23",
+      "id": "scripts_update_events_months_ro_full",
+      "community": 13,
+      "norm_label": "months_ro_full"
+    },
+    {
+      "label": "MONTHS_RO_ABBR",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L24",
+      "id": "scripts_update_events_months_ro_abbr",
+      "community": 13,
+      "norm_label": "months_ro_abbr"
+    },
+    {
+      "label": "MONTHS_EN_ABBR",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L25",
+      "id": "scripts_update_events_months_en_abbr",
+      "community": 13,
+      "norm_label": "months_en_abbr"
+    },
+    {
+      "label": "decodeEntities()",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L27",
+      "id": "scripts_update_events_decodeentities",
+      "community": 13,
+      "norm_label": "decodeentities()"
+    },
+    {
+      "label": "fetchText()",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L32",
+      "id": "scripts_update_events_fetchtext",
+      "community": 13,
+      "norm_label": "fetchtext()"
+    },
+    {
+      "label": "discoverEventUrls()",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L38",
+      "id": "scripts_update_events_discovereventurls",
+      "community": 13,
+      "norm_label": "discovereventurls()"
+    },
+    {
+      "label": "parseEvent()",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L51",
+      "id": "scripts_update_events_parseevent",
+      "community": 13,
+      "norm_label": "parseevent()"
+    },
+    {
+      "label": "savePoster()",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L90",
+      "id": "scripts_update_events_saveposter",
+      "community": 13,
+      "norm_label": "saveposter()"
+    },
+    {
+      "label": "cardHtml()",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L102",
+      "id": "scripts_update_events_cardhtml",
+      "community": 13,
+      "norm_label": "cardhtml()"
+    },
+    {
+      "label": "ldJson()",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L138",
+      "id": "scripts_update_events_ldjson",
+      "community": 13,
+      "norm_label": "ldjson()"
+    },
+    {
+      "label": "splice()",
+      "file_type": "code",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L158",
+      "id": "scripts_update_events_splice",
+      "community": 13,
+      "norm_label": "splice()"
     },
     {
       "label": "vercel.json",
@@ -818,6 +1322,146 @@
       "confidence_score": 1.0,
       "source": "add_event_main",
       "target": "add_event_pad"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "data_events_overrides",
+      "target": "data_events_overrides_13722",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "data_events_overrides",
+      "target": "data_events_overrides_13735",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "data_events_overrides",
+      "target": "data_events_overrides_comentariu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "data_events_overrides_13722",
+      "target": "data_events_overrides_13722_genre",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "data_events_overrides_13722",
+      "target": "data_events_overrides_13722_lineup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "data_events_overrides_13722",
+      "target": "data_events_overrides_13722_tags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "data_events_overrides_13722",
+      "target": "data_events_overrides_13722_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "data_events_overrides_13722",
+      "target": "data_events_overrides_13722_venue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "data_events_overrides_13735",
+      "target": "data_events_overrides_13735_city",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "data_events_overrides_13735",
+      "target": "data_events_overrides_13735_genre",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "data_events_overrides_13735",
+      "target": "data_events_overrides_13735_lineup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "data_events_overrides_13735",
+      "target": "data_events_overrides_13735_tags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "data_events_overrides_13735",
+      "target": "data_events_overrides_13735_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/events-overrides.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "data_events_overrides_13735",
+      "target": "data_events_overrides_13735_venue",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1144,6 +1788,108 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "js_magic_rings",
+      "target": "js_magic_rings_compile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "js_magic_rings",
+      "target": "js_magic_rings_drawframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "js_magic_rings",
+      "target": "js_magic_rings_hex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "js_magic_rings",
+      "target": "js_magic_rings_loop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "js_magic_rings",
+      "target": "js_magic_rings_resize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "js_magic_rings",
+      "target": "js_magic_rings_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L192",
+      "weight": 1.0,
+      "source": "js_magic_rings",
+      "target": "js_magic_rings_stop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "js_magic_rings",
+      "target": "js_magic_rings_u",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "js_magic_rings_resize",
+      "target": "js_magic_rings_drawframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/magic-rings.js",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "js_magic_rings_loop",
+      "target": "js_magic_rings_drawframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "js/main.js",
       "source_location": "L330",
       "weight": 1.0,
@@ -1160,6 +1906,16 @@
       "confidence_score": 1.0,
       "source": "js_main",
       "target": "js_main_eventdate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/main.js",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_setmenu",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1328,6 +2084,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "js/title-spotlight.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "js_title_spotlight",
+      "target": "js_title_spotlight_anyinview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/title-spotlight.js",
       "source_location": "L53",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -1386,6 +2152,17 @@
       "target": "js_title_spotlight_setvars"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/title-spotlight.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "js_title_spotlight_start",
+      "target": "js_title_spotlight_anyinview",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
@@ -1414,6 +2191,375 @@
       "confidence_score": 1.0,
       "source": "package_devdependencies",
       "target": "package_devdependencies_sharp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "scripts_build_artists",
+      "target": "scripts_build_artists_artists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "scripts_build_artists",
+      "target": "scripts_build_artists_esc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "scripts_build_artists",
+      "target": "scripts_build_artists_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scripts_build_artists",
+      "target": "scripts_build_artists_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "scripts_build_artists",
+      "target": "scripts_build_artists_jesc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "scripts_build_artists",
+      "target": "scripts_build_artists_linklabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "scripts_build_artists",
+      "target": "scripts_build_artists_nav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "scripts_build_artists",
+      "target": "scripts_build_artists_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "scripts_build_artists",
+      "target": "scripts_build_artists_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "scripts_build_artists",
+      "target": "scripts_build_artists_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "scripts_build_artists_page",
+      "target": "scripts_build_artists_esc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "scripts_build_artists_page",
+      "target": "scripts_build_artists_jesc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "scripts_build_artists_page",
+      "target": "scripts_build_artists_linklabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "scripts_build_artists_page",
+      "target": "scripts_build_artists_nav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-artists.js",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "scripts_build_artists_page",
+      "target": "scripts_build_artists_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_cardhtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_decodeentities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_discovereventurls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_fetchtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_img_dir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_ldjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_months_en_abbr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_months_ro_abbr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_months_ro_full",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_overrides_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_parseevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_saveposter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_sharp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "scripts_update_events",
+      "target": "scripts_update_events_splice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "scripts_update_events_saveposter",
+      "target": "scripts_update_events_sharp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "scripts_update_events_parseevent",
+      "target": "scripts_update_events_decodeentities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "scripts_update_events_discovereventurls",
+      "target": "scripts_update_events_fetchtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-events.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "scripts_update_events_parseevent",
+      "target": "scripts_update_events_fetchtext",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1477,5 +2623,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8b4ca0c3d7a1e0fd7f2e7cbbca6e32718ce50ec5"
+  "built_at_commit": "a854340d83da235a74b80e39c63455bf6e533432"
 }

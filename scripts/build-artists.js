@@ -10,7 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 const ROOT = path.join(__dirname, '..');
-const CSS_V = 'v=8';
+const CSS_V = 'v=9';
 
 const artists = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'artists.json'), 'utf8'));
 const only = process.argv[2];
@@ -63,7 +63,7 @@ function footer(lang) {
     : '<li><a href="index.html">Home</a></li><li><a href="events.html">Events</a></li><li><a href="artists.html">Artists</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="labels.html">Labels</a></li><li><a href="about.html">About Us</a></li>';
   return '  <footer class="footer" role="contentinfo">\n    <div class="container">\n      <div class="footer__grid">\n' +
     '        <div class="footer__brand">\n          <p class="footer__logo">cyclic</p>\n' +
-    '          <p class="footer__tagline">' + (ro ? 'Underground-ul României. Ridicat.<br>Evenimente de muzică electronică din 2009.' : 'Romania\'s Underground. Elevated.<br>Electronic music events since 2009.') + '</p>\n' +
+    '          <p class="footer__tagline">' + (ro ? 'Fiecare moment, construit pentru tine.<br>Evenimente de muzică electronică din 2009.' : 'Built On Moments Curated For You.<br>Electronic music events since 2009.') + '</p>\n' +
     '          <nav class="footer__social" aria-label="' + (ro ? 'Linkuri social media' : 'Social media links') + '">\n' +
     '            <a href="https://facebook.com/cyclicagency" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>\n' +
     '            <a href="https://instagram.com/cyclic_music" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>\n' +

@@ -476,7 +476,7 @@ body.hero-in-view .nav--scrolled {
 }
 .hero__title {
   font-family: var(--font-display);
-  font-size: clamp(36px, 7vw, 100px);
+  font-size: clamp(32px, 5vw, 72px);
   line-height: 0.88;
   text-transform: uppercase;
   letter-spacing: 0.01em;
@@ -1727,7 +1727,7 @@ html, body {
     align-items: center;
   }
   .hero__title {
-    font-size: clamp(32px, 9vw, 56px);
+    font-size: clamp(30px, 8vw, 50px);
     margin-bottom: 16px;
   }
   .hero__sub {

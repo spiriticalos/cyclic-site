@@ -10,7 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 const ROOT = path.join(__dirname, '..');
-const CSS_V = 'v=9';
+const CSS_V = 'v=10';
 
 const artists = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'artists.json'), 'utf8'));
 const only = process.argv[2];

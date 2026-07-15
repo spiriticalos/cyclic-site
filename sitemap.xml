@@ -492,6 +492,24 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+<url>
+    <loc>https://cyclic.ro/politica-confidentialitate.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+<url>
+    <loc>https://cyclic.ro/politica-cookies.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+<url>
+    <loc>https://cyclic.ro/termeni-si-conditii.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
   <url>
     <loc>https://cyclic.ro/cookie-policy.html</loc>
     <lastmod>2026-07-11</lastmod>

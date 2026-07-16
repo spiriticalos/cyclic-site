@@ -105,8 +105,8 @@
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\inchiriere-dj.html": {
-    "mtime": 1784150190.7949731,
-    "ast_hash": "141d4d73d6256a43bce34ac7122372fa",
+    "mtime": 1784150954.3646805,
+    "ast_hash": "6fa1376cdeb4ee626931d7aaeb0dfd04",
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\inchiriere-echipamente.html": {
@@ -115,13 +115,13 @@
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\inchiriere-lumini.html": {
-    "mtime": 1784150190.7989907,
-    "ast_hash": "e1d4502076228c35565a46d56a30234a",
+    "mtime": 1784150954.3646805,
+    "ast_hash": "a38abb8c3192c50f9b4933e5988d7269",
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\inchiriere-sonorizare.html": {
-    "mtime": 1784150190.7989907,
-    "ast_hash": "566f0ba7819950a851cf3c6f2e88b94c",
+    "mtime": 1784150954.3646805,
+    "ast_hash": "c4b1560bd75c64e7e694cc3cff06598c",
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\index.html": {
@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\rentals.html": {
-    "mtime": 1784144179.4026513,
-    "ast_hash": "f05590d05d495328f08870c2586866fd",
+    "mtime": 1784151031.5762253,
+    "ast_hash": "4113a85d1bb2a56a3bc704c3e35719ba",
     "semantic_hash": ""
   },
   "D:\\party\\site cyclic V1\\robots.txt": {
@@ -617,6 +617,21 @@
   "D:\\party\\site cyclic V1\\termeni-si-conditii.html": {
     "mtime": 1784149290.204327,
     "ast_hash": "3d2428ea05b9a35aee74a7434414ea04",
+    "semantic_hash": ""
+  },
+  "D:\\party\\site cyclic V1\\dj-equipment-rental.html": {
+    "mtime": 1784150765.7693105,
+    "ast_hash": "f68585ee6c4bbd8cc2e1ee5b1147344b",
+    "semantic_hash": ""
+  },
+  "D:\\party\\site cyclic V1\\lighting-rental.html": {
+    "mtime": 1784150954.277579,
+    "ast_hash": "1a6b7c5eb47316df5f918e4b69642b85",
+    "semantic_hash": ""
+  },
+  "D:\\party\\site cyclic V1\\sound-system-rental.html": {
+    "mtime": 1784150603.2521758,
+    "ast_hash": "575afb5bcd1d9414598b8101c8193dce",
     "semantic_hash": ""
   }
 }

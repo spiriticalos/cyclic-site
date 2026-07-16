@@ -58,7 +58,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-sonorizare.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/rentals.html#card-sound"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/sound-system-rental.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/sound-system-rental.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-sonorizare.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/sound-system-rental.html"/>
   </url>
   <url>
     <loc>https://cyclic.ro/inchiriere-dj.html</loc>
@@ -66,7 +74,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-dj.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/rentals.html#card-dj"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/dj-equipment-rental.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/dj-equipment-rental.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-dj.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/dj-equipment-rental.html"/>
   </url>
   <url>
     <loc>https://cyclic.ro/inchiriere-lumini.html</loc>
@@ -74,7 +90,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-lumini.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/rentals.html#card-light"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/lighting-rental.html"/>
+  </url>
+  <url>
+    <loc>https://cyclic.ro/lighting-rental.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cyclic.ro/inchiriere-lumini.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyclic.ro/lighting-rental.html"/>
   </url>
   <url>
     <loc>https://cyclic.ro/home-en.html</loc>

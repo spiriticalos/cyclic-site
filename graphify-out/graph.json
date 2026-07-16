@@ -673,7 +673,7 @@
       "label": "compileShader()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L115",
+      "source_location": "L121",
       "id": "js_threads_compileshader",
       "community": 5,
       "norm_label": "compileshader()"
@@ -682,7 +682,7 @@
       "label": "resize()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L159",
+      "source_location": "L165",
       "id": "js_threads_resize",
       "community": 5,
       "norm_label": "resize()"
@@ -691,7 +691,7 @@
       "label": "renderFrame()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L192",
+      "source_location": "L198",
       "id": "js_threads_renderframe",
       "community": 5,
       "norm_label": "renderframe()"
@@ -700,7 +700,7 @@
       "label": "loop()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L203",
+      "source_location": "L209",
       "id": "js_threads_loop",
       "community": 5,
       "norm_label": "loop()"
@@ -709,7 +709,7 @@
       "label": "start()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L210",
+      "source_location": "L216",
       "id": "js_threads_start",
       "community": 5,
       "norm_label": "start()"
@@ -718,7 +718,7 @@
       "label": "stop()",
       "file_type": "code",
       "source_file": "js/threads.js",
-      "source_location": "L215",
+      "source_location": "L221",
       "id": "js_threads_stop",
       "community": 5,
       "norm_label": "stop()"
@@ -1329,9 +1329,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides",
-      "target": "data_events_overrides_13722",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13722"
     },
     {
       "relation": "contains",
@@ -1339,9 +1339,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides",
-      "target": "data_events_overrides_13735",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13735"
     },
     {
       "relation": "contains",
@@ -1349,9 +1349,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides",
-      "target": "data_events_overrides_comentariu",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_comentariu"
     },
     {
       "relation": "contains",
@@ -1359,9 +1359,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides_13722",
-      "target": "data_events_overrides_13722_genre",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13722_genre"
     },
     {
       "relation": "contains",
@@ -1369,9 +1369,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides_13722",
-      "target": "data_events_overrides_13722_lineup",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13722_lineup"
     },
     {
       "relation": "contains",
@@ -1379,9 +1379,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides_13722",
-      "target": "data_events_overrides_13722_tags",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13722_tags"
     },
     {
       "relation": "contains",
@@ -1389,9 +1389,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides_13722",
-      "target": "data_events_overrides_13722_title",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13722_title"
     },
     {
       "relation": "contains",
@@ -1399,9 +1399,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides_13722",
-      "target": "data_events_overrides_13722_venue",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13722_venue"
     },
     {
       "relation": "contains",
@@ -1409,9 +1409,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides_13735",
-      "target": "data_events_overrides_13735_city",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13735_city"
     },
     {
       "relation": "contains",
@@ -1419,9 +1419,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides_13735",
-      "target": "data_events_overrides_13735_genre",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13735_genre"
     },
     {
       "relation": "contains",
@@ -1429,9 +1429,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides_13735",
-      "target": "data_events_overrides_13735_lineup",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13735_lineup"
     },
     {
       "relation": "contains",
@@ -1439,9 +1439,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides_13735",
-      "target": "data_events_overrides_13735_tags",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13735_tags"
     },
     {
       "relation": "contains",
@@ -1449,9 +1449,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides_13735",
-      "target": "data_events_overrides_13735_title",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13735_title"
     },
     {
       "relation": "contains",
@@ -1459,9 +1459,9 @@
       "source_file": "data/events-overrides.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_events_overrides_13735",
-      "target": "data_events_overrides_13735_venue",
-      "confidence_score": 1.0
+      "target": "data_events_overrides_13735_venue"
     },
     {
       "relation": "contains",
@@ -1791,9 +1791,9 @@
       "source_file": "js/magic-rings.js",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_magic_rings",
-      "target": "js_magic_rings_compile",
-      "confidence_score": 1.0
+      "target": "js_magic_rings_compile"
     },
     {
       "relation": "contains",
@@ -1801,9 +1801,9 @@
       "source_file": "js/magic-rings.js",
       "source_location": "L177",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_magic_rings",
-      "target": "js_magic_rings_drawframe",
-      "confidence_score": 1.0
+      "target": "js_magic_rings_drawframe"
     },
     {
       "relation": "contains",
@@ -1811,9 +1811,9 @@
       "source_file": "js/magic-rings.js",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_magic_rings",
-      "target": "js_magic_rings_hex",
-      "confidence_score": 1.0
+      "target": "js_magic_rings_hex"
     },
     {
       "relation": "contains",
@@ -1821,9 +1821,9 @@
       "source_file": "js/magic-rings.js",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_magic_rings",
-      "target": "js_magic_rings_loop",
-      "confidence_score": 1.0
+      "target": "js_magic_rings_loop"
     },
     {
       "relation": "contains",
@@ -1831,9 +1831,9 @@
       "source_file": "js/magic-rings.js",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_magic_rings",
-      "target": "js_magic_rings_resize",
-      "confidence_score": 1.0
+      "target": "js_magic_rings_resize"
     },
     {
       "relation": "contains",
@@ -1841,9 +1841,9 @@
       "source_file": "js/magic-rings.js",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_magic_rings",
-      "target": "js_magic_rings_start",
-      "confidence_score": 1.0
+      "target": "js_magic_rings_start"
     },
     {
       "relation": "contains",
@@ -1851,9 +1851,9 @@
       "source_file": "js/magic-rings.js",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_magic_rings",
-      "target": "js_magic_rings_stop",
-      "confidence_score": 1.0
+      "target": "js_magic_rings_stop"
     },
     {
       "relation": "contains",
@@ -1861,9 +1861,9 @@
       "source_file": "js/magic-rings.js",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_magic_rings",
-      "target": "js_magic_rings_u",
-      "confidence_score": 1.0
+      "target": "js_magic_rings_u"
     },
     {
       "relation": "calls",
@@ -1872,9 +1872,9 @@
       "source_file": "js/magic-rings.js",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_magic_rings_resize",
-      "target": "js_magic_rings_drawframe",
-      "confidence_score": 1.0
+      "target": "js_magic_rings_drawframe"
     },
     {
       "relation": "calls",
@@ -1883,9 +1883,9 @@
       "source_file": "js/magic-rings.js",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_magic_rings_loop",
-      "target": "js_magic_rings_drawframe",
-      "confidence_score": 1.0
+      "target": "js_magic_rings_drawframe"
     },
     {
       "relation": "contains",
@@ -1913,9 +1913,9 @@
       "source_file": "js/main.js",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_main",
-      "target": "js_main_setmenu",
-      "confidence_score": 1.0
+      "target": "js_main_setmenu"
     },
     {
       "relation": "contains",
@@ -2086,9 +2086,9 @@
       "source_file": "js/title-spotlight.js",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_title_spotlight",
-      "target": "js_title_spotlight_anyinview",
-      "confidence_score": 1.0
+      "target": "js_title_spotlight_anyinview"
     },
     {
       "relation": "contains",
@@ -2158,9 +2158,9 @@
       "source_file": "js/title-spotlight.js",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "js_title_spotlight_start",
-      "target": "js_title_spotlight_anyinview",
-      "confidence_score": 1.0
+      "target": "js_title_spotlight_anyinview"
     },
     {
       "relation": "contains",
@@ -2198,9 +2198,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists",
-      "target": "scripts_build_artists_artists",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_artists"
     },
     {
       "relation": "contains",
@@ -2208,9 +2208,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists",
-      "target": "scripts_build_artists_esc",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_esc"
     },
     {
       "relation": "contains",
@@ -2218,9 +2218,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists",
-      "target": "scripts_build_artists_footer",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_footer"
     },
     {
       "relation": "contains",
@@ -2228,9 +2228,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists",
-      "target": "scripts_build_artists_fs",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_fs"
     },
     {
       "relation": "contains",
@@ -2238,9 +2238,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists",
-      "target": "scripts_build_artists_jesc",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_jesc"
     },
     {
       "relation": "contains",
@@ -2248,9 +2248,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists",
-      "target": "scripts_build_artists_linklabel",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_linklabel"
     },
     {
       "relation": "contains",
@@ -2258,9 +2258,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists",
-      "target": "scripts_build_artists_nav",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_nav"
     },
     {
       "relation": "contains",
@@ -2268,9 +2268,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists",
-      "target": "scripts_build_artists_page",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_page"
     },
     {
       "relation": "contains",
@@ -2278,9 +2278,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists",
-      "target": "scripts_build_artists_path",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_path"
     },
     {
       "relation": "contains",
@@ -2288,9 +2288,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists",
-      "target": "scripts_build_artists_root",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_root"
     },
     {
       "relation": "calls",
@@ -2299,9 +2299,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists_page",
-      "target": "scripts_build_artists_esc",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_esc"
     },
     {
       "relation": "calls",
@@ -2310,9 +2310,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists_page",
-      "target": "scripts_build_artists_jesc",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_jesc"
     },
     {
       "relation": "calls",
@@ -2321,9 +2321,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists_page",
-      "target": "scripts_build_artists_linklabel",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_linklabel"
     },
     {
       "relation": "calls",
@@ -2332,9 +2332,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists_page",
-      "target": "scripts_build_artists_nav",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_nav"
     },
     {
       "relation": "calls",
@@ -2343,9 +2343,9 @@
       "source_file": "scripts/build-artists.js",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_artists_page",
-      "target": "scripts_build_artists_footer",
-      "confidence_score": 1.0
+      "target": "scripts_build_artists_footer"
     },
     {
       "relation": "contains",
@@ -2353,9 +2353,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_cardhtml",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_cardhtml"
     },
     {
       "relation": "contains",
@@ -2363,9 +2363,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_decodeentities",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_decodeentities"
     },
     {
       "relation": "contains",
@@ -2373,9 +2373,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_discovereventurls",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_discovereventurls"
     },
     {
       "relation": "contains",
@@ -2383,9 +2383,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_fetchtext",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_fetchtext"
     },
     {
       "relation": "contains",
@@ -2393,9 +2393,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_fs",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_fs"
     },
     {
       "relation": "contains",
@@ -2403,9 +2403,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_img_dir",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_img_dir"
     },
     {
       "relation": "contains",
@@ -2413,9 +2413,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_ldjson",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_ldjson"
     },
     {
       "relation": "contains",
@@ -2423,9 +2423,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_months_en_abbr",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_months_en_abbr"
     },
     {
       "relation": "contains",
@@ -2433,9 +2433,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_months_ro_abbr",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_months_ro_abbr"
     },
     {
       "relation": "contains",
@@ -2443,9 +2443,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_months_ro_full",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_months_ro_full"
     },
     {
       "relation": "contains",
@@ -2453,9 +2453,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_overrides_file",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_overrides_file"
     },
     {
       "relation": "contains",
@@ -2463,9 +2463,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_parseevent",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_parseevent"
     },
     {
       "relation": "contains",
@@ -2473,9 +2473,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_path",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_path"
     },
     {
       "relation": "contains",
@@ -2483,9 +2483,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_root",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_root"
     },
     {
       "relation": "contains",
@@ -2493,9 +2493,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_saveposter",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_saveposter"
     },
     {
       "relation": "contains",
@@ -2503,9 +2503,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_sharp",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_sharp"
     },
     {
       "relation": "contains",
@@ -2513,9 +2513,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events",
-      "target": "scripts_update_events_splice",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_splice"
     },
     {
       "relation": "calls",
@@ -2524,9 +2524,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events_saveposter",
-      "target": "scripts_update_events_sharp",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_sharp"
     },
     {
       "relation": "calls",
@@ -2535,9 +2535,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events_parseevent",
-      "target": "scripts_update_events_decodeentities",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_decodeentities"
     },
     {
       "relation": "calls",
@@ -2546,9 +2546,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events_discovereventurls",
-      "target": "scripts_update_events_fetchtext",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_fetchtext"
     },
     {
       "relation": "calls",
@@ -2557,9 +2557,9 @@
       "source_file": "scripts/update-events.js",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_events_parseevent",
-      "target": "scripts_update_events_fetchtext",
-      "confidence_score": 1.0
+      "target": "scripts_update_events_fetchtext"
     },
     {
       "relation": "contains",
@@ -2623,5 +2623,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a854340d83da235a74b80e39c63455bf6e533432"
+  "built_at_commit": "9e6f1358653deb532e3027a185440d8c9e3f6752"
 }

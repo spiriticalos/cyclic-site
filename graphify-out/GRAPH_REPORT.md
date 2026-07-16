@@ -1,7 +1,7 @@
-# Graph Report - site cyclic V1  (2026-07-15)
+# Graph Report - site cyclic V1  (2026-07-16)
 
 ## Corpus Check
-- 19 files · ~193,438 words
+- 19 files · ~210,085 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a854340d`
+- Built from commit: `9e6f1358`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

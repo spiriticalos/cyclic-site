@@ -4,7 +4,13 @@
   var hero = document.querySelector('.hero__bg');
   if (!hero) return;
 
-  // Setările vizuale originale (commit 98a5f9a), acum active și pe mobil.
+  // Pe mobil sărim complet shaderul WebGL (per-pixel, fără cap de fps — cel mai
+  // scump efect al site-ului). Hero-ul rămâne pe fundalul de gradient animat din
+  // CSS (.hero__bg::before/::after + scanlines), deci nu devine negru gol.
+  // Consecvent cu gate-ul din magic-rings.js / constellation.js.
+  if (window.matchMedia('(max-width: 768px)').matches) return;
+
+  // Setările vizuale originale (commit 98a5f9a).
   // Static (fără loop) când userul preferă reduced motion.
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var LINE_COUNT = 40;       // shader loop iterations (per-pixel cost)

@@ -146,7 +146,7 @@ function page(a, lang) {
     '          <a href="mailto:ionut@cyclic.ro?subject=Booking%20' + encodeURIComponent(a.name) + '" class="btn btn--accent magnetic">' + bookingLabel + ' <span class="arrow">→</span></a>\n' +
     '        </div>\n      </div>\n    </section>\n  </main>\n\n' +
     footer(lang) + '\n\n' +
-    '  <script src="js/main.js?v=3" defer></script>\n  <script src="js/effects.js?v=2" defer></script>\n  <script src="js/cookie-banner.js?v=3" defer></script>\n  <script src="js/analytics.js?v=2" defer></script>\n</body>\n</html>\n';
+    '  <script src="js/main.js?v=4" defer></script>\n  <script src="js/effects.js?v=2" defer></script>\n  <script src="js/cookie-banner.js?v=3" defer></script>\n  <script src="js/analytics.js?v=2" defer></script>\n</body>\n</html>\n';
 }
 
 var n = 0;

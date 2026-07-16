@@ -291,14 +291,14 @@
     const T = roPage ? {
       aria: 'Abonare la newsletter-ul Cyclic',
       title: 'Nu rata niciun eveniment Cyclic',
-      sub: 'Acces din timp · Oferte exclusive',
+      sub: 'Acces prioritar · Oferte exclusive',
       placeholder: 'adresa@email.com',
       emailAria: 'Adresă de email',
       submit: 'Abonează-te →',
-      consent: 'Prin abonare ești de acord cu <a href="privacy-policy.html">Politica de Confidențialitate</a>.',
+      consent: 'Prin abonare ești de acord cu <a href="politica-confidentialitate.html">Politica de Confidențialitate</a>.',
       closeAria: 'Închide',
       okTitle: '✓ Te-ai abonat.',
-      okSub: '&nbsp;Îți trimitem acces din timp și oferte exclusive.'
+      okSub: '&nbsp;Îți trimitem acces prioritar și oferte exclusive.'
     } : {
       aria: 'Subscribe to Cyclic newsletter',
       title: 'Never miss a Cyclic event',

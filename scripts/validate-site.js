@@ -74,7 +74,7 @@ for (const f of files) {
 
 // 7. versiuni de asseturi consecvente (capcana cache immutable)
 const gen = fs.readFileSync(path.join(ROOT, 'scripts', 'build-artists.js'), 'utf8');
-for (const asset of ['main.css', 'main.js', 'effects.js', 'cookie-banner.js', 'analytics.js', 'fonts.css']) {
+for (const asset of ['main.css', 'main.js', 'effects.js', 'cookie-banner.js', 'analytics.js', 'fonts.css', 'rentals.css']) {
   const vers = new Set();
   for (const f of files)
     for (const m of read(f).matchAll(new RegExp(asset.replace('.', '\\.') + '\\?v=(\\d+)', 'g'))) vers.add(m[1]);

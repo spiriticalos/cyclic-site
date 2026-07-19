@@ -25,11 +25,15 @@ jobs:
       - name: Rulează sincronizarea
         run: node scripts/update-events.js
 
+      - name: Recalculează vârsta companiei ("17 ani" -> din 2009)
+        run: node scripts/update-years.js
+
       - name: Commit + push dacă s-a schimbat ceva
         run: |
           git config user.name "cyclic-events-bot"
           git config user.email "actions@github.com"
           git add evenimente.html events.html images/events-auto
+          git add -u -- '*.html' llms.txt data/site-age.json
           if git diff --cached --quiet; then
             echo "Nimic de actualizat."
           else

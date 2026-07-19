@@ -1,0 +1,20 @@
+name: Validare site
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validează site-ul (linkuri, JSON-LD, hreflang, sitemap, versiuni)
+        run: node scripts/validate-site.js

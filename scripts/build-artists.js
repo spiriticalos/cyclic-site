@@ -82,6 +82,8 @@ function page(a, lang) {
   var urlRo = 'https://cyclic.ro/artist-' + a.slug + '.html';
   var urlEn = 'https://cyclic.ro/artist-' + a.slug + '-en.html';
   var img = 'https://cyclic.ro/images/artists/' + a.slug + '.webp';
+  // og:image pe domeniul care serveste imaginea AZI (cyclic.ro e inca WP-ul vechi)
+  var ogImg = 'https://cyclic-site.vercel.app/images/artists/' + a.slug + '.webp';
   var typeLabel = ro ? (a.type === 'local' ? 'Artist local' : 'Internațional') : (a.type === 'local' ? 'Local Artist' : 'International');
   var bio = ro ? a.bio_ro : a.bio_en;
   var title = a.name + ' — ' + a.genre + (ro ? ' | Cyclic Agency' : ' | Cyclic Agency');
@@ -120,7 +122,7 @@ function page(a, lang) {
     '  <meta property="og:type" content="profile">\n' +
     '  <meta property="og:title" content="' + esc(title) + '">\n' +
     '  <meta property="og:description" content="' + desc + '">\n' +
-    '  <meta property="og:image" content="' + img + '">\n' +
+    '  <meta property="og:image" content="' + ogImg + '">\n' +
     '  <meta property="og:url" content="' + url + '">\n' +
     '  <meta property="og:site_name" content="Cyclic Agency">\n' +
     '  <meta property="og:locale" content="' + (ro ? 'ro_RO' : 'en_US') + '">\n' +

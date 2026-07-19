@@ -369,7 +369,7 @@
       "source_file": "js/constellation.js",
       "source_location": "L211",
       "id": "js_constellation_start",
-      "community": 11,
+      "community": 3,
       "norm_label": "start()"
     },
     {
@@ -603,7 +603,7 @@
       "source_file": "js/profile-card.js",
       "source_location": "L1",
       "id": "js_profile_card",
-      "community": 11,
+      "community": 3,
       "norm_label": "profile-card.js"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "js/profile-card.js",
       "source_location": "L5",
       "id": "js_profile_card_clamp",
-      "community": 11,
+      "community": 3,
       "norm_label": "clamp()"
     },
     {
@@ -621,7 +621,7 @@
       "source_file": "js/profile-card.js",
       "source_location": "L6",
       "id": "js_profile_card_round",
-      "community": 11,
+      "community": 3,
       "norm_label": "round()"
     },
     {
@@ -630,7 +630,7 @@
       "source_file": "js/profile-card.js",
       "source_location": "L8",
       "id": "js_profile_card_createengine",
-      "community": 11,
+      "community": 3,
       "norm_label": "createengine()"
     },
     {
@@ -639,7 +639,7 @@
       "source_file": "js/profile-card.js",
       "source_location": "L80",
       "id": "js_profile_card_check",
-      "community": 11,
+      "community": 3,
       "norm_label": "check()"
     },
     {
@@ -920,6 +920,114 @@
       "id": "scripts_build_artists_page",
       "community": 15,
       "norm_label": "page()"
+    },
+    {
+      "label": "build-footer.js",
+      "file_type": "code",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L1",
+      "id": "scripts_build_footer",
+      "community": 18,
+      "norm_label": "build-footer.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L7",
+      "id": "scripts_build_footer_fs",
+      "community": 18,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L8",
+      "id": "scripts_build_footer_path",
+      "community": 18,
+      "norm_label": "path"
+    },
+    {
+      "label": "{ footer }",
+      "file_type": "code",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L9",
+      "id": "scripts_build_footer_footer",
+      "community": 18,
+      "norm_label": "{ footer }"
+    },
+    {
+      "label": "ROOT",
+      "file_type": "code",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L11",
+      "id": "scripts_build_footer_root",
+      "community": 18,
+      "norm_label": "root"
+    },
+    {
+      "label": "WRITE",
+      "file_type": "code",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L12",
+      "id": "scripts_build_footer_write",
+      "community": 18,
+      "norm_label": "write"
+    },
+    {
+      "label": "RENTALS",
+      "file_type": "code",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L14",
+      "id": "scripts_build_footer_rentals",
+      "community": 18,
+      "norm_label": "rentals"
+    },
+    {
+      "label": "pages",
+      "file_type": "code",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L22",
+      "id": "scripts_build_footer_pages",
+      "community": 18,
+      "norm_label": "pages"
+    },
+    {
+      "label": "changedFooters",
+      "file_type": "code",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L24",
+      "id": "scripts_build_footer_changedfooters",
+      "community": 18,
+      "norm_label": "changedfooters"
+    },
+    {
+      "label": "toWrite",
+      "file_type": "code",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L25",
+      "id": "scripts_build_footer_towrite",
+      "community": 18,
+      "norm_label": "towrite"
+    },
+    {
+      "label": "layout.js",
+      "file_type": "code",
+      "source_file": "scripts/layout.js",
+      "source_location": "L1",
+      "id": "scripts_layout",
+      "community": 18,
+      "norm_label": "layout.js"
+    },
+    {
+      "label": "footer()",
+      "file_type": "code",
+      "source_file": "scripts/layout.js",
+      "source_location": "L8",
+      "id": "scripts_layout_footer",
+      "community": 18,
+      "norm_label": "footer()"
     },
     {
       "label": "update-events.js",
@@ -2350,6 +2458,128 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "scripts_build_footer",
+      "target": "scripts_build_footer_changedfooters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "scripts_build_footer",
+      "target": "scripts_build_footer_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "scripts_build_footer",
+      "target": "scripts_build_footer_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "scripts_build_footer",
+      "target": "scripts_build_footer_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "scripts_build_footer",
+      "target": "scripts_build_footer_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "scripts_build_footer",
+      "target": "scripts_build_footer_rentals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "scripts_build_footer",
+      "target": "scripts_build_footer_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_build_footer",
+      "target": "scripts_build_footer_towrite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "scripts_build_footer",
+      "target": "scripts_build_footer_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "scripts_build_footer",
+      "target": "scripts_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-footer.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "scripts_build_footer",
+      "target": "scripts_layout_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/layout.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "scripts_layout",
+      "target": "scripts_layout_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/update-events.js",
       "source_location": "L102",
       "weight": 1.0,
@@ -2623,5 +2853,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9e6f1358653deb532e3027a185440d8c9e3f6752"
+  "built_at_commit": "d60581357816b38a9a600f062853a2f3020364e9"
 }

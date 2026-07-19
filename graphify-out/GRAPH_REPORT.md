@@ -1,16 +1,16 @@
-# Graph Report - site cyclic V1  (2026-07-16)
+# Graph Report - site cyclic V1  (2026-07-19)
 
 ## Corpus Check
-- 19 files · ~210,085 words
+- 21 files · ~159,072 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 128 nodes · 143 edges · 18 communities (16 shown, 2 thin omitted)
+- 140 nodes · 155 edges · 19 communities (17 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9e6f1358`
+- Built from commit: `d6058135`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -28,6 +28,7 @@
 - [[_COMMUNITY_Community 14|Community 14]]
 - [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 18|Community 18]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `main()` - 7 edges
@@ -42,15 +43,15 @@
 10. `draw()` - 3 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `createEngine()` --calls--> `setVars()`  [INFERRED]
-  js/profile-card.js → js/title-spotlight.js
 - `createEngine()` --calls--> `start()`  [INFERRED]
   js/profile-card.js → js/constellation.js
+- `createEngine()` --calls--> `setVars()`  [INFERRED]
+  js/profile-card.js → js/title-spotlight.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (18 total, 2 thin omitted)
+## Communities (19 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.29
@@ -61,8 +62,8 @@ Cohesion: 0.70
 Nodes (4): closeBanner(), read(), renderBanner(), write()
 
 ### Community 3 - "Community 3"
-Cohesion: 0.38
-Nodes (4): anyInView(), loop(), setVars(), start()
+Cohesion: 0.18
+Nodes (6): start(), createEngine(), anyInView(), loop(), setVars(), start()
 
 ### Community 5 - "Community 5"
 Cohesion: 0.38
@@ -73,8 +74,8 @@ Cohesion: 0.50
 Nodes (3): devDependencies, playwright, sharp
 
 ### Community 11 - "Community 11"
-Cohesion: 0.18
-Nodes (9): draw(), frame(), isMobile(), makeParticles(), rand(), resize(), start(), step() (+1 more)
+Cohesion: 0.36
+Nodes (7): draw(), frame(), isMobile(), makeParticles(), rand(), resize(), step()
 
 ### Community 12 - "Community 12"
 Cohesion: 0.33
@@ -96,20 +97,22 @@ Nodes (10): artists, esc(), footer(), fs, jesc(), linkLabel(), nav(), page() (+2
 Cohesion: 0.28
 Nodes (3): drawFrame(), loop(), resize()
 
+### Community 18 - "Community 18"
+Cohesion: 0.18
+Nodes (10): changedFooters, { footer }, fs, pages, path, RENTALS, ROOT, toWrite (+2 more)
+
 ## Knowledge Gaps
-- **34 isolated node(s):** `fs`, `path`, `rl`, `_comentariu`, `title` (+29 more)
+- **43 isolated node(s):** `fs`, `path`, `rl`, `_comentariu`, `title` (+38 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `createEngine()` connect `Community 11` to `Community 3`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **Why does `setVars()` connect `Community 3` to `Community 11`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `start()` connect `Community 3` to `Community 11`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `fs`, `path`, `rl` to the rest of the system?**
-  _34 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _43 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 13` be split into smaller, more focused modules?**
   _Cohesion score 0.13725490196078433 - nodes in this community are weakly interconnected._
 - **Should `Community 14` be split into smaller, more focused modules?**

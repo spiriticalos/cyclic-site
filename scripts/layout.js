@@ -89,4 +89,46 @@ function footer(lang, navVariant, indent) {
   return lines.join('\n');
 }
 
-module.exports = { footer: footer };
+// opts: { active: 'pagina.html'|null, ctaHref, ctaLabel, toggleHref }
+// Toggle-ul arata SPRE cealalta limba (pe RO apare butonul EN si invers).
+function nav(lang, opts) {
+  var ro = lang === 'ro';
+  var links = ro
+    ? [['index.html', 'Acasă'], ['evenimente.html', 'Evenimente'], ['artisti.html', 'Artiști'], ['inchiriere-echipamente.html', 'Închirieri'], ['label-uri.html', 'Label-uri'], ['despre-noi.html', 'Despre noi']]
+    : [['index.html', 'Home'], ['events.html', 'Events'], ['artists.html', 'Artists'], ['rentals.html', 'Rentals'], ['labels.html', 'Labels'], ['about.html', 'About Us']];
+
+  var toggle = ro
+    ? '<a href="' + opts.toggleHref + '" class="lang-toggle" hreflang="en" aria-label="Switch to English"><span class="lang-toggle__flag" aria-hidden="true">🇬🇧</span> EN</a>'
+    : '<a href="' + opts.toggleHref + '" class="lang-toggle" hreflang="ro" aria-label="Schimbă în română"><span class="lang-toggle__flag" aria-hidden="true">🇷🇴</span> RO</a>';
+
+  var lis = links.map(function (x) {
+    var act = x[0] === opts.active ? ' active' : '';
+    return '        <li><a href="' + x[0] + '" class="nav__link' + act + '">' + x[1] + '</a></li>';
+  }).join('\n');
+  var mob = links.map(function (x) {
+    return '    <a href="' + x[0] + '" class="nav__link">' + x[1] + '</a>';
+  }).join('\n');
+
+  var lines = [
+    '  <nav class="nav" id="nav" role="navigation" aria-label="' + (ro ? 'Navigare principală' : 'Main navigation') + '">',
+    '    <div class="nav__inner container">',
+    '      <a href="index.html" class="nav__logo"><img src="images/cyclic-logo-white.png" alt="Cyclic Agency" class="nav__logo-img" width="80" height="24"></a>',
+    '      <ul class="nav__links" role="list">',
+    lis,
+    '      </ul>',
+    '      <a href="' + opts.ctaHref + '" class="btn btn--accent nav__cta magnetic">' + opts.ctaLabel + ' <span class="arrow">→</span></a>',
+    '      ' + toggle,
+    '      <button class="nav__burger" aria-label="' + (ro ? 'Deschide meniu' : 'Toggle navigation') + '" aria-expanded="false"><span></span><span></span><span></span></button>',
+    '    </div>',
+    '  </nav>',
+    '',
+    '  <div class="nav__mobile" role="dialog" aria-label="' + (ro ? 'Navigare mobilă' : 'Mobile navigation') + '" aria-modal="true">',
+    mob,
+    '    <a href="' + opts.ctaHref + '" class="btn btn--accent magnetic">' + opts.ctaLabel + ' →</a>',
+    '    ' + toggle,
+    '  </div>'
+  ];
+  return lines.join('\n');
+}
+
+module.exports = { footer: footer, nav: nav };

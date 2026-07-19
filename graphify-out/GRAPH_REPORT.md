@@ -1,16 +1,16 @@
 # Graph Report - site cyclic V1  (2026-07-19)
 
 ## Corpus Check
-- 21 files · ~159,072 words
+- 22 files · ~159,868 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 140 nodes · 155 edges · 19 communities (17 shown, 2 thin omitted)
+- 150 nodes · 166 edges · 19 communities (17 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d6058135`
+- Built from commit: `72b1f187`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -98,11 +98,11 @@ Cohesion: 0.28
 Nodes (3): drawFrame(), loop(), resize()
 
 ### Community 18 - "Community 18"
-Cohesion: 0.18
-Nodes (10): changedFooters, { footer }, fs, pages, path, RENTALS, ROOT, toWrite (+2 more)
+Cohesion: 0.10
+Nodes (18): changedFooters, { footer }, fs, pages, path, RENTALS, ROOT, toWrite (+10 more)
 
 ## Knowledge Gaps
-- **43 isolated node(s):** `fs`, `path`, `rl`, `_comentariu`, `title` (+38 more)
+- **50 isolated node(s):** `fs`, `path`, `rl`, `_comentariu`, `title` (+45 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -110,10 +110,12 @@ Nodes (10): changedFooters, { footer }, fs, pages, path, RENTALS, ROOT, toWrite 
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `start()` connect `Community 3` to `Community 11`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **What connects `fs`, `path`, `rl` to the rest of the system?**
-  _43 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _50 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 13` be split into smaller, more focused modules?**
   _Cohesion score 0.13725490196078433 - nodes in this community are weakly interconnected._
 - **Should `Community 14` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
+- **Should `Community 18` be split into smaller, more focused modules?**
+  _Cohesion score 0.09956709956709957 - nodes in this community are weakly interconnected._

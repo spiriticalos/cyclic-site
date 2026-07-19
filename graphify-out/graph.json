@@ -1012,6 +1012,87 @@
       "norm_label": "towrite"
     },
     {
+      "label": "build-nav.js",
+      "file_type": "code",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L1",
+      "id": "scripts_build_nav",
+      "community": 18,
+      "norm_label": "build-nav.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L6",
+      "id": "scripts_build_nav_fs",
+      "community": 18,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L7",
+      "id": "scripts_build_nav_path",
+      "community": 18,
+      "norm_label": "path"
+    },
+    {
+      "label": "{ nav }",
+      "file_type": "code",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L8",
+      "id": "scripts_build_nav_nav",
+      "community": 18,
+      "norm_label": "{ nav }"
+    },
+    {
+      "label": "ROOT",
+      "file_type": "code",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L10",
+      "id": "scripts_build_nav_root",
+      "community": 18,
+      "norm_label": "root"
+    },
+    {
+      "label": "WRITE",
+      "file_type": "code",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L11",
+      "id": "scripts_build_nav_write",
+      "community": 18,
+      "norm_label": "write"
+    },
+    {
+      "label": "params()",
+      "file_type": "code",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L16",
+      "id": "scripts_build_nav_params",
+      "community": 18,
+      "norm_label": "params()"
+    },
+    {
+      "label": "pages",
+      "file_type": "code",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L26",
+      "id": "scripts_build_nav_pages",
+      "community": 18,
+      "norm_label": "pages"
+    },
+    {
+      "label": "toWrite",
+      "file_type": "code",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L28",
+      "id": "scripts_build_nav_towrite",
+      "community": 18,
+      "norm_label": "towrite"
+    },
+    {
       "label": "layout.js",
       "file_type": "code",
       "source_file": "scripts/layout.js",
@@ -1028,6 +1109,15 @@
       "id": "scripts_layout_footer",
       "community": 18,
       "norm_label": "footer()"
+    },
+    {
+      "label": "nav()",
+      "file_type": "code",
+      "source_file": "scripts/layout.js",
+      "source_location": "L94",
+      "id": "scripts_layout_nav",
+      "community": 18,
+      "norm_label": "nav()"
     },
     {
       "label": "update-events.js",
@@ -2461,9 +2551,9 @@
       "source_file": "scripts/build-footer.js",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_footer",
-      "target": "scripts_build_footer_changedfooters",
-      "confidence_score": 1.0
+      "target": "scripts_build_footer_changedfooters"
     },
     {
       "relation": "contains",
@@ -2471,9 +2561,9 @@
       "source_file": "scripts/build-footer.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_footer",
-      "target": "scripts_build_footer_footer",
-      "confidence_score": 1.0
+      "target": "scripts_build_footer_footer"
     },
     {
       "relation": "contains",
@@ -2481,9 +2571,9 @@
       "source_file": "scripts/build-footer.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_footer",
-      "target": "scripts_build_footer_fs",
-      "confidence_score": 1.0
+      "target": "scripts_build_footer_fs"
     },
     {
       "relation": "contains",
@@ -2491,9 +2581,9 @@
       "source_file": "scripts/build-footer.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_footer",
-      "target": "scripts_build_footer_pages",
-      "confidence_score": 1.0
+      "target": "scripts_build_footer_pages"
     },
     {
       "relation": "contains",
@@ -2501,9 +2591,9 @@
       "source_file": "scripts/build-footer.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_footer",
-      "target": "scripts_build_footer_path",
-      "confidence_score": 1.0
+      "target": "scripts_build_footer_path"
     },
     {
       "relation": "contains",
@@ -2511,9 +2601,9 @@
       "source_file": "scripts/build-footer.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_footer",
-      "target": "scripts_build_footer_rentals",
-      "confidence_score": 1.0
+      "target": "scripts_build_footer_rentals"
     },
     {
       "relation": "contains",
@@ -2521,9 +2611,9 @@
       "source_file": "scripts/build-footer.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_footer",
-      "target": "scripts_build_footer_root",
-      "confidence_score": 1.0
+      "target": "scripts_build_footer_root"
     },
     {
       "relation": "contains",
@@ -2531,9 +2621,9 @@
       "source_file": "scripts/build-footer.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_footer",
-      "target": "scripts_build_footer_towrite",
-      "confidence_score": 1.0
+      "target": "scripts_build_footer_towrite"
     },
     {
       "relation": "contains",
@@ -2541,9 +2631,9 @@
       "source_file": "scripts/build-footer.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_footer",
-      "target": "scripts_build_footer_write",
-      "confidence_score": 1.0
+      "target": "scripts_build_footer_write"
     },
     {
       "relation": "imports_from",
@@ -2552,9 +2642,9 @@
       "source_file": "scripts/build-footer.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_footer",
-      "target": "scripts_layout",
-      "confidence_score": 1.0
+      "target": "scripts_layout"
     },
     {
       "relation": "imports",
@@ -2563,8 +2653,110 @@
       "source_file": "scripts/build-footer.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_footer",
-      "target": "scripts_layout_footer",
+      "target": "scripts_layout_footer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "scripts_build_nav",
+      "target": "scripts_build_nav_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "scripts_build_nav",
+      "target": "scripts_build_nav_nav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "scripts_build_nav",
+      "target": "scripts_build_nav_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "scripts_build_nav",
+      "target": "scripts_build_nav_params",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "scripts_build_nav",
+      "target": "scripts_build_nav_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scripts_build_nav",
+      "target": "scripts_build_nav_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "scripts_build_nav",
+      "target": "scripts_build_nav_towrite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "scripts_build_nav",
+      "target": "scripts_build_nav_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "scripts_build_nav",
+      "target": "scripts_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-nav.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "scripts_build_nav",
+      "target": "scripts_layout_nav",
       "confidence_score": 1.0
     },
     {
@@ -2573,8 +2765,18 @@
       "source_file": "scripts/layout.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_layout",
-      "target": "scripts_layout_footer",
+      "target": "scripts_layout_footer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/layout.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "scripts_layout",
+      "target": "scripts_layout_nav",
       "confidence_score": 1.0
     },
     {
@@ -2853,5 +3055,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d60581357816b38a9a600f062853a2f3020364e9"
+  "built_at_commit": "72b1f1874d27a08f61e2d1002ac898b7e798a175"
 }

@@ -1,48 +1,5 @@
 [
   {
-    "slug": "optick",
-    "name": "Optick",
-    "genre": "Techno",
-    "type": "local",
-    "bio_ro": "DJ și producător de techno român — un nume definitoriu în scena underground a cluburilor din București.",
-    "bio_en": "Romanian techno DJ and producer — a defining name in Bucharest's underground club scene.",
-    "links": [
-      "https://open.spotify.com/artist/6lpcxPinrSMexifBZoelvg",
-      "https://soundcloud.com/djoptick",
-      "https://www.instagram.com/djoptick/",
-      "https://www.facebook.com/djoptick",
-      "https://www.tiktok.com/@djoptick"
-    ]
-  },
-  {
-    "slug": "rhem",
-    "name": "Rhem",
-    "genre": "Techno",
-    "type": "local",
-    "bio_ro": "Artist techno român cu un sound tăios, industrial, și o prezență în creștere pe circuitul est-european.",
-    "bio_en": "Romanian techno artist with a sharp, industrial edge and a growing presence on the Eastern European circuit.",
-    "links": [
-      "https://soundcloud.com/rhemmusic",
-      "https://www.instagram.com/rhem.music/",
-      "https://www.facebook.com/rhem31",
-      "https://www.tiktok.com/@rhem.music"
-    ]
-  },
-  {
-    "slug": "dobrikan",
-    "name": "Dobrikan",
-    "genre": "Melodic Techno",
-    "type": "local",
-    "bio_ro": "DJ român de melodic techno care îmbină energia brută a underground-ului cu peisaje sonore emoționale, stratificate.",
-    "bio_en": "Romanian melodic techno DJ bridging raw underground energy with emotional, layered soundscapes.",
-    "links": [
-      "https://open.spotify.com/artist/6I8UpPhQ3tHTGXox81A0yy",
-      "https://on.soundcloud.com/3xMwm4pU6hNVMZZh7",
-      "https://www.instagram.com/dobrikan/",
-      "https://www.facebook.com/dobrikan"
-    ]
-  },
-  {
     "slug": "adrian-eftimie",
     "name": "Adrian Eftimie",
     "genre": "House",
@@ -56,20 +13,6 @@
       "https://www.instagram.com/adrianeftimie",
       "https://www.facebook.com/djadrianeftimie",
       "https://www.tiktok.com/@adrianeftimiero"
-    ]
-  },
-  {
-    "slug": "skinny",
-    "name": "SKINNY",
-    "genre": "House",
-    "type": "local",
-    "bio_ro": "DJ română de house cu o prezență scenică electrizantă — seturi vibrante, pline de energie, care transformă orice ring într-o petrecere de neuitat.",
-    "bio_en": "Romanian house DJ with an electrifying stage presence — vibrant, high-energy sets that turn any dancefloor into an unforgettable party.",
-    "links": [
-      "https://www.instagram.com/skinnyioana/",
-      "https://youtube.com/@skinnydj7824",
-      "https://www.tiktok.com/@skinnyioana",
-      "https://on.soundcloud.com/7AVPT3ZxZbrAstkj8"
     ]
   },
   {
@@ -89,6 +32,17 @@
     ]
   },
   {
+    "slug": "brad-brunner",
+    "name": "Brad Brunner",
+    "genre": "Techno",
+    "type": "local",
+    "bio_ro": "DJ techno român cu o prezență scenică constantă, de mare impact, și o reputație construită pe circuitul underground.",
+    "bio_en": "Romanian techno DJ with a consistent, high-impact stage presence and a reputation built on the underground circuit.",
+    "links": [
+      "https://open.spotify.com/artist/3VuRBWq60RkNH59fbf60SL"
+    ]
+  },
+  {
     "slug": "deny",
     "name": "Deny",
     "genre": "House / Afro House",
@@ -100,13 +54,18 @@
     ]
   },
   {
-    "slug": "emann",
-    "name": "Emann",
-    "genre": "Techno",
+    "slug": "dobrikan",
+    "name": "Dobrikan",
+    "genre": "Melodic Techno",
     "type": "local",
-    "bio_ro": "Producător și DJ techno român cu o estetică întunecată, mereu în mișcare, și o prezență scenică puternică.",
-    "bio_en": "Romanian techno producer and DJ with a dark, forward-moving aesthetic and powerful stage presence.",
-    "links": []
+    "bio_ro": "DJ român de melodic techno care îmbină energia brută a underground-ului cu peisaje sonore emoționale, stratificate.",
+    "bio_en": "Romanian melodic techno DJ bridging raw underground energy with emotional, layered soundscapes.",
+    "links": [
+      "https://open.spotify.com/artist/6I8UpPhQ3tHTGXox81A0yy",
+      "https://on.soundcloud.com/3xMwm4pU6hNVMZZh7",
+      "https://www.instagram.com/dobrikan/",
+      "https://www.facebook.com/dobrikan"
+    ]
   },
   {
     "slug": "efi",
@@ -127,6 +86,26 @@
     "links": []
   },
   {
+    "slug": "emann",
+    "name": "Emann",
+    "genre": "Techno",
+    "type": "local",
+    "bio_ro": "Producător și DJ techno român cu o estetică întunecată, mereu în mișcare, și o prezență scenică puternică.",
+    "bio_en": "Romanian techno producer and DJ with a dark, forward-moving aesthetic and powerful stage presence.",
+    "links": []
+  },
+  {
+    "slug": "hraach",
+    "name": "Hraach",
+    "genre": "Techno",
+    "type": "international",
+    "bio_ro": "DJ și producător techno internațional, adus pe scenele românești de Cyclic Agency în cadrul programului nostru de booking internațional.",
+    "bio_en": "International techno DJ and producer, brought to Romanian stages by Cyclic Agency as part of our international booking programme.",
+    "links": [
+      "https://open.spotify.com/artist/6rdTxNwQhUJTodUx7voWXO"
+    ]
+  },
+  {
     "slug": "kristopher",
     "name": "Kristopher",
     "genre": "House",
@@ -134,6 +113,39 @@
     "bio_ro": "DJ român de house care îmbină profunzimea muzicală cu o tehnică de citire a publicului rafinată în ani pe circuitul românesc.",
     "bio_en": "Romanian house DJ blending musical depth with crowd-reading technique refined across years on the Romanian circuit.",
     "links": []
+  },
+  {
+    "slug": "laura-bogdan",
+    "name": "Laura Musuroaea & Bogdan Urucu",
+    "genre": "Afro / Melodic / Tech House",
+    "type": "local",
+    "bio_ro": "Cântă Afro, Melodic și Tech House. Le place să transmită publicului energia și vibe-ul pozitiv și cred că muzica e ca o terapie — cu ajutorul ei, pot face oamenii să se simtă bine și să se bucure de viață.",
+    "bio_en": "They play Afro, Melodic and Tech House. They like to make people feel their energy and positive vibe, and believe that music is like therapy — with its help, they can make people feel good and enjoy life.",
+    "links": [
+      "https://soundcloud.com/laura-musuroaea",
+      "https://www.instagram.com/lauramusuroaea/",
+      "https://www.facebook.com/musurica",
+      "https://www.tiktok.com/@lauramusuroaea",
+      "https://soundcloud.com/bogdanurucu",
+      "https://www.instagram.com/urucubogdan/",
+      "https://www.facebook.com/urucubogdan",
+      "https://www.tiktok.com/@iambogdan.u"
+    ]
+  },
+  {
+    "slug": "optick",
+    "name": "Optick",
+    "genre": "Techno",
+    "type": "local",
+    "bio_ro": "DJ și producător de techno român — un nume definitoriu în scena underground a cluburilor din București.",
+    "bio_en": "Romanian techno DJ and producer — a defining name in Bucharest's underground club scene.",
+    "links": [
+      "https://open.spotify.com/artist/6lpcxPinrSMexifBZoelvg",
+      "https://soundcloud.com/djoptick",
+      "https://www.instagram.com/djoptick/",
+      "https://www.facebook.com/djoptick",
+      "https://www.tiktok.com/@djoptick"
+    ]
   },
   {
     "slug": "oscar",
@@ -156,32 +168,32 @@
     ]
   },
   {
-    "slug": "sabo",
-    "name": "Sabo",
-    "genre": "Techno",
+    "slug": "paul-damixie",
+    "name": "Paul Damixie",
+    "genre": "House",
     "type": "local",
-    "bio_ro": "DJ techno român, o prezență puternică și de încredere pe scenele din toată România.",
-    "bio_en": "Romanian techno DJ, a dependable and powerful presence on stage at venues across Romania.",
-    "links": []
-  },
-  {
-    "slug": "zamfirov",
-    "name": "Zamfirov",
-    "genre": "Electronic",
-    "type": "local",
-    "bio_ro": "DJ și producător român cu un stil larg, care traversează genurile, înrădăcinat în cultura muzicii electronice.",
-    "bio_en": "Romanian DJ and producer with a broad, genre-crossing style rooted in electronic music culture.",
-    "links": []
-  },
-  {
-    "slug": "brad-brunner",
-    "name": "Brad Brunner",
-    "genre": "Techno",
-    "type": "local",
-    "bio_ro": "DJ techno român cu o prezență scenică constantă, de mare impact, și o reputație construită pe circuitul underground.",
-    "bio_en": "Romanian techno DJ with a consistent, high-impact stage presence and a reputation built on the underground circuit.",
+    "bio_ro": "DJ și producător român de house, cu o discografie internațională și seturi care îmbină groove-ul dansant cu momente melodice, pline de emoție.",
+    "bio_en": "Romanian house DJ and producer with an international discography, blending dancefloor groove with emotional, melodic moments.",
     "links": [
-      "https://open.spotify.com/artist/3VuRBWq60RkNH59fbf60SL"
+      "https://soundcloud.com/pauldamixie",
+      "https://www.instagram.com/pauldamixie/",
+      "https://www.facebook.com/pauldamixie/",
+      "https://www.tiktok.com/@pauldamixie_official",
+      "https://www.youtube.com/channel/UChPDEFm347lsgiRfy02RqBw"
+    ]
+  },
+  {
+    "slug": "rhem",
+    "name": "Rhem",
+    "genre": "Techno",
+    "type": "local",
+    "bio_ro": "Artist techno român cu un sound tăios, industrial, și o prezență în creștere pe circuitul est-european.",
+    "bio_en": "Romanian techno artist with a sharp, industrial edge and a growing presence on the Eastern European circuit.",
+    "links": [
+      "https://soundcloud.com/rhemmusic",
+      "https://www.instagram.com/rhem.music/",
+      "https://www.facebook.com/rhem31",
+      "https://www.tiktok.com/@rhem.music"
     ]
   },
   {
@@ -201,15 +213,13 @@
     ]
   },
   {
-    "slug": "hraach",
-    "name": "Hraach",
+    "slug": "sabo",
+    "name": "Sabo",
     "genre": "Techno",
-    "type": "international",
-    "bio_ro": "DJ și producător techno internațional, adus pe scenele românești de Cyclic Agency în cadrul programului nostru de booking internațional.",
-    "bio_en": "International techno DJ and producer, brought to Romanian stages by Cyclic Agency as part of our international booking programme.",
-    "links": [
-      "https://open.spotify.com/artist/6rdTxNwQhUJTodUx7voWXO"
-    ]
+    "type": "local",
+    "bio_ro": "DJ techno român, o prezență puternică și de încredere pe scenele din toată România.",
+    "bio_en": "Romanian techno DJ, a dependable and powerful presence on stage at venues across Romania.",
+    "links": []
   },
   {
     "slug": "sahar-z",
@@ -234,36 +244,26 @@
     ]
   },
   {
-    "slug": "paul-damixie",
-    "name": "Paul Damixie",
+    "slug": "skinny",
+    "name": "SKINNY",
     "genre": "House",
     "type": "local",
-    "bio_ro": "DJ și producător român de house, cu o discografie internațională și seturi care îmbină groove-ul dansant cu momente melodice, pline de emoție.",
-    "bio_en": "Romanian house DJ and producer with an international discography, blending dancefloor groove with emotional, melodic moments.",
+    "bio_ro": "DJ română de house cu o prezență scenică electrizantă — seturi vibrante, pline de energie, care transformă orice ring într-o petrecere de neuitat.",
+    "bio_en": "Romanian house DJ with an electrifying stage presence — vibrant, high-energy sets that turn any dancefloor into an unforgettable party.",
     "links": [
-      "https://soundcloud.com/pauldamixie",
-      "https://www.instagram.com/pauldamixie/",
-      "https://www.facebook.com/pauldamixie/",
-      "https://www.tiktok.com/@pauldamixie_official",
-      "https://www.youtube.com/channel/UChPDEFm347lsgiRfy02RqBw"
+      "https://www.instagram.com/skinnyioana/",
+      "https://youtube.com/@skinnydj7824",
+      "https://www.tiktok.com/@skinnyioana",
+      "https://on.soundcloud.com/7AVPT3ZxZbrAstkj8"
     ]
   },
   {
-    "slug": "laura-bogdan",
-    "name": "Laura Musuroaea & Bogdan Urucu",
-    "genre": "Afro / Melodic / Tech House",
+    "slug": "zamfirov",
+    "name": "Zamfirov",
+    "genre": "Electronic",
     "type": "local",
-    "bio_ro": "Cântă Afro, Melodic și Tech House. Le place să transmită publicului energia și vibe-ul pozitiv și cred că muzica e ca o terapie — cu ajutorul ei, pot face oamenii să se simtă bine și să se bucure de viață.",
-    "bio_en": "They play Afro, Melodic and Tech House. They like to make people feel their energy and positive vibe, and believe that music is like therapy — with its help, they can make people feel good and enjoy life.",
-    "links": [
-      "https://soundcloud.com/laura-musuroaea",
-      "https://www.instagram.com/lauramusuroaea/",
-      "https://www.facebook.com/musurica",
-      "https://www.tiktok.com/@lauramusuroaea",
-      "https://soundcloud.com/bogdanurucu",
-      "https://www.instagram.com/urucubogdan/",
-      "https://www.facebook.com/urucubogdan",
-      "https://www.tiktok.com/@iambogdan.u"
-    ]
+    "bio_ro": "DJ și producător român cu un stil larg, care traversează genurile, înrădăcinat în cultura muzicii electronice.",
+    "bio_en": "Romanian DJ and producer with a broad, genre-crossing style rooted in electronic music culture.",
+    "links": []
   }
 ]
